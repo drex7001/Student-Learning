@@ -1,0 +1,63 @@
+{
+  "entities": [
+    {
+      "name": "student",
+      "fields": [
+        { "name": "id", "type": "string", "description": "Stable identifier used across Postgres, Neo4j, and the frontend." },
+        { "name": "full_name", "type": "string", "description": "Synthetic student display name." },
+        { "name": "cohort", "type": "string", "description": "Class or section label." }
+      ]
+    },
+    {
+      "name": "assessment",
+      "fields": [
+        { "name": "id", "type": "string" },
+        { "name": "student_id", "type": "string" },
+        { "name": "assessment_date", "type": "date" },
+        { "name": "attempt_number", "type": "integer" }
+      ]
+    },
+    {
+      "name": "question",
+      "fields": [
+        { "name": "id", "type": "string" },
+        { "name": "concept_id", "type": "string" },
+        { "name": "prompt", "type": "string" },
+        { "name": "score_max", "type": "float" }
+      ]
+    },
+    {
+      "name": "question_result",
+      "fields": [
+        { "name": "id", "type": "string" },
+        { "name": "assessment_id", "type": "string" },
+        { "name": "question_id", "type": "string" },
+        { "name": "concept_id", "type": "string" },
+        { "name": "score_obtained", "type": "float" },
+        { "name": "score_max", "type": "float" }
+      ]
+    },
+    {
+      "name": "concept_score",
+      "fields": [
+        { "name": "id", "type": "string" },
+        { "name": "student_id", "type": "string" },
+        { "name": "assessment_id", "type": "string" },
+        { "name": "concept_id", "type": "string" },
+        { "name": "mastery_score", "type": "float", "description": "Normalized 0.0-1.0 mastery." },
+        { "name": "confidence", "type": "float", "description": "Derived from question coverage in the latest assessment." },
+        { "name": "computed_at", "type": "datetime" }
+      ]
+    }
+  ],
+  "aggregation_rule": {
+    "description": "Concept mastery is the weighted mean of question percentages for all questions mapped to a concept in an assessment.",
+    "formula": "mastery_score = sum(score_obtained) / sum(score_max)",
+    "confidence_formula": "confidence = min(0.95, answered_question_count / mapped_question_count)"
+  },
+  "missing_data_policy": {
+    "default_confidence": 0.35,
+    "default_mastery": 0.5,
+    "behavior": "Missing concept observations remain diagnosable but are ranked below observed weak concepts with higher certainty."
+  }
+}

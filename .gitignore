@@ -1,0 +1,11 @@
+.env
+.env.local
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+api/.coverage
+api/htmlcov/
+web/.next/
+web/node_modules/
+web/out/
