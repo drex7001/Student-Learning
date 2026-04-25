@@ -5,8 +5,20 @@ from pydantic import BaseModel
 
 class ConceptNode(BaseModel):
     id: str
+    subject_id: str | None = None
     name: str
+    name_si: str | None = None
     description: str | None = None
+    description_si: str | None = None
+
+
+class SubjectNode(BaseModel):
+    id: str
+    name: str
+    name_si: str | None = None
+    description: str | None = None
+    description_si: str | None = None
+    default_concept_id: str
 
 
 class StudentSummary(BaseModel):
@@ -91,6 +103,7 @@ class PrerequisiteResponse(BaseModel):
 class SelectorOptionsResponse(BaseModel):
     students: list[StudentSummary]
     concepts: list[ConceptNode]
+    subjects: list[SubjectNode] = []
 
 
 class SupportQueueEntry(BaseModel):

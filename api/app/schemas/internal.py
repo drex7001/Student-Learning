@@ -4,6 +4,7 @@ from pydantic import BaseModel, Field
 
 
 class ImportCurriculumResponse(BaseModel):
+    subject_count: int
     concept_count: int
     edge_count: int
     source: str

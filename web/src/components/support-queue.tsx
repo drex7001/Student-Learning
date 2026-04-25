@@ -5,12 +5,24 @@ import { startTransition, useEffect, useEffectEvent, useState } from "react";
 
 type ConceptNode = {
   id: string;
+  subject_id?: string | null;
   name: string;
+  name_si?: string | null;
   description?: string;
+  description_si?: string | null;
+};
+
+type SubjectNode = {
+  id: string;
+  name: string;
+  name_si?: string | null;
+  description?: string | null;
+  default_concept_id: string;
 };
 
 type SelectorOptionsResponse = {
   students: { id: string; full_name: string; cohort: string }[];
+  subjects: SubjectNode[];
   concepts: ConceptNode[];
 };
 
@@ -38,6 +50,11 @@ type SupportQueueResponse = {
 };
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000";
+const DEFAULT_SUBJECT_ID = "OL-MATH";
+
+function displayName(item: { name: string; name_si?: string | null }) {
+  return item.name_si ? `${item.name} / ${item.name_si}` : item.name;
+}
 
 function statusLabel(status: SupportQueueEntry["readiness_status"]) {
   if (status === "needs_immediate_support") {
@@ -60,18 +77,22 @@ function statusTone(status: SupportQueueEntry["readiness_status"]) {
 }
 
 export function SupportQueue({
-  initialConceptId = "ALG-024",
+  initialSubjectId = DEFAULT_SUBJECT_ID,
+  initialConceptId,
 }: {
+  initialSubjectId?: string;
   initialConceptId?: string;
 }) {
-  const [conceptId, setConceptId] = useState(initialConceptId);
+  const [subjectId, setSubjectId] = useState(initialSubjectId);
+  const [conceptId, setConceptId] = useState(initialConceptId ?? "");
+  const [subjects, setSubjects] = useState<SubjectNode[]>([]);
   const [concepts, setConcepts] = useState<ConceptNode[]>([]);
   const [queue, setQueue] = useState<SupportQueueResponse | null>(null);
   const [status, setStatus] = useState<"idle" | "loading" | "error">("idle");
   const [message, setMessage] = useState("Loading concept queue...");
 
-  async function fetchOptions() {
-    const response = await fetch(`${API_BASE_URL}/api/options`);
+  async function fetchOptions(nextSubjectId: string) {
+    const response = await fetch(`${API_BASE_URL}/api/options?subject_id=${nextSubjectId}`);
     if (!response.ok) {
       throw new Error("Unable to load concept options.");
     }
@@ -87,16 +108,23 @@ export function SupportQueue({
     return (await response.json()) as SupportQueueResponse;
   }
 
-  async function loadQueue(nextConceptId: string) {
+  async function loadQueue(nextSubjectId: string, nextConceptId?: string) {
     setStatus("loading");
     setMessage("Ranking learners for the selected concept...");
     try {
-      const optionsPayload = await fetchOptions();
+      const optionsPayload = await fetchOptions(nextSubjectId);
+      setSubjects(optionsPayload.subjects);
       setConcepts(optionsPayload.concepts);
+      const selectedSubject =
+        optionsPayload.subjects.find((subject) => subject.id === nextSubjectId) ??
+        optionsPayload.subjects[0];
       const resolvedConceptId =
         optionsPayload.concepts.find((concept) => concept.id === nextConceptId)?.id ??
+        optionsPayload.concepts.find((concept) => concept.id === selectedSubject?.default_concept_id)?.id ??
         optionsPayload.concepts[0]?.id ??
-        nextConceptId;
+        nextConceptId ??
+        "";
+      setSubjectId(selectedSubject?.id ?? nextSubjectId);
       setConceptId(resolvedConceptId);
 
       const queuePayload = await fetchQueue(resolvedConceptId);
@@ -111,7 +139,7 @@ export function SupportQueue({
   }
 
   const loadInitialQueue = useEffectEvent(() => {
-    void loadQueue(conceptId);
+    void loadQueue(subjectId, conceptId);
   });
 
   useEffect(() => {
@@ -125,39 +153,64 @@ export function SupportQueue({
       <section className="rounded-[2.4rem] border border-line bg-[linear-gradient(135deg,#132034,#20324b)] p-6 text-white shadow-[0_24px_100px_rgba(19,32,52,0.16)] md:p-8">
         <div className="grid gap-6 xl:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <p className="font-mono text-xs uppercase tracking-[0.28em] text-gold">Teacher Queue</p>
+            <p className="font-mono text-xs uppercase tracking-[0.28em] text-gold">Support Queue</p>
             <h1 className="mt-4 text-4xl font-semibold tracking-tight md:text-5xl">
-              See who needs help first.
+              Find the learners who need support first.
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-8 text-white/76">
-              Pick a concept, scan the ranked list, and open diagnosis only for the learners who
-              need attention.
+              Choose an O/L subject and concept, then review the students ranked by readiness for
+              the next lesson or revision session.
             </p>
           </div>
 
           <div className="rounded-[1.8rem] border border-white/10 bg-white/8 p-5 backdrop-blur">
-            <label className="grid gap-3">
-              <span className="font-mono text-xs uppercase tracking-[0.22em] text-white/60">
-                Queue concept
-              </span>
-              <select
-                className="rounded-2xl border border-white/10 bg-white/92 px-4 py-3 text-foreground outline-none"
-                value={conceptId}
-                onChange={(event) => {
-                  const nextConceptId = event.target.value;
-                  setConceptId(nextConceptId);
-                  startTransition(() => {
-                    void loadQueue(nextConceptId);
-                  });
-                }}
-              >
-                {concepts.map((concept) => (
-                  <option key={concept.id} value={concept.id}>
-                    {concept.name}
-                  </option>
-                ))}
-              </select>
-            </label>
+            <div className="grid gap-4 md:grid-cols-2">
+              <label className="grid gap-3">
+                <span className="font-mono text-xs uppercase tracking-[0.22em] text-white/60">
+                  Subject
+                </span>
+                <select
+                  className="rounded-2xl border border-white/10 bg-white/92 px-4 py-3 text-foreground outline-none"
+                  value={subjectId}
+                  onChange={(event) => {
+                    const nextSubjectId = event.target.value;
+                    setSubjectId(nextSubjectId);
+                    startTransition(() => {
+                      void loadQueue(nextSubjectId);
+                    });
+                  }}
+                >
+                  {subjects.map((subject) => (
+                    <option key={subject.id} value={subject.id}>
+                      {displayName(subject)}
+                    </option>
+                  ))}
+                </select>
+              </label>
+
+              <label className="grid gap-3">
+                <span className="font-mono text-xs uppercase tracking-[0.22em] text-white/60">
+                  Concept
+                </span>
+                <select
+                  className="rounded-2xl border border-white/10 bg-white/92 px-4 py-3 text-foreground outline-none"
+                  value={conceptId}
+                  onChange={(event) => {
+                    const nextConceptId = event.target.value;
+                    setConceptId(nextConceptId);
+                    startTransition(() => {
+                      void loadQueue(subjectId, nextConceptId);
+                    });
+                  }}
+                >
+                  {concepts.map((concept) => (
+                    <option key={concept.id} value={concept.id}>
+                      {displayName(concept)}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            </div>
             <p className="mt-4 text-sm leading-7 text-white/70">{message}</p>
           </div>
         </div>
@@ -167,7 +220,7 @@ export function SupportQueue({
         <div className="rounded-[2rem] border border-line bg-surface p-5 shadow-[0_20px_80px_rgba(19,32,52,0.08)]">
           <p className="font-mono text-xs uppercase tracking-[0.24em] text-muted">Queue summary</p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight text-foreground">
-            {queue?.concept.name ?? "Loading concept"}
+            {queue ? displayName(queue.concept) : "Loading concept"}
           </h2>
           <p className="mt-3 text-sm leading-7 text-muted">
             {queue?.concept.description ?? "Loading concept summary."}
@@ -232,7 +285,7 @@ export function SupportQueue({
                   </div>
                   <div className="md:justify-self-end">
                     <Link
-                      href={`/diagnosis?student=${student.student_id}&concept=${conceptId}`}
+                      href={`/diagnosis?subject=${subjectId}&student=${student.student_id}&concept=${conceptId}`}
                       className="inline-flex rounded-full bg-foreground px-4 py-2 text-sm text-white"
                     >
                       Open diagnosis

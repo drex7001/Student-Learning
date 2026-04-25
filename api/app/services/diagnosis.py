@@ -237,7 +237,7 @@ class DiagnosisEngine:
                     order=index,
                     concept_id=concept.concept_id,
                     concept_name=concept.concept_name,
-                    action=f"Reinforce {concept.concept_name.lower()} before revisiting downstream algebra tasks.",
+                    action=f"Reinforce {concept.concept_name.lower()} before revisiting downstream tasks.",
                 )
             )
         return remediation[:5]

@@ -26,7 +26,7 @@ class Settings:
         ).split(",")
         if origin.strip()
     )
-    curriculum_path: Path = BASE_DIR / "data" / "curriculum" / "grade8_algebra_curriculum.json"
+    curriculum_path: Path = BASE_DIR / "data" / "curriculum" / "ol_subject_curriculum.json"
     data_dictionary_path: Path = BASE_DIR / "data" / "curriculum" / "data_dictionary.json"
     generator_config_path: Path = BASE_DIR / "data" / "seeds" / "generator_config.json"
 

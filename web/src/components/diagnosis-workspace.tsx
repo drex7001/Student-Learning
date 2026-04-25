@@ -13,8 +13,19 @@ import {
 
 type ConceptNode = {
   id: string;
+  subject_id?: string | null;
   name: string;
+  name_si?: string | null;
   description?: string;
+  description_si?: string | null;
+};
+
+type SubjectNode = {
+  id: string;
+  name: string;
+  name_si?: string | null;
+  description?: string | null;
+  default_concept_id: string;
 };
 
 type StudentSummary = {
@@ -92,6 +103,7 @@ type DiagnosisResponse = {
 
 type SelectorOptionsResponse = {
   students: StudentSummary[];
+  subjects: SubjectNode[];
   concepts: ConceptNode[];
 };
 
@@ -129,6 +141,11 @@ const StudentScene = dynamic(
 );
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000";
+const DEFAULT_SUBJECT_ID = "OL-MATH";
+
+function displayName(item: { name: string; name_si?: string | null }) {
+  return item.name_si ? `${item.name} / ${item.name_si}` : item.name;
+}
 
 function formatReadinessStatus(status: StudentReadiness["status"]): string {
   if (status === "needs_immediate_support") {
@@ -311,7 +328,7 @@ function DependencyMap({ drilldown }: { drilldown: PrerequisiteResponse | null }
       <div className="flex items-center justify-between gap-3">
         <div>
           <p className="font-mono text-xs uppercase tracking-[0.22em] text-muted">Concept route</p>
-          <strong className="mt-2 block text-xl text-foreground">{drilldown.concept.name}</strong>
+          <strong className="mt-2 block text-xl text-foreground">{displayName(drilldown.concept)}</strong>
         </div>
         <span className="rounded-full bg-accent-soft px-3 py-2 font-mono text-[11px] uppercase tracking-[0.16em] text-accent">
           {drilldown.downstream_concepts.length} downstream links
@@ -368,18 +385,22 @@ function DependencyMap({ drilldown }: { drilldown: PrerequisiteResponse | null }
 }
 
 export function DiagnosisWorkspace({
+  initialSubjectId = DEFAULT_SUBJECT_ID,
   initialStudentId = "STU-001",
-  initialConceptId = "ALG-024",
+  initialConceptId,
 }: {
+  initialSubjectId?: string;
   initialStudentId?: string;
   initialConceptId?: string;
 }) {
+  const [subjectId, setSubjectId] = useState(initialSubjectId);
   const [studentId, setStudentId] = useState(initialStudentId);
-  const [conceptId, setConceptId] = useState(initialConceptId);
+  const [conceptId, setConceptId] = useState(initialConceptId ?? "");
   const [diagnosis, setDiagnosis] = useState<DiagnosisResponse | null>(null);
   const [focusDrilldown, setFocusDrilldown] = useState<PrerequisiteResponse | null>(null);
   const [selectedDrilldownConceptId, setSelectedDrilldownConceptId] = useState<string | null>(null);
   const [students, setStudents] = useState<StudentSummary[]>([]);
+  const [subjects, setSubjects] = useState<SubjectNode[]>([]);
   const [concepts, setConcepts] = useState<ConceptNode[]>([]);
   const [status, setStatus] = useState<"idle" | "loading" | "error">("idle");
   const [message, setMessage] = useState("Loading the diagnosis surface...");
@@ -388,8 +409,8 @@ export function DiagnosisWorkspace({
   const stableDiagnosis = useDeferredValue(diagnosis);
   const stableDrilldown = useDeferredValue(focusDrilldown);
 
-  async function fetchOptions() {
-    const response = await fetch(`${API_BASE_URL}/api/options`);
+  async function fetchOptions(nextSubjectId: string) {
+    const response = await fetch(`${API_BASE_URL}/api/options?subject_id=${nextSubjectId}`);
     if (!response.ok) {
       throw new Error("Unable to load student and concept options.");
     }
@@ -421,13 +442,21 @@ export function DiagnosisWorkspace({
     setFocusDrilldown(drilldownPayload);
   }
 
-  async function loadOptionsAndDiagnosis(nextStudentId: string, nextConceptId: string) {
+  async function loadOptionsAndDiagnosis(
+    nextSubjectId: string,
+    nextStudentId: string,
+    nextConceptId?: string,
+  ) {
     setStatus("loading");
-    setMessage("Loading learner, concept, and decision surface...");
+    setMessage("Loading learner, subject, and concept evidence...");
     try {
-      const optionsPayload = await fetchOptions();
+      const optionsPayload = await fetchOptions(nextSubjectId);
       setStudents(optionsPayload.students);
+      setSubjects(optionsPayload.subjects);
       setConcepts(optionsPayload.concepts);
+      const selectedSubject =
+        optionsPayload.subjects.find((subject) => subject.id === nextSubjectId) ??
+        optionsPayload.subjects[0];
 
       const resolvedStudentId =
         optionsPayload.students.find((student) => student.id === nextStudentId)?.id ??
@@ -435,9 +464,12 @@ export function DiagnosisWorkspace({
         nextStudentId;
       const resolvedConceptId =
         optionsPayload.concepts.find((concept) => concept.id === nextConceptId)?.id ??
+        optionsPayload.concepts.find((concept) => concept.id === selectedSubject?.default_concept_id)?.id ??
         optionsPayload.concepts[0]?.id ??
-        nextConceptId;
+        nextConceptId ??
+        "";
 
+      setSubjectId(selectedSubject?.id ?? nextSubjectId);
       setStudentId(resolvedStudentId);
       setConceptId(resolvedConceptId);
 
@@ -469,7 +501,7 @@ export function DiagnosisWorkspace({
 
   async function loadDiagnosis(nextStudentId: string, nextConceptId: string) {
     setStatus("loading");
-    setMessage("Recomputing the intervention decision...");
+    setMessage("Updating the intervention recommendation...");
     try {
       const diagnosisPayload = await fetchDiagnosis(nextStudentId, nextConceptId);
       setDiagnosis(diagnosisPayload);
@@ -487,7 +519,7 @@ export function DiagnosisWorkspace({
       }
 
       setStatus("idle");
-      setMessage("Decision surface updated.");
+      setMessage("Diagnosis updated.");
     } catch (error) {
       setStatus("error");
       setMessage(error instanceof Error ? error.message : "Unable to load diagnosis.");
@@ -495,7 +527,7 @@ export function DiagnosisWorkspace({
   }
 
   const loadInitialWorkspace = useEffectEvent(() => {
-    void loadOptionsAndDiagnosis(studentId, conceptId);
+    void loadOptionsAndDiagnosis(subjectId, studentId, conceptId);
   });
 
   useEffect(() => {
@@ -515,7 +547,7 @@ export function DiagnosisWorkspace({
     startTransition(() => {
       void loadDrilldown(nextConceptId)
         .then(() => {
-          setMessage("Focused the decision surface on the selected concept.");
+          setMessage("Focused on the selected concept.");
         })
         .catch((error) => {
           setStatus("error");
@@ -560,7 +592,28 @@ export function DiagnosisWorkspace({
   return (
     <div className="grid gap-6">
       <section className="rounded-[2rem] border border-line bg-white/86 p-4 shadow-[0_20px_80px_rgba(19,32,52,0.08)] md:p-5">
-        <form className="grid gap-4 xl:grid-cols-[1.1fr_1.1fr_auto_1fr]" onSubmit={handleSubmit}>
+        <form className="grid gap-4 xl:grid-cols-[1fr_1fr_1fr_auto_1fr]" onSubmit={handleSubmit}>
+          <label className="grid gap-2">
+            <span className="font-mono text-xs uppercase tracking-[0.22em] text-muted">Subject</span>
+            <select
+              className="rounded-2xl border border-line bg-surface-strong px-4 py-3 outline-none"
+              value={subjectId}
+              onChange={(event) => {
+                const nextSubjectId = event.target.value;
+                setSubjectId(nextSubjectId);
+                startTransition(() => {
+                  void loadOptionsAndDiagnosis(nextSubjectId, studentId);
+                });
+              }}
+            >
+              {subjects.map((subject) => (
+                <option key={subject.id} value={subject.id}>
+                  {displayName(subject)}
+                </option>
+              ))}
+            </select>
+          </label>
+
           <label className="grid gap-2">
             <span className="font-mono text-xs uppercase tracking-[0.22em] text-muted">Student</span>
             <select
@@ -585,7 +638,7 @@ export function DiagnosisWorkspace({
             >
               {concepts.map((concept) => (
                 <option key={concept.id} value={concept.id}>
-                  {concept.name}
+                  {displayName(concept)}
                 </option>
               ))}
             </select>
@@ -625,7 +678,7 @@ export function DiagnosisWorkspace({
           <div className="rounded-[1.5rem] border border-white/12 bg-white/8 px-4 py-4 backdrop-blur">
             <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-white/54">Target concept</p>
             <strong className="mt-2 block text-2xl text-white">
-              {currentDiagnosis?.target_concept.name ?? "Loading target"}
+              {currentDiagnosis ? displayName(currentDiagnosis.target_concept) : "Loading target"}
             </strong>
             <p className="mt-2 text-sm leading-6 text-white/70">
               {currentDiagnosis?.target_concept.description ?? "Waiting for concept detail"}
@@ -720,13 +773,13 @@ export function DiagnosisWorkspace({
       <section className="rounded-[2rem] border border-line bg-surface p-5 shadow-[0_20px_80px_rgba(19,32,52,0.08)]">
         <div className="flex flex-col gap-4 xl:flex-row xl:items-end xl:justify-between">
           <div>
-            <p className="font-mono text-xs uppercase tracking-[0.24em] text-muted">Decision focus</p>
+            <p className="font-mono text-xs uppercase tracking-[0.24em] text-muted">Teaching focus</p>
             <h2 className="mt-2 text-3xl font-semibold tracking-tight text-foreground">
               Inspect only the concepts worth discussing next
             </h2>
           </div>
           <Link
-            href={`/concepts?concept=${explorerConceptId}`}
+            href={`/concepts?subject=${subjectId}&concept=${explorerConceptId}`}
             className="inline-flex rounded-full bg-accent-soft px-4 py-2 text-sm text-accent"
           >
             Open full concept explorer
@@ -844,7 +897,7 @@ export function DiagnosisWorkspace({
             <article className="rounded-[1.8rem] border border-line bg-white p-5">
               <p className="font-mono text-xs uppercase tracking-[0.22em] text-muted">Focused concept</p>
               <strong className="mt-3 block text-3xl text-foreground">
-                {currentDrilldown?.concept.name ?? topRootCause?.concept_name ?? "Awaiting focus"}
+                {currentDrilldown ? displayName(currentDrilldown.concept) : topRootCause?.concept_name ?? "Awaiting focus"}
               </strong>
               <p className="mt-3 text-sm leading-7 text-muted">
                 {currentDrilldown?.concept.description ?? "Choose a bottleneck concept to inspect its route."}

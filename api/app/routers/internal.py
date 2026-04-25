@@ -25,7 +25,11 @@ def import_curriculum() -> ImportCurriculumResponse:
     validate_curriculum(curriculum)
     repository = GraphRepository()
     try:
-        summary = repository.import_curriculum(curriculum["concepts"], [tuple(edge) for edge in curriculum["edges"]])
+        summary = repository.import_curriculum(
+            curriculum["subjects"],
+            curriculum["concepts"],
+            [tuple(edge) for edge in curriculum["edges"]],
+        )
     finally:
         repository.close()
     return ImportCurriculumResponse(**summary, source=str(settings.curriculum_path))

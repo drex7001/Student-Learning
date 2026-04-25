@@ -2,10 +2,10 @@
 
 ## Locked Scope
 
-- Grade level: Grade 8
-- Domain slice: Algebra foundations and linear relationships
-- Concept count target: 20-30 concepts
-- Current concept count: 24
+- Level: Sri Lankan G.C.E. Ordinary Level prototype
+- Subject slice: Mathematics, Science, English, and ICT
+- Concept count target: 8-30 concepts per subject
+- Current concept count: 40 across 4 subjects
 
 ## Scoring Model
 
@@ -30,7 +30,8 @@
 
 ## Exclusions
 
-- No multi-grade syllabus mixing.
+- No claim of official syllabus completeness.
+- No cross-subject prerequisite edges in this milestone.
 - No adaptive testing logic.
 - No live school SIS integration.
 - No student-facing intervention personalization in this milestone.

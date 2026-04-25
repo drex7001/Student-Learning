@@ -11,6 +11,7 @@ from app.schemas.diagnosis import (
     DiagnosisResponse,
     PrerequisiteResponse,
     SelectorOptionsResponse,
+    SubjectNode,
     SupportQueueEntry,
     SupportQueueResponse,
     SupportQueueSummary,
@@ -22,18 +23,33 @@ router = APIRouter(prefix="/api", tags=["diagnosis"])
 
 
 @router.get("/options", response_model=SelectorOptionsResponse)
-def get_selector_options(session: Session = Depends(get_session)) -> SelectorOptionsResponse:
+def get_selector_options(
+    subject_id: str | None = None,
+    session: Session = Depends(get_session),
+) -> SelectorOptionsResponse:
     graph_repository = GraphRepository()
     try:
-        concepts = graph_repository.list_concepts()
+        subjects = graph_repository.list_subjects()
+        concepts = graph_repository.list_concepts(subject_id)
     finally:
         graph_repository.close()
 
     students = PostgresRepository(session).list_students()
     return SelectorOptionsResponse(
         students=students,
+        subjects=subjects,
         concepts=concepts,
     )
+
+
+@router.get("/subjects", response_model=list[SubjectNode])
+def get_subjects() -> list[SubjectNode]:
+    graph_repository = GraphRepository()
+    try:
+        subjects = graph_repository.list_subjects()
+    finally:
+        graph_repository.close()
+    return [SubjectNode(**subject) for subject in subjects]
 
 
 @router.get("/concepts/{concept_id}/prerequisites", response_model=PrerequisiteResponse)

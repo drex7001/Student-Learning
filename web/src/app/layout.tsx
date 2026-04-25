@@ -15,8 +15,8 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "KG Learning Intelligence System",
-  description: "Grade 8 algebra diagnosis workspace backed by graph traversal and synthetic mastery data.",
+  title: "O/L Learning Intelligence System",
+  description: "Sri Lankan O/L teacher dashboard backed by graph traversal and synthetic mastery data.",
 };
 
 export default function RootLayout({
@@ -37,8 +37,8 @@ export default function RootLayout({
                 KG
               </span>
               <div>
-                <strong className="block text-sm uppercase tracking-[0.2em]">Learning Intelligence</strong>
-                <span className="block text-xs text-muted">Teacher workflow MVP</span>
+                <strong className="block text-sm uppercase tracking-[0.2em]">O/L Learning Intelligence</strong>
+                <span className="block text-xs text-muted">Teacher support dashboard</span>
               </div>
             </Link>
 
@@ -65,7 +65,7 @@ export default function RootLayout({
                 href="/concepts"
                 className="rounded-full px-4 py-2 text-sm text-muted transition-colors hover:bg-white/70 hover:text-foreground"
               >
-                Concept Explorer
+                Concept Map
               </Link>
             </nav>
           </div>

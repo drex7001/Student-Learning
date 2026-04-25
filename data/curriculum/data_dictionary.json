@@ -1,6 +1,26 @@
 {
   "entities": [
     {
+      "name": "subject",
+      "fields": [
+        { "name": "id", "type": "string", "description": "Stable subject identifier such as OL-MATH." },
+        { "name": "name", "type": "string", "description": "English display name." },
+        { "name": "name_si", "type": "string", "description": "Sinhala display name when available." },
+        { "name": "default_concept_id", "type": "string", "description": "Default concept used when opening a workflow for the subject." }
+      ]
+    },
+    {
+      "name": "concept",
+      "fields": [
+        { "name": "id", "type": "string", "description": "Globally unique concept identifier." },
+        { "name": "subject_id", "type": "string", "description": "Subject that owns the concept." },
+        { "name": "name", "type": "string", "description": "English display name." },
+        { "name": "name_si", "type": "string", "description": "Sinhala display name when available." },
+        { "name": "description", "type": "string" },
+        { "name": "description_si", "type": "string" }
+      ]
+    },
+    {
       "name": "student",
       "fields": [
         { "name": "id", "type": "string", "description": "Stable identifier used across Postgres, Neo4j, and the frontend." },

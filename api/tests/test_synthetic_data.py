@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 def load_curriculum() -> dict:
-    path = ROOT / "data" / "curriculum" / "grade8_algebra_curriculum.json"
+    path = ROOT / "data" / "curriculum" / "ol_subject_curriculum.json"
     return json.loads(path.read_text(encoding="utf-8"))
 
 

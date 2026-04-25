@@ -4,8 +4,19 @@ import { startTransition, useEffect, useEffectEvent, useState } from "react";
 
 type ConceptNode = {
   id: string;
+  subject_id?: string | null;
   name: string;
+  name_si?: string | null;
   description?: string;
+  description_si?: string | null;
+};
+
+type SubjectNode = {
+  id: string;
+  name: string;
+  name_si?: string | null;
+  description?: string | null;
+  default_concept_id: string;
 };
 
 type PathSegment = {
@@ -21,6 +32,7 @@ type PrerequisiteResponse = {
 
 type SelectorOptionsResponse = {
   students: { id: string; full_name: string; cohort: string }[];
+  subjects: SubjectNode[];
   concepts: ConceptNode[];
 };
 
@@ -40,6 +52,11 @@ type Edge = {
 };
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000";
+const DEFAULT_SUBJECT_ID = "OL-MATH";
+
+function displayName(item: { name: string; name_si?: string | null }) {
+  return item.name_si ? `${item.name} / ${item.name_si}` : item.name;
+}
 
 function distributeYPositions(count: number): number[] {
   if (count <= 0) {
@@ -150,18 +167,22 @@ function buildDependencyMap(drilldown: PrerequisiteResponse | null): {
 }
 
 export function ConceptExplorer({
-  initialConceptId = "ALG-024",
+  initialSubjectId = DEFAULT_SUBJECT_ID,
+  initialConceptId,
 }: {
+  initialSubjectId?: string;
   initialConceptId?: string;
 }) {
-  const [conceptId, setConceptId] = useState(initialConceptId);
+  const [subjectId, setSubjectId] = useState(initialSubjectId);
+  const [conceptId, setConceptId] = useState(initialConceptId ?? "");
+  const [subjects, setSubjects] = useState<SubjectNode[]>([]);
   const [concepts, setConcepts] = useState<ConceptNode[]>([]);
   const [graph, setGraph] = useState<PrerequisiteResponse | null>(null);
   const [status, setStatus] = useState<"idle" | "loading" | "error">("idle");
   const [message, setMessage] = useState("Loading concept graph...");
 
-  async function fetchOptions() {
-    const response = await fetch(`${API_BASE_URL}/api/options`);
+  async function fetchOptions(nextSubjectId: string) {
+    const response = await fetch(`${API_BASE_URL}/api/options?subject_id=${nextSubjectId}`);
     if (!response.ok) {
       throw new Error("Unable to load concept options.");
     }
@@ -177,16 +198,23 @@ export function ConceptExplorer({
     return (await response.json()) as PrerequisiteResponse;
   }
 
-  async function loadExplorer(nextConceptId: string) {
+  async function loadExplorer(nextSubjectId: string, nextConceptId?: string) {
     setStatus("loading");
     setMessage("Tracing prerequisite paths and downstream links...");
     try {
-      const optionsPayload = await fetchOptions();
+      const optionsPayload = await fetchOptions(nextSubjectId);
+      setSubjects(optionsPayload.subjects);
       setConcepts(optionsPayload.concepts);
+      const selectedSubject =
+        optionsPayload.subjects.find((subject) => subject.id === nextSubjectId) ??
+        optionsPayload.subjects[0];
       const resolvedConceptId =
         optionsPayload.concepts.find((concept) => concept.id === nextConceptId)?.id ??
+        optionsPayload.concepts.find((concept) => concept.id === selectedSubject?.default_concept_id)?.id ??
         optionsPayload.concepts[0]?.id ??
-        nextConceptId;
+        nextConceptId ??
+        "";
+      setSubjectId(selectedSubject?.id ?? nextSubjectId);
       setConceptId(resolvedConceptId);
 
       const graphPayload = await fetchGraph(resolvedConceptId);
@@ -201,7 +229,7 @@ export function ConceptExplorer({
   }
 
   const loadInitialGraph = useEffectEvent(() => {
-    void loadExplorer(conceptId);
+    void loadExplorer(subjectId, conceptId);
   });
 
   useEffect(() => {
@@ -218,37 +246,60 @@ export function ConceptExplorer({
       <section className="rounded-[2.4rem] border border-line bg-[linear-gradient(135deg,#edf6f4,#ffffff)] p-6 shadow-[0_24px_80px_rgba(19,32,52,0.08)] md:p-8">
         <div className="grid gap-6 xl:grid-cols-[0.85fr_1.15fr]">
           <div>
-            <p className="font-mono text-xs uppercase tracking-[0.28em] text-teal">Concept Explorer</p>
+            <p className="font-mono text-xs uppercase tracking-[0.28em] text-teal">Concept Map</p>
             <h1 className="mt-4 text-4xl font-semibold tracking-tight text-foreground md:text-5xl">
-              Read the graph without student noise.
+              Review the learning path for a subject.
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-8 text-muted">
-              This route is only for curriculum structure. Pick a concept and inspect its upstream
-              path and downstream spread.
+              Choose an O/L subject and concept to inspect the prerequisite path and the topics
+              that depend on it.
             </p>
           </div>
 
           <div className="rounded-[1.8rem] border border-line bg-white/90 p-5">
-            <label className="grid gap-3">
-              <span className="font-mono text-xs uppercase tracking-[0.22em] text-muted">Concept</span>
-              <select
-                className="rounded-2xl border border-line bg-surface-strong px-4 py-3 outline-none"
-                value={conceptId}
-                onChange={(event) => {
-                  const nextConceptId = event.target.value;
-                  setConceptId(nextConceptId);
-                  startTransition(() => {
-                    void loadExplorer(nextConceptId);
-                  });
-                }}
-              >
-                {concepts.map((concept) => (
-                  <option key={concept.id} value={concept.id}>
-                    {concept.name}
-                  </option>
-                ))}
-              </select>
-            </label>
+            <div className="grid gap-4 md:grid-cols-2">
+              <label className="grid gap-3">
+                <span className="font-mono text-xs uppercase tracking-[0.22em] text-muted">Subject</span>
+                <select
+                  className="rounded-2xl border border-line bg-surface-strong px-4 py-3 outline-none"
+                  value={subjectId}
+                  onChange={(event) => {
+                    const nextSubjectId = event.target.value;
+                    setSubjectId(nextSubjectId);
+                    startTransition(() => {
+                      void loadExplorer(nextSubjectId);
+                    });
+                  }}
+                >
+                  {subjects.map((subject) => (
+                    <option key={subject.id} value={subject.id}>
+                      {displayName(subject)}
+                    </option>
+                  ))}
+                </select>
+              </label>
+
+              <label className="grid gap-3">
+                <span className="font-mono text-xs uppercase tracking-[0.22em] text-muted">Concept</span>
+                <select
+                  className="rounded-2xl border border-line bg-surface-strong px-4 py-3 outline-none"
+                  value={conceptId}
+                  onChange={(event) => {
+                    const nextConceptId = event.target.value;
+                    setConceptId(nextConceptId);
+                    startTransition(() => {
+                      void loadExplorer(subjectId, nextConceptId);
+                    });
+                  }}
+                >
+                  {concepts.map((concept) => (
+                    <option key={concept.id} value={concept.id}>
+                      {displayName(concept)}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            </div>
             <p className="mt-4 text-sm leading-7 text-muted">{message}</p>
           </div>
         </div>
@@ -260,7 +311,7 @@ export function ConceptExplorer({
             <div>
               <p className="font-mono text-xs uppercase tracking-[0.24em] text-muted">Route map</p>
               <h2 className="mt-2 text-3xl font-semibold tracking-tight text-foreground">
-                {graph?.concept.name ?? "Loading concept"}
+                {graph ? displayName(graph.concept) : "Loading concept"}
               </h2>
             </div>
             {graph ? (
@@ -343,7 +394,7 @@ export function ConceptExplorer({
               {graph?.downstream_concepts.length ? (
                 graph.downstream_concepts.map((concept) => (
                   <div key={concept.id} className="rounded-2xl bg-[#f8f6f1] px-4 py-3">
-                    <strong className="block text-foreground">{concept.name}</strong>
+                    <strong className="block text-foreground">{displayName(concept)}</strong>
                     <p className="mt-1 text-sm text-muted">{concept.id}</p>
                   </div>
                 ))

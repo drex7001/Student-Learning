@@ -2,21 +2,21 @@
   "seed": 20260412,
   "student_count": 240,
   "assessment_attempts": 4,
-  "cohorts": ["8A", "8B", "8C"],
+  "cohorts": ["10A", "10B", "10C", "11A", "11B"],
   "weakness_profiles": [
     {
-      "name": "early-foundation-gap",
-      "root_concepts": ["ALG-001", "ALG-003"],
+      "name": "math-foundation-and-science-measurement",
+      "root_concepts": ["MATH-001", "MATH-003", "SCI-001"],
       "mastery_range": [0.28, 0.52]
     },
     {
-      "name": "equation-gap",
-      "root_concepts": ["ALG-007", "ALG-008"],
+      "name": "language-and-ict-foundation-gap",
+      "root_concepts": ["ENG-001", "ENG-002", "ICT-001", "ICT-002"],
       "mastery_range": [0.3, 0.58]
     },
     {
-      "name": "graphing-gap",
-      "root_concepts": ["ALG-014", "ALG-017"],
+      "name": "applied-problem-solving-gap",
+      "root_concepts": ["MATH-006", "SCI-006", "ENG-005", "ICT-007"],
       "mastery_range": [0.32, 0.57]
     }
   ]
