@@ -17,7 +17,7 @@ The system is a teacher-facing Sri Lankan O/L learning intelligence prototype. I
 3. `POST /internal/generate/synthetic-data` reads the same curriculum and `data/seeds/generator_config.json`.
 4. Synthetic students, assessments, question results, and concept scores are written into PostgreSQL.
 5. Frontend workflows request subject-filtered concepts through `GET /api/options?subject_id=...`.
-6. Diagnosis requests combine Neo4j prerequisite paths with PostgreSQL mastery evidence.
+6. The student diagnosis page requests a subject-wide support map, then loads detailed diagnosis for the selected concept.
 
 ## Main API Surface
 
@@ -31,6 +31,7 @@ Teacher workflow endpoints:
 - `GET /api/subjects`
 - `GET /api/options?subject_id=OL-MATH`
 - `GET /api/overview/concept/{concept_id}`
+- `GET /api/diagnosis/student/{student_id}/subject/{subject_id}/map`
 - `GET /api/concepts/{concept_id}/prerequisites`
 - `GET /api/diagnosis/student/{student_id}/concept/{concept_id}`
 
@@ -52,7 +53,8 @@ Support Queue:
 Student Diagnosis:
 
 - Route: `/diagnosis?subject=OL-ENG&student=STU-001&concept=ENG-010`
-- Shows readiness, root-cause candidates, prerequisite route, concept trends, and remediation order.
+- Shows every concept in the selected subject as a support map for the learner.
+- Opens detailed root-cause diagnosis, trends, and remediation order when a concept node is selected.
 
 Concept Map:
 

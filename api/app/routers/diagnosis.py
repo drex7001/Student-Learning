@@ -12,11 +12,13 @@ from app.schemas.diagnosis import (
     PrerequisiteResponse,
     SelectorOptionsResponse,
     SubjectNode,
+    SubjectDiagnosisMapResponse,
     SupportQueueEntry,
     SupportQueueResponse,
     SupportQueueSummary,
 )
 from app.services.diagnosis import DiagnosisEngine
+from app.services.subject_diagnosis import SubjectDiagnosisEngine
 
 
 router = APIRouter(prefix="/api", tags=["diagnosis"])
@@ -120,6 +122,43 @@ def get_diagnosis(student_id: str, concept_id: str, session: Session = Depends(g
         recent_scores_by_concept=recent_scores_by_concept,
         assessment_summary=assessment_summary,
         cohort_target_mastery=cohort_target_mastery,
+    )
+
+
+@router.get("/diagnosis/student/{student_id}/subject/{subject_id}/map", response_model=SubjectDiagnosisMapResponse)
+def get_subject_diagnosis_map(
+    student_id: str,
+    subject_id: str,
+    session: Session = Depends(get_session),
+) -> SubjectDiagnosisMapResponse:
+    postgres_repository = PostgresRepository(session)
+    student = postgres_repository.get_student(student_id)
+    if student is None:
+        raise HTTPException(status_code=404, detail="Student data not found. Generate synthetic data first.")
+
+    graph_repository = GraphRepository()
+    try:
+        subject = graph_repository.get_subject(subject_id)
+        if subject is None:
+            raise HTTPException(status_code=404, detail="Subject not found.")
+        concepts = graph_repository.list_concepts(subject_id)
+        edges = graph_repository.get_subject_edges(subject_id)
+    finally:
+        graph_repository.close()
+
+    if not concepts:
+        raise HTTPException(status_code=404, detail="Subject concepts not found. Import the curriculum first.")
+
+    latest_scores = postgres_repository.get_latest_scores_for_student(student_id)
+    if not latest_scores:
+        raise HTTPException(status_code=404, detail="Student data not found. Generate synthetic data first.")
+
+    return SubjectDiagnosisEngine().run(
+        student=student,
+        subject=subject,
+        concepts=concepts,
+        edges=edges,
+        latest_scores=latest_scores,
     )
 
 

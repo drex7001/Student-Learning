@@ -14,11 +14,11 @@ export default async function DiagnosisPage({
       <div className="mb-5 max-w-4xl">
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-teal">Student Diagnosis</p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-foreground md:text-5xl">
-          Understand why a learner is stuck.
+          See every support need for one learner.
         </h1>
         <p className="mt-4 text-base leading-8 text-muted">
-          Select an O/L subject, learner, and target concept to find the prerequisite skill that
-          should be revised first.
+          Select an O/L subject and learner to view the full concept map, then open any concept
+          for detailed root-cause diagnosis.
         </p>
       </div>
 

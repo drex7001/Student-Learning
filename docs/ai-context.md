@@ -23,7 +23,7 @@ The curriculum data is prototype-aligned. Do not describe it as official syllabu
 
 - `/`: teacher dashboard with subject and concept selection
 - `/students`: support queue for selected subject/concept
-- `/diagnosis`: one learner and one target concept
+- `/diagnosis`: one learner and one subject-wide support map, with detailed diagnosis after selecting a concept
 - `/concepts`: prerequisite and downstream concept map
 
 Keep these workflows separate. Do not collapse everything into one page.
@@ -72,6 +72,7 @@ Subject selection flows through query parameters:
 
 - `GET /api/options?subject_id=OL-MATH`
 - frontend links should preserve `subject` and `concept`
+- `GET /api/diagnosis/student/{student_id}/subject/{subject_id}/map` powers the main diagnosis canvas
 
 Do not change the existing diagnosis endpoint shape unless there is a strong reason:
 
@@ -121,5 +122,6 @@ Quick API smoke checks:
 ```powershell
 Invoke-RestMethod -Uri http://localhost:8000/api/subjects
 Invoke-RestMethod -Uri 'http://localhost:8000/api/options?subject_id=OL-MATH'
+Invoke-RestMethod -Uri http://localhost:8000/api/diagnosis/student/STU-001/subject/OL-MATH/map
 Invoke-RestMethod -Uri http://localhost:8000/api/diagnosis/student/STU-001/concept/MATH-010
 ```

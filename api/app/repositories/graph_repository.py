@@ -87,6 +87,22 @@ class GraphRepository:
             ).data()
         return records
 
+    def get_subject(self, subject_id: str) -> dict | None:
+        with self.driver.session() as session:
+            record = session.run(
+                """
+                MATCH (s:Subject {id: $subject_id})
+                RETURN s.id AS id,
+                       s.name AS name,
+                       s.name_si AS name_si,
+                       s.description AS description,
+                       s.description_si AS description_si,
+                       s.default_concept_id AS default_concept_id
+                """,
+                subject_id=subject_id,
+            ).single()
+        return dict(record) if record else None
+
     def get_concept(self, concept_id: str) -> dict | None:
         with self.driver.session() as session:
             record = session.run(
@@ -155,5 +171,18 @@ class GraphRepository:
                 ORDER BY downstream.id
                 """,
                 concept_id=concept_id,
+            ).data()
+        return records
+
+    def get_subject_edges(self, subject_id: str) -> list[dict]:
+        with self.driver.session() as session:
+            records = session.run(
+                """
+                MATCH (source:Concept {subject_id: $subject_id})-[:REQUIRED_FOR]->(target:Concept {subject_id: $subject_id})
+                RETURN source.id AS source_id,
+                       target.id AS target_id
+                ORDER BY source.id, target.id
+                """,
+                subject_id=subject_id,
             ).data()
         return records

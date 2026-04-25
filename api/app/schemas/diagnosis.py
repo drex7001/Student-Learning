@@ -12,6 +12,35 @@ class ConceptNode(BaseModel):
     description_si: str | None = None
 
 
+class ConceptSupportEdge(BaseModel):
+    source_id: str
+    target_id: str
+
+
+class ConceptSupportNode(BaseModel):
+    id: str
+    subject_id: str
+    name: str
+    name_si: str | None = None
+    description: str | None = None
+    description_si: str | None = None
+    mastery_score: float | None = None
+    confidence: float
+    status: str
+    priority_score: float
+    depth: int
+    downstream_impact: int
+    evidence: str
+
+
+class SubjectSupportSummary(BaseModel):
+    total_concepts: int
+    support_now: int
+    watch: int
+    ready: int
+    missing_evidence: int
+
+
 class SubjectNode(BaseModel):
     id: str
     name: str
@@ -91,6 +120,16 @@ class DiagnosisResponse(BaseModel):
     concept_trends: list[ConceptTrend]
     root_cause_candidates: list[RootCauseCandidate]
     remediation_order: list[RemediationStep]
+    explanation: str
+
+
+class SubjectDiagnosisMapResponse(BaseModel):
+    student: StudentSummary
+    subject: SubjectNode
+    concepts: list[ConceptSupportNode]
+    edges: list[ConceptSupportEdge]
+    summary: SubjectSupportSummary
+    recommended_concept_id: str | None = None
     explanation: str
 
 

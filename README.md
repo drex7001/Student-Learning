@@ -32,5 +32,6 @@ Greenfield monorepo for a thesis-oriented learning intelligence platform that us
 - `POST /internal/generate/synthetic-data`
 - `GET /api/subjects`
 - `GET /api/options?subject_id=OL-MATH`
+- `GET /api/diagnosis/student/{student_id}/subject/{subject_id}/map`
 - `GET /api/concepts/{concept_id}/prerequisites`
 - `GET /api/diagnosis/student/{student_id}/concept/{concept_id}`
