@@ -70,3 +70,42 @@ class ConceptScore(Base):
 
     student: Mapped["Student"] = relationship(back_populates="concept_scores")
     assessment: Mapped["Assessment"] = relationship(back_populates="concept_scores")
+
+
+class QuizQuestion(Base):
+    __tablename__ = "quiz_questions"
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    subject_id: Mapped[str] = mapped_column(String(64), index=True)
+    concept_id: Mapped[str] = mapped_column(String(64), index=True)
+    prompt: Mapped[str] = mapped_column(Text)
+    options_json: Mapped[str] = mapped_column(Text)
+    correct_option_index: Mapped[int] = mapped_column(Integer)
+    explanation: Mapped[str] = mapped_column(Text)
+    difficulty: Mapped[int] = mapped_column(Integer)
+
+
+class QuizAttempt(Base):
+    __tablename__ = "quiz_attempts"
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    student_id: Mapped[str] = mapped_column(ForeignKey("students.id"), index=True)
+    subject_id: Mapped[str] = mapped_column(String(64), index=True)
+    concept_ids_json: Mapped[str] = mapped_column(Text)
+    question_ids_json: Mapped[str] = mapped_column(Text)
+    status: Mapped[str] = mapped_column(String(32), index=True)
+    started_at: Mapped[datetime] = mapped_column(DateTime)
+    submitted_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
+
+
+class QuizAnswer(Base):
+    __tablename__ = "quiz_answers"
+
+    id: Mapped[str] = mapped_column(String(96), primary_key=True)
+    attempt_id: Mapped[str] = mapped_column(ForeignKey("quiz_attempts.id"), index=True)
+    question_id: Mapped[str] = mapped_column(ForeignKey("quiz_questions.id"), index=True)
+    concept_id: Mapped[str] = mapped_column(String(64), index=True)
+    selected_option_index: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    is_correct: Mapped[int] = mapped_column(Integer)
+    score_obtained: Mapped[float] = mapped_column(Float)
+    score_max: Mapped[float] = mapped_column(Float)

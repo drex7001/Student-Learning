@@ -34,6 +34,9 @@ Teacher workflow endpoints:
 - `GET /api/diagnosis/student/{student_id}/subject/{subject_id}/map`
 - `GET /api/concepts/{concept_id}/prerequisites`
 - `GET /api/diagnosis/student/{student_id}/concept/{concept_id}`
+- `GET /api/learn/student/{student_id}/subject/{subject_id}`
+- `POST /api/learn/quiz/start`
+- `POST /api/learn/quiz/{attempt_id}/submit`
 
 ## Frontend Workflows
 
@@ -60,6 +63,13 @@ Concept Map:
 
 - Route: `/concepts?subject=OL-SCI&concept=SCI-010`
 - Shows upstream prerequisite paths and downstream dependent concepts.
+
+Learn:
+
+- Route: `/learn?subject=OL-MATH&student=STU-001`
+- Shows student-facing lesson cards for weak concepts.
+- Starts a personalized multiple-choice quiz from the highest-priority support concepts.
+- Submitting a quiz creates assessment-compatible rows so later diagnosis uses the updated evidence.
 
 ## Diagnosis Logic
 
@@ -100,3 +110,4 @@ Neo4j stores:
 - `(concept:Concept)-[:IN_SUBJECT]->(subject:Subject)`
 
 PostgreSQL stores synthetic assessment evidence only. It does not store curriculum metadata.
+Quiz questions, attempts, and answers are also stored in PostgreSQL. Quiz submission writes practice assessments, question results, and concept scores so teacher and student workflows use the same mastery evidence.

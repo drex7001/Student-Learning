@@ -1,0 +1,1805 @@
+{
+  "version": "2026-04-26",
+  "questions": [
+    {
+      "id": "QB-ENG-001-1",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-001",
+      "prompt": "Choose the best word: The student gave a clear ____ of the picture.",
+      "options": [
+        "describe",
+        "description",
+        "describing",
+        "described"
+      ],
+      "correct_option_index": 1,
+      "explanation": "The noun 'description' fits after 'a clear'.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ENG-001-2",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-001",
+      "prompt": "Which statement best matches Core vocabulary?",
+      "options": [
+        "Use common school, social, and academic vocabulary accurately",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Core vocabulary is about this skill: Use common school, social, and academic vocabulary accurately.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ENG-001-3",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-001",
+      "prompt": "A student is revising Core vocabulary. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on core vocabulary and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Core vocabulary.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-ENG-002-1",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-002",
+      "prompt": "Choose the correct sentence.",
+      "options": [
+        "She go to school.",
+        "She goes to school.",
+        "She going to school.",
+        "She gone to school."
+      ],
+      "correct_option_index": 1,
+      "explanation": "With 'she' in the simple present tense, the verb is 'goes'.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ENG-002-2",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-002",
+      "prompt": "Which statement best matches Sentence grammar?",
+      "options": [
+        "Control tense, agreement, articles, and word order",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Sentence grammar is about this skill: Control tense, agreement, articles, and word order.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ENG-002-3",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-002",
+      "prompt": "A student is revising Sentence grammar. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on sentence grammar and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Sentence grammar.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-ENG-003-1",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-003",
+      "prompt": "What is the main idea of a paragraph?",
+      "options": [
+        "The least important word",
+        "The central point",
+        "Only the final comma",
+        "A random example"
+      ],
+      "correct_option_index": 1,
+      "explanation": "The main idea is the central point the paragraph is about.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ENG-003-2",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-003",
+      "prompt": "Which statement best matches Reading for main idea?",
+      "options": [
+        "Identify central ideas in short passages",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Reading for main idea is about this skill: Identify central ideas in short passages.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ENG-003-3",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-003",
+      "prompt": "A student is revising Reading for main idea. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on reading for main idea and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Reading for main idea.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-ENG-004-1",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-004",
+      "prompt": "When reading for detail, what should you look for?",
+      "options": [
+        "Specific facts and evidence",
+        "Only the title",
+        "Only pictures",
+        "Unrelated opinions"
+      ],
+      "correct_option_index": 0,
+      "explanation": "Reading for detail means finding exact facts, evidence, and implied information.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ENG-004-2",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-004",
+      "prompt": "Which statement best matches Reading for detail?",
+      "options": [
+        "Find evidence, facts, and implied information in passages",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Reading for detail is about this skill: Find evidence, facts, and implied information in passages.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ENG-004-3",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-004",
+      "prompt": "A student is revising Reading for detail. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on reading for detail and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Reading for detail.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-ENG-005-1",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-005",
+      "prompt": "Which part usually introduces the main idea of a paragraph?",
+      "options": [
+        "Topic sentence",
+        "Full stop",
+        "Page number",
+        "Signature"
+      ],
+      "correct_option_index": 0,
+      "explanation": "A topic sentence usually states the paragraph's main idea.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ENG-005-2",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-005",
+      "prompt": "Which statement best matches Paragraph structure?",
+      "options": [
+        "Organize topic sentences, supporting details, and conclusions",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Paragraph structure is about this skill: Organize topic sentences, supporting details, and conclusions.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ENG-005-3",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-005",
+      "prompt": "A student is revising Paragraph structure. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on paragraph structure and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Paragraph structure.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-ENG-006-1",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-006",
+      "prompt": "For a short notice, which information is most important?",
+      "options": [
+        "Clear purpose, date, time, and place",
+        "Only decorative words",
+        "Only the writer's marks",
+        "No details"
+      ],
+      "correct_option_index": 0,
+      "explanation": "A useful notice gives the reader the purpose and key details.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ENG-006-2",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-006",
+      "prompt": "Which statement best matches Guided writing?",
+      "options": [
+        "Write notices, messages, letters, and short responses using prompts",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Guided writing is about this skill: Write notices, messages, letters, and short responses using prompts.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ENG-006-3",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-006",
+      "prompt": "A student is revising Guided writing. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on guided writing and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Guided writing.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-ENG-007-1",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-007",
+      "prompt": "What should a summary include?",
+      "options": [
+        "Every small detail",
+        "Only key ideas",
+        "New unrelated ideas",
+        "Only examples"
+      ],
+      "correct_option_index": 1,
+      "explanation": "A summary keeps the key ideas and removes unnecessary details.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ENG-007-2",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-007",
+      "prompt": "Which statement best matches Summary writing?",
+      "options": [
+        "Condense key ideas while preserving meaning",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Summary writing is about this skill: Condense key ideas while preserving meaning.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ENG-007-3",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-007",
+      "prompt": "A student is revising Summary writing. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on summary writing and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Summary writing.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-ENG-008-1",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-008",
+      "prompt": "Which phrase is polite for making a request?",
+      "options": [
+        "Give me now.",
+        "Could you please help me?",
+        "I want, you do.",
+        "No need to ask."
+      ],
+      "correct_option_index": 1,
+      "explanation": "'Could you please...' is a polite request form.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ENG-008-2",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-008",
+      "prompt": "Which statement best matches Functional language?",
+      "options": [
+        "Use language for requests, explanations, descriptions, and opinions",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Functional language is about this skill: Use language for requests, explanations, descriptions, and opinions.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ENG-008-3",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-008",
+      "prompt": "A student is revising Functional language. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on functional language and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Functional language.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-ENG-009-1",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-009",
+      "prompt": "When listening to instructions, what should you identify first?",
+      "options": [
+        "The speaker's shoes",
+        "The task you must do",
+        "Only background noise",
+        "The longest word"
+      ],
+      "correct_option_index": 1,
+      "explanation": "Good listening focuses on the required task and key details.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ENG-009-2",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-009",
+      "prompt": "Which statement best matches Listening and response?",
+      "options": [
+        "Understand spoken information and respond appropriately",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Listening and response is about this skill: Understand spoken information and respond appropriately.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ENG-009-3",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-009",
+      "prompt": "A student is revising Listening and response. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on listening and response and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Listening and response.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-ENG-010-1",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-010",
+      "prompt": "What helps most before writing an essay?",
+      "options": [
+        "Planning main points",
+        "Ignoring the topic",
+        "Writing random sentences",
+        "Avoiding paragraphs"
+      ],
+      "correct_option_index": 0,
+      "explanation": "Planning helps organize ideas into a coherent essay.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-ENG-010-2",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-010",
+      "prompt": "Which statement best matches Extended writing?",
+      "options": [
+        "Plan and write coherent essays or descriptions for assessment tasks",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Extended writing is about this skill: Plan and write coherent essays or descriptions for assessment tasks.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ENG-010-3",
+      "subject_id": "OL-ENG",
+      "concept_id": "ENG-010",
+      "prompt": "A student is revising Extended writing. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on extended writing and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Extended writing.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-ICT-001-1",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-001",
+      "prompt": "Which item is computer hardware?",
+      "options": [
+        "Keyboard",
+        "Spreadsheet formula",
+        "Operating system",
+        "File name"
+      ],
+      "correct_option_index": 0,
+      "explanation": "A keyboard is a physical input device, so it is hardware.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ICT-001-2",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-001",
+      "prompt": "Which statement best matches Computer system basics?",
+      "options": [
+        "Identify hardware, software, input, output, and storage roles",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Computer system basics is about this skill: Identify hardware, software, input, output, and storage roles.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ICT-001-3",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-001",
+      "prompt": "A student is revising Computer system basics. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on computer system basics and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Computer system basics.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-ICT-002-1",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-002",
+      "prompt": "What is the main purpose of folders?",
+      "options": [
+        "To organize files",
+        "To increase monitor size",
+        "To change keyboard keys",
+        "To remove electricity"
+      ],
+      "correct_option_index": 0,
+      "explanation": "Folders help organize and locate files.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ICT-002-2",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-002",
+      "prompt": "Which statement best matches Operating system use?",
+      "options": [
+        "Manage files, folders, settings, and common desktop tasks",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Operating system use is about this skill: Manage files, folders, settings, and common desktop tasks.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ICT-002-3",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-002",
+      "prompt": "A student is revising Operating system use. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on operating system use and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Operating system use.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-ICT-003-1",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-003",
+      "prompt": "Which tool is commonly used to align text in a document?",
+      "options": [
+        "Paragraph alignment",
+        "Screen brightness",
+        "Network cable",
+        "Speaker volume"
+      ],
+      "correct_option_index": 0,
+      "explanation": "Paragraph alignment controls left, center, right, or justified text layout.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ICT-003-2",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-003",
+      "prompt": "Which statement best matches Word processing?",
+      "options": [
+        "Format documents using text, tables, images, and page settings",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Word processing is about this skill: Format documents using text, tables, images, and page settings.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ICT-003-3",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-003",
+      "prompt": "A student is revising Word processing. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on word processing and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Word processing.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-ICT-004-1",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-004",
+      "prompt": "In a spreadsheet, what does a formula usually begin with?",
+      "options": [
+        "#",
+        "=",
+        "@",
+        "?"
+      ],
+      "correct_option_index": 1,
+      "explanation": "Spreadsheet formulas usually begin with an equals sign.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ICT-004-2",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-004",
+      "prompt": "Which statement best matches Spreadsheets?",
+      "options": [
+        "Use cells, formulas, functions, charts, and simple analysis",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Spreadsheets is about this skill: Use cells, formulas, functions, charts, and simple analysis.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ICT-004-3",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-004",
+      "prompt": "A student is revising Spreadsheets. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on spreadsheets and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Spreadsheets.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-ICT-005-1",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-005",
+      "prompt": "In a database table, what is a record?",
+      "options": [
+        "A row of related data",
+        "Only a chart title",
+        "A power cable",
+        "A monitor setting"
+      ],
+      "correct_option_index": 0,
+      "explanation": "A record is one row containing related fields about one item.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ICT-005-2",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-005",
+      "prompt": "Which statement best matches Databases?",
+      "options": [
+        "Understand tables, records, fields, keys, queries, and reports",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Databases is about this skill: Understand tables, records, fields, keys, queries, and reports.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ICT-005-3",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-005",
+      "prompt": "A student is revising Databases. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on databases and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Databases.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-ICT-006-1",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-006",
+      "prompt": "Which practice is safer online?",
+      "options": [
+        "Sharing passwords",
+        "Using strong passwords",
+        "Opening every unknown link",
+        "Posting private details publicly"
+      ],
+      "correct_option_index": 1,
+      "explanation": "Strong passwords help protect accounts and personal data.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ICT-006-2",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-006",
+      "prompt": "Which statement best matches Networks and internet?",
+      "options": [
+        "Explain network components, internet services, and safe use",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Networks and internet is about this skill: Explain network components, internet services, and safe use.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ICT-006-3",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-006",
+      "prompt": "A student is revising Networks and internet. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on networks and internet and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Networks and internet.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-ICT-007-1",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-007",
+      "prompt": "What should be identified first when solving a computing problem?",
+      "options": [
+        "Inputs and required output",
+        "Font color only",
+        "Printer brand only",
+        "Desk size"
+      ],
+      "correct_option_index": 0,
+      "explanation": "Problem solving begins by identifying inputs, processing, and expected output.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ICT-007-2",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-007",
+      "prompt": "Which statement best matches Problem solving steps?",
+      "options": [
+        "Break a task into inputs, processing, outputs, and test cases",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Problem solving steps is about this skill: Break a task into inputs, processing, outputs, and test cases.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ICT-007-3",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-007",
+      "prompt": "A student is revising Problem solving steps. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on problem solving steps and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Problem solving steps.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-ICT-008-1",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-008",
+      "prompt": "Which flowchart symbol usually represents a decision?",
+      "options": [
+        "Rectangle",
+        "Diamond",
+        "Circle only",
+        "Straight line only"
+      ],
+      "correct_option_index": 1,
+      "explanation": "A diamond is commonly used for decisions in flowcharts.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ICT-008-2",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-008",
+      "prompt": "Which statement best matches Algorithms and flowcharts?",
+      "options": [
+        "Represent solutions using sequence, selection, and repetition",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Algorithms and flowcharts is about this skill: Represent solutions using sequence, selection, and repetition.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ICT-008-3",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-008",
+      "prompt": "A student is revising Algorithms and flowcharts. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on algorithms and flowcharts and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Algorithms and flowcharts.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-ICT-009-1",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-009",
+      "prompt": "What does a loop do in a program?",
+      "options": [
+        "Repeats instructions",
+        "Deletes the keyboard",
+        "Stops all variables",
+        "Turns off the screen"
+      ],
+      "correct_option_index": 0,
+      "explanation": "A loop repeats a set of instructions while a condition is met or for a fixed count.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ICT-009-2",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-009",
+      "prompt": "Which statement best matches Simple programming logic?",
+      "options": [
+        "Apply variables, conditions, loops, and trace tables",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Simple programming logic is about this skill: Apply variables, conditions, loops, and trace tables.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ICT-009-3",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-009",
+      "prompt": "A student is revising Simple programming logic. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on simple programming logic and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Simple programming logic.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-ICT-010-1",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-010",
+      "prompt": "For an applied ICT task, what should you choose first?",
+      "options": [
+        "A suitable tool for the task",
+        "The longest file name",
+        "A random menu",
+        "A decorative border only"
+      ],
+      "correct_option_index": 0,
+      "explanation": "Applied ICT tasks require selecting a suitable digital tool and method for the goal.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-ICT-010-2",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-010",
+      "prompt": "Which statement best matches Applied ICT task?",
+      "options": [
+        "Select digital tools and computing logic to complete a practical task",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Applied ICT task is about this skill: Select digital tools and computing logic to complete a practical task.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-ICT-010-3",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-010",
+      "prompt": "A student is revising Applied ICT task. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on applied ict task and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Applied ICT task.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-MATH-001-1",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-001",
+      "prompt": "Which calculation is correct?",
+      "options": [
+        "3/4 + 1/4 = 1",
+        "3/4 + 1/4 = 3/8",
+        "3/4 + 1/4 = 4/8",
+        "3/4 + 1/4 = 1/2"
+      ],
+      "correct_option_index": 0,
+      "explanation": "Fractions with the same denominator are added by adding numerators, so 3/4 + 1/4 = 4/4 = 1.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-MATH-001-2",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-001",
+      "prompt": "Which statement best matches Number operations?",
+      "options": [
+        "Use integers, fractions, decimals, and percentages accurately",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Number operations is about this skill: Use integers, fractions, decimals, and percentages accurately.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-MATH-001-3",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-001",
+      "prompt": "A student is revising Number operations. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on number operations and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Number operations.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-MATH-002-1",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-002",
+      "prompt": "If 4 books cost Rs. 800, what is the cost of 6 books at the same rate?",
+      "options": [
+        "Rs. 1000",
+        "Rs. 1200",
+        "Rs. 1400",
+        "Rs. 1600"
+      ],
+      "correct_option_index": 1,
+      "explanation": "One book costs Rs. 200, so 6 books cost 6 x 200 = Rs. 1200.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-MATH-002-2",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-002",
+      "prompt": "Which statement best matches Ratio and proportion?",
+      "options": [
+        "Compare quantities and solve proportional situations",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Ratio and proportion is about this skill: Compare quantities and solve proportional situations.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-MATH-002-3",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-002",
+      "prompt": "A student is revising Ratio and proportion. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on ratio and proportion and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Ratio and proportion.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-MATH-003-1",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-003",
+      "prompt": "Which expression represents 'five more than twice x'?",
+      "options": [
+        "5x + 2",
+        "2x - 5",
+        "2x + 5",
+        "x + 10"
+      ],
+      "correct_option_index": 2,
+      "explanation": "Twice x is 2x, and five more than that is 2x + 5.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-MATH-003-2",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-003",
+      "prompt": "Which statement best matches Algebraic notation?",
+      "options": [
+        "Translate relationships into algebraic expressions",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Algebraic notation is about this skill: Translate relationships into algebraic expressions.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-MATH-003-3",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-003",
+      "prompt": "A student is revising Algebraic notation. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on algebraic notation and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Algebraic notation.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-MATH-004-1",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-004",
+      "prompt": "Simplify 3a + 2a - a.",
+      "options": [
+        "4a",
+        "5a",
+        "6a",
+        "4"
+      ],
+      "correct_option_index": 0,
+      "explanation": "Combine like terms: 3a + 2a - a = 4a.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-MATH-004-2",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-004",
+      "prompt": "Which statement best matches Simplifying expressions?",
+      "options": [
+        "Collect like terms and apply basic algebraic manipulation",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Simplifying expressions is about this skill: Collect like terms and apply basic algebraic manipulation.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-MATH-004-3",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-004",
+      "prompt": "A student is revising Simplifying expressions. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on simplifying expressions and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Simplifying expressions.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-MATH-005-1",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-005",
+      "prompt": "Solve 2x + 3 = 11.",
+      "options": [
+        "x = 3",
+        "x = 4",
+        "x = 7",
+        "x = 8"
+      ],
+      "correct_option_index": 1,
+      "explanation": "Subtract 3 from both sides to get 2x = 8, then divide by 2 to get x = 4.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-MATH-005-2",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-005",
+      "prompt": "Which statement best matches Linear equations?",
+      "options": [
+        "Solve one-variable linear equations using inverse operations",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Linear equations is about this skill: Solve one-variable linear equations using inverse operations.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-MATH-005-3",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-005",
+      "prompt": "A student is revising Linear equations. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on linear equations and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Linear equations.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-MATH-006-1",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-006",
+      "prompt": "What is the gradient of a line passing through (1, 2) and (3, 6)?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct_option_index": 1,
+      "explanation": "Gradient = change in y / change in x = (6 - 2) / (3 - 1) = 4/2 = 2.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-MATH-006-2",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-006",
+      "prompt": "Which statement best matches Coordinate geometry?",
+      "options": [
+        "Interpret points, gradients, and straight-line relationships",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Coordinate geometry is about this skill: Interpret points, gradients, and straight-line relationships.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-MATH-006-3",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-006",
+      "prompt": "A student is revising Coordinate geometry. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on coordinate geometry and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Coordinate geometry.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-MATH-007-1",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-007",
+      "prompt": "For y = 2x + 1, what is y when x = 3?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct_option_index": 2,
+      "explanation": "Substitute x = 3: y = 2(3) + 1 = 7.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-MATH-007-2",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-007",
+      "prompt": "Which statement best matches Graphs of linear functions?",
+      "options": [
+        "Draw and interpret graphs of linear equations",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Graphs of linear functions is about this skill: Draw and interpret graphs of linear equations.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-MATH-007-3",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-007",
+      "prompt": "A student is revising Graphs of linear functions. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on graphs of linear functions and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Graphs of linear functions.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-MATH-008-1",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-008",
+      "prompt": "What is the area of a rectangle with length 8 cm and width 5 cm?",
+      "options": [
+        "13 cm2",
+        "26 cm2",
+        "40 cm2",
+        "80 cm2"
+      ],
+      "correct_option_index": 2,
+      "explanation": "Area of a rectangle is length x width, so 8 x 5 = 40 cm2.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-MATH-008-2",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-008",
+      "prompt": "Which statement best matches Mensuration basics?",
+      "options": [
+        "Calculate perimeter, area, volume, and unit conversions",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Mensuration basics is about this skill: Calculate perimeter, area, volume, and unit conversions.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-MATH-008-3",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-008",
+      "prompt": "A student is revising Mensuration basics. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on mensuration basics and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Mensuration basics.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-MATH-009-1",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-009",
+      "prompt": "In a right triangle, which ratio defines sine of an angle?",
+      "options": [
+        "Adjacent / Hypotenuse",
+        "Opposite / Hypotenuse",
+        "Opposite / Adjacent",
+        "Hypotenuse / Adjacent"
+      ],
+      "correct_option_index": 1,
+      "explanation": "Sine is the ratio of the opposite side to the hypotenuse.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-MATH-009-2",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-009",
+      "prompt": "Which statement best matches Trigonometric ratios?",
+      "options": [
+        "Use sine, cosine, and tangent in right-angled triangles",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Trigonometric ratios is about this skill: Use sine, cosine, and tangent in right-angled triangles.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-MATH-009-3",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-009",
+      "prompt": "A student is revising Trigonometric ratios. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on trigonometric ratios and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Trigonometric ratios.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-MATH-010-1",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-010",
+      "prompt": "A problem asks for total cost after a percentage discount. Which skills are most likely needed?",
+      "options": [
+        "Only drawing a graph",
+        "Percentages and arithmetic operations",
+        "Only measuring angles",
+        "Only naming shapes"
+      ],
+      "correct_option_index": 1,
+      "explanation": "Applied problems often require selecting relevant methods; discount problems use percentages and arithmetic.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-MATH-010-2",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-010",
+      "prompt": "Which statement best matches Applied problem solving?",
+      "options": [
+        "Select and combine mathematical methods in exam-style problems",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Applied problem solving is about this skill: Select and combine mathematical methods in exam-style problems.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-MATH-010-3",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-010",
+      "prompt": "A student is revising Applied problem solving. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on applied problem solving and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Applied problem solving.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-SCI-001-1",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-001",
+      "prompt": "Which unit is suitable for measuring the mass of a small stone?",
+      "options": [
+        "Second",
+        "Gram",
+        "Volt",
+        "Degree Celsius"
+      ],
+      "correct_option_index": 1,
+      "explanation": "Gram is a unit of mass.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-SCI-001-2",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-001",
+      "prompt": "Which statement best matches Scientific measurement?",
+      "options": [
+        "Use units, measurements, and observations reliably",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Scientific measurement is about this skill: Use units, measurements, and observations reliably.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-SCI-001-3",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-001",
+      "prompt": "A student is revising Scientific measurement. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on scientific measurement and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Scientific measurement.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-SCI-002-1",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-002",
+      "prompt": "What happens to particles when a solid melts?",
+      "options": [
+        "They stop moving",
+        "They become more fixed",
+        "They gain energy and move more freely",
+        "They disappear"
+      ],
+      "correct_option_index": 2,
+      "explanation": "Melting gives particles more energy, allowing them to move more freely as a liquid.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-SCI-002-2",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-002",
+      "prompt": "Which statement best matches Matter and particles?",
+      "options": [
+        "Explain states of matter and particle behavior",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Matter and particles is about this skill: Explain states of matter and particle behavior.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-SCI-002-3",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-002",
+      "prompt": "A student is revising Matter and particles. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on matter and particles and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Matter and particles.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-SCI-003-1",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-003",
+      "prompt": "Which particle has a negative charge?",
+      "options": [
+        "Proton",
+        "Neutron",
+        "Electron",
+        "Nucleus"
+      ],
+      "correct_option_index": 2,
+      "explanation": "Electrons are negatively charged particles.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-SCI-003-2",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-003",
+      "prompt": "Which statement best matches Atomic structure?",
+      "options": [
+        "Describe atoms, elements, compounds, and simple bonding ideas",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Atomic structure is about this skill: Describe atoms, elements, compounds, and simple bonding ideas.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-SCI-003-3",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-003",
+      "prompt": "A student is revising Atomic structure. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on atomic structure and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Atomic structure.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-SCI-004-1",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-004",
+      "prompt": "Which observation is evidence of a chemical reaction?",
+      "options": [
+        "Cutting paper",
+        "Melting ice",
+        "Gas bubbles forming",
+        "Mixing sand and salt"
+      ],
+      "correct_option_index": 2,
+      "explanation": "Gas formation can indicate that new substances are being produced in a chemical reaction.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-SCI-004-2",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-004",
+      "prompt": "Which statement best matches Chemical reactions?",
+      "options": [
+        "Recognize reactants, products, and evidence of reactions",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Chemical reactions is about this skill: Recognize reactants, products, and evidence of reactions.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-SCI-004-3",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-004",
+      "prompt": "A student is revising Chemical reactions. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on chemical reactions and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Chemical reactions.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-SCI-005-1",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-005",
+      "prompt": "What can an unbalanced force do to an object?",
+      "options": [
+        "Only change its color",
+        "Change its motion",
+        "Remove its mass",
+        "Stop gravity"
+      ],
+      "correct_option_index": 1,
+      "explanation": "An unbalanced force can change speed, direction, or shape.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-SCI-005-2",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-005",
+      "prompt": "Which statement best matches Forces and motion?",
+      "options": [
+        "Relate forces to changes in motion",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Forces and motion is about this skill: Relate forces to changes in motion.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-SCI-005-3",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-005",
+      "prompt": "A student is revising Forces and motion. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on forces and motion and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Forces and motion.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-SCI-006-1",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-006",
+      "prompt": "In a lamp, electrical energy is mainly changed into which forms?",
+      "options": [
+        "Light and heat",
+        "Sound only",
+        "Chemical energy only",
+        "Magnetic energy only"
+      ],
+      "correct_option_index": 0,
+      "explanation": "A lamp converts electrical energy mainly into light and some heat.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-SCI-006-2",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-006",
+      "prompt": "Which statement best matches Energy transfer?",
+      "options": [
+        "Explain energy forms, transfers, and conservation",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Energy transfer is about this skill: Explain energy forms, transfers, and conservation.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-SCI-006-3",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-006",
+      "prompt": "A student is revising Energy transfer. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on energy transfer and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Energy transfer.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-SCI-007-1",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-007",
+      "prompt": "What is needed for current to flow in a simple circuit?",
+      "options": [
+        "An open switch",
+        "A complete path",
+        "No power source",
+        "Only a bulb"
+      ],
+      "correct_option_index": 1,
+      "explanation": "Current flows only when there is a complete conducting path.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-SCI-007-2",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-007",
+      "prompt": "Which statement best matches Electric circuits?",
+      "options": [
+        "Build and interpret simple circuit relationships",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Electric circuits is about this skill: Build and interpret simple circuit relationships.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-SCI-007-3",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-007",
+      "prompt": "A student is revising Electric circuits. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on electric circuits and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Electric circuits.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-SCI-008-1",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-008",
+      "prompt": "Which cell part controls most cell activities?",
+      "options": [
+        "Cell wall",
+        "Nucleus",
+        "Vacuole",
+        "Cytoplasm"
+      ],
+      "correct_option_index": 1,
+      "explanation": "The nucleus contains genetic material and controls cell activities.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-SCI-008-2",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-008",
+      "prompt": "Which statement best matches Cell structure?",
+      "options": [
+        "Identify cell parts and their functions",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Cell structure is about this skill: Identify cell parts and their functions.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-SCI-008-3",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-008",
+      "prompt": "A student is revising Cell structure. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on cell structure and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Cell structure.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-SCI-009-1",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-009",
+      "prompt": "Which system transports oxygen and nutrients around the body?",
+      "options": [
+        "Digestive system",
+        "Circulatory system",
+        "Skeletal system",
+        "Excretory system"
+      ],
+      "correct_option_index": 1,
+      "explanation": "The circulatory system transports blood carrying oxygen and nutrients.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-SCI-009-2",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-009",
+      "prompt": "Which statement best matches Human body systems?",
+      "options": [
+        "Explain interactions among major body systems",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Human body systems is about this skill: Explain interactions among major body systems.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-SCI-009-3",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-009",
+      "prompt": "A student is revising Human body systems. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on human body systems and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Human body systems.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-SCI-010-1",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-010",
+      "prompt": "A good scientific explanation should mainly use what?",
+      "options": [
+        "Guesswork only",
+        "Evidence and science concepts",
+        "Long sentences only",
+        "Unrelated facts"
+      ],
+      "correct_option_index": 1,
+      "explanation": "Scientific explanations connect evidence with correct concepts.",
+      "difficulty": 2
+    },
+    {
+      "id": "QB-SCI-010-2",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-010",
+      "prompt": "Which statement best matches Scientific explanations?",
+      "options": [
+        "Use evidence and concepts to explain exam-style science problems",
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Scientific explanations is about this skill: Use evidence and concepts to explain exam-style science problems.",
+      "difficulty": 1
+    },
+    {
+      "id": "QB-SCI-010-3",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-010",
+      "prompt": "A student is revising Scientific explanations. What is the best next practice step?",
+      "options": [
+        "Work a short example focused on scientific explanations and check the explanation.",
+        "Choose answers without reading the question.",
+        "Move to an unrelated subject immediately.",
+        "Avoid feedback after mistakes."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Focused practice with feedback is the best way to improve Scientific explanations.",
+      "difficulty": 2
+    }
+  ]
+}

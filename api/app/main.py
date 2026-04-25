@@ -11,6 +11,7 @@ from app.db import models  # noqa: F401
 from app.db.postgres import Base, engine
 from app.routers.diagnosis import router as diagnosis_router
 from app.routers.internal import router as internal_router
+from app.routers.learning import router as learning_router
 
 
 app = FastAPI(title=settings.app_name)
@@ -51,3 +52,4 @@ def healthcheck() -> dict:
 
 app.include_router(internal_router)
 app.include_router(diagnosis_router)
+app.include_router(learning_router)

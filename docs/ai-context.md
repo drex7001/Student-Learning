@@ -24,6 +24,7 @@ The curriculum data is prototype-aligned. Do not describe it as official syllabu
 - `/`: teacher dashboard with subject and concept selection
 - `/students`: support queue for selected subject/concept
 - `/diagnosis`: one learner and one subject-wide support map, with detailed diagnosis after selecting a concept
+- `/learn`: student-facing learning portal with lesson cards and personalized quizzes
 - `/concepts`: prerequisite and downstream concept map
 
 Keep these workflows separate. Do not collapse everything into one page.
@@ -40,6 +41,7 @@ Keep these workflows separate. Do not collapse everything into one page.
 - Support queue: `web/src/components/support-queue.tsx`
 - Diagnosis workspace: `web/src/components/diagnosis-workspace.tsx`
 - Concept map: `web/src/components/concept-explorer.tsx`
+- Learning portal: `web/src/components/learning-portal.tsx`
 
 Concept IDs are globally unique and include subject prefixes such as `MATH-`, `SCI-`, `ENG-`, and `ICT-`.
 
@@ -73,6 +75,8 @@ Subject selection flows through query parameters:
 - `GET /api/options?subject_id=OL-MATH`
 - frontend links should preserve `subject` and `concept`
 - `GET /api/diagnosis/student/{student_id}/subject/{subject_id}/map` powers the main diagnosis canvas
+- `GET /api/learn/student/{student_id}/subject/{subject_id}` powers the student learning portal
+- `POST /api/learn/quiz/start` and `POST /api/learn/quiz/{attempt_id}/submit` manage personalized quizzes
 
 Do not change the existing diagnosis endpoint shape unless there is a strong reason:
 

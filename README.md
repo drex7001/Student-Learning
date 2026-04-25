@@ -35,3 +35,6 @@ Greenfield monorepo for a thesis-oriented learning intelligence platform that us
 - `GET /api/diagnosis/student/{student_id}/subject/{subject_id}/map`
 - `GET /api/concepts/{concept_id}/prerequisites`
 - `GET /api/diagnosis/student/{student_id}/concept/{concept_id}`
+- `GET /api/learn/student/{student_id}/subject/{subject_id}`
+- `POST /api/learn/quiz/start`
+- `POST /api/learn/quiz/{attempt_id}/submit`

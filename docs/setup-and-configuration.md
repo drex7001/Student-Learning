@@ -106,3 +106,56 @@ Invoke-RestMethod -Method Post -Uri http://localhost:8000/internal/generate/synt
 ```
 
 `/internal/import/curriculum` replaces Neo4j subject and concept nodes. `/internal/generate/synthetic-data` replaces PostgreSQL students, assessments, questions, question results, and concept scores.
+
+
+
+## Hot reload 
+
+Yes, you can avoid rebuilding every time, but **the current Docker setup is production-style**, not hot reload.
+
+Right now:
+
+- `web/Dockerfile` runs `npm run build` then `npm run start`
+- `api/Dockerfile` runs `uvicorn` without `--reload`
+- `docker-compose.yml` does not mount source code volumes
+
+So Docker works, but it is **not hot reload Docker** yet.
+
+Best current dev workflow:
+
+```powershell
+docker compose up -d postgres neo4j
+```
+
+Run API locally with reload:
+
+```powershell
+cd api
+$env:PYTHONPATH='.'
+$env:DATABASE_URL='postgresql+psycopg://kgis:kgis@localhost:5432/kgis'
+$env:NEO4J_URI='bolt://localhost:7687'
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+```
+
+Run frontend locally with hot reload:
+
+```powershell
+cd web
+npm run dev
+```
+
+Then open:
+
+```text
+http://localhost:3000
+```
+
+If Docker web is already using port `3000`, run:
+
+```powershell
+npm run dev -- --port 3001
+```
+
+So: **yes, you can run without rebuilding**, but for now hot reload is easiest outside Docker while Docker runs only Postgres and Neo4j.
+
+A proper next improvement would be adding `docker-compose.dev.yml` with mounted volumes and reload commands for both `api` and `web`.

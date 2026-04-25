@@ -62,6 +62,12 @@ export default function RootLayout({
                 Student Diagnosis
               </Link>
               <Link
+                href="/learn"
+                className="rounded-full px-4 py-2 text-sm text-muted transition-colors hover:bg-white/70 hover:text-foreground"
+              >
+                Learn
+              </Link>
+              <Link
                 href="/concepts"
                 className="rounded-full px-4 py-2 text-sm text-muted transition-colors hover:bg-white/70 hover:text-foreground"
               >

@@ -22,6 +22,9 @@ class PostgresRepository:
         concept_scores: list[models.ConceptScore],
     ) -> dict:
         for table in (
+            models.QuizAnswer,
+            models.QuizAttempt,
+            models.QuizQuestion,
             models.ConceptScore,
             models.QuestionResult,
             models.Question,

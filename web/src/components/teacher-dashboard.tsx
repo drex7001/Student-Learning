@@ -206,7 +206,7 @@ export function TeacherDashboard() {
         </div>
       </section>
 
-      <section className="mt-6 grid gap-5 xl:grid-cols-3">
+      <section className="mt-6 grid gap-5 xl:grid-cols-4">
         <Link
           href={`/students?subject=${subjectId}&concept=${conceptId}`}
           className="rounded-[2rem] border border-line bg-white p-6 shadow-[0_20px_80px_rgba(19,32,52,0.08)] transition-transform duration-200 hover:-translate-y-1"
@@ -225,6 +225,16 @@ export function TeacherDashboard() {
           <h2 className="mt-4 text-3xl font-semibold tracking-tight">Find the root cause</h2>
           <p className="mt-4 text-sm leading-7 text-muted">
             Select a learner and identify the prerequisite concept to revise first.
+          </p>
+        </Link>
+        <Link
+          href={`/learn?subject=${subjectId}`}
+          className="rounded-[2rem] border border-line bg-white p-6 shadow-[0_20px_80px_rgba(19,32,52,0.08)] transition-transform duration-200 hover:-translate-y-1"
+        >
+          <p className="font-mono text-xs uppercase tracking-[0.24em] text-muted">Learn</p>
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight">Practice weak areas</h2>
+          <p className="mt-4 text-sm leading-7 text-muted">
+            Open the student portal for lesson cards and a personalized quiz.
           </p>
         </Link>
         <Link

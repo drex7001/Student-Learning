@@ -68,6 +68,45 @@
         { "name": "confidence", "type": "float", "description": "Derived from question coverage in the latest assessment." },
         { "name": "computed_at", "type": "datetime" }
       ]
+    },
+    {
+      "name": "quiz_question",
+      "fields": [
+        { "name": "id", "type": "string" },
+        { "name": "subject_id", "type": "string" },
+        { "name": "concept_id", "type": "string" },
+        { "name": "prompt", "type": "string" },
+        { "name": "options_json", "type": "json-string" },
+        { "name": "correct_option_index", "type": "integer" },
+        { "name": "explanation", "type": "string" },
+        { "name": "difficulty", "type": "integer" }
+      ]
+    },
+    {
+      "name": "quiz_attempt",
+      "fields": [
+        { "name": "id", "type": "string" },
+        { "name": "student_id", "type": "string" },
+        { "name": "subject_id", "type": "string" },
+        { "name": "concept_ids_json", "type": "json-string" },
+        { "name": "question_ids_json", "type": "json-string" },
+        { "name": "status", "type": "string" },
+        { "name": "started_at", "type": "datetime" },
+        { "name": "submitted_at", "type": "datetime" }
+      ]
+    },
+    {
+      "name": "quiz_answer",
+      "fields": [
+        { "name": "id", "type": "string" },
+        { "name": "attempt_id", "type": "string" },
+        { "name": "question_id", "type": "string" },
+        { "name": "concept_id", "type": "string" },
+        { "name": "selected_option_index", "type": "integer" },
+        { "name": "is_correct", "type": "integer" },
+        { "name": "score_obtained", "type": "float" },
+        { "name": "score_max", "type": "float" }
+      ]
     }
   ],
   "aggregation_rule": {
