@@ -1,0 +1,1157 @@
+{
+  "version": "2026-04-26",
+  "subject_id": "OL-SCI",
+  "subject_name": "Science",
+  "questions": [
+    {
+      "id": "QB-SCI-001-1",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-001",
+      "prompt": "Which answer best describes what Scientific measurement means in an O/L task?",
+      "options": [
+        "Use units, measurements, and observations reliably.",
+        "Explain states of matter and particle behavior.",
+        "Describe atoms, elements, compounds, and simple bonding ideas.",
+        "Recognize reactants, products, and evidence of reactions."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Scientific measurement focuses on: Use units, measurements, and observations reliably. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී විද්‍යාත්මක මිනුම් යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ඒකක, මිනුම් සහ නිරීක්ෂණ විශ්වාසනීයව භාවිතා කිරීම.",
+        "ද්‍රව්‍ය තත්ත්ව සහ අංශු හැසිරීම පැහැදිලි කිරීම.",
+        "පරමාණු, මූලද්‍රව්‍ය, සංයෝග සහ සරල බැඳීම් අදහස් විස්තර කිරීම.",
+        "ප්‍රතික්‍රියාකාරක, නිෂ්පාදන සහ ප්‍රතික්‍රියා සාක්ෂි හඳුනාගැනීම."
+      ],
+      "explanation_si": "විද්‍යාත්මක මිනුම් හි මූලික අදහස: ඒකක, මිනුම් සහ නිරීක්ෂණ විශ්වාසනීයව භාවිතා කිරීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-SCI-001-2",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-001",
+      "prompt": "A learner is losing marks on Scientific measurement. Which correction should come first?",
+      "options": [
+        "Lists facts without linking them to the observation in the question.",
+        "Practise only Matter and particles before checking the error in this answer.",
+        "Name the observation, connect it to the correct scientific idea, and explain the cause clearly.",
+        "Try a harder mixed question before fixing the basic error in Scientific measurement."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Scientific measurement: Name the observation, connect it to the correct scientific idea, and explain the cause clearly.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට විද්‍යාත්මක මිනුම් ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "ප්‍රශ්නයේ නිරීක්ෂණයට සම්බන්ධ නොකර කරුණු පමණක් ලැයිස්තුගත කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර ද්‍රව්‍ය සහ අංශු පමණක් පුහුණු වීම.",
+        "නිරීක්ෂණය නම් කර, නිවැරදි විද්‍යා අදහසට සම්බන්ධ කර, හේතුව පැහැදිලි කිරීම.",
+        "විද්‍යාත්මක මිනුම් හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "විද්‍යාත්මක මිනුම් සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: නිරීක්ෂණය නම් කර, නිවැරදි විද්‍යා අදහසට සම්බන්ධ කර, හේතුව පැහැදිලි කිරීම."
+    },
+    {
+      "id": "QB-SCI-001-3",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-001",
+      "prompt": "Which practice task is most directly linked to Scientific measurement?",
+      "options": [
+        "A task mainly testing Atomic structure.",
+        "A short O/L-style question where the student must use units, measurements, and observations reliably.",
+        "A task mainly testing Chemical reactions.",
+        "Uses a scientific term but gives no cause-and-effect explanation."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Scientific measurement, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "විද්‍යාත්මක මිනුම් සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් පරමාණුක ව්‍යුහය පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා ඒකක, මිනුම් සහ නිරීක්ෂණ විශ්වාසනීයව භාවිතා කිරීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් රසායනික ප්‍රතික්‍රියා පරීක්ෂා කරන කාර්යයක්.",
+        "විද්‍යාත්මක පදයක් භාවිතා කරමින් හේතු-ප්‍රතිඵල පැහැදිලි නොකිරීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය විද්‍යාත්මක මිනුම් හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-SCI-001-4",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-001",
+      "prompt": "Which answer shows the learner is ready to move forward from Scientific measurement?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Confuses evidence from the experiment with a general opinion.",
+        "The learner solves a new question on Scientific measurement and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Scientific measurement independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා විද්‍යාත්මක මිනුම් සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "පරීක්ෂණ සාක්ෂි සාමාන්‍ය අදහසක් සමඟ මිශ්‍ර කිරීම.",
+        "ශිෂ්‍යයා විද්‍යාත්මක මිනුම් පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු විද්‍යාත්මක මිනුම් ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-SCI-001-5",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-001",
+      "prompt": "After a wrong answer in Scientific measurement, which feedback is most useful?",
+      "options": [
+        "Use one observation as evidence, then write the scientific reason for that observation.",
+        "Check Matter and particles first, even though the error happened in Scientific measurement.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Scientific measurement.",
+      "difficulty": 3,
+      "prompt_si": "විද්‍යාත්මක මිනුම් ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "එක් නිරීක්ෂණයක් සාක්ෂියක් ලෙස භාවිතා කර, එයට විද්‍යාත්මක හේතුව ලිවීම.",
+        "වැරැද්ද විද්‍යාත්මක මිනුම් තුළ ඇති නමුත් මුලින්ම ද්‍රව්‍ය සහ අංශු පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය විද්‍යාත්මක මිනුම් හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-SCI-002-1",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-002",
+      "prompt": "Which answer best describes what Matter and particles means in an O/L task?",
+      "options": [
+        "Explain states of matter and particle behavior.",
+        "Describe atoms, elements, compounds, and simple bonding ideas.",
+        "Recognize reactants, products, and evidence of reactions.",
+        "Relate forces to changes in motion."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Matter and particles focuses on: Explain states of matter and particle behavior. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී ද්‍රව්‍ය සහ අංශු යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ද්‍රව්‍ය තත්ත්ව සහ අංශු හැසිරීම පැහැදිලි කිරීම.",
+        "පරමාණු, මූලද්‍රව්‍ය, සංයෝග සහ සරල බැඳීම් අදහස් විස්තර කිරීම.",
+        "ප්‍රතික්‍රියාකාරක, නිෂ්පාදන සහ ප්‍රතික්‍රියා සාක්ෂි හඳුනාගැනීම.",
+        "බල සහ චලනයේ වෙනස්කම් අතර සම්බන්ධතාව පැහැදිලි කිරීම."
+      ],
+      "explanation_si": "ද්‍රව්‍ය සහ අංශු හි මූලික අදහස: ද්‍රව්‍ය තත්ත්ව සහ අංශු හැසිරීම පැහැදිලි කිරීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-SCI-002-2",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-002",
+      "prompt": "A learner is losing marks on Matter and particles. Which correction should come first?",
+      "options": [
+        "Lists facts without linking them to the observation in the question.",
+        "Practise only Atomic structure before checking the error in this answer.",
+        "Name the observation, connect it to the correct scientific idea, and explain the cause clearly.",
+        "Try a harder mixed question before fixing the basic error in Matter and particles."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Matter and particles: Name the observation, connect it to the correct scientific idea, and explain the cause clearly.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට ද්‍රව්‍ය සහ අංශු ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "ප්‍රශ්නයේ නිරීක්ෂණයට සම්බන්ධ නොකර කරුණු පමණක් ලැයිස්තුගත කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර පරමාණුක ව්‍යුහය පමණක් පුහුණු වීම.",
+        "නිරීක්ෂණය නම් කර, නිවැරදි විද්‍යා අදහසට සම්බන්ධ කර, හේතුව පැහැදිලි කිරීම.",
+        "ද්‍රව්‍ය සහ අංශු හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "ද්‍රව්‍ය සහ අංශු සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: නිරීක්ෂණය නම් කර, නිවැරදි විද්‍යා අදහසට සම්බන්ධ කර, හේතුව පැහැදිලි කිරීම."
+    },
+    {
+      "id": "QB-SCI-002-3",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-002",
+      "prompt": "Which practice task is most directly linked to Matter and particles?",
+      "options": [
+        "A task mainly testing Chemical reactions.",
+        "A short O/L-style question where the student must explain states of matter and particle behavior.",
+        "A task mainly testing Forces and motion.",
+        "Uses a scientific term but gives no cause-and-effect explanation."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Matter and particles, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "ද්‍රව්‍ය සහ අංශු සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් රසායනික ප්‍රතික්‍රියා පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා ද්‍රව්‍ය තත්ත්ව සහ අංශු හැසිරීම පැහැදිලි කිරීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් බල සහ චලනය පරීක්ෂා කරන කාර්යයක්.",
+        "විද්‍යාත්මක පදයක් භාවිතා කරමින් හේතු-ප්‍රතිඵල පැහැදිලි නොකිරීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය ද්‍රව්‍ය සහ අංශු හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-SCI-002-4",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-002",
+      "prompt": "Which answer shows the learner is ready to move forward from Matter and particles?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Confuses evidence from the experiment with a general opinion.",
+        "The learner solves a new question on Matter and particles and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Matter and particles independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා ද්‍රව්‍ය සහ අංශු සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "පරීක්ෂණ සාක්ෂි සාමාන්‍ය අදහසක් සමඟ මිශ්‍ර කිරීම.",
+        "ශිෂ්‍යයා ද්‍රව්‍ය සහ අංශු පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු ද්‍රව්‍ය සහ අංශු ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-SCI-002-5",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-002",
+      "prompt": "After a wrong answer in Matter and particles, which feedback is most useful?",
+      "options": [
+        "Use one observation as evidence, then write the scientific reason for that observation.",
+        "Check Atomic structure first, even though the error happened in Matter and particles.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Matter and particles.",
+      "difficulty": 3,
+      "prompt_si": "ද්‍රව්‍ය සහ අංශු ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "එක් නිරීක්ෂණයක් සාක්ෂියක් ලෙස භාවිතා කර, එයට විද්‍යාත්මක හේතුව ලිවීම.",
+        "වැරැද්ද ද්‍රව්‍ය සහ අංශු තුළ ඇති නමුත් මුලින්ම පරමාණුක ව්‍යුහය පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය ද්‍රව්‍ය සහ අංශු හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-SCI-003-1",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-003",
+      "prompt": "Which answer best describes what Atomic structure means in an O/L task?",
+      "options": [
+        "Describe atoms, elements, compounds, and simple bonding ideas.",
+        "Recognize reactants, products, and evidence of reactions.",
+        "Relate forces to changes in motion.",
+        "Explain energy forms, transfers, and conservation."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Atomic structure focuses on: Describe atoms, elements, compounds, and simple bonding ideas. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී පරමාණුක ව්‍යුහය යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "පරමාණු, මූලද්‍රව්‍ය, සංයෝග සහ සරල බැඳීම් අදහස් විස්තර කිරීම.",
+        "ප්‍රතික්‍රියාකාරක, නිෂ්පාදන සහ ප්‍රතික්‍රියා සාක්ෂි හඳුනාගැනීම.",
+        "බල සහ චලනයේ වෙනස්කම් අතර සම්බන්ධතාව පැහැදිලි කිරීම.",
+        "ශක්ති ආකාර, මාරුවීම් සහ සංරක්ෂණය පැහැදිලි කිරීම."
+      ],
+      "explanation_si": "පරමාණුක ව්‍යුහය හි මූලික අදහස: පරමාණු, මූලද්‍රව්‍ය, සංයෝග සහ සරල බැඳීම් අදහස් විස්තර කිරීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-SCI-003-2",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-003",
+      "prompt": "A learner is losing marks on Atomic structure. Which correction should come first?",
+      "options": [
+        "Lists facts without linking them to the observation in the question.",
+        "Practise only Chemical reactions before checking the error in this answer.",
+        "Name the observation, connect it to the correct scientific idea, and explain the cause clearly.",
+        "Try a harder mixed question before fixing the basic error in Atomic structure."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Atomic structure: Name the observation, connect it to the correct scientific idea, and explain the cause clearly.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට පරමාණුක ව්‍යුහය ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "ප්‍රශ්නයේ නිරීක්ෂණයට සම්බන්ධ නොකර කරුණු පමණක් ලැයිස්තුගත කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර රසායනික ප්‍රතික්‍රියා පමණක් පුහුණු වීම.",
+        "නිරීක්ෂණය නම් කර, නිවැරදි විද්‍යා අදහසට සම්බන්ධ කර, හේතුව පැහැදිලි කිරීම.",
+        "පරමාණුක ව්‍යුහය හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "පරමාණුක ව්‍යුහය සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: නිරීක්ෂණය නම් කර, නිවැරදි විද්‍යා අදහසට සම්බන්ධ කර, හේතුව පැහැදිලි කිරීම."
+    },
+    {
+      "id": "QB-SCI-003-3",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-003",
+      "prompt": "Which practice task is most directly linked to Atomic structure?",
+      "options": [
+        "A task mainly testing Forces and motion.",
+        "A short O/L-style question where the student must describe atoms, elements, compounds, and simple bonding ideas.",
+        "A task mainly testing Energy transfer.",
+        "Uses a scientific term but gives no cause-and-effect explanation."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Atomic structure, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "පරමාණුක ව්‍යුහය සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් බල සහ චලනය පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා පරමාණු, මූලද්‍රව්‍ය, සංයෝග සහ සරල බැඳීම් අදහස් විස්තර කිරීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් ශක්ති මාරුව පරීක්ෂා කරන කාර්යයක්.",
+        "විද්‍යාත්මක පදයක් භාවිතා කරමින් හේතු-ප්‍රතිඵල පැහැදිලි නොකිරීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය පරමාණුක ව්‍යුහය හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-SCI-003-4",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-003",
+      "prompt": "Which answer shows the learner is ready to move forward from Atomic structure?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Confuses evidence from the experiment with a general opinion.",
+        "The learner solves a new question on Atomic structure and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Atomic structure independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා පරමාණුක ව්‍යුහය සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "පරීක්ෂණ සාක්ෂි සාමාන්‍ය අදහසක් සමඟ මිශ්‍ර කිරීම.",
+        "ශිෂ්‍යයා පරමාණුක ව්‍යුහය පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු පරමාණුක ව්‍යුහය ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-SCI-003-5",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-003",
+      "prompt": "After a wrong answer in Atomic structure, which feedback is most useful?",
+      "options": [
+        "Use one observation as evidence, then write the scientific reason for that observation.",
+        "Check Chemical reactions first, even though the error happened in Atomic structure.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Atomic structure.",
+      "difficulty": 3,
+      "prompt_si": "පරමාණුක ව්‍යුහය ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "එක් නිරීක්ෂණයක් සාක්ෂියක් ලෙස භාවිතා කර, එයට විද්‍යාත්මක හේතුව ලිවීම.",
+        "වැරැද්ද පරමාණුක ව්‍යුහය තුළ ඇති නමුත් මුලින්ම රසායනික ප්‍රතික්‍රියා පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය පරමාණුක ව්‍යුහය හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-SCI-004-1",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-004",
+      "prompt": "Which answer best describes what Chemical reactions means in an O/L task?",
+      "options": [
+        "Recognize reactants, products, and evidence of reactions.",
+        "Relate forces to changes in motion.",
+        "Explain energy forms, transfers, and conservation.",
+        "Build and interpret simple circuit relationships."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Chemical reactions focuses on: Recognize reactants, products, and evidence of reactions. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී රසායනික ප්‍රතික්‍රියා යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ප්‍රතික්‍රියාකාරක, නිෂ්පාදන සහ ප්‍රතික්‍රියා සාක්ෂි හඳුනාගැනීම.",
+        "බල සහ චලනයේ වෙනස්කම් අතර සම්බන්ධතාව පැහැදිලි කිරීම.",
+        "ශක්ති ආකාර, මාරුවීම් සහ සංරක්ෂණය පැහැදිලි කිරීම.",
+        "සරල පරිපථ සම්බන්ධතා ගොඩනැගීම සහ අර්ථ දැක්වීම."
+      ],
+      "explanation_si": "රසායනික ප්‍රතික්‍රියා හි මූලික අදහස: ප්‍රතික්‍රියාකාරක, නිෂ්පාදන සහ ප්‍රතික්‍රියා සාක්ෂි හඳුනාගැනීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-SCI-004-2",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-004",
+      "prompt": "A learner is losing marks on Chemical reactions. Which correction should come first?",
+      "options": [
+        "Lists facts without linking them to the observation in the question.",
+        "Practise only Forces and motion before checking the error in this answer.",
+        "Name the observation, connect it to the correct scientific idea, and explain the cause clearly.",
+        "Try a harder mixed question before fixing the basic error in Chemical reactions."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Chemical reactions: Name the observation, connect it to the correct scientific idea, and explain the cause clearly.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට රසායනික ප්‍රතික්‍රියා ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "ප්‍රශ්නයේ නිරීක්ෂණයට සම්බන්ධ නොකර කරුණු පමණක් ලැයිස්තුගත කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර බල සහ චලනය පමණක් පුහුණු වීම.",
+        "නිරීක්ෂණය නම් කර, නිවැරදි විද්‍යා අදහසට සම්බන්ධ කර, හේතුව පැහැදිලි කිරීම.",
+        "රසායනික ප්‍රතික්‍රියා හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "රසායනික ප්‍රතික්‍රියා සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: නිරීක්ෂණය නම් කර, නිවැරදි විද්‍යා අදහසට සම්බන්ධ කර, හේතුව පැහැදිලි කිරීම."
+    },
+    {
+      "id": "QB-SCI-004-3",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-004",
+      "prompt": "Which practice task is most directly linked to Chemical reactions?",
+      "options": [
+        "A task mainly testing Energy transfer.",
+        "A short O/L-style question where the student must recognize reactants, products, and evidence of reactions.",
+        "A task mainly testing Electric circuits.",
+        "Uses a scientific term but gives no cause-and-effect explanation."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Chemical reactions, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "රසායනික ප්‍රතික්‍රියා සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් ශක්ති මාරුව පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා ප්‍රතික්‍රියාකාරක, නිෂ්පාදන සහ ප්‍රතික්‍රියා සාක්ෂි හඳුනාගැනීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් විදුලි පරිපථ පරීක්ෂා කරන කාර්යයක්.",
+        "විද්‍යාත්මක පදයක් භාවිතා කරමින් හේතු-ප්‍රතිඵල පැහැදිලි නොකිරීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය රසායනික ප්‍රතික්‍රියා හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-SCI-004-4",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-004",
+      "prompt": "Which answer shows the learner is ready to move forward from Chemical reactions?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Confuses evidence from the experiment with a general opinion.",
+        "The learner solves a new question on Chemical reactions and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Chemical reactions independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා රසායනික ප්‍රතික්‍රියා සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "පරීක්ෂණ සාක්ෂි සාමාන්‍ය අදහසක් සමඟ මිශ්‍ර කිරීම.",
+        "ශිෂ්‍යයා රසායනික ප්‍රතික්‍රියා පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු රසායනික ප්‍රතික්‍රියා ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-SCI-004-5",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-004",
+      "prompt": "After a wrong answer in Chemical reactions, which feedback is most useful?",
+      "options": [
+        "Use one observation as evidence, then write the scientific reason for that observation.",
+        "Check Forces and motion first, even though the error happened in Chemical reactions.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Chemical reactions.",
+      "difficulty": 3,
+      "prompt_si": "රසායනික ප්‍රතික්‍රියා ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "එක් නිරීක්ෂණයක් සාක්ෂියක් ලෙස භාවිතා කර, එයට විද්‍යාත්මක හේතුව ලිවීම.",
+        "වැරැද්ද රසායනික ප්‍රතික්‍රියා තුළ ඇති නමුත් මුලින්ම බල සහ චලනය පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය රසායනික ප්‍රතික්‍රියා හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-SCI-005-1",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-005",
+      "prompt": "Which answer best describes what Forces and motion means in an O/L task?",
+      "options": [
+        "Relate forces to changes in motion.",
+        "Explain energy forms, transfers, and conservation.",
+        "Build and interpret simple circuit relationships.",
+        "Identify cell parts and their functions."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Forces and motion focuses on: Relate forces to changes in motion. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී බල සහ චලනය යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "බල සහ චලනයේ වෙනස්කම් අතර සම්බන්ධතාව පැහැදිලි කිරීම.",
+        "ශක්ති ආකාර, මාරුවීම් සහ සංරක්ෂණය පැහැදිලි කිරීම.",
+        "සරල පරිපථ සම්බන්ධතා ගොඩනැගීම සහ අර්ථ දැක්වීම.",
+        "සෛල කොටස් සහ කාර්යයන් හඳුනාගැනීම."
+      ],
+      "explanation_si": "බල සහ චලනය හි මූලික අදහස: බල සහ චලනයේ වෙනස්කම් අතර සම්බන්ධතාව පැහැදිලි කිරීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-SCI-005-2",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-005",
+      "prompt": "A learner is losing marks on Forces and motion. Which correction should come first?",
+      "options": [
+        "Lists facts without linking them to the observation in the question.",
+        "Practise only Energy transfer before checking the error in this answer.",
+        "Name the observation, connect it to the correct scientific idea, and explain the cause clearly.",
+        "Try a harder mixed question before fixing the basic error in Forces and motion."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Forces and motion: Name the observation, connect it to the correct scientific idea, and explain the cause clearly.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට බල සහ චලනය ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "ප්‍රශ්නයේ නිරීක්ෂණයට සම්බන්ධ නොකර කරුණු පමණක් ලැයිස්තුගත කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර ශක්ති මාරුව පමණක් පුහුණු වීම.",
+        "නිරීක්ෂණය නම් කර, නිවැරදි විද්‍යා අදහසට සම්බන්ධ කර, හේතුව පැහැදිලි කිරීම.",
+        "බල සහ චලනය හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "බල සහ චලනය සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: නිරීක්ෂණය නම් කර, නිවැරදි විද්‍යා අදහසට සම්බන්ධ කර, හේතුව පැහැදිලි කිරීම."
+    },
+    {
+      "id": "QB-SCI-005-3",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-005",
+      "prompt": "Which practice task is most directly linked to Forces and motion?",
+      "options": [
+        "A task mainly testing Electric circuits.",
+        "A short O/L-style question where the student must relate forces to changes in motion.",
+        "A task mainly testing Cell structure.",
+        "Uses a scientific term but gives no cause-and-effect explanation."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Forces and motion, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "බල සහ චලනය සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් විදුලි පරිපථ පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා බල සහ චලනයේ වෙනස්කම් අතර සම්බන්ධතාව පැහැදිලි කිරීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් සෛල ව්‍යුහය පරීක්ෂා කරන කාර්යයක්.",
+        "විද්‍යාත්මක පදයක් භාවිතා කරමින් හේතු-ප්‍රතිඵල පැහැදිලි නොකිරීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය බල සහ චලනය හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-SCI-005-4",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-005",
+      "prompt": "Which answer shows the learner is ready to move forward from Forces and motion?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Confuses evidence from the experiment with a general opinion.",
+        "The learner solves a new question on Forces and motion and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Forces and motion independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා බල සහ චලනය සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "පරීක්ෂණ සාක්ෂි සාමාන්‍ය අදහසක් සමඟ මිශ්‍ර කිරීම.",
+        "ශිෂ්‍යයා බල සහ චලනය පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු බල සහ චලනය ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-SCI-005-5",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-005",
+      "prompt": "After a wrong answer in Forces and motion, which feedback is most useful?",
+      "options": [
+        "Use one observation as evidence, then write the scientific reason for that observation.",
+        "Check Energy transfer first, even though the error happened in Forces and motion.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Forces and motion.",
+      "difficulty": 3,
+      "prompt_si": "බල සහ චලනය ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "එක් නිරීක්ෂණයක් සාක්ෂියක් ලෙස භාවිතා කර, එයට විද්‍යාත්මක හේතුව ලිවීම.",
+        "වැරැද්ද බල සහ චලනය තුළ ඇති නමුත් මුලින්ම ශක්ති මාරුව පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය බල සහ චලනය හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-SCI-006-1",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-006",
+      "prompt": "Which answer best describes what Energy transfer means in an O/L task?",
+      "options": [
+        "Explain energy forms, transfers, and conservation.",
+        "Build and interpret simple circuit relationships.",
+        "Identify cell parts and their functions.",
+        "Explain interactions among major body systems."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Energy transfer focuses on: Explain energy forms, transfers, and conservation. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී ශක්ති මාරුව යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශක්ති ආකාර, මාරුවීම් සහ සංරක්ෂණය පැහැදිලි කිරීම.",
+        "සරල පරිපථ සම්බන්ධතා ගොඩනැගීම සහ අර්ථ දැක්වීම.",
+        "සෛල කොටස් සහ කාර්යයන් හඳුනාගැනීම.",
+        "ප්‍රධාන දේහ පද්ධති අතර අන්තර්ක්‍රියා පැහැදිලි කිරීම."
+      ],
+      "explanation_si": "ශක්ති මාරුව හි මූලික අදහස: ශක්ති ආකාර, මාරුවීම් සහ සංරක්ෂණය පැහැදිලි කිරීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-SCI-006-2",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-006",
+      "prompt": "A learner is losing marks on Energy transfer. Which correction should come first?",
+      "options": [
+        "Lists facts without linking them to the observation in the question.",
+        "Practise only Electric circuits before checking the error in this answer.",
+        "Name the observation, connect it to the correct scientific idea, and explain the cause clearly.",
+        "Try a harder mixed question before fixing the basic error in Energy transfer."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Energy transfer: Name the observation, connect it to the correct scientific idea, and explain the cause clearly.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට ශක්ති මාරුව ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "ප්‍රශ්නයේ නිරීක්ෂණයට සම්බන්ධ නොකර කරුණු පමණක් ලැයිස්තුගත කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර විදුලි පරිපථ පමණක් පුහුණු වීම.",
+        "නිරීක්ෂණය නම් කර, නිවැරදි විද්‍යා අදහසට සම්බන්ධ කර, හේතුව පැහැදිලි කිරීම.",
+        "ශක්ති මාරුව හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "ශක්ති මාරුව සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: නිරීක්ෂණය නම් කර, නිවැරදි විද්‍යා අදහසට සම්බන්ධ කර, හේතුව පැහැදිලි කිරීම."
+    },
+    {
+      "id": "QB-SCI-006-3",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-006",
+      "prompt": "Which practice task is most directly linked to Energy transfer?",
+      "options": [
+        "A task mainly testing Cell structure.",
+        "A short O/L-style question where the student must explain energy forms, transfers, and conservation.",
+        "A task mainly testing Human body systems.",
+        "Uses a scientific term but gives no cause-and-effect explanation."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Energy transfer, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "ශක්ති මාරුව සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් සෛල ව්‍යුහය පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා ශක්ති ආකාර, මාරුවීම් සහ සංරක්ෂණය පැහැදිලි කිරීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් මානව දේහ පද්ධති පරීක්ෂා කරන කාර්යයක්.",
+        "විද්‍යාත්මක පදයක් භාවිතා කරමින් හේතු-ප්‍රතිඵල පැහැදිලි නොකිරීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය ශක්ති මාරුව හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-SCI-006-4",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-006",
+      "prompt": "Which answer shows the learner is ready to move forward from Energy transfer?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Confuses evidence from the experiment with a general opinion.",
+        "The learner solves a new question on Energy transfer and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Energy transfer independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා ශක්ති මාරුව සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "පරීක්ෂණ සාක්ෂි සාමාන්‍ය අදහසක් සමඟ මිශ්‍ර කිරීම.",
+        "ශිෂ්‍යයා ශක්ති මාරුව පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු ශක්ති මාරුව ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-SCI-006-5",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-006",
+      "prompt": "After a wrong answer in Energy transfer, which feedback is most useful?",
+      "options": [
+        "Use one observation as evidence, then write the scientific reason for that observation.",
+        "Check Electric circuits first, even though the error happened in Energy transfer.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Energy transfer.",
+      "difficulty": 3,
+      "prompt_si": "ශක්ති මාරුව ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "එක් නිරීක්ෂණයක් සාක්ෂියක් ලෙස භාවිතා කර, එයට විද්‍යාත්මක හේතුව ලිවීම.",
+        "වැරැද්ද ශක්ති මාරුව තුළ ඇති නමුත් මුලින්ම විදුලි පරිපථ පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය ශක්ති මාරුව හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-SCI-007-1",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-007",
+      "prompt": "Which answer best describes what Electric circuits means in an O/L task?",
+      "options": [
+        "Build and interpret simple circuit relationships.",
+        "Identify cell parts and their functions.",
+        "Explain interactions among major body systems.",
+        "Use evidence and concepts to explain exam-style science problems."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Electric circuits focuses on: Build and interpret simple circuit relationships. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී විදුලි පරිපථ යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "සරල පරිපථ සම්බන්ධතා ගොඩනැගීම සහ අර්ථ දැක්වීම.",
+        "සෛල කොටස් සහ කාර්යයන් හඳුනාගැනීම.",
+        "ප්‍රධාන දේහ පද්ධති අතර අන්තර්ක්‍රියා පැහැදිලි කිරීම.",
+        "සාක්ෂි සහ සංකල්ප භාවිතයෙන් විභාග ආකාරයේ විද්‍යා ගැටලු පැහැදිලි කිරීම."
+      ],
+      "explanation_si": "විදුලි පරිපථ හි මූලික අදහස: සරල පරිපථ සම්බන්ධතා ගොඩනැගීම සහ අර්ථ දැක්වීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-SCI-007-2",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-007",
+      "prompt": "A learner is losing marks on Electric circuits. Which correction should come first?",
+      "options": [
+        "Lists facts without linking them to the observation in the question.",
+        "Practise only Cell structure before checking the error in this answer.",
+        "Name the observation, connect it to the correct scientific idea, and explain the cause clearly.",
+        "Try a harder mixed question before fixing the basic error in Electric circuits."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Electric circuits: Name the observation, connect it to the correct scientific idea, and explain the cause clearly.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට විදුලි පරිපථ ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "ප්‍රශ්නයේ නිරීක්ෂණයට සම්බන්ධ නොකර කරුණු පමණක් ලැයිස්තුගත කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර සෛල ව්‍යුහය පමණක් පුහුණු වීම.",
+        "නිරීක්ෂණය නම් කර, නිවැරදි විද්‍යා අදහසට සම්බන්ධ කර, හේතුව පැහැදිලි කිරීම.",
+        "විදුලි පරිපථ හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "විදුලි පරිපථ සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: නිරීක්ෂණය නම් කර, නිවැරදි විද්‍යා අදහසට සම්බන්ධ කර, හේතුව පැහැදිලි කිරීම."
+    },
+    {
+      "id": "QB-SCI-007-3",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-007",
+      "prompt": "Which practice task is most directly linked to Electric circuits?",
+      "options": [
+        "A task mainly testing Human body systems.",
+        "A short O/L-style question where the student must build and interpret simple circuit relationships.",
+        "A task mainly testing Scientific explanations.",
+        "Uses a scientific term but gives no cause-and-effect explanation."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Electric circuits, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "විදුලි පරිපථ සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් මානව දේහ පද්ධති පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා සරල පරිපථ සම්බන්ධතා ගොඩනැගීම සහ අර්ථ දැක්වීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් විද්‍යාත්මක පැහැදිලි කිරීම් පරීක්ෂා කරන කාර්යයක්.",
+        "විද්‍යාත්මක පදයක් භාවිතා කරමින් හේතු-ප්‍රතිඵල පැහැදිලි නොකිරීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය විදුලි පරිපථ හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-SCI-007-4",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-007",
+      "prompt": "Which answer shows the learner is ready to move forward from Electric circuits?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Confuses evidence from the experiment with a general opinion.",
+        "The learner solves a new question on Electric circuits and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Electric circuits independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා විදුලි පරිපථ සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "පරීක්ෂණ සාක්ෂි සාමාන්‍ය අදහසක් සමඟ මිශ්‍ර කිරීම.",
+        "ශිෂ්‍යයා විදුලි පරිපථ පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු විදුලි පරිපථ ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-SCI-007-5",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-007",
+      "prompt": "After a wrong answer in Electric circuits, which feedback is most useful?",
+      "options": [
+        "Use one observation as evidence, then write the scientific reason for that observation.",
+        "Check Cell structure first, even though the error happened in Electric circuits.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Electric circuits.",
+      "difficulty": 3,
+      "prompt_si": "විදුලි පරිපථ ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "එක් නිරීක්ෂණයක් සාක්ෂියක් ලෙස භාවිතා කර, එයට විද්‍යාත්මක හේතුව ලිවීම.",
+        "වැරැද්ද විදුලි පරිපථ තුළ ඇති නමුත් මුලින්ම සෛල ව්‍යුහය පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය විදුලි පරිපථ හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-SCI-008-1",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-008",
+      "prompt": "Which answer best describes what Cell structure means in an O/L task?",
+      "options": [
+        "Identify cell parts and their functions.",
+        "Explain interactions among major body systems.",
+        "Use evidence and concepts to explain exam-style science problems.",
+        "Use units, measurements, and observations reliably."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Cell structure focuses on: Identify cell parts and their functions. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී සෛල ව්‍යුහය යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "සෛල කොටස් සහ කාර්යයන් හඳුනාගැනීම.",
+        "ප්‍රධාන දේහ පද්ධති අතර අන්තර්ක්‍රියා පැහැදිලි කිරීම.",
+        "සාක්ෂි සහ සංකල්ප භාවිතයෙන් විභාග ආකාරයේ විද්‍යා ගැටලු පැහැදිලි කිරීම.",
+        "ඒකක, මිනුම් සහ නිරීක්ෂණ විශ්වාසනීයව භාවිතා කිරීම."
+      ],
+      "explanation_si": "සෛල ව්‍යුහය හි මූලික අදහස: සෛල කොටස් සහ කාර්යයන් හඳුනාගැනීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-SCI-008-2",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-008",
+      "prompt": "A learner is losing marks on Cell structure. Which correction should come first?",
+      "options": [
+        "Lists facts without linking them to the observation in the question.",
+        "Practise only Human body systems before checking the error in this answer.",
+        "Name the observation, connect it to the correct scientific idea, and explain the cause clearly.",
+        "Try a harder mixed question before fixing the basic error in Cell structure."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Cell structure: Name the observation, connect it to the correct scientific idea, and explain the cause clearly.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට සෛල ව්‍යුහය ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "ප්‍රශ්නයේ නිරීක්ෂණයට සම්බන්ධ නොකර කරුණු පමණක් ලැයිස්තුගත කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර මානව දේහ පද්ධති පමණක් පුහුණු වීම.",
+        "නිරීක්ෂණය නම් කර, නිවැරදි විද්‍යා අදහසට සම්බන්ධ කර, හේතුව පැහැදිලි කිරීම.",
+        "සෛල ව්‍යුහය හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "සෛල ව්‍යුහය සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: නිරීක්ෂණය නම් කර, නිවැරදි විද්‍යා අදහසට සම්බන්ධ කර, හේතුව පැහැදිලි කිරීම."
+    },
+    {
+      "id": "QB-SCI-008-3",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-008",
+      "prompt": "Which practice task is most directly linked to Cell structure?",
+      "options": [
+        "A task mainly testing Scientific explanations.",
+        "A short O/L-style question where the student must identify cell parts and their functions.",
+        "A task mainly testing Scientific measurement.",
+        "Uses a scientific term but gives no cause-and-effect explanation."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Cell structure, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "සෛල ව්‍යුහය සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් විද්‍යාත්මක පැහැදිලි කිරීම් පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා සෛල කොටස් සහ කාර්යයන් හඳුනාගැනීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් විද්‍යාත්මක මිනුම් පරීක්ෂා කරන කාර්යයක්.",
+        "විද්‍යාත්මක පදයක් භාවිතා කරමින් හේතු-ප්‍රතිඵල පැහැදිලි නොකිරීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය සෛල ව්‍යුහය හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-SCI-008-4",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-008",
+      "prompt": "Which answer shows the learner is ready to move forward from Cell structure?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Confuses evidence from the experiment with a general opinion.",
+        "The learner solves a new question on Cell structure and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Cell structure independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා සෛල ව්‍යුහය සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "පරීක්ෂණ සාක්ෂි සාමාන්‍ය අදහසක් සමඟ මිශ්‍ර කිරීම.",
+        "ශිෂ්‍යයා සෛල ව්‍යුහය පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු සෛල ව්‍යුහය ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-SCI-008-5",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-008",
+      "prompt": "After a wrong answer in Cell structure, which feedback is most useful?",
+      "options": [
+        "Use one observation as evidence, then write the scientific reason for that observation.",
+        "Check Human body systems first, even though the error happened in Cell structure.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Cell structure.",
+      "difficulty": 3,
+      "prompt_si": "සෛල ව්‍යුහය ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "එක් නිරීක්ෂණයක් සාක්ෂියක් ලෙස භාවිතා කර, එයට විද්‍යාත්මක හේතුව ලිවීම.",
+        "වැරැද්ද සෛල ව්‍යුහය තුළ ඇති නමුත් මුලින්ම මානව දේහ පද්ධති පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය සෛල ව්‍යුහය හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-SCI-009-1",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-009",
+      "prompt": "Which answer best describes what Human body systems means in an O/L task?",
+      "options": [
+        "Explain interactions among major body systems.",
+        "Use evidence and concepts to explain exam-style science problems.",
+        "Use units, measurements, and observations reliably.",
+        "Explain states of matter and particle behavior."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Human body systems focuses on: Explain interactions among major body systems. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී මානව දේහ පද්ධති යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන දේහ පද්ධති අතර අන්තර්ක්‍රියා පැහැදිලි කිරීම.",
+        "සාක්ෂි සහ සංකල්ප භාවිතයෙන් විභාග ආකාරයේ විද්‍යා ගැටලු පැහැදිලි කිරීම.",
+        "ඒකක, මිනුම් සහ නිරීක්ෂණ විශ්වාසනීයව භාවිතා කිරීම.",
+        "ද්‍රව්‍ය තත්ත්ව සහ අංශු හැසිරීම පැහැදිලි කිරීම."
+      ],
+      "explanation_si": "මානව දේහ පද්ධති හි මූලික අදහස: ප්‍රධාන දේහ පද්ධති අතර අන්තර්ක්‍රියා පැහැදිලි කිරීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-SCI-009-2",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-009",
+      "prompt": "A learner is losing marks on Human body systems. Which correction should come first?",
+      "options": [
+        "Lists facts without linking them to the observation in the question.",
+        "Practise only Scientific explanations before checking the error in this answer.",
+        "Name the observation, connect it to the correct scientific idea, and explain the cause clearly.",
+        "Try a harder mixed question before fixing the basic error in Human body systems."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Human body systems: Name the observation, connect it to the correct scientific idea, and explain the cause clearly.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට මානව දේහ පද්ධති ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "ප්‍රශ්නයේ නිරීක්ෂණයට සම්බන්ධ නොකර කරුණු පමණක් ලැයිස්තුගත කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර විද්‍යාත්මක පැහැදිලි කිරීම් පමණක් පුහුණු වීම.",
+        "නිරීක්ෂණය නම් කර, නිවැරදි විද්‍යා අදහසට සම්බන්ධ කර, හේතුව පැහැදිලි කිරීම.",
+        "මානව දේහ පද්ධති හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "මානව දේහ පද්ධති සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: නිරීක්ෂණය නම් කර, නිවැරදි විද්‍යා අදහසට සම්බන්ධ කර, හේතුව පැහැදිලි කිරීම."
+    },
+    {
+      "id": "QB-SCI-009-3",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-009",
+      "prompt": "Which practice task is most directly linked to Human body systems?",
+      "options": [
+        "A task mainly testing Scientific measurement.",
+        "A short O/L-style question where the student must explain interactions among major body systems.",
+        "A task mainly testing Matter and particles.",
+        "Uses a scientific term but gives no cause-and-effect explanation."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Human body systems, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "මානව දේහ පද්ධති සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් විද්‍යාත්මක මිනුම් පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා ප්‍රධාන දේහ පද්ධති අතර අන්තර්ක්‍රියා පැහැදිලි කිරීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් ද්‍රව්‍ය සහ අංශු පරීක්ෂා කරන කාර්යයක්.",
+        "විද්‍යාත්මක පදයක් භාවිතා කරමින් හේතු-ප්‍රතිඵල පැහැදිලි නොකිරීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය මානව දේහ පද්ධති හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-SCI-009-4",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-009",
+      "prompt": "Which answer shows the learner is ready to move forward from Human body systems?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Confuses evidence from the experiment with a general opinion.",
+        "The learner solves a new question on Human body systems and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Human body systems independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා මානව දේහ පද්ධති සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "පරීක්ෂණ සාක්ෂි සාමාන්‍ය අදහසක් සමඟ මිශ්‍ර කිරීම.",
+        "ශිෂ්‍යයා මානව දේහ පද්ධති පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු මානව දේහ පද්ධති ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-SCI-009-5",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-009",
+      "prompt": "After a wrong answer in Human body systems, which feedback is most useful?",
+      "options": [
+        "Use one observation as evidence, then write the scientific reason for that observation.",
+        "Check Scientific explanations first, even though the error happened in Human body systems.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Human body systems.",
+      "difficulty": 3,
+      "prompt_si": "මානව දේහ පද්ධති ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "එක් නිරීක්ෂණයක් සාක්ෂියක් ලෙස භාවිතා කර, එයට විද්‍යාත්මක හේතුව ලිවීම.",
+        "වැරැද්ද මානව දේහ පද්ධති තුළ ඇති නමුත් මුලින්ම විද්‍යාත්මක පැහැදිලි කිරීම් පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය මානව දේහ පද්ධති හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-SCI-010-1",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-010",
+      "prompt": "Which answer best describes what Scientific explanations means in an O/L task?",
+      "options": [
+        "Use evidence and concepts to explain exam-style science problems.",
+        "Use units, measurements, and observations reliably.",
+        "Explain states of matter and particle behavior.",
+        "Describe atoms, elements, compounds, and simple bonding ideas."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Scientific explanations focuses on: Use evidence and concepts to explain exam-style science problems. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී විද්‍යාත්මක පැහැදිලි කිරීම් යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "සාක්ෂි සහ සංකල්ප භාවිතයෙන් විභාග ආකාරයේ විද්‍යා ගැටලු පැහැදිලි කිරීම.",
+        "ඒකක, මිනුම් සහ නිරීක්ෂණ විශ්වාසනීයව භාවිතා කිරීම.",
+        "ද්‍රව්‍ය තත්ත්ව සහ අංශු හැසිරීම පැහැදිලි කිරීම.",
+        "පරමාණු, මූලද්‍රව්‍ය, සංයෝග සහ සරල බැඳීම් අදහස් විස්තර කිරීම."
+      ],
+      "explanation_si": "විද්‍යාත්මක පැහැදිලි කිරීම් හි මූලික අදහස: සාක්ෂි සහ සංකල්ප භාවිතයෙන් විභාග ආකාරයේ විද්‍යා ගැටලු පැහැදිලි කිරීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-SCI-010-2",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-010",
+      "prompt": "A learner is losing marks on Scientific explanations. Which correction should come first?",
+      "options": [
+        "Lists facts without linking them to the observation in the question.",
+        "Practise only Scientific measurement before checking the error in this answer.",
+        "Name the observation, connect it to the correct scientific idea, and explain the cause clearly.",
+        "Try a harder mixed question before fixing the basic error in Scientific explanations."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Scientific explanations: Name the observation, connect it to the correct scientific idea, and explain the cause clearly.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට විද්‍යාත්මක පැහැදිලි කිරීම් ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "ප්‍රශ්නයේ නිරීක්ෂණයට සම්බන්ධ නොකර කරුණු පමණක් ලැයිස්තුගත කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර විද්‍යාත්මක මිනුම් පමණක් පුහුණු වීම.",
+        "නිරීක්ෂණය නම් කර, නිවැරදි විද්‍යා අදහසට සම්බන්ධ කර, හේතුව පැහැදිලි කිරීම.",
+        "විද්‍යාත්මක පැහැදිලි කිරීම් හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "විද්‍යාත්මක පැහැදිලි කිරීම් සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: නිරීක්ෂණය නම් කර, නිවැරදි විද්‍යා අදහසට සම්බන්ධ කර, හේතුව පැහැදිලි කිරීම."
+    },
+    {
+      "id": "QB-SCI-010-3",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-010",
+      "prompt": "Which practice task is most directly linked to Scientific explanations?",
+      "options": [
+        "A task mainly testing Matter and particles.",
+        "A short O/L-style question where the student must use evidence and concepts to explain exam-style science problems.",
+        "A task mainly testing Atomic structure.",
+        "Uses a scientific term but gives no cause-and-effect explanation."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Scientific explanations, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "විද්‍යාත්මක පැහැදිලි කිරීම් සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් ද්‍රව්‍ය සහ අංශු පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා සාක්ෂි සහ සංකල්ප භාවිතයෙන් විභාග ආකාරයේ විද්‍යා ගැටලු පැහැදිලි කිරීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් පරමාණුක ව්‍යුහය පරීක්ෂා කරන කාර්යයක්.",
+        "විද්‍යාත්මක පදයක් භාවිතා කරමින් හේතු-ප්‍රතිඵල පැහැදිලි නොකිරීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය විද්‍යාත්මක පැහැදිලි කිරීම් හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-SCI-010-4",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-010",
+      "prompt": "Which answer shows the learner is ready to move forward from Scientific explanations?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Confuses evidence from the experiment with a general opinion.",
+        "The learner solves a new question on Scientific explanations and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Scientific explanations independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා විද්‍යාත්මක පැහැදිලි කිරීම් සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "පරීක්ෂණ සාක්ෂි සාමාන්‍ය අදහසක් සමඟ මිශ්‍ර කිරීම.",
+        "ශිෂ්‍යයා විද්‍යාත්මක පැහැදිලි කිරීම් පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු විද්‍යාත්මක පැහැදිලි කිරීම් ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-SCI-010-5",
+      "subject_id": "OL-SCI",
+      "concept_id": "SCI-010",
+      "prompt": "After a wrong answer in Scientific explanations, which feedback is most useful?",
+      "options": [
+        "Use one observation as evidence, then write the scientific reason for that observation.",
+        "Check Scientific measurement first, even though the error happened in Scientific explanations.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Scientific explanations.",
+      "difficulty": 3,
+      "prompt_si": "විද්‍යාත්මක පැහැදිලි කිරීම් ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "එක් නිරීක්ෂණයක් සාක්ෂියක් ලෙස භාවිතා කර, එයට විද්‍යාත්මක හේතුව ලිවීම.",
+        "වැරැද්ද විද්‍යාත්මක පැහැදිලි කිරීම් තුළ ඇති නමුත් මුලින්ම විද්‍යාත්මක මිනුම් පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය විද්‍යාත්මක පැහැදිලි කිරීම් හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    }
+  ]
+}

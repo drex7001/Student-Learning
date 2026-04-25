@@ -1,0 +1,1157 @@
+{
+  "version": "2026-04-26",
+  "subject_id": "OL-ICT",
+  "subject_name": "ICT",
+  "questions": [
+    {
+      "id": "QB-ICT-001-1",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-001",
+      "prompt": "Which answer best describes what Computer system basics means in an O/L task?",
+      "options": [
+        "Identify hardware, software, input, output, and storage roles.",
+        "Manage files, folders, settings, and common desktop tasks.",
+        "Format documents using text, tables, images, and page settings.",
+        "Use cells, formulas, functions, charts, and simple analysis."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Computer system basics focuses on: Identify hardware, software, input, output, and storage roles. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී පරිගණක පද්ධති මූලිකතා යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "දෘඩාංග, මෘදුකාංග, ආදාන, ප්‍රතිදාන සහ ගබඩා භූමිකා හඳුනාගැනීම.",
+        "ගොනු, ෆෝල්ඩර, සැකසුම් සහ සාමාන්‍ය desktop කාර්ය කළමනාකරණය.",
+        "පෙළ, වගු, රූප සහ පිටු සැකසුම් භාවිතයෙන් ලේඛන ආකෘතිකරණය.",
+        "කෝෂ, සූත්‍ර, functions, ප්‍රස්ථාර සහ සරල විශ්ලේෂණ භාවිතා කිරීම."
+      ],
+      "explanation_si": "පරිගණක පද්ධති මූලිකතා හි මූලික අදහස: දෘඩාංග, මෘදුකාංග, ආදාන, ප්‍රතිදාන සහ ගබඩා භූමිකා හඳුනාගැනීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-ICT-001-2",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-001",
+      "prompt": "A learner is losing marks on Computer system basics. Which correction should come first?",
+      "options": [
+        "Names a tool but does not say how it solves the task.",
+        "Practise only Operating system use before checking the error in this answer.",
+        "Identify the task, choose the correct tool or command, and check that the output matches the requirement.",
+        "Try a harder mixed question before fixing the basic error in Computer system basics."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Computer system basics: Identify the task, choose the correct tool or command, and check that the output matches the requirement.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට පරිගණක පද්ධති මූලිකතා ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "මෙවලමක් නම් කරමින් එය කාර්යය විසඳන ආකාරය නොපැහැදිලි කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර මෙහෙයුම් පද්ධති භාවිතය පමණක් පුහුණු වීම.",
+        "කාර්යය හඳුනාගෙන, නිවැරදි මෙවලම හෝ විධානය තෝරා, ප්‍රතිදානය අවශ්‍යතාවට ගැළපේදැයි පරීක්ෂා කිරීම.",
+        "පරිගණක පද්ධති මූලිකතා හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "පරිගණක පද්ධති මූලිකතා සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: කාර්යය හඳුනාගෙන, නිවැරදි මෙවලම හෝ විධානය තෝරා, ප්‍රතිදානය අවශ්‍යතාවට ගැළපේදැයි පරීක්ෂා කිරීම."
+    },
+    {
+      "id": "QB-ICT-001-3",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-001",
+      "prompt": "Which practice task is most directly linked to Computer system basics?",
+      "options": [
+        "A task mainly testing Word processing.",
+        "A short O/L-style question where the student must identify hardware, software, input, output, and storage roles.",
+        "A task mainly testing Spreadsheets.",
+        "Chooses a command without checking the required output."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Computer system basics, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "පරිගණක පද්ධති මූලිකතා සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් වචන සැකසීම පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා දෘඩාංග, මෘදුකාංග, ආදාන, ප්‍රතිදාන සහ ගබඩා භූමිකා හඳුනාගැනීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් පැතුරුම්පත් පරීක්ෂා කරන කාර්යයක්.",
+        "අවශ්‍ය ප්‍රතිදානය පරීක්ෂා නොකර විධානයක් තෝරා ගැනීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය පරිගණක පද්ධති මූලිකතා හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-ICT-001-4",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-001",
+      "prompt": "Which answer shows the learner is ready to move forward from Computer system basics?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Mixes up data, software, hardware, and network roles.",
+        "The learner solves a new question on Computer system basics and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Computer system basics independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා පරිගණක පද්ධති මූලිකතා සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "දත්ත, මෘදුකාංග, දෘඩාංග සහ ජාල භූමිකා මිශ්‍ර කිරීම.",
+        "ශිෂ්‍යයා පරිගණක පද්ධති මූලිකතා පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු පරිගණක පද්ධති මූලිකතා ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-ICT-001-5",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-001",
+      "prompt": "After a wrong answer in Computer system basics, which feedback is most useful?",
+      "options": [
+        "Match each requirement to the relevant feature, command, or data item before giving the answer.",
+        "Check Operating system use first, even though the error happened in Computer system basics.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Computer system basics.",
+      "difficulty": 3,
+      "prompt_si": "පරිගණක පද්ධති මූලිකතා ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "පිළිතුරට පෙර සෑම අවශ්‍යතාවයක්ම අදාළ විශේෂාංගය, විධානය හෝ දත්ත අංගය සමඟ ගළපීම.",
+        "වැරැද්ද පරිගණක පද්ධති මූලිකතා තුළ ඇති නමුත් මුලින්ම මෙහෙයුම් පද්ධති භාවිතය පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය පරිගණක පද්ධති මූලිකතා හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-ICT-002-1",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-002",
+      "prompt": "Which answer best describes what Operating system use means in an O/L task?",
+      "options": [
+        "Manage files, folders, settings, and common desktop tasks.",
+        "Format documents using text, tables, images, and page settings.",
+        "Use cells, formulas, functions, charts, and simple analysis.",
+        "Understand tables, records, fields, keys, queries, and reports."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Operating system use focuses on: Manage files, folders, settings, and common desktop tasks. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී මෙහෙයුම් පද්ධති භාවිතය යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ගොනු, ෆෝල්ඩර, සැකසුම් සහ සාමාන්‍ය desktop කාර්ය කළමනාකරණය.",
+        "පෙළ, වගු, රූප සහ පිටු සැකසුම් භාවිතයෙන් ලේඛන ආකෘතිකරණය.",
+        "කෝෂ, සූත්‍ර, functions, ප්‍රස්ථාර සහ සරල විශ්ලේෂණ භාවිතා කිරීම.",
+        "වගු, වාර්තා, ක්ෂේත්‍ර, keys, queries සහ reports තේරුම් ගැනීම."
+      ],
+      "explanation_si": "මෙහෙයුම් පද්ධති භාවිතය හි මූලික අදහස: ගොනු, ෆෝල්ඩර, සැකසුම් සහ සාමාන්‍ය desktop කාර්ය කළමනාකරණය. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-ICT-002-2",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-002",
+      "prompt": "A learner is losing marks on Operating system use. Which correction should come first?",
+      "options": [
+        "Names a tool but does not say how it solves the task.",
+        "Practise only Word processing before checking the error in this answer.",
+        "Identify the task, choose the correct tool or command, and check that the output matches the requirement.",
+        "Try a harder mixed question before fixing the basic error in Operating system use."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Operating system use: Identify the task, choose the correct tool or command, and check that the output matches the requirement.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට මෙහෙයුම් පද්ධති භාවිතය ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "මෙවලමක් නම් කරමින් එය කාර්යය විසඳන ආකාරය නොපැහැදිලි කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර වචන සැකසීම පමණක් පුහුණු වීම.",
+        "කාර්යය හඳුනාගෙන, නිවැරදි මෙවලම හෝ විධානය තෝරා, ප්‍රතිදානය අවශ්‍යතාවට ගැළපේදැයි පරීක්ෂා කිරීම.",
+        "මෙහෙයුම් පද්ධති භාවිතය හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "මෙහෙයුම් පද්ධති භාවිතය සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: කාර්යය හඳුනාගෙන, නිවැරදි මෙවලම හෝ විධානය තෝරා, ප්‍රතිදානය අවශ්‍යතාවට ගැළපේදැයි පරීක්ෂා කිරීම."
+    },
+    {
+      "id": "QB-ICT-002-3",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-002",
+      "prompt": "Which practice task is most directly linked to Operating system use?",
+      "options": [
+        "A task mainly testing Spreadsheets.",
+        "A short O/L-style question where the student must manage files, folders, settings, and common desktop tasks.",
+        "A task mainly testing Databases.",
+        "Chooses a command without checking the required output."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Operating system use, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "මෙහෙයුම් පද්ධති භාවිතය සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් පැතුරුම්පත් පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා ගොනු, ෆෝල්ඩර, සැකසුම් සහ සාමාන්‍ය desktop කාර්ය කළමනාකරණය කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් දත්ත සමුදා පරීක්ෂා කරන කාර්යයක්.",
+        "අවශ්‍ය ප්‍රතිදානය පරීක්ෂා නොකර විධානයක් තෝරා ගැනීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය මෙහෙයුම් පද්ධති භාවිතය හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-ICT-002-4",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-002",
+      "prompt": "Which answer shows the learner is ready to move forward from Operating system use?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Mixes up data, software, hardware, and network roles.",
+        "The learner solves a new question on Operating system use and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Operating system use independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා මෙහෙයුම් පද්ධති භාවිතය සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "දත්ත, මෘදුකාංග, දෘඩාංග සහ ජාල භූමිකා මිශ්‍ර කිරීම.",
+        "ශිෂ්‍යයා මෙහෙයුම් පද්ධති භාවිතය පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු මෙහෙයුම් පද්ධති භාවිතය ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-ICT-002-5",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-002",
+      "prompt": "After a wrong answer in Operating system use, which feedback is most useful?",
+      "options": [
+        "Match each requirement to the relevant feature, command, or data item before giving the answer.",
+        "Check Word processing first, even though the error happened in Operating system use.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Operating system use.",
+      "difficulty": 3,
+      "prompt_si": "මෙහෙයුම් පද්ධති භාවිතය ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "පිළිතුරට පෙර සෑම අවශ්‍යතාවයක්ම අදාළ විශේෂාංගය, විධානය හෝ දත්ත අංගය සමඟ ගළපීම.",
+        "වැරැද්ද මෙහෙයුම් පද්ධති භාවිතය තුළ ඇති නමුත් මුලින්ම වචන සැකසීම පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය මෙහෙයුම් පද්ධති භාවිතය හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-ICT-003-1",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-003",
+      "prompt": "Which answer best describes what Word processing means in an O/L task?",
+      "options": [
+        "Format documents using text, tables, images, and page settings.",
+        "Use cells, formulas, functions, charts, and simple analysis.",
+        "Understand tables, records, fields, keys, queries, and reports.",
+        "Explain network components, internet services, and safe use."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Word processing focuses on: Format documents using text, tables, images, and page settings. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී වචන සැකසීම යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "පෙළ, වගු, රූප සහ පිටු සැකසුම් භාවිතයෙන් ලේඛන ආකෘතිකරණය.",
+        "කෝෂ, සූත්‍ර, functions, ප්‍රස්ථාර සහ සරල විශ්ලේෂණ භාවිතා කිරීම.",
+        "වගු, වාර්තා, ක්ෂේත්‍ර, keys, queries සහ reports තේරුම් ගැනීම.",
+        "ජාල කොටස්, අන්තර්ජාල සේවා සහ ආරක්ෂිත භාවිතය පැහැදිලි කිරීම."
+      ],
+      "explanation_si": "වචන සැකසීම හි මූලික අදහස: පෙළ, වගු, රූප සහ පිටු සැකසුම් භාවිතයෙන් ලේඛන ආකෘතිකරණය. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-ICT-003-2",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-003",
+      "prompt": "A learner is losing marks on Word processing. Which correction should come first?",
+      "options": [
+        "Names a tool but does not say how it solves the task.",
+        "Practise only Spreadsheets before checking the error in this answer.",
+        "Identify the task, choose the correct tool or command, and check that the output matches the requirement.",
+        "Try a harder mixed question before fixing the basic error in Word processing."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Word processing: Identify the task, choose the correct tool or command, and check that the output matches the requirement.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට වචන සැකසීම ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "මෙවලමක් නම් කරමින් එය කාර්යය විසඳන ආකාරය නොපැහැදිලි කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර පැතුරුම්පත් පමණක් පුහුණු වීම.",
+        "කාර්යය හඳුනාගෙන, නිවැරදි මෙවලම හෝ විධානය තෝරා, ප්‍රතිදානය අවශ්‍යතාවට ගැළපේදැයි පරීක්ෂා කිරීම.",
+        "වචන සැකසීම හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "වචන සැකසීම සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: කාර්යය හඳුනාගෙන, නිවැරදි මෙවලම හෝ විධානය තෝරා, ප්‍රතිදානය අවශ්‍යතාවට ගැළපේදැයි පරීක්ෂා කිරීම."
+    },
+    {
+      "id": "QB-ICT-003-3",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-003",
+      "prompt": "Which practice task is most directly linked to Word processing?",
+      "options": [
+        "A task mainly testing Databases.",
+        "A short O/L-style question where the student must format documents using text, tables, images, and page settings.",
+        "A task mainly testing Networks and internet.",
+        "Chooses a command without checking the required output."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Word processing, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "වචන සැකසීම සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් දත්ත සමුදා පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා පෙළ, වගු, රූප සහ පිටු සැකසුම් භාවිතයෙන් ලේඛන ආකෘතිකරණය කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් ජාල සහ අන්තර්ජාලය පරීක්ෂා කරන කාර්යයක්.",
+        "අවශ්‍ය ප්‍රතිදානය පරීක්ෂා නොකර විධානයක් තෝරා ගැනීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය වචන සැකසීම හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-ICT-003-4",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-003",
+      "prompt": "Which answer shows the learner is ready to move forward from Word processing?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Mixes up data, software, hardware, and network roles.",
+        "The learner solves a new question on Word processing and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Word processing independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා වචන සැකසීම සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "දත්ත, මෘදුකාංග, දෘඩාංග සහ ජාල භූමිකා මිශ්‍ර කිරීම.",
+        "ශිෂ්‍යයා වචන සැකසීම පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු වචන සැකසීම ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-ICT-003-5",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-003",
+      "prompt": "After a wrong answer in Word processing, which feedback is most useful?",
+      "options": [
+        "Match each requirement to the relevant feature, command, or data item before giving the answer.",
+        "Check Spreadsheets first, even though the error happened in Word processing.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Word processing.",
+      "difficulty": 3,
+      "prompt_si": "වචන සැකසීම ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "පිළිතුරට පෙර සෑම අවශ්‍යතාවයක්ම අදාළ විශේෂාංගය, විධානය හෝ දත්ත අංගය සමඟ ගළපීම.",
+        "වැරැද්ද වචන සැකසීම තුළ ඇති නමුත් මුලින්ම පැතුරුම්පත් පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය වචන සැකසීම හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-ICT-004-1",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-004",
+      "prompt": "Which answer best describes what Spreadsheets means in an O/L task?",
+      "options": [
+        "Use cells, formulas, functions, charts, and simple analysis.",
+        "Understand tables, records, fields, keys, queries, and reports.",
+        "Explain network components, internet services, and safe use.",
+        "Break a task into inputs, processing, outputs, and test cases."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Spreadsheets focuses on: Use cells, formulas, functions, charts, and simple analysis. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී පැතුරුම්පත් යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "කෝෂ, සූත්‍ර, functions, ප්‍රස්ථාර සහ සරල විශ්ලේෂණ භාවිතා කිරීම.",
+        "වගු, වාර්තා, ක්ෂේත්‍ර, keys, queries සහ reports තේරුම් ගැනීම.",
+        "ජාල කොටස්, අන්තර්ජාල සේවා සහ ආරක්ෂිත භාවිතය පැහැදිලි කිරීම.",
+        "කාර්යයක් ආදාන, සැකසුම්, ප්‍රතිදාන සහ පරීක්ෂණ අවස්ථා ලෙස බෙදීම."
+      ],
+      "explanation_si": "පැතුරුම්පත් හි මූලික අදහස: කෝෂ, සූත්‍ර, functions, ප්‍රස්ථාර සහ සරල විශ්ලේෂණ භාවිතා කිරීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-ICT-004-2",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-004",
+      "prompt": "A learner is losing marks on Spreadsheets. Which correction should come first?",
+      "options": [
+        "Names a tool but does not say how it solves the task.",
+        "Practise only Databases before checking the error in this answer.",
+        "Identify the task, choose the correct tool or command, and check that the output matches the requirement.",
+        "Try a harder mixed question before fixing the basic error in Spreadsheets."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Spreadsheets: Identify the task, choose the correct tool or command, and check that the output matches the requirement.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට පැතුරුම්පත් ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "මෙවලමක් නම් කරමින් එය කාර්යය විසඳන ආකාරය නොපැහැදිලි කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර දත්ත සමුදා පමණක් පුහුණු වීම.",
+        "කාර්යය හඳුනාගෙන, නිවැරදි මෙවලම හෝ විධානය තෝරා, ප්‍රතිදානය අවශ්‍යතාවට ගැළපේදැයි පරීක්ෂා කිරීම.",
+        "පැතුරුම්පත් හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "පැතුරුම්පත් සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: කාර්යය හඳුනාගෙන, නිවැරදි මෙවලම හෝ විධානය තෝරා, ප්‍රතිදානය අවශ්‍යතාවට ගැළපේදැයි පරීක්ෂා කිරීම."
+    },
+    {
+      "id": "QB-ICT-004-3",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-004",
+      "prompt": "Which practice task is most directly linked to Spreadsheets?",
+      "options": [
+        "A task mainly testing Networks and internet.",
+        "A short O/L-style question where the student must use cells, formulas, functions, charts, and simple analysis.",
+        "A task mainly testing Problem solving steps.",
+        "Chooses a command without checking the required output."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Spreadsheets, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "පැතුරුම්පත් සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් ජාල සහ අන්තර්ජාලය පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා කෝෂ, සූත්‍ර, functions, ප්‍රස්ථාර සහ සරල විශ්ලේෂණ භාවිතා කිරීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් ගැටලු විසඳීමේ පියවර පරීක්ෂා කරන කාර්යයක්.",
+        "අවශ්‍ය ප්‍රතිදානය පරීක්ෂා නොකර විධානයක් තෝරා ගැනීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය පැතුරුම්පත් හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-ICT-004-4",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-004",
+      "prompt": "Which answer shows the learner is ready to move forward from Spreadsheets?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Mixes up data, software, hardware, and network roles.",
+        "The learner solves a new question on Spreadsheets and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Spreadsheets independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා පැතුරුම්පත් සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "දත්ත, මෘදුකාංග, දෘඩාංග සහ ජාල භූමිකා මිශ්‍ර කිරීම.",
+        "ශිෂ්‍යයා පැතුරුම්පත් පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු පැතුරුම්පත් ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-ICT-004-5",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-004",
+      "prompt": "After a wrong answer in Spreadsheets, which feedback is most useful?",
+      "options": [
+        "Match each requirement to the relevant feature, command, or data item before giving the answer.",
+        "Check Databases first, even though the error happened in Spreadsheets.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Spreadsheets.",
+      "difficulty": 3,
+      "prompt_si": "පැතුරුම්පත් ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "පිළිතුරට පෙර සෑම අවශ්‍යතාවයක්ම අදාළ විශේෂාංගය, විධානය හෝ දත්ත අංගය සමඟ ගළපීම.",
+        "වැරැද්ද පැතුරුම්පත් තුළ ඇති නමුත් මුලින්ම දත්ත සමුදා පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය පැතුරුම්පත් හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-ICT-005-1",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-005",
+      "prompt": "Which answer best describes what Databases means in an O/L task?",
+      "options": [
+        "Understand tables, records, fields, keys, queries, and reports.",
+        "Explain network components, internet services, and safe use.",
+        "Break a task into inputs, processing, outputs, and test cases.",
+        "Represent solutions using sequence, selection, and repetition."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Databases focuses on: Understand tables, records, fields, keys, queries, and reports. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී දත්ත සමුදා යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "වගු, වාර්තා, ක්ෂේත්‍ර, keys, queries සහ reports තේරුම් ගැනීම.",
+        "ජාල කොටස්, අන්තර්ජාල සේවා සහ ආරක්ෂිත භාවිතය පැහැදිලි කිරීම.",
+        "කාර්යයක් ආදාන, සැකසුම්, ප්‍රතිදාන සහ පරීක්ෂණ අවස්ථා ලෙස බෙදීම.",
+        "අනුක්‍රමය, තේරීම සහ පුනරාවර්තනය භාවිතයෙන් විසඳුම් නිරූපණය."
+      ],
+      "explanation_si": "දත්ත සමුදා හි මූලික අදහස: වගු, වාර්තා, ක්ෂේත්‍ර, keys, queries සහ reports තේරුම් ගැනීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-ICT-005-2",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-005",
+      "prompt": "A learner is losing marks on Databases. Which correction should come first?",
+      "options": [
+        "Names a tool but does not say how it solves the task.",
+        "Practise only Networks and internet before checking the error in this answer.",
+        "Identify the task, choose the correct tool or command, and check that the output matches the requirement.",
+        "Try a harder mixed question before fixing the basic error in Databases."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Databases: Identify the task, choose the correct tool or command, and check that the output matches the requirement.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට දත්ත සමුදා ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "මෙවලමක් නම් කරමින් එය කාර්යය විසඳන ආකාරය නොපැහැදිලි කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර ජාල සහ අන්තර්ජාලය පමණක් පුහුණු වීම.",
+        "කාර්යය හඳුනාගෙන, නිවැරදි මෙවලම හෝ විධානය තෝරා, ප්‍රතිදානය අවශ්‍යතාවට ගැළපේදැයි පරීක්ෂා කිරීම.",
+        "දත්ත සමුදා හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "දත්ත සමුදා සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: කාර්යය හඳුනාගෙන, නිවැරදි මෙවලම හෝ විධානය තෝරා, ප්‍රතිදානය අවශ්‍යතාවට ගැළපේදැයි පරීක්ෂා කිරීම."
+    },
+    {
+      "id": "QB-ICT-005-3",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-005",
+      "prompt": "Which practice task is most directly linked to Databases?",
+      "options": [
+        "A task mainly testing Problem solving steps.",
+        "A short O/L-style question where the student must understand tables, records, fields, keys, queries, and reports.",
+        "A task mainly testing Algorithms and flowcharts.",
+        "Chooses a command without checking the required output."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Databases, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "දත්ත සමුදා සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් ගැටලු විසඳීමේ පියවර පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා වගු, වාර්තා, ක්ෂේත්‍ර, keys, queries සහ reports තේරුම් ගැනීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් ඇල්ගොරිතම සහ ප්‍රවාහ සටහන් පරීක්ෂා කරන කාර්යයක්.",
+        "අවශ්‍ය ප්‍රතිදානය පරීක්ෂා නොකර විධානයක් තෝරා ගැනීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය දත්ත සමුදා හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-ICT-005-4",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-005",
+      "prompt": "Which answer shows the learner is ready to move forward from Databases?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Mixes up data, software, hardware, and network roles.",
+        "The learner solves a new question on Databases and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Databases independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා දත්ත සමුදා සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "දත්ත, මෘදුකාංග, දෘඩාංග සහ ජාල භූමිකා මිශ්‍ර කිරීම.",
+        "ශිෂ්‍යයා දත්ත සමුදා පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු දත්ත සමුදා ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-ICT-005-5",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-005",
+      "prompt": "After a wrong answer in Databases, which feedback is most useful?",
+      "options": [
+        "Match each requirement to the relevant feature, command, or data item before giving the answer.",
+        "Check Networks and internet first, even though the error happened in Databases.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Databases.",
+      "difficulty": 3,
+      "prompt_si": "දත්ත සමුදා ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "පිළිතුරට පෙර සෑම අවශ්‍යතාවයක්ම අදාළ විශේෂාංගය, විධානය හෝ දත්ත අංගය සමඟ ගළපීම.",
+        "වැරැද්ද දත්ත සමුදා තුළ ඇති නමුත් මුලින්ම ජාල සහ අන්තර්ජාලය පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය දත්ත සමුදා හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-ICT-006-1",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-006",
+      "prompt": "Which answer best describes what Networks and internet means in an O/L task?",
+      "options": [
+        "Explain network components, internet services, and safe use.",
+        "Break a task into inputs, processing, outputs, and test cases.",
+        "Represent solutions using sequence, selection, and repetition.",
+        "Apply variables, conditions, loops, and trace tables."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Networks and internet focuses on: Explain network components, internet services, and safe use. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී ජාල සහ අන්තර්ජාලය යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ජාල කොටස්, අන්තර්ජාල සේවා සහ ආරක්ෂිත භාවිතය පැහැදිලි කිරීම.",
+        "කාර්යයක් ආදාන, සැකසුම්, ප්‍රතිදාන සහ පරීක්ෂණ අවස්ථා ලෙස බෙදීම.",
+        "අනුක්‍රමය, තේරීම සහ පුනරාවර්තනය භාවිතයෙන් විසඳුම් නිරූපණය.",
+        "චල්‍ය, කොන්දේසි, loops සහ trace tables භාවිතය."
+      ],
+      "explanation_si": "ජාල සහ අන්තර්ජාලය හි මූලික අදහස: ජාල කොටස්, අන්තර්ජාල සේවා සහ ආරක්ෂිත භාවිතය පැහැදිලි කිරීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-ICT-006-2",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-006",
+      "prompt": "A learner is losing marks on Networks and internet. Which correction should come first?",
+      "options": [
+        "Names a tool but does not say how it solves the task.",
+        "Practise only Problem solving steps before checking the error in this answer.",
+        "Identify the task, choose the correct tool or command, and check that the output matches the requirement.",
+        "Try a harder mixed question before fixing the basic error in Networks and internet."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Networks and internet: Identify the task, choose the correct tool or command, and check that the output matches the requirement.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට ජාල සහ අන්තර්ජාලය ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "මෙවලමක් නම් කරමින් එය කාර්යය විසඳන ආකාරය නොපැහැදිලි කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර ගැටලු විසඳීමේ පියවර පමණක් පුහුණු වීම.",
+        "කාර්යය හඳුනාගෙන, නිවැරදි මෙවලම හෝ විධානය තෝරා, ප්‍රතිදානය අවශ්‍යතාවට ගැළපේදැයි පරීක්ෂා කිරීම.",
+        "ජාල සහ අන්තර්ජාලය හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "ජාල සහ අන්තර්ජාලය සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: කාර්යය හඳුනාගෙන, නිවැරදි මෙවලම හෝ විධානය තෝරා, ප්‍රතිදානය අවශ්‍යතාවට ගැළපේදැයි පරීක්ෂා කිරීම."
+    },
+    {
+      "id": "QB-ICT-006-3",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-006",
+      "prompt": "Which practice task is most directly linked to Networks and internet?",
+      "options": [
+        "A task mainly testing Algorithms and flowcharts.",
+        "A short O/L-style question where the student must explain network components, internet services, and safe use.",
+        "A task mainly testing Simple programming logic.",
+        "Chooses a command without checking the required output."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Networks and internet, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "ජාල සහ අන්තර්ජාලය සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් ඇල්ගොරිතම සහ ප්‍රවාහ සටහන් පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා ජාල කොටස්, අන්තර්ජාල සේවා සහ ආරක්ෂිත භාවිතය පැහැදිලි කිරීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් සරල ක්‍රමලේඛ තර්කය පරීක්ෂා කරන කාර්යයක්.",
+        "අවශ්‍ය ප්‍රතිදානය පරීක්ෂා නොකර විධානයක් තෝරා ගැනීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය ජාල සහ අන්තර්ජාලය හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-ICT-006-4",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-006",
+      "prompt": "Which answer shows the learner is ready to move forward from Networks and internet?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Mixes up data, software, hardware, and network roles.",
+        "The learner solves a new question on Networks and internet and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Networks and internet independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා ජාල සහ අන්තර්ජාලය සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "දත්ත, මෘදුකාංග, දෘඩාංග සහ ජාල භූමිකා මිශ්‍ර කිරීම.",
+        "ශිෂ්‍යයා ජාල සහ අන්තර්ජාලය පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු ජාල සහ අන්තර්ජාලය ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-ICT-006-5",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-006",
+      "prompt": "After a wrong answer in Networks and internet, which feedback is most useful?",
+      "options": [
+        "Match each requirement to the relevant feature, command, or data item before giving the answer.",
+        "Check Problem solving steps first, even though the error happened in Networks and internet.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Networks and internet.",
+      "difficulty": 3,
+      "prompt_si": "ජාල සහ අන්තර්ජාලය ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "පිළිතුරට පෙර සෑම අවශ්‍යතාවයක්ම අදාළ විශේෂාංගය, විධානය හෝ දත්ත අංගය සමඟ ගළපීම.",
+        "වැරැද්ද ජාල සහ අන්තර්ජාලය තුළ ඇති නමුත් මුලින්ම ගැටලු විසඳීමේ පියවර පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය ජාල සහ අන්තර්ජාලය හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-ICT-007-1",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-007",
+      "prompt": "Which answer best describes what Problem solving steps means in an O/L task?",
+      "options": [
+        "Break a task into inputs, processing, outputs, and test cases.",
+        "Represent solutions using sequence, selection, and repetition.",
+        "Apply variables, conditions, loops, and trace tables.",
+        "Select digital tools and computing logic to complete a practical task."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Problem solving steps focuses on: Break a task into inputs, processing, outputs, and test cases. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී ගැටලු විසඳීමේ පියවර යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "කාර්යයක් ආදාන, සැකසුම්, ප්‍රතිදාන සහ පරීක්ෂණ අවස්ථා ලෙස බෙදීම.",
+        "අනුක්‍රමය, තේරීම සහ පුනරාවර්තනය භාවිතයෙන් විසඳුම් නිරූපණය.",
+        "චල්‍ය, කොන්දේසි, loops සහ trace tables භාවිතය.",
+        "ප්‍රායෝගික කාර්යයක් සම්පූර්ණ කිරීමට ඩිජිටල් මෙවලම් සහ පරිගණක තර්කය තෝරා භාවිතා කිරීම."
+      ],
+      "explanation_si": "ගැටලු විසඳීමේ පියවර හි මූලික අදහස: කාර්යයක් ආදාන, සැකසුම්, ප්‍රතිදාන සහ පරීක්ෂණ අවස්ථා ලෙස බෙදීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-ICT-007-2",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-007",
+      "prompt": "A learner is losing marks on Problem solving steps. Which correction should come first?",
+      "options": [
+        "Names a tool but does not say how it solves the task.",
+        "Practise only Algorithms and flowcharts before checking the error in this answer.",
+        "Identify the task, choose the correct tool or command, and check that the output matches the requirement.",
+        "Try a harder mixed question before fixing the basic error in Problem solving steps."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Problem solving steps: Identify the task, choose the correct tool or command, and check that the output matches the requirement.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට ගැටලු විසඳීමේ පියවර ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "මෙවලමක් නම් කරමින් එය කාර්යය විසඳන ආකාරය නොපැහැදිලි කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර ඇල්ගොරිතම සහ ප්‍රවාහ සටහන් පමණක් පුහුණු වීම.",
+        "කාර්යය හඳුනාගෙන, නිවැරදි මෙවලම හෝ විධානය තෝරා, ප්‍රතිදානය අවශ්‍යතාවට ගැළපේදැයි පරීක්ෂා කිරීම.",
+        "ගැටලු විසඳීමේ පියවර හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "ගැටලු විසඳීමේ පියවර සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: කාර්යය හඳුනාගෙන, නිවැරදි මෙවලම හෝ විධානය තෝරා, ප්‍රතිදානය අවශ්‍යතාවට ගැළපේදැයි පරීක්ෂා කිරීම."
+    },
+    {
+      "id": "QB-ICT-007-3",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-007",
+      "prompt": "Which practice task is most directly linked to Problem solving steps?",
+      "options": [
+        "A task mainly testing Simple programming logic.",
+        "A short O/L-style question where the student must break a task into inputs, processing, outputs, and test cases.",
+        "A task mainly testing Applied ICT task.",
+        "Chooses a command without checking the required output."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Problem solving steps, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "ගැටලු විසඳීමේ පියවර සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් සරල ක්‍රමලේඛ තර්කය පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා කාර්යයක් ආදාන, සැකසුම්, ප්‍රතිදාන සහ පරීක්ෂණ අවස්ථා ලෙස බෙදීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් යෙදුම් ICT කාර්යය පරීක්ෂා කරන කාර්යයක්.",
+        "අවශ්‍ය ප්‍රතිදානය පරීක්ෂා නොකර විධානයක් තෝරා ගැනීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය ගැටලු විසඳීමේ පියවර හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-ICT-007-4",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-007",
+      "prompt": "Which answer shows the learner is ready to move forward from Problem solving steps?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Mixes up data, software, hardware, and network roles.",
+        "The learner solves a new question on Problem solving steps and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Problem solving steps independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා ගැටලු විසඳීමේ පියවර සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "දත්ත, මෘදුකාංග, දෘඩාංග සහ ජාල භූමිකා මිශ්‍ර කිරීම.",
+        "ශිෂ්‍යයා ගැටලු විසඳීමේ පියවර පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු ගැටලු විසඳීමේ පියවර ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-ICT-007-5",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-007",
+      "prompt": "After a wrong answer in Problem solving steps, which feedback is most useful?",
+      "options": [
+        "Match each requirement to the relevant feature, command, or data item before giving the answer.",
+        "Check Algorithms and flowcharts first, even though the error happened in Problem solving steps.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Problem solving steps.",
+      "difficulty": 3,
+      "prompt_si": "ගැටලු විසඳීමේ පියවර ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "පිළිතුරට පෙර සෑම අවශ්‍යතාවයක්ම අදාළ විශේෂාංගය, විධානය හෝ දත්ත අංගය සමඟ ගළපීම.",
+        "වැරැද්ද ගැටලු විසඳීමේ පියවර තුළ ඇති නමුත් මුලින්ම ඇල්ගොරිතම සහ ප්‍රවාහ සටහන් පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය ගැටලු විසඳීමේ පියවර හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-ICT-008-1",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-008",
+      "prompt": "Which answer best describes what Algorithms and flowcharts means in an O/L task?",
+      "options": [
+        "Represent solutions using sequence, selection, and repetition.",
+        "Apply variables, conditions, loops, and trace tables.",
+        "Select digital tools and computing logic to complete a practical task.",
+        "Identify hardware, software, input, output, and storage roles."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Algorithms and flowcharts focuses on: Represent solutions using sequence, selection, and repetition. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී ඇල්ගොරිතම සහ ප්‍රවාහ සටහන් යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "අනුක්‍රමය, තේරීම සහ පුනරාවර්තනය භාවිතයෙන් විසඳුම් නිරූපණය.",
+        "චල්‍ය, කොන්දේසි, loops සහ trace tables භාවිතය.",
+        "ප්‍රායෝගික කාර්යයක් සම්පූර්ණ කිරීමට ඩිජිටල් මෙවලම් සහ පරිගණක තර්කය තෝරා භාවිතා කිරීම.",
+        "දෘඩාංග, මෘදුකාංග, ආදාන, ප්‍රතිදාන සහ ගබඩා භූමිකා හඳුනාගැනීම."
+      ],
+      "explanation_si": "ඇල්ගොරිතම සහ ප්‍රවාහ සටහන් හි මූලික අදහස: අනුක්‍රමය, තේරීම සහ පුනරාවර්තනය භාවිතයෙන් විසඳුම් නිරූපණය. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-ICT-008-2",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-008",
+      "prompt": "A learner is losing marks on Algorithms and flowcharts. Which correction should come first?",
+      "options": [
+        "Names a tool but does not say how it solves the task.",
+        "Practise only Simple programming logic before checking the error in this answer.",
+        "Identify the task, choose the correct tool or command, and check that the output matches the requirement.",
+        "Try a harder mixed question before fixing the basic error in Algorithms and flowcharts."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Algorithms and flowcharts: Identify the task, choose the correct tool or command, and check that the output matches the requirement.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට ඇල්ගොරිතම සහ ප්‍රවාහ සටහන් ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "මෙවලමක් නම් කරමින් එය කාර්යය විසඳන ආකාරය නොපැහැදිලි කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර සරල ක්‍රමලේඛ තර්කය පමණක් පුහුණු වීම.",
+        "කාර්යය හඳුනාගෙන, නිවැරදි මෙවලම හෝ විධානය තෝරා, ප්‍රතිදානය අවශ්‍යතාවට ගැළපේදැයි පරීක්ෂා කිරීම.",
+        "ඇල්ගොරිතම සහ ප්‍රවාහ සටහන් හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "ඇල්ගොරිතම සහ ප්‍රවාහ සටහන් සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: කාර්යය හඳුනාගෙන, නිවැරදි මෙවලම හෝ විධානය තෝරා, ප්‍රතිදානය අවශ්‍යතාවට ගැළපේදැයි පරීක්ෂා කිරීම."
+    },
+    {
+      "id": "QB-ICT-008-3",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-008",
+      "prompt": "Which practice task is most directly linked to Algorithms and flowcharts?",
+      "options": [
+        "A task mainly testing Applied ICT task.",
+        "A short O/L-style question where the student must represent solutions using sequence, selection, and repetition.",
+        "A task mainly testing Computer system basics.",
+        "Chooses a command without checking the required output."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Algorithms and flowcharts, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "ඇල්ගොරිතම සහ ප්‍රවාහ සටහන් සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් යෙදුම් ICT කාර්යය පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා අනුක්‍රමය, තේරීම සහ පුනරාවර්තනය භාවිතයෙන් විසඳුම් නිරූපණය කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් පරිගණක පද්ධති මූලිකතා පරීක්ෂා කරන කාර්යයක්.",
+        "අවශ්‍ය ප්‍රතිදානය පරීක්ෂා නොකර විධානයක් තෝරා ගැනීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය ඇල්ගොරිතම සහ ප්‍රවාහ සටහන් හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-ICT-008-4",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-008",
+      "prompt": "Which answer shows the learner is ready to move forward from Algorithms and flowcharts?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Mixes up data, software, hardware, and network roles.",
+        "The learner solves a new question on Algorithms and flowcharts and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Algorithms and flowcharts independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා ඇල්ගොරිතම සහ ප්‍රවාහ සටහන් සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "දත්ත, මෘදුකාංග, දෘඩාංග සහ ජාල භූමිකා මිශ්‍ර කිරීම.",
+        "ශිෂ්‍යයා ඇල්ගොරිතම සහ ප්‍රවාහ සටහන් පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු ඇල්ගොරිතම සහ ප්‍රවාහ සටහන් ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-ICT-008-5",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-008",
+      "prompt": "After a wrong answer in Algorithms and flowcharts, which feedback is most useful?",
+      "options": [
+        "Match each requirement to the relevant feature, command, or data item before giving the answer.",
+        "Check Simple programming logic first, even though the error happened in Algorithms and flowcharts.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Algorithms and flowcharts.",
+      "difficulty": 3,
+      "prompt_si": "ඇල්ගොරිතම සහ ප්‍රවාහ සටහන් ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "පිළිතුරට පෙර සෑම අවශ්‍යතාවයක්ම අදාළ විශේෂාංගය, විධානය හෝ දත්ත අංගය සමඟ ගළපීම.",
+        "වැරැද්ද ඇල්ගොරිතම සහ ප්‍රවාහ සටහන් තුළ ඇති නමුත් මුලින්ම සරල ක්‍රමලේඛ තර්කය පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය ඇල්ගොරිතම සහ ප්‍රවාහ සටහන් හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-ICT-009-1",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-009",
+      "prompt": "Which answer best describes what Simple programming logic means in an O/L task?",
+      "options": [
+        "Apply variables, conditions, loops, and trace tables.",
+        "Select digital tools and computing logic to complete a practical task.",
+        "Identify hardware, software, input, output, and storage roles.",
+        "Manage files, folders, settings, and common desktop tasks."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Simple programming logic focuses on: Apply variables, conditions, loops, and trace tables. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී සරල ක්‍රමලේඛ තර්කය යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "චල්‍ය, කොන්දේසි, loops සහ trace tables භාවිතය.",
+        "ප්‍රායෝගික කාර්යයක් සම්පූර්ණ කිරීමට ඩිජිටල් මෙවලම් සහ පරිගණක තර්කය තෝරා භාවිතා කිරීම.",
+        "දෘඩාංග, මෘදුකාංග, ආදාන, ප්‍රතිදාන සහ ගබඩා භූමිකා හඳුනාගැනීම.",
+        "ගොනු, ෆෝල්ඩර, සැකසුම් සහ සාමාන්‍ය desktop කාර්ය කළමනාකරණය."
+      ],
+      "explanation_si": "සරල ක්‍රමලේඛ තර්කය හි මූලික අදහස: චල්‍ය, කොන්දේසි, loops සහ trace tables භාවිතය. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-ICT-009-2",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-009",
+      "prompt": "A learner is losing marks on Simple programming logic. Which correction should come first?",
+      "options": [
+        "Names a tool but does not say how it solves the task.",
+        "Practise only Applied ICT task before checking the error in this answer.",
+        "Identify the task, choose the correct tool or command, and check that the output matches the requirement.",
+        "Try a harder mixed question before fixing the basic error in Simple programming logic."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Simple programming logic: Identify the task, choose the correct tool or command, and check that the output matches the requirement.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට සරල ක්‍රමලේඛ තර්කය ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "මෙවලමක් නම් කරමින් එය කාර්යය විසඳන ආකාරය නොපැහැදිලි කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර යෙදුම් ICT කාර්යය පමණක් පුහුණු වීම.",
+        "කාර්යය හඳුනාගෙන, නිවැරදි මෙවලම හෝ විධානය තෝරා, ප්‍රතිදානය අවශ්‍යතාවට ගැළපේදැයි පරීක්ෂා කිරීම.",
+        "සරල ක්‍රමලේඛ තර්කය හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "සරල ක්‍රමලේඛ තර්කය සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: කාර්යය හඳුනාගෙන, නිවැරදි මෙවලම හෝ විධානය තෝරා, ප්‍රතිදානය අවශ්‍යතාවට ගැළපේදැයි පරීක්ෂා කිරීම."
+    },
+    {
+      "id": "QB-ICT-009-3",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-009",
+      "prompt": "Which practice task is most directly linked to Simple programming logic?",
+      "options": [
+        "A task mainly testing Computer system basics.",
+        "A short O/L-style question where the student must apply variables, conditions, loops, and trace tables.",
+        "A task mainly testing Operating system use.",
+        "Chooses a command without checking the required output."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Simple programming logic, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "සරල ක්‍රමලේඛ තර්කය සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් පරිගණක පද්ධති මූලිකතා පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා චල්‍ය, කොන්දේසි, loops සහ trace tables භාවිතය කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් මෙහෙයුම් පද්ධති භාවිතය පරීක්ෂා කරන කාර්යයක්.",
+        "අවශ්‍ය ප්‍රතිදානය පරීක්ෂා නොකර විධානයක් තෝරා ගැනීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය සරල ක්‍රමලේඛ තර්කය හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-ICT-009-4",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-009",
+      "prompt": "Which answer shows the learner is ready to move forward from Simple programming logic?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Mixes up data, software, hardware, and network roles.",
+        "The learner solves a new question on Simple programming logic and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Simple programming logic independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා සරල ක්‍රමලේඛ තර්කය සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "දත්ත, මෘදුකාංග, දෘඩාංග සහ ජාල භූමිකා මිශ්‍ර කිරීම.",
+        "ශිෂ්‍යයා සරල ක්‍රමලේඛ තර්කය පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු සරල ක්‍රමලේඛ තර්කය ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-ICT-009-5",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-009",
+      "prompt": "After a wrong answer in Simple programming logic, which feedback is most useful?",
+      "options": [
+        "Match each requirement to the relevant feature, command, or data item before giving the answer.",
+        "Check Applied ICT task first, even though the error happened in Simple programming logic.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Simple programming logic.",
+      "difficulty": 3,
+      "prompt_si": "සරල ක්‍රමලේඛ තර්කය ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "පිළිතුරට පෙර සෑම අවශ්‍යතාවයක්ම අදාළ විශේෂාංගය, විධානය හෝ දත්ත අංගය සමඟ ගළපීම.",
+        "වැරැද්ද සරල ක්‍රමලේඛ තර්කය තුළ ඇති නමුත් මුලින්ම යෙදුම් ICT කාර්යය පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය සරල ක්‍රමලේඛ තර්කය හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-ICT-010-1",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-010",
+      "prompt": "Which answer best describes what Applied ICT task means in an O/L task?",
+      "options": [
+        "Select digital tools and computing logic to complete a practical task.",
+        "Identify hardware, software, input, output, and storage roles.",
+        "Manage files, folders, settings, and common desktop tasks.",
+        "Format documents using text, tables, images, and page settings."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Applied ICT task focuses on: Select digital tools and computing logic to complete a practical task. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී යෙදුම් ICT කාර්යය යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ප්‍රායෝගික කාර්යයක් සම්පූර්ණ කිරීමට ඩිජිටල් මෙවලම් සහ පරිගණක තර්කය තෝරා භාවිතා කිරීම.",
+        "දෘඩාංග, මෘදුකාංග, ආදාන, ප්‍රතිදාන සහ ගබඩා භූමිකා හඳුනාගැනීම.",
+        "ගොනු, ෆෝල්ඩර, සැකසුම් සහ සාමාන්‍ය desktop කාර්ය කළමනාකරණය.",
+        "පෙළ, වගු, රූප සහ පිටු සැකසුම් භාවිතයෙන් ලේඛන ආකෘතිකරණය."
+      ],
+      "explanation_si": "යෙදුම් ICT කාර්යය හි මූලික අදහස: ප්‍රායෝගික කාර්යයක් සම්පූර්ණ කිරීමට ඩිජිටල් මෙවලම් සහ පරිගණක තර්කය තෝරා භාවිතා කිරීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-ICT-010-2",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-010",
+      "prompt": "A learner is losing marks on Applied ICT task. Which correction should come first?",
+      "options": [
+        "Names a tool but does not say how it solves the task.",
+        "Practise only Computer system basics before checking the error in this answer.",
+        "Identify the task, choose the correct tool or command, and check that the output matches the requirement.",
+        "Try a harder mixed question before fixing the basic error in Applied ICT task."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Applied ICT task: Identify the task, choose the correct tool or command, and check that the output matches the requirement.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට යෙදුම් ICT කාර්යය ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "මෙවලමක් නම් කරමින් එය කාර්යය විසඳන ආකාරය නොපැහැදිලි කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර පරිගණක පද්ධති මූලිකතා පමණක් පුහුණු වීම.",
+        "කාර්යය හඳුනාගෙන, නිවැරදි මෙවලම හෝ විධානය තෝරා, ප්‍රතිදානය අවශ්‍යතාවට ගැළපේදැයි පරීක්ෂා කිරීම.",
+        "යෙදුම් ICT කාර්යය හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "යෙදුම් ICT කාර්යය සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: කාර්යය හඳුනාගෙන, නිවැරදි මෙවලම හෝ විධානය තෝරා, ප්‍රතිදානය අවශ්‍යතාවට ගැළපේදැයි පරීක්ෂා කිරීම."
+    },
+    {
+      "id": "QB-ICT-010-3",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-010",
+      "prompt": "Which practice task is most directly linked to Applied ICT task?",
+      "options": [
+        "A task mainly testing Operating system use.",
+        "A short O/L-style question where the student must select digital tools and computing logic to complete a practical task.",
+        "A task mainly testing Word processing.",
+        "Chooses a command without checking the required output."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Applied ICT task, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "යෙදුම් ICT කාර්යය සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් මෙහෙයුම් පද්ධති භාවිතය පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා ප්‍රායෝගික කාර්යයක් සම්පූර්ණ කිරීමට ඩිජිටල් මෙවලම් සහ පරිගණක තර්කය තෝරා භාවිතා කිරීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් වචන සැකසීම පරීක්ෂා කරන කාර්යයක්.",
+        "අවශ්‍ය ප්‍රතිදානය පරීක්ෂා නොකර විධානයක් තෝරා ගැනීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය යෙදුම් ICT කාර්යය හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-ICT-010-4",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-010",
+      "prompt": "Which answer shows the learner is ready to move forward from Applied ICT task?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Mixes up data, software, hardware, and network roles.",
+        "The learner solves a new question on Applied ICT task and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Applied ICT task independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා යෙදුම් ICT කාර්යය සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "දත්ත, මෘදුකාංග, දෘඩාංග සහ ජාල භූමිකා මිශ්‍ර කිරීම.",
+        "ශිෂ්‍යයා යෙදුම් ICT කාර්යය පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු යෙදුම් ICT කාර්යය ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-ICT-010-5",
+      "subject_id": "OL-ICT",
+      "concept_id": "ICT-010",
+      "prompt": "After a wrong answer in Applied ICT task, which feedback is most useful?",
+      "options": [
+        "Match each requirement to the relevant feature, command, or data item before giving the answer.",
+        "Check Computer system basics first, even though the error happened in Applied ICT task.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Applied ICT task.",
+      "difficulty": 3,
+      "prompt_si": "යෙදුම් ICT කාර්යය ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "පිළිතුරට පෙර සෑම අවශ්‍යතාවයක්ම අදාළ විශේෂාංගය, විධානය හෝ දත්ත අංගය සමඟ ගළපීම.",
+        "වැරැද්ද යෙදුම් ICT කාර්යය තුළ ඇති නමුත් මුලින්ම පරිගණක පද්ධති මූලිකතා පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය යෙදුම් ICT කාර්යය හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    }
+  ]
+}

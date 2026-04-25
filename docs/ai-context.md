@@ -4,9 +4,9 @@ Use this document before making code changes. It is written for AI coding agents
 
 ## Project Goal
 
-This is a Sri Lankan G.C.E. Ordinary Level teacher support prototype. It helps teachers select a subject, inspect learner readiness, and identify prerequisite concepts that may be causing poor performance on a target concept.
+This is a Sri Lankan G.C.E. Ordinary Level learning intelligence prototype. It helps teachers inspect learner readiness and identify prerequisite concepts that may be causing poor performance, and it gives students a separate `/learn` portal for targeted revision quizzes.
 
-The product is not a student learning app and not a marketing website. The first screen should remain a practical teacher dashboard.
+The product is not a marketing website. The first screen should remain a practical teacher dashboard, with student learning kept in the separate `/learn` workflow.
 
 ## Current Scope
 
@@ -32,6 +32,7 @@ Keep these workflows separate. Do not collapse everything into one page.
 ## Important Implementation Details
 
 - Curriculum source: `data/curriculum/ol_subject_curriculum.json`
+- Quiz sources: `data/quiz/*_mcq_bank.json`
 - Synthetic config: `data/seeds/generator_config.json`
 - API settings: `api/app/core/config.py`
 - Graph access: `api/app/repositories/graph_repository.py`
@@ -95,6 +96,13 @@ When adding or editing curriculum:
 - keep each subject between 8 and 30 concepts
 - add Sinhala fields where practical
 - update synthetic weakness profiles if new concepts should appear in generated weakness patterns
+
+When adding or editing quizzes:
+
+- keep one MCQ bank file per subject under `data/quiz`
+- use `prompt_si`, `options_si`, and `explanation_si` for Mathematics, Science, and ICT
+- omit Sinhala quiz fields for English
+- keep distractors plausible and O/L-relevant; avoid repeated filler answers
 
 ## Verification Checklist
 

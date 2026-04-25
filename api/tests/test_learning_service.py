@@ -1,5 +1,8 @@
 from __future__ import annotations
 
+import json
+from pathlib import Path
+
 from sqlalchemy import create_engine, func, select
 from sqlalchemy.orm import sessionmaker
 
@@ -120,6 +123,81 @@ def test_quiz_question_seed_is_idempotent(tmp_path) -> None:
 
     count = session.scalar(select(func.count(models.QuizQuestion.id)).where(models.QuizQuestion.id == "QB-MATH-001-A"))
     assert count == 1
+
+
+def test_quiz_bank_is_split_by_subject_and_translated() -> None:
+    quiz_dir = Path(__file__).resolve().parents[2] / "data" / "quiz"
+    bank_files = sorted(path.name for path in quiz_dir.glob("*_mcq_bank.json"))
+    assert bank_files == [
+        "ol_english_mcq_bank.json",
+        "ol_ict_mcq_bank.json",
+        "ol_math_mcq_bank.json",
+        "ol_science_mcq_bank.json",
+    ]
+
+    banned_fragments = [
+        "It is unrelated to later lessons.",
+        "It should be skipped until the final exam.",
+        "It only requires guessing the answer.",
+        "Choose the longest option next time.",
+    ]
+    for bank_file in quiz_dir.glob("*_mcq_bank.json"):
+        raw = bank_file.read_text(encoding="utf-8")
+        assert not any(fragment in raw for fragment in banned_fragments)
+        bank = json.loads(raw)
+        assert len(bank["questions"]) == 50
+        for question in bank["questions"]:
+            assert len(question["options"]) == 4
+            if bank["subject_id"] == "OL-ENG":
+                assert "prompt_si" not in question
+                assert "options_si" not in question
+            else:
+                assert question["prompt_si"]
+                assert len(question["options_si"]) == 4
+                assert question["explanation_si"]
+
+
+def test_start_quiz_returns_sinhala_fields_from_bank(tmp_path) -> None:
+    session = make_session()
+    session.add(models.Student(id="STU-001", full_name="Student 001", cohort="10A"))
+    quiz_bank_path = tmp_path / "ol_math_mcq_bank.json"
+    quiz_bank_path.write_text(
+        """
+        {
+          "subject_id": "OL-MATH",
+          "questions": [
+            {
+              "id": "QB-MATH-001-A",
+              "subject_id": "OL-MATH",
+              "concept_id": "MATH-001",
+              "prompt": "Question A",
+              "prompt_si": "සිංහල ප්‍රශ්නය A",
+              "options": ["A", "B", "C", "D"],
+              "options_si": ["අ", "ආ", "ඇ", "ඈ"],
+              "correct_option_index": 1,
+              "explanation": "Choose B.",
+              "explanation_si": "ආ තෝරන්න.",
+              "difficulty": 1
+            }
+          ]
+        }
+        """,
+        encoding="utf-8",
+    )
+    ensure_quiz_questions_seeded(session, quiz_bank_path)
+
+    attempt = start_quiz_attempt(
+        session=session,
+        student_id="STU-001",
+        subject_id="OL-MATH",
+        concept_ids=["MATH-001"],
+        quiz_length=1,
+        concept_names={"MATH-001": "Number operations"},
+        quiz_bank_path=quiz_bank_path,
+    )
+
+    assert attempt.questions[0].prompt_si == "සිංහල ප්‍රශ්නය A"
+    assert attempt.questions[0].options_si == ["අ", "ආ", "ඇ", "ඈ"]
 
 
 def test_quiz_submit_creates_assessment_scores_and_variable_confidence() -> None:

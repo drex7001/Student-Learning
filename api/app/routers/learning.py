@@ -104,6 +104,7 @@ def start_quiz(
         concept_ids=selected_concepts,
         quiz_length=payload.quiz_length,
         concept_names={concept.id: concept.name for concept in subject_map.concepts},
+        quiz_bank_path=settings.quiz_bank_path,
     )
     if not attempt.questions:
         raise HTTPException(status_code=404, detail="No quiz questions available for the selected concepts.")
@@ -121,6 +122,7 @@ def submit_quiz(
             session=session,
             attempt_id=attempt_id,
             answers={answer.question_id: answer.selected_option_index for answer in payload.answers},
+            quiz_bank_path=settings.quiz_bank_path,
         )
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc

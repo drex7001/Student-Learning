@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import json
 from collections import defaultdict
-from dataclasses import dataclass
 from datetime import date, datetime
 from pathlib import Path
 from uuid import uuid4
@@ -30,6 +29,25 @@ def _load_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def _load_quiz_bank_items(quiz_bank_path: Path) -> list[dict]:
+    if quiz_bank_path.is_dir():
+        bank_files = sorted(quiz_bank_path.glob("*_mcq_bank.json"))
+    else:
+        bank_files = [quiz_bank_path]
+
+    items: list[dict] = []
+    for bank_file in bank_files:
+        bank = _load_json(bank_file)
+        items.extend(bank["questions"])
+    return items
+
+
+def _quiz_bank_index(quiz_bank_path: Path | None) -> dict[str, dict]:
+    if quiz_bank_path is None:
+        return {}
+    return {item["id"]: item for item in _load_quiz_bank_items(quiz_bank_path)}
+
+
 def _decode_json_list(value: str) -> list:
     return json.loads(value)
 
@@ -39,22 +57,29 @@ def _encode_json(value: object) -> str:
 
 
 def ensure_quiz_questions_seeded(session: Session, quiz_bank_path: Path) -> None:
-    bank = _load_json(quiz_bank_path)
-    for item in bank["questions"]:
-        if session.get(models.QuizQuestion, item["id"]) is not None:
-            continue
-        session.add(
-            models.QuizQuestion(
-                id=item["id"],
-                subject_id=item["subject_id"],
-                concept_id=item["concept_id"],
-                prompt=item["prompt"],
-                options_json=_encode_json(item["options"]),
-                correct_option_index=item["correct_option_index"],
-                explanation=item["explanation"],
-                difficulty=item["difficulty"],
+    for item in _load_quiz_bank_items(quiz_bank_path):
+        existing = session.get(models.QuizQuestion, item["id"])
+        if existing is None:
+            session.add(
+                models.QuizQuestion(
+                    id=item["id"],
+                    subject_id=item["subject_id"],
+                    concept_id=item["concept_id"],
+                    prompt=item["prompt"],
+                    options_json=_encode_json(item["options"]),
+                    correct_option_index=item["correct_option_index"],
+                    explanation=item["explanation"],
+                    difficulty=item["difficulty"],
+                )
             )
-        )
+        else:
+            existing.subject_id = item["subject_id"]
+            existing.concept_id = item["concept_id"]
+            existing.prompt = item["prompt"]
+            existing.options_json = _encode_json(item["options"])
+            existing.correct_option_index = item["correct_option_index"]
+            existing.explanation = item["explanation"]
+            existing.difficulty = item["difficulty"]
     try:
         session.commit()
     except IntegrityError:
@@ -107,9 +132,11 @@ def start_quiz_attempt(
     concept_ids: list[str],
     quiz_length: int,
     concept_names: dict[str, str],
+    quiz_bank_path: Path | None = None,
 ) -> QuizAttemptResponse:
     selected_questions = _select_questions(session, subject_id, concept_ids, quiz_length)
     selected_concept_ids = sorted({question.concept_id for question in selected_questions})
+    bank_by_id = _quiz_bank_index(quiz_bank_path)
     attempt = models.QuizAttempt(
         id=f"QA-{uuid4().hex[:12].upper()}",
         student_id=student_id,
@@ -135,7 +162,9 @@ def start_quiz_attempt(
                 concept_id=question.concept_id,
                 concept_name=concept_names.get(question.concept_id, question.concept_id),
                 prompt=question.prompt,
+                prompt_si=bank_by_id.get(question.id, {}).get("prompt_si"),
                 options=_decode_json_list(question.options_json),
+                options_si=bank_by_id.get(question.id, {}).get("options_si"),
                 difficulty=question.difficulty,
             )
             for question in selected_questions
@@ -148,6 +177,7 @@ def submit_quiz_attempt(
     session: Session,
     attempt_id: str,
     answers: dict[str, int | None],
+    quiz_bank_path: Path | None = None,
 ) -> QuizSubmitResponse:
     attempt = session.get(models.QuizAttempt, attempt_id)
     if attempt is None:
@@ -161,6 +191,7 @@ def submit_quiz_attempt(
     ).scalars().all()
     question_by_id = {question.id: question for question in questions}
     ordered_questions = [question_by_id[question_id] for question_id in question_ids if question_id in question_by_id]
+    bank_by_id = _quiz_bank_index(quiz_bank_path)
 
     submitted_at = datetime.now()
     attempt.status = "submitted"
@@ -198,12 +229,14 @@ def submit_quiz_attempt(
                 question_id=question.id,
                 concept_id=question.concept_id,
                 prompt=question.prompt,
+                prompt_si=bank_by_id.get(question.id, {}).get("prompt_si"),
                 selected_option_index=selected,
                 correct_option_index=question.correct_option_index,
                 is_correct=bool(is_correct),
                 score_obtained=score,
                 score_max=1.0,
                 explanation=question.explanation,
+                explanation_si=bank_by_id.get(question.id, {}).get("explanation_si"),
             )
         )
 

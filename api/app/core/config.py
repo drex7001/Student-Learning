@@ -29,7 +29,7 @@ class Settings:
     curriculum_path: Path = BASE_DIR / "data" / "curriculum" / "ol_subject_curriculum.json"
     data_dictionary_path: Path = BASE_DIR / "data" / "curriculum" / "data_dictionary.json"
     generator_config_path: Path = BASE_DIR / "data" / "seeds" / "generator_config.json"
-    quiz_bank_path: Path = BASE_DIR / "data" / "quiz" / "ol_mcq_bank.json"
+    quiz_bank_path: Path = BASE_DIR / "data" / "quiz"
 
 
 settings = Settings()

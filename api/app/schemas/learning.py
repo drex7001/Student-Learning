@@ -44,7 +44,9 @@ class QuizQuestionItem(BaseModel):
     concept_id: str
     concept_name: str
     prompt: str
+    prompt_si: str | None = None
     options: list[str]
+    options_si: list[str] | None = None
     difficulty: int
 
 
@@ -70,12 +72,14 @@ class QuizAnswerResult(BaseModel):
     question_id: str
     concept_id: str
     prompt: str
+    prompt_si: str | None = None
     selected_option_index: int | None
     correct_option_index: int
     is_correct: bool
     score_obtained: float
     score_max: float
     explanation: str
+    explanation_si: str | None = None
 
 
 class UpdatedConceptScore(BaseModel):

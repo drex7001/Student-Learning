@@ -1,0 +1,1157 @@
+{
+  "version": "2026-04-26",
+  "subject_id": "OL-MATH",
+  "subject_name": "Mathematics",
+  "questions": [
+    {
+      "id": "QB-MATH-001-1",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-001",
+      "prompt": "Which answer best describes what Number operations means in an O/L task?",
+      "options": [
+        "Use integers, fractions, decimals, and percentages accurately.",
+        "Compare quantities and solve proportional situations.",
+        "Translate relationships into algebraic expressions.",
+        "Collect like terms and apply basic algebraic manipulation."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Number operations focuses on: Use integers, fractions, decimals, and percentages accurately. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී සංඛ්‍යා ක්‍රියා යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "පූර්ණ සංඛ්‍යා, භාග, දශම සහ ප්‍රතිශත නිවැරදිව භාවිතා කිරීම.",
+        "ප්‍රමාණ සැසඳීම සහ සමානුපාතික අවස්ථා විසඳීම.",
+        "සම්බන්ධතා වීජගණිත ප්‍රකාශන බවට පරිවර්තනය කිරීම.",
+        "සමාන පද එකතු කිරීම සහ මූලික වීජගණිත හැසිරවීම."
+      ],
+      "explanation_si": "සංඛ්‍යා ක්‍රියා හි මූලික අදහස: පූර්ණ සංඛ්‍යා, භාග, දශම සහ ප්‍රතිශත නිවැරදිව භාවිතා කිරීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-MATH-001-2",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-001",
+      "prompt": "A learner is losing marks on Number operations. Which correction should come first?",
+      "options": [
+        "Uses a memorised formula without checking what the question asks.",
+        "Practise only Ratio and proportion before checking the error in this answer.",
+        "Write the given values, choose the correct operation or formula, and show the working line by line.",
+        "Try a harder mixed question before fixing the basic error in Number operations."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Number operations: Write the given values, choose the correct operation or formula, and show the working line by line.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට සංඛ්‍යා ක්‍රියා ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "ප්‍රශ්නය ඉල්ලන දේ පරීක්ෂා නොකර මතක සූත්‍රයක් භාවිතා කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර අනුපාත සහ සමානුපාත පමණක් පුහුණු වීම.",
+        "දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම.",
+        "සංඛ්‍යා ක්‍රියා හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "සංඛ්‍යා ක්‍රියා සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම."
+    },
+    {
+      "id": "QB-MATH-001-3",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-001",
+      "prompt": "Which practice task is most directly linked to Number operations?",
+      "options": [
+        "A task mainly testing Algebraic notation.",
+        "A short O/L-style question where the student must use integers, fractions, decimals, and percentages accurately.",
+        "A task mainly testing Simplifying expressions.",
+        "Skips working steps and writes only the final answer."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Number operations, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "සංඛ්‍යා ක්‍රියා සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් වීජගණිත ලකුණු කිරීම පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා පූර්ණ සංඛ්‍යා, භාග, දශම සහ ප්‍රතිශත නිවැරදිව භාවිතා කිරීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් ප්‍රකාශන සරල කිරීම පරීක්ෂා කරන කාර්යයක්.",
+        "වැඩ කිරීමේ පියවර නොපෙන්වා අවසාන පිළිතුර පමණක් ලිවීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය සංඛ්‍යා ක්‍රියා හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-MATH-001-4",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-001",
+      "prompt": "Which answer shows the learner is ready to move forward from Number operations?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Changes units or signs without explaining the reason.",
+        "The learner solves a new question on Number operations and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Number operations independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා සංඛ්‍යා ක්‍රියා සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "හේතුව පැහැදිලි නොකර ඒකක හෝ සලකුණු වෙනස් කිරීම.",
+        "ශිෂ්‍යයා සංඛ්‍යා ක්‍රියා පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු සංඛ්‍යා ක්‍රියා ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-MATH-001-5",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-001",
+      "prompt": "After a wrong answer in Number operations, which feedback is most useful?",
+      "options": [
+        "Go back to the first incorrect working line, correct that step, and then complete the calculation again.",
+        "Check Ratio and proportion first, even though the error happened in Number operations.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Number operations.",
+      "difficulty": 3,
+      "prompt_si": "සංඛ්‍යා ක්‍රියා ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "මුල් වැරදි වැඩ පියවරට ආපසු ගොස් එය නිවැරදි කර, ගණනය නැවත සම්පූර්ණ කිරීම.",
+        "වැරැද්ද සංඛ්‍යා ක්‍රියා තුළ ඇති නමුත් මුලින්ම අනුපාත සහ සමානුපාත පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය සංඛ්‍යා ක්‍රියා හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-MATH-002-1",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-002",
+      "prompt": "Which answer best describes what Ratio and proportion means in an O/L task?",
+      "options": [
+        "Compare quantities and solve proportional situations.",
+        "Translate relationships into algebraic expressions.",
+        "Collect like terms and apply basic algebraic manipulation.",
+        "Solve one-variable linear equations using inverse operations."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Ratio and proportion focuses on: Compare quantities and solve proportional situations. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී අනුපාත සහ සමානුපාත යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ප්‍රමාණ සැසඳීම සහ සමානුපාතික අවස්ථා විසඳීම.",
+        "සම්බන්ධතා වීජගණිත ප්‍රකාශන බවට පරිවර්තනය කිරීම.",
+        "සමාන පද එකතු කිරීම සහ මූලික වීජගණිත හැසිරවීම.",
+        "ප්‍රතිලෝම ක්‍රියා භාවිතයෙන් එක් චල්‍ය රේඛීය සමීකරණ විසඳීම."
+      ],
+      "explanation_si": "අනුපාත සහ සමානුපාත හි මූලික අදහස: ප්‍රමාණ සැසඳීම සහ සමානුපාතික අවස්ථා විසඳීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-MATH-002-2",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-002",
+      "prompt": "A learner is losing marks on Ratio and proportion. Which correction should come first?",
+      "options": [
+        "Uses a memorised formula without checking what the question asks.",
+        "Practise only Algebraic notation before checking the error in this answer.",
+        "Write the given values, choose the correct operation or formula, and show the working line by line.",
+        "Try a harder mixed question before fixing the basic error in Ratio and proportion."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Ratio and proportion: Write the given values, choose the correct operation or formula, and show the working line by line.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට අනුපාත සහ සමානුපාත ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "ප්‍රශ්නය ඉල්ලන දේ පරීක්ෂා නොකර මතක සූත්‍රයක් භාවිතා කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර වීජගණිත ලකුණු කිරීම පමණක් පුහුණු වීම.",
+        "දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම.",
+        "අනුපාත සහ සමානුපාත හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "අනුපාත සහ සමානුපාත සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම."
+    },
+    {
+      "id": "QB-MATH-002-3",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-002",
+      "prompt": "Which practice task is most directly linked to Ratio and proportion?",
+      "options": [
+        "A task mainly testing Simplifying expressions.",
+        "A short O/L-style question where the student must compare quantities and solve proportional situations.",
+        "A task mainly testing Linear equations.",
+        "Skips working steps and writes only the final answer."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Ratio and proportion, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "අනුපාත සහ සමානුපාත සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් ප්‍රකාශන සරල කිරීම පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා ප්‍රමාණ සැසඳීම සහ සමානුපාතික අවස්ථා විසඳීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් රේඛීය සමීකරණ පරීක්ෂා කරන කාර්යයක්.",
+        "වැඩ කිරීමේ පියවර නොපෙන්වා අවසාන පිළිතුර පමණක් ලිවීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය අනුපාත සහ සමානුපාත හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-MATH-002-4",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-002",
+      "prompt": "Which answer shows the learner is ready to move forward from Ratio and proportion?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Changes units or signs without explaining the reason.",
+        "The learner solves a new question on Ratio and proportion and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Ratio and proportion independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා අනුපාත සහ සමානුපාත සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "හේතුව පැහැදිලි නොකර ඒකක හෝ සලකුණු වෙනස් කිරීම.",
+        "ශිෂ්‍යයා අනුපාත සහ සමානුපාත පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු අනුපාත සහ සමානුපාත ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-MATH-002-5",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-002",
+      "prompt": "After a wrong answer in Ratio and proportion, which feedback is most useful?",
+      "options": [
+        "Go back to the first incorrect working line, correct that step, and then complete the calculation again.",
+        "Check Algebraic notation first, even though the error happened in Ratio and proportion.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Ratio and proportion.",
+      "difficulty": 3,
+      "prompt_si": "අනුපාත සහ සමානුපාත ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "මුල් වැරදි වැඩ පියවරට ආපසු ගොස් එය නිවැරදි කර, ගණනය නැවත සම්පූර්ණ කිරීම.",
+        "වැරැද්ද අනුපාත සහ සමානුපාත තුළ ඇති නමුත් මුලින්ම වීජගණිත ලකුණු කිරීම පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය අනුපාත සහ සමානුපාත හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-MATH-003-1",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-003",
+      "prompt": "Which answer best describes what Algebraic notation means in an O/L task?",
+      "options": [
+        "Translate relationships into algebraic expressions.",
+        "Collect like terms and apply basic algebraic manipulation.",
+        "Solve one-variable linear equations using inverse operations.",
+        "Interpret points, gradients, and straight-line relationships."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Algebraic notation focuses on: Translate relationships into algebraic expressions. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී වීජගණිත ලකුණු කිරීම යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "සම්බන්ධතා වීජගණිත ප්‍රකාශන බවට පරිවර්තනය කිරීම.",
+        "සමාන පද එකතු කිරීම සහ මූලික වීජගණිත හැසිරවීම.",
+        "ප්‍රතිලෝම ක්‍රියා භාවිතයෙන් එක් චල්‍ය රේඛීය සමීකරණ විසඳීම.",
+        "ලක්ෂ්‍ය, ධාල සහ සෘජු රේඛා සම්බන්ධතා අර්ථ දැක්වීම."
+      ],
+      "explanation_si": "වීජගණිත ලකුණු කිරීම හි මූලික අදහස: සම්බන්ධතා වීජගණිත ප්‍රකාශන බවට පරිවර්තනය කිරීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-MATH-003-2",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-003",
+      "prompt": "A learner is losing marks on Algebraic notation. Which correction should come first?",
+      "options": [
+        "Uses a memorised formula without checking what the question asks.",
+        "Practise only Simplifying expressions before checking the error in this answer.",
+        "Write the given values, choose the correct operation or formula, and show the working line by line.",
+        "Try a harder mixed question before fixing the basic error in Algebraic notation."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Algebraic notation: Write the given values, choose the correct operation or formula, and show the working line by line.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට වීජගණිත ලකුණු කිරීම ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "ප්‍රශ්නය ඉල්ලන දේ පරීක්ෂා නොකර මතක සූත්‍රයක් භාවිතා කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර ප්‍රකාශන සරල කිරීම පමණක් පුහුණු වීම.",
+        "දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම.",
+        "වීජගණිත ලකුණු කිරීම හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "වීජගණිත ලකුණු කිරීම සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම."
+    },
+    {
+      "id": "QB-MATH-003-3",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-003",
+      "prompt": "Which practice task is most directly linked to Algebraic notation?",
+      "options": [
+        "A task mainly testing Linear equations.",
+        "A short O/L-style question where the student must translate relationships into algebraic expressions.",
+        "A task mainly testing Coordinate geometry.",
+        "Skips working steps and writes only the final answer."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Algebraic notation, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "වීජගණිත ලකුණු කිරීම සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් රේඛීය සමීකරණ පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා සම්බන්ධතා වීජගණිත ප්‍රකාශන බවට පරිවර්තනය කිරීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් ඛණ්ඩාංක ජ්‍යාමිතිය පරීක්ෂා කරන කාර්යයක්.",
+        "වැඩ කිරීමේ පියවර නොපෙන්වා අවසාන පිළිතුර පමණක් ලිවීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය වීජගණිත ලකුණු කිරීම හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-MATH-003-4",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-003",
+      "prompt": "Which answer shows the learner is ready to move forward from Algebraic notation?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Changes units or signs without explaining the reason.",
+        "The learner solves a new question on Algebraic notation and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Algebraic notation independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා වීජගණිත ලකුණු කිරීම සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "හේතුව පැහැදිලි නොකර ඒකක හෝ සලකුණු වෙනස් කිරීම.",
+        "ශිෂ්‍යයා වීජගණිත ලකුණු කිරීම පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු වීජගණිත ලකුණු කිරීම ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-MATH-003-5",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-003",
+      "prompt": "After a wrong answer in Algebraic notation, which feedback is most useful?",
+      "options": [
+        "Go back to the first incorrect working line, correct that step, and then complete the calculation again.",
+        "Check Simplifying expressions first, even though the error happened in Algebraic notation.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Algebraic notation.",
+      "difficulty": 3,
+      "prompt_si": "වීජගණිත ලකුණු කිරීම ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "මුල් වැරදි වැඩ පියවරට ආපසු ගොස් එය නිවැරදි කර, ගණනය නැවත සම්පූර්ණ කිරීම.",
+        "වැරැද්ද වීජගණිත ලකුණු කිරීම තුළ ඇති නමුත් මුලින්ම ප්‍රකාශන සරල කිරීම පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය වීජගණිත ලකුණු කිරීම හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-MATH-004-1",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-004",
+      "prompt": "Which answer best describes what Simplifying expressions means in an O/L task?",
+      "options": [
+        "Collect like terms and apply basic algebraic manipulation.",
+        "Solve one-variable linear equations using inverse operations.",
+        "Interpret points, gradients, and straight-line relationships.",
+        "Draw and interpret graphs of linear equations."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Simplifying expressions focuses on: Collect like terms and apply basic algebraic manipulation. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී ප්‍රකාශන සරල කිරීම යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "සමාන පද එකතු කිරීම සහ මූලික වීජගණිත හැසිරවීම.",
+        "ප්‍රතිලෝම ක්‍රියා භාවිතයෙන් එක් චල්‍ය රේඛීය සමීකරණ විසඳීම.",
+        "ලක්ෂ්‍ය, ධාල සහ සෘජු රේඛා සම්බන්ධතා අර්ථ දැක්වීම.",
+        "රේඛීය සමීකරණ ප්‍රස්ථාර ඇඳීම සහ අර්ථ දැක්වීම."
+      ],
+      "explanation_si": "ප්‍රකාශන සරල කිරීම හි මූලික අදහස: සමාන පද එකතු කිරීම සහ මූලික වීජගණිත හැසිරවීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-MATH-004-2",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-004",
+      "prompt": "A learner is losing marks on Simplifying expressions. Which correction should come first?",
+      "options": [
+        "Uses a memorised formula without checking what the question asks.",
+        "Practise only Linear equations before checking the error in this answer.",
+        "Write the given values, choose the correct operation or formula, and show the working line by line.",
+        "Try a harder mixed question before fixing the basic error in Simplifying expressions."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Simplifying expressions: Write the given values, choose the correct operation or formula, and show the working line by line.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට ප්‍රකාශන සරල කිරීම ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "ප්‍රශ්නය ඉල්ලන දේ පරීක්ෂා නොකර මතක සූත්‍රයක් භාවිතා කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර රේඛීය සමීකරණ පමණක් පුහුණු වීම.",
+        "දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම.",
+        "ප්‍රකාශන සරල කිරීම හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "ප්‍රකාශන සරල කිරීම සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම."
+    },
+    {
+      "id": "QB-MATH-004-3",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-004",
+      "prompt": "Which practice task is most directly linked to Simplifying expressions?",
+      "options": [
+        "A task mainly testing Coordinate geometry.",
+        "A short O/L-style question where the student must collect like terms and apply basic algebraic manipulation.",
+        "A task mainly testing Graphs of linear functions.",
+        "Skips working steps and writes only the final answer."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Simplifying expressions, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "ප්‍රකාශන සරල කිරීම සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් ඛණ්ඩාංක ජ්‍යාමිතිය පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා සමාන පද එකතු කිරීම සහ මූලික වීජගණිත හැසිරවීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් රේඛීය ශ්‍රිත ප්‍රස්ථාර පරීක්ෂා කරන කාර්යයක්.",
+        "වැඩ කිරීමේ පියවර නොපෙන්වා අවසාන පිළිතුර පමණක් ලිවීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය ප්‍රකාශන සරල කිරීම හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-MATH-004-4",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-004",
+      "prompt": "Which answer shows the learner is ready to move forward from Simplifying expressions?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Changes units or signs without explaining the reason.",
+        "The learner solves a new question on Simplifying expressions and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Simplifying expressions independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා ප්‍රකාශන සරල කිරීම සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "හේතුව පැහැදිලි නොකර ඒකක හෝ සලකුණු වෙනස් කිරීම.",
+        "ශිෂ්‍යයා ප්‍රකාශන සරල කිරීම පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු ප්‍රකාශන සරල කිරීම ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-MATH-004-5",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-004",
+      "prompt": "After a wrong answer in Simplifying expressions, which feedback is most useful?",
+      "options": [
+        "Go back to the first incorrect working line, correct that step, and then complete the calculation again.",
+        "Check Linear equations first, even though the error happened in Simplifying expressions.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Simplifying expressions.",
+      "difficulty": 3,
+      "prompt_si": "ප්‍රකාශන සරල කිරීම ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "මුල් වැරදි වැඩ පියවරට ආපසු ගොස් එය නිවැරදි කර, ගණනය නැවත සම්පූර්ණ කිරීම.",
+        "වැරැද්ද ප්‍රකාශන සරල කිරීම තුළ ඇති නමුත් මුලින්ම රේඛීය සමීකරණ පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය ප්‍රකාශන සරල කිරීම හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-MATH-005-1",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-005",
+      "prompt": "Which answer best describes what Linear equations means in an O/L task?",
+      "options": [
+        "Solve one-variable linear equations using inverse operations.",
+        "Interpret points, gradients, and straight-line relationships.",
+        "Draw and interpret graphs of linear equations.",
+        "Calculate perimeter, area, volume, and unit conversions."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Linear equations focuses on: Solve one-variable linear equations using inverse operations. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී රේඛීය සමීකරණ යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ප්‍රතිලෝම ක්‍රියා භාවිතයෙන් එක් චල්‍ය රේඛීය සමීකරණ විසඳීම.",
+        "ලක්ෂ්‍ය, ධාල සහ සෘජු රේඛා සම්බන්ධතා අර්ථ දැක්වීම.",
+        "රේඛීය සමීකරණ ප්‍රස්ථාර ඇඳීම සහ අර්ථ දැක්වීම.",
+        "පරිමිතිය, වර්ගඵලය, පරිමාව සහ ඒකක පරිවර්තන ගණනය කිරීම."
+      ],
+      "explanation_si": "රේඛීය සමීකරණ හි මූලික අදහස: ප්‍රතිලෝම ක්‍රියා භාවිතයෙන් එක් චල්‍ය රේඛීය සමීකරණ විසඳීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-MATH-005-2",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-005",
+      "prompt": "A learner is losing marks on Linear equations. Which correction should come first?",
+      "options": [
+        "Uses a memorised formula without checking what the question asks.",
+        "Practise only Coordinate geometry before checking the error in this answer.",
+        "Write the given values, choose the correct operation or formula, and show the working line by line.",
+        "Try a harder mixed question before fixing the basic error in Linear equations."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Linear equations: Write the given values, choose the correct operation or formula, and show the working line by line.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට රේඛීය සමීකරණ ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "ප්‍රශ්නය ඉල්ලන දේ පරීක්ෂා නොකර මතක සූත්‍රයක් භාවිතා කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර ඛණ්ඩාංක ජ්‍යාමිතිය පමණක් පුහුණු වීම.",
+        "දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම.",
+        "රේඛීය සමීකරණ හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "රේඛීය සමීකරණ සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම."
+    },
+    {
+      "id": "QB-MATH-005-3",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-005",
+      "prompt": "Which practice task is most directly linked to Linear equations?",
+      "options": [
+        "A task mainly testing Graphs of linear functions.",
+        "A short O/L-style question where the student must solve one-variable linear equations using inverse operations.",
+        "A task mainly testing Mensuration basics.",
+        "Skips working steps and writes only the final answer."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Linear equations, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "රේඛීය සමීකරණ සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් රේඛීය ශ්‍රිත ප්‍රස්ථාර පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා ප්‍රතිලෝම ක්‍රියා භාවිතයෙන් එක් චල්‍ය රේඛීය සමීකරණ විසඳීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් මිනුම් මූලිකතා පරීක්ෂා කරන කාර්යයක්.",
+        "වැඩ කිරීමේ පියවර නොපෙන්වා අවසාන පිළිතුර පමණක් ලිවීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය රේඛීය සමීකරණ හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-MATH-005-4",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-005",
+      "prompt": "Which answer shows the learner is ready to move forward from Linear equations?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Changes units or signs without explaining the reason.",
+        "The learner solves a new question on Linear equations and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Linear equations independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා රේඛීය සමීකරණ සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "හේතුව පැහැදිලි නොකර ඒකක හෝ සලකුණු වෙනස් කිරීම.",
+        "ශිෂ්‍යයා රේඛීය සමීකරණ පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු රේඛීය සමීකරණ ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-MATH-005-5",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-005",
+      "prompt": "After a wrong answer in Linear equations, which feedback is most useful?",
+      "options": [
+        "Go back to the first incorrect working line, correct that step, and then complete the calculation again.",
+        "Check Coordinate geometry first, even though the error happened in Linear equations.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Linear equations.",
+      "difficulty": 3,
+      "prompt_si": "රේඛීය සමීකරණ ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "මුල් වැරදි වැඩ පියවරට ආපසු ගොස් එය නිවැරදි කර, ගණනය නැවත සම්පූර්ණ කිරීම.",
+        "වැරැද්ද රේඛීය සමීකරණ තුළ ඇති නමුත් මුලින්ම ඛණ්ඩාංක ජ්‍යාමිතිය පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය රේඛීය සමීකරණ හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-MATH-006-1",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-006",
+      "prompt": "Which answer best describes what Coordinate geometry means in an O/L task?",
+      "options": [
+        "Interpret points, gradients, and straight-line relationships.",
+        "Draw and interpret graphs of linear equations.",
+        "Calculate perimeter, area, volume, and unit conversions.",
+        "Use sine, cosine, and tangent in right-angled triangles."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Coordinate geometry focuses on: Interpret points, gradients, and straight-line relationships. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී ඛණ්ඩාංක ජ්‍යාමිතිය යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ලක්ෂ්‍ය, ධාල සහ සෘජු රේඛා සම්බන්ධතා අර්ථ දැක්වීම.",
+        "රේඛීය සමීකරණ ප්‍රස්ථාර ඇඳීම සහ අර්ථ දැක්වීම.",
+        "පරිමිතිය, වර්ගඵලය, පරිමාව සහ ඒකක පරිවර්තන ගණනය කිරීම.",
+        "සෘජුකෝණාස්‍ර ත්‍රිකෝණවල sine, cosine, tangent භාවිතය."
+      ],
+      "explanation_si": "ඛණ්ඩාංක ජ්‍යාමිතිය හි මූලික අදහස: ලක්ෂ්‍ය, ධාල සහ සෘජු රේඛා සම්බන්ධතා අර්ථ දැක්වීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-MATH-006-2",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-006",
+      "prompt": "A learner is losing marks on Coordinate geometry. Which correction should come first?",
+      "options": [
+        "Uses a memorised formula without checking what the question asks.",
+        "Practise only Graphs of linear functions before checking the error in this answer.",
+        "Write the given values, choose the correct operation or formula, and show the working line by line.",
+        "Try a harder mixed question before fixing the basic error in Coordinate geometry."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Coordinate geometry: Write the given values, choose the correct operation or formula, and show the working line by line.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට ඛණ්ඩාංක ජ්‍යාමිතිය ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "ප්‍රශ්නය ඉල්ලන දේ පරීක්ෂා නොකර මතක සූත්‍රයක් භාවිතා කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර රේඛීය ශ්‍රිත ප්‍රස්ථාර පමණක් පුහුණු වීම.",
+        "දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම.",
+        "ඛණ්ඩාංක ජ්‍යාමිතිය හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "ඛණ්ඩාංක ජ්‍යාමිතිය සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම."
+    },
+    {
+      "id": "QB-MATH-006-3",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-006",
+      "prompt": "Which practice task is most directly linked to Coordinate geometry?",
+      "options": [
+        "A task mainly testing Mensuration basics.",
+        "A short O/L-style question where the student must interpret points, gradients, and straight-line relationships.",
+        "A task mainly testing Trigonometric ratios.",
+        "Skips working steps and writes only the final answer."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Coordinate geometry, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "ඛණ්ඩාංක ජ්‍යාමිතිය සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් මිනුම් මූලිකතා පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා ලක්ෂ්‍ය, ධාල සහ සෘජු රේඛා සම්බන්ධතා අර්ථ දැක්වීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් ත්‍රිකෝණමිතික අනුපාත පරීක්ෂා කරන කාර්යයක්.",
+        "වැඩ කිරීමේ පියවර නොපෙන්වා අවසාන පිළිතුර පමණක් ලිවීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය ඛණ්ඩාංක ජ්‍යාමිතිය හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-MATH-006-4",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-006",
+      "prompt": "Which answer shows the learner is ready to move forward from Coordinate geometry?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Changes units or signs without explaining the reason.",
+        "The learner solves a new question on Coordinate geometry and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Coordinate geometry independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා ඛණ්ඩාංක ජ්‍යාමිතිය සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "හේතුව පැහැදිලි නොකර ඒකක හෝ සලකුණු වෙනස් කිරීම.",
+        "ශිෂ්‍යයා ඛණ්ඩාංක ජ්‍යාමිතිය පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු ඛණ්ඩාංක ජ්‍යාමිතිය ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-MATH-006-5",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-006",
+      "prompt": "After a wrong answer in Coordinate geometry, which feedback is most useful?",
+      "options": [
+        "Go back to the first incorrect working line, correct that step, and then complete the calculation again.",
+        "Check Graphs of linear functions first, even though the error happened in Coordinate geometry.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Coordinate geometry.",
+      "difficulty": 3,
+      "prompt_si": "ඛණ්ඩාංක ජ්‍යාමිතිය ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "මුල් වැරදි වැඩ පියවරට ආපසු ගොස් එය නිවැරදි කර, ගණනය නැවත සම්පූර්ණ කිරීම.",
+        "වැරැද්ද ඛණ්ඩාංක ජ්‍යාමිතිය තුළ ඇති නමුත් මුලින්ම රේඛීය ශ්‍රිත ප්‍රස්ථාර පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය ඛණ්ඩාංක ජ්‍යාමිතිය හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-MATH-007-1",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-007",
+      "prompt": "Which answer best describes what Graphs of linear functions means in an O/L task?",
+      "options": [
+        "Draw and interpret graphs of linear equations.",
+        "Calculate perimeter, area, volume, and unit conversions.",
+        "Use sine, cosine, and tangent in right-angled triangles.",
+        "Select and combine mathematical methods in exam-style problems."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Graphs of linear functions focuses on: Draw and interpret graphs of linear equations. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී රේඛීය ශ්‍රිත ප්‍රස්ථාර යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "රේඛීය සමීකරණ ප්‍රස්ථාර ඇඳීම සහ අර්ථ දැක්වීම.",
+        "පරිමිතිය, වර්ගඵලය, පරිමාව සහ ඒකක පරිවර්තන ගණනය කිරීම.",
+        "සෘජුකෝණාස්‍ර ත්‍රිකෝණවල sine, cosine, tangent භාවිතය.",
+        "විභාග ආකාරයේ ගැටලු සඳහා ගණිත ක්‍රම තෝරා ඒකාබද්ධ කිරීම."
+      ],
+      "explanation_si": "රේඛීය ශ්‍රිත ප්‍රස්ථාර හි මූලික අදහස: රේඛීය සමීකරණ ප්‍රස්ථාර ඇඳීම සහ අර්ථ දැක්වීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-MATH-007-2",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-007",
+      "prompt": "A learner is losing marks on Graphs of linear functions. Which correction should come first?",
+      "options": [
+        "Uses a memorised formula without checking what the question asks.",
+        "Practise only Mensuration basics before checking the error in this answer.",
+        "Write the given values, choose the correct operation or formula, and show the working line by line.",
+        "Try a harder mixed question before fixing the basic error in Graphs of linear functions."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Graphs of linear functions: Write the given values, choose the correct operation or formula, and show the working line by line.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට රේඛීය ශ්‍රිත ප්‍රස්ථාර ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "ප්‍රශ්නය ඉල්ලන දේ පරීක්ෂා නොකර මතක සූත්‍රයක් භාවිතා කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර මිනුම් මූලිකතා පමණක් පුහුණු වීම.",
+        "දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම.",
+        "රේඛීය ශ්‍රිත ප්‍රස්ථාර හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "රේඛීය ශ්‍රිත ප්‍රස්ථාර සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම."
+    },
+    {
+      "id": "QB-MATH-007-3",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-007",
+      "prompt": "Which practice task is most directly linked to Graphs of linear functions?",
+      "options": [
+        "A task mainly testing Trigonometric ratios.",
+        "A short O/L-style question where the student must draw and interpret graphs of linear equations.",
+        "A task mainly testing Applied problem solving.",
+        "Skips working steps and writes only the final answer."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Graphs of linear functions, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "රේඛීය ශ්‍රිත ප්‍රස්ථාර සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් ත්‍රිකෝණමිතික අනුපාත පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා රේඛීය සමීකරණ ප්‍රස්ථාර ඇඳීම සහ අර්ථ දැක්වීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් යෙදුම් ගැටලු විසඳීම පරීක්ෂා කරන කාර්යයක්.",
+        "වැඩ කිරීමේ පියවර නොපෙන්වා අවසාන පිළිතුර පමණක් ලිවීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය රේඛීය ශ්‍රිත ප්‍රස්ථාර හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-MATH-007-4",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-007",
+      "prompt": "Which answer shows the learner is ready to move forward from Graphs of linear functions?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Changes units or signs without explaining the reason.",
+        "The learner solves a new question on Graphs of linear functions and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Graphs of linear functions independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා රේඛීය ශ්‍රිත ප්‍රස්ථාර සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "හේතුව පැහැදිලි නොකර ඒකක හෝ සලකුණු වෙනස් කිරීම.",
+        "ශිෂ්‍යයා රේඛීය ශ්‍රිත ප්‍රස්ථාර පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු රේඛීය ශ්‍රිත ප්‍රස්ථාර ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-MATH-007-5",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-007",
+      "prompt": "After a wrong answer in Graphs of linear functions, which feedback is most useful?",
+      "options": [
+        "Go back to the first incorrect working line, correct that step, and then complete the calculation again.",
+        "Check Mensuration basics first, even though the error happened in Graphs of linear functions.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Graphs of linear functions.",
+      "difficulty": 3,
+      "prompt_si": "රේඛීය ශ්‍රිත ප්‍රස්ථාර ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "මුල් වැරදි වැඩ පියවරට ආපසු ගොස් එය නිවැරදි කර, ගණනය නැවත සම්පූර්ණ කිරීම.",
+        "වැරැද්ද රේඛීය ශ්‍රිත ප්‍රස්ථාර තුළ ඇති නමුත් මුලින්ම මිනුම් මූලිකතා පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය රේඛීය ශ්‍රිත ප්‍රස්ථාර හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-MATH-008-1",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-008",
+      "prompt": "Which answer best describes what Mensuration basics means in an O/L task?",
+      "options": [
+        "Calculate perimeter, area, volume, and unit conversions.",
+        "Use sine, cosine, and tangent in right-angled triangles.",
+        "Select and combine mathematical methods in exam-style problems.",
+        "Use integers, fractions, decimals, and percentages accurately."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Mensuration basics focuses on: Calculate perimeter, area, volume, and unit conversions. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී මිනුම් මූලිකතා යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "පරිමිතිය, වර්ගඵලය, පරිමාව සහ ඒකක පරිවර්තන ගණනය කිරීම.",
+        "සෘජුකෝණාස්‍ර ත්‍රිකෝණවල sine, cosine, tangent භාවිතය.",
+        "විභාග ආකාරයේ ගැටලු සඳහා ගණිත ක්‍රම තෝරා ඒකාබද්ධ කිරීම.",
+        "පූර්ණ සංඛ්‍යා, භාග, දශම සහ ප්‍රතිශත නිවැරදිව භාවිතා කිරීම."
+      ],
+      "explanation_si": "මිනුම් මූලිකතා හි මූලික අදහස: පරිමිතිය, වර්ගඵලය, පරිමාව සහ ඒකක පරිවර්තන ගණනය කිරීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-MATH-008-2",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-008",
+      "prompt": "A learner is losing marks on Mensuration basics. Which correction should come first?",
+      "options": [
+        "Uses a memorised formula without checking what the question asks.",
+        "Practise only Trigonometric ratios before checking the error in this answer.",
+        "Write the given values, choose the correct operation or formula, and show the working line by line.",
+        "Try a harder mixed question before fixing the basic error in Mensuration basics."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Mensuration basics: Write the given values, choose the correct operation or formula, and show the working line by line.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට මිනුම් මූලිකතා ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "ප්‍රශ්නය ඉල්ලන දේ පරීක්ෂා නොකර මතක සූත්‍රයක් භාවිතා කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර ත්‍රිකෝණමිතික අනුපාත පමණක් පුහුණු වීම.",
+        "දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම.",
+        "මිනුම් මූලිකතා හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "මිනුම් මූලිකතා සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම."
+    },
+    {
+      "id": "QB-MATH-008-3",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-008",
+      "prompt": "Which practice task is most directly linked to Mensuration basics?",
+      "options": [
+        "A task mainly testing Applied problem solving.",
+        "A short O/L-style question where the student must calculate perimeter, area, volume, and unit conversions.",
+        "A task mainly testing Number operations.",
+        "Skips working steps and writes only the final answer."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Mensuration basics, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "මිනුම් මූලිකතා සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් යෙදුම් ගැටලු විසඳීම පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා පරිමිතිය, වර්ගඵලය, පරිමාව සහ ඒකක පරිවර්තන ගණනය කිරීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් සංඛ්‍යා ක්‍රියා පරීක්ෂා කරන කාර්යයක්.",
+        "වැඩ කිරීමේ පියවර නොපෙන්වා අවසාන පිළිතුර පමණක් ලිවීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය මිනුම් මූලිකතා හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-MATH-008-4",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-008",
+      "prompt": "Which answer shows the learner is ready to move forward from Mensuration basics?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Changes units or signs without explaining the reason.",
+        "The learner solves a new question on Mensuration basics and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Mensuration basics independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා මිනුම් මූලිකතා සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "හේතුව පැහැදිලි නොකර ඒකක හෝ සලකුණු වෙනස් කිරීම.",
+        "ශිෂ්‍යයා මිනුම් මූලිකතා පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු මිනුම් මූලිකතා ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-MATH-008-5",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-008",
+      "prompt": "After a wrong answer in Mensuration basics, which feedback is most useful?",
+      "options": [
+        "Go back to the first incorrect working line, correct that step, and then complete the calculation again.",
+        "Check Trigonometric ratios first, even though the error happened in Mensuration basics.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Mensuration basics.",
+      "difficulty": 3,
+      "prompt_si": "මිනුම් මූලිකතා ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "මුල් වැරදි වැඩ පියවරට ආපසු ගොස් එය නිවැරදි කර, ගණනය නැවත සම්පූර්ණ කිරීම.",
+        "වැරැද්ද මිනුම් මූලිකතා තුළ ඇති නමුත් මුලින්ම ත්‍රිකෝණමිතික අනුපාත පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය මිනුම් මූලිකතා හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-MATH-009-1",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-009",
+      "prompt": "Which answer best describes what Trigonometric ratios means in an O/L task?",
+      "options": [
+        "Use sine, cosine, and tangent in right-angled triangles.",
+        "Select and combine mathematical methods in exam-style problems.",
+        "Use integers, fractions, decimals, and percentages accurately.",
+        "Compare quantities and solve proportional situations."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Trigonometric ratios focuses on: Use sine, cosine, and tangent in right-angled triangles. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී ත්‍රිකෝණමිතික අනුපාත යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "සෘජුකෝණාස්‍ර ත්‍රිකෝණවල sine, cosine, tangent භාවිතය.",
+        "විභාග ආකාරයේ ගැටලු සඳහා ගණිත ක්‍රම තෝරා ඒකාබද්ධ කිරීම.",
+        "පූර්ණ සංඛ්‍යා, භාග, දශම සහ ප්‍රතිශත නිවැරදිව භාවිතා කිරීම.",
+        "ප්‍රමාණ සැසඳීම සහ සමානුපාතික අවස්ථා විසඳීම."
+      ],
+      "explanation_si": "ත්‍රිකෝණමිතික අනුපාත හි මූලික අදහස: සෘජුකෝණාස්‍ර ත්‍රිකෝණවල sine, cosine, tangent භාවිතය. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-MATH-009-2",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-009",
+      "prompt": "A learner is losing marks on Trigonometric ratios. Which correction should come first?",
+      "options": [
+        "Uses a memorised formula without checking what the question asks.",
+        "Practise only Applied problem solving before checking the error in this answer.",
+        "Write the given values, choose the correct operation or formula, and show the working line by line.",
+        "Try a harder mixed question before fixing the basic error in Trigonometric ratios."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Trigonometric ratios: Write the given values, choose the correct operation or formula, and show the working line by line.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට ත්‍රිකෝණමිතික අනුපාත ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "ප්‍රශ්නය ඉල්ලන දේ පරීක්ෂා නොකර මතක සූත්‍රයක් භාවිතා කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර යෙදුම් ගැටලු විසඳීම පමණක් පුහුණු වීම.",
+        "දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම.",
+        "ත්‍රිකෝණමිතික අනුපාත හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "ත්‍රිකෝණමිතික අනුපාත සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම."
+    },
+    {
+      "id": "QB-MATH-009-3",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-009",
+      "prompt": "Which practice task is most directly linked to Trigonometric ratios?",
+      "options": [
+        "A task mainly testing Number operations.",
+        "A short O/L-style question where the student must use sine, cosine, and tangent in right-angled triangles.",
+        "A task mainly testing Ratio and proportion.",
+        "Skips working steps and writes only the final answer."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Trigonometric ratios, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "ත්‍රිකෝණමිතික අනුපාත සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් සංඛ්‍යා ක්‍රියා පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා සෘජුකෝණාස්‍ර ත්‍රිකෝණවල sine, cosine, tangent භාවිතය කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් අනුපාත සහ සමානුපාත පරීක්ෂා කරන කාර්යයක්.",
+        "වැඩ කිරීමේ පියවර නොපෙන්වා අවසාන පිළිතුර පමණක් ලිවීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය ත්‍රිකෝණමිතික අනුපාත හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-MATH-009-4",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-009",
+      "prompt": "Which answer shows the learner is ready to move forward from Trigonometric ratios?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Changes units or signs without explaining the reason.",
+        "The learner solves a new question on Trigonometric ratios and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Trigonometric ratios independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා ත්‍රිකෝණමිතික අනුපාත සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "හේතුව පැහැදිලි නොකර ඒකක හෝ සලකුණු වෙනස් කිරීම.",
+        "ශිෂ්‍යයා ත්‍රිකෝණමිතික අනුපාත පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු ත්‍රිකෝණමිතික අනුපාත ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-MATH-009-5",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-009",
+      "prompt": "After a wrong answer in Trigonometric ratios, which feedback is most useful?",
+      "options": [
+        "Go back to the first incorrect working line, correct that step, and then complete the calculation again.",
+        "Check Applied problem solving first, even though the error happened in Trigonometric ratios.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Trigonometric ratios.",
+      "difficulty": 3,
+      "prompt_si": "ත්‍රිකෝණමිතික අනුපාත ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "මුල් වැරදි වැඩ පියවරට ආපසු ගොස් එය නිවැරදි කර, ගණනය නැවත සම්පූර්ණ කිරීම.",
+        "වැරැද්ද ත්‍රිකෝණමිතික අනුපාත තුළ ඇති නමුත් මුලින්ම යෙදුම් ගැටලු විසඳීම පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය ත්‍රිකෝණමිතික අනුපාත හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    },
+    {
+      "id": "QB-MATH-010-1",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-010",
+      "prompt": "Which answer best describes what Applied problem solving means in an O/L task?",
+      "options": [
+        "Select and combine mathematical methods in exam-style problems.",
+        "Use integers, fractions, decimals, and percentages accurately.",
+        "Compare quantities and solve proportional situations.",
+        "Translate relationships into algebraic expressions."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Applied problem solving focuses on: Select and combine mathematical methods in exam-style problems. The other options describe nearby concepts, not this one.",
+      "difficulty": 1,
+      "prompt_si": "O/L ප්‍රශ්නයකදී යෙදුම් ගැටලු විසඳීම යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "විභාග ආකාරයේ ගැටලු සඳහා ගණිත ක්‍රම තෝරා ඒකාබද්ධ කිරීම.",
+        "පූර්ණ සංඛ්‍යා, භාග, දශම සහ ප්‍රතිශත නිවැරදිව භාවිතා කිරීම.",
+        "ප්‍රමාණ සැසඳීම සහ සමානුපාතික අවස්ථා විසඳීම.",
+        "සම්බන්ධතා වීජගණිත ප්‍රකාශන බවට පරිවර්තනය කිරීම."
+      ],
+      "explanation_si": "යෙදුම් ගැටලු විසඳීම හි මූලික අදහස: විභාග ආකාරයේ ගැටලු සඳහා ගණිත ක්‍රම තෝරා ඒකාබද්ධ කිරීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+    },
+    {
+      "id": "QB-MATH-010-2",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-010",
+      "prompt": "A learner is losing marks on Applied problem solving. Which correction should come first?",
+      "options": [
+        "Uses a memorised formula without checking what the question asks.",
+        "Practise only Number operations before checking the error in this answer.",
+        "Write the given values, choose the correct operation or formula, and show the working line by line.",
+        "Try a harder mixed question before fixing the basic error in Applied problem solving."
+      ],
+      "correct_option_index": 2,
+      "explanation": "The first correction is a complete method for Applied problem solving: Write the given values, choose the correct operation or formula, and show the working line by line.",
+      "difficulty": 1,
+      "prompt_si": "ශිෂ්‍යයෙකුට යෙදුම් ගැටලු විසඳීම ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "options_si": [
+        "ප්‍රශ්නය ඉල්ලන දේ පරීක්ෂා නොකර මතක සූත්‍රයක් භාවිතා කිරීම.",
+        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර සංඛ්‍යා ක්‍රියා පමණක් පුහුණු වීම.",
+        "දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම.",
+        "යෙදුම් ගැටලු විසඳීම හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+      ],
+      "explanation_si": "යෙදුම් ගැටලු විසඳීම සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම."
+    },
+    {
+      "id": "QB-MATH-010-3",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-010",
+      "prompt": "Which practice task is most directly linked to Applied problem solving?",
+      "options": [
+        "A task mainly testing Ratio and proportion.",
+        "A short O/L-style question where the student must select and combine mathematical methods in exam-style problems.",
+        "A task mainly testing Algebraic notation.",
+        "Skips working steps and writes only the final answer."
+      ],
+      "correct_option_index": 1,
+      "explanation": "The best practice task must require the exact skill in Applied problem solving, not only a related topic.",
+      "difficulty": 2,
+      "prompt_si": "යෙදුම් ගැටලු විසඳීම සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "options_si": [
+        "ප්‍රධාන වශයෙන් අනුපාත සහ සමානුපාත පරීක්ෂා කරන කාර්යයක්.",
+        "ශිෂ්‍යයා විභාග ආකාරයේ ගැටලු සඳහා ගණිත ක්‍රම තෝරා ඒකාබද්ධ කිරීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
+        "ප්‍රධාන වශයෙන් වීජගණිත ලකුණු කිරීම පරීක්ෂා කරන කාර්යයක්.",
+        "වැඩ කිරීමේ පියවර නොපෙන්වා අවසාන පිළිතුර පමණක් ලිවීම."
+      ],
+      "explanation_si": "හොඳම පුහුණු කාර්යය යෙදුම් ගැටලු විසඳීම හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+    },
+    {
+      "id": "QB-MATH-010-4",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-010",
+      "prompt": "Which answer shows the learner is ready to move forward from Applied problem solving?",
+      "options": [
+        "The learner recognises the topic name but cannot explain the steps.",
+        "The learner can answer only when the teacher gives the method.",
+        "Changes units or signs without explaining the reason.",
+        "The learner solves a new question on Applied problem solving and explains why each step is used."
+      ],
+      "correct_option_index": 3,
+      "explanation": "Readiness means the learner can apply Applied problem solving independently and explain the reasoning.",
+      "difficulty": 2,
+      "prompt_si": "ශිෂ්‍යයා යෙදුම් ගැටලු විසඳීම සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "options_si": [
+        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
+        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
+        "හේතුව පැහැදිලි නොකර ඒකක හෝ සලකුණු වෙනස් කිරීම.",
+        "ශිෂ්‍යයා යෙදුම් ගැටලු විසඳීම පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+      ],
+      "explanation_si": "සූදානම් බව යනු යෙදුම් ගැටලු විසඳීම ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+    },
+    {
+      "id": "QB-MATH-010-5",
+      "subject_id": "OL-MATH",
+      "concept_id": "MATH-010",
+      "prompt": "After a wrong answer in Applied problem solving, which feedback is most useful?",
+      "options": [
+        "Go back to the first incorrect working line, correct that step, and then complete the calculation again.",
+        "Check Number operations first, even though the error happened in Applied problem solving.",
+        "Repeat the same answer and compare only the final mark.",
+        "Read the explanation once but leave the corrected working unwritten."
+      ],
+      "correct_option_index": 0,
+      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Applied problem solving.",
+      "difficulty": 3,
+      "prompt_si": "යෙදුම් ගැටලු විසඳීම ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "options_si": [
+        "මුල් වැරදි වැඩ පියවරට ආපසු ගොස් එය නිවැරදි කර, ගණනය නැවත සම්පූර්ණ කිරීම.",
+        "වැරැද්ද යෙදුම් ගැටලු විසඳීම තුළ ඇති නමුත් මුලින්ම සංඛ්‍යා ක්‍රියා පරීක්ෂා කිරීම.",
+        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
+        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+      ],
+      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය යෙදුම් ගැටලු විසඳීම හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+    }
+  ]
+}

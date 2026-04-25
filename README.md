@@ -7,6 +7,7 @@ Greenfield monorepo for a thesis-oriented learning intelligence platform that us
 - `web` - Next.js teacher dashboard and diagnosis workspace
 - `api` - FastAPI backend for curriculum import, seed generation, and diagnosis
 - `data/curriculum` - prototype O/L subject graph and data dictionary artifacts
+- `data/quiz` - subject-wise seeded MCQ banks with Sinhala fields for non-English subjects
 - `docs` - thesis scope and scoring specification
 
 ## Documentation

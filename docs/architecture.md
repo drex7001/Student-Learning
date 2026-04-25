@@ -8,7 +8,7 @@ The system is a teacher-facing Sri Lankan O/L learning intelligence prototype. I
 - `api`: FastAPI service for curriculum import, synthetic data generation, graph lookup, support queues, and diagnosis.
 - PostgreSQL: stores students, assessments, questions, question results, and computed concept scores.
 - Neo4j: stores O/L subjects, concepts, and `REQUIRED_FOR` prerequisite relationships.
-- `data`: stores the prototype curriculum bundle and synthetic data generator configuration.
+- `data`: stores the prototype curriculum bundle, synthetic data generator configuration, and subject-wise quiz banks.
 
 ## Data Flow
 
@@ -69,6 +69,7 @@ Learn:
 - Route: `/learn?subject=OL-MATH&student=STU-001`
 - Shows student-facing lesson cards for weak concepts.
 - Starts a personalized multiple-choice quiz from the highest-priority support concepts.
+- Offers Sinhala quiz display for Mathematics, Science, and ICT when translated bank fields exist.
 - Submitting a quiz creates assessment-compatible rows so later diagnosis uses the updated evidence.
 
 ## Diagnosis Logic
@@ -101,6 +102,8 @@ Thresholds:
 ## Storage Notes
 
 Concept IDs are globally unique across subjects. This lets PostgreSQL keep `concept_id` as a simple string without an extra subject column on concept score rows.
+
+Quiz banks live as one JSON file per subject in `data/quiz`. PostgreSQL stores the English prompt/options/explanation used for grading and assessment evidence. Sinhala quiz text remains in the seed files and is attached to quiz API responses for display, avoiding a database migration for translated UI text.
 
 Neo4j stores:
 

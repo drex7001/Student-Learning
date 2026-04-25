@@ -64,7 +64,9 @@ type QuizQuestionItem = {
   concept_id: string;
   concept_name: string;
   prompt: string;
+  prompt_si?: string | null;
   options: string[];
+  options_si?: string[] | null;
   difficulty: number;
 };
 
@@ -87,10 +89,12 @@ type QuizSubmitResponse = {
     question_id: string;
     concept_id: string;
     prompt: string;
+    prompt_si?: string | null;
     selected_option_index?: number | null;
     correct_option_index: number;
     is_correct: boolean;
     explanation: string;
+    explanation_si?: string | null;
   }[];
   updated_concepts: {
     concept_id: string;
@@ -103,6 +107,7 @@ type QuizSubmitResponse = {
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000";
 const DEFAULT_SUBJECT_ID = "OL-MATH";
+type QuizLanguage = "en" | "si";
 
 function displayName(item: { name: string; name_si?: string | null }) {
   return item.name_si ? `${item.name} / ${item.name_si}` : item.name;
@@ -138,6 +143,14 @@ function statusTone(status: LessonCard["status"]) {
   return "border-line bg-[#f8f6f1] text-muted";
 }
 
+function localizedText(english: string, sinhala: string | null | undefined, language: QuizLanguage) {
+  return language === "si" && sinhala ? sinhala : english;
+}
+
+function localizedOptions(english: string[], sinhala: string[] | null | undefined, language: QuizLanguage) {
+  return language === "si" && sinhala?.length === english.length ? sinhala : english;
+}
+
 export function LearningPortal({
   initialSubjectId = DEFAULT_SUBJECT_ID,
   initialStudentId = "STU-001",
@@ -153,6 +166,7 @@ export function LearningPortal({
   const [attempt, setAttempt] = useState<QuizAttemptResponse | null>(null);
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [result, setResult] = useState<QuizSubmitResponse | null>(null);
+  const [quizLanguage, setQuizLanguage] = useState<QuizLanguage>("en");
   const [status, setStatus] = useState<"idle" | "loading" | "error">("idle");
   const [message, setMessage] = useState("Loading your learning plan...");
 
@@ -188,6 +202,9 @@ export function LearningPortal({
       setStudents(options.students);
       setSubjectId(resolvedSubjectId);
       setStudentId(resolvedStudentId);
+      if (resolvedSubjectId === "OL-ENG") {
+        setQuizLanguage("en");
+      }
       setProfile(await fetchProfile(resolvedStudentId, resolvedSubjectId));
       setAttempt(null);
       setResult(null);
@@ -275,6 +292,8 @@ export function LearningPortal({
       loadInitialPortal();
     });
   }, []);
+
+  const canShowSinhala = subjectId !== "OL-ENG";
 
   return (
     <main className="flex w-full flex-1 flex-col px-4 py-5 md:px-6 xl:px-8">
@@ -406,8 +425,28 @@ export function LearningPortal({
         </div>
 
         <div className="rounded-[2rem] border border-line bg-surface p-5 shadow-[0_20px_80px_rgba(19,32,52,0.08)]">
-          <p className="font-mono text-xs uppercase tracking-[0.24em] text-muted">Personalized quiz</p>
-          <h2 className="mt-2 text-3xl font-semibold tracking-tight">Practice now</h2>
+          <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.24em] text-muted">Personalized quiz</p>
+              <h2 className="mt-2 text-3xl font-semibold tracking-tight">Practice now</h2>
+            </div>
+            {canShowSinhala ? (
+              <div className="inline-flex rounded-full border border-line bg-white p-1">
+                {(["en", "si"] as QuizLanguage[]).map((language) => (
+                  <button
+                    key={language}
+                    type="button"
+                    onClick={() => setQuizLanguage(language)}
+                    className={`rounded-full px-4 py-2 text-sm ${
+                      quizLanguage === language ? "bg-foreground text-white" : "text-muted"
+                    }`}
+                  >
+                    {language === "en" ? "English" : "සිංහල"}
+                  </button>
+                ))}
+              </div>
+            ) : null}
+          </div>
           <p className="mt-3 text-sm leading-7 text-muted">
             {profile?.recommended_quiz.reason ?? "Quiz recommendation will appear after your profile loads."}
           </p>
@@ -421,20 +460,25 @@ export function LearningPortal({
               <p className="font-mono text-xs uppercase tracking-[0.18em] text-muted">Attempt {attempt.attempt_id}</p>
               {attempt.questions.map((question, index) => {
                 const resultItem = result?.results.find((item) => item.question_id === question.id);
+                const prompt = localizedText(question.prompt, question.prompt_si, quizLanguage);
+                const options = localizedOptions(question.options, question.options_si, quizLanguage);
+                const explanation = resultItem
+                  ? localizedText(resultItem.explanation, resultItem.explanation_si, quizLanguage)
+                  : null;
                 return (
                   <article key={question.id} className="rounded-[1.4rem] border border-line bg-white p-4">
                     <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-muted">
                       Question {index + 1} · {question.concept_name}
                     </p>
-                    <strong className="mt-2 block text-lg">{question.prompt}</strong>
+                    <strong className="mt-2 block text-lg">{prompt}</strong>
                     <div className="mt-3 grid gap-2">
-                      {question.options.map((option, optionIndex) => {
+                      {options.map((option, optionIndex) => {
                         const selected = answers[question.id] === optionIndex;
                         const correct = resultItem?.correct_option_index === optionIndex;
                         const wrongSelected = resultItem && selected && !correct;
                         return (
                           <label
-                            key={option}
+                            key={`${question.id}-${optionIndex}`}
                             className={`rounded-2xl border px-4 py-3 text-sm ${
                               correct
                                 ? "border-[rgba(27,127,138,0.25)] bg-[rgba(27,127,138,0.1)]"
@@ -459,7 +503,7 @@ export function LearningPortal({
                       })}
                     </div>
                     {resultItem ? (
-                      <p className="mt-3 text-sm leading-6 text-muted">{resultItem.explanation}</p>
+                      <p className="mt-3 text-sm leading-6 text-muted">{explanation}</p>
                     ) : null}
                   </article>
                 );
