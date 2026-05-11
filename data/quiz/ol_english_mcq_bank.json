@@ -1,5 +1,5 @@
 {
-  "version": "2026-04-26",
+  "version": "2026-05-11",
   "subject_id": "OL-ENG",
   "subject_name": "English",
   "questions": [
@@ -7,751 +7,751 @@
       "id": "QB-ENG-001-1",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-001",
-      "prompt": "Which answer best describes what Core vocabulary means in an O/L task?",
+      "prompt": "Choose the word that best completes the sentence: The library is a quiet place for _____.",
       "options": [
-        "Use common school, social, and academic vocabulary accurately.",
-        "Control tense, agreement, articles, and word order.",
-        "Identify central ideas in short passages.",
-        "Find evidence, facts, and implied information in passages."
+        "running",
+        "reading",
+        "shouting",
+        "cooking"
       ],
-      "correct_option_index": 0,
-      "explanation": "Core vocabulary focuses on: Use common school, social, and academic vocabulary accurately. The other options describe nearby concepts, not this one.",
+      "correct_option_index": 1,
+      "explanation": "A library is normally used for reading.",
       "difficulty": 1
     },
     {
       "id": "QB-ENG-001-2",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-001",
-      "prompt": "A learner is losing marks on Core vocabulary. Which correction should come first?",
+      "prompt": "Which word is closest in meaning to “rapid”?",
       "options": [
-        "Chooses a word from memory without checking the sentence meaning.",
-        "Practise only Sentence grammar before checking the error in this answer.",
-        "Read the whole sentence or passage, use evidence, and check grammar before choosing the answer.",
-        "Try a harder mixed question before fixing the basic error in Core vocabulary."
+        "slow",
+        "quick",
+        "weak",
+        "silent"
       ],
-      "correct_option_index": 2,
-      "explanation": "The first correction is a complete method for Core vocabulary: Read the whole sentence or passage, use evidence, and check grammar before choosing the answer.",
+      "correct_option_index": 1,
+      "explanation": "Rapid means fast or quick.",
       "difficulty": 1
     },
     {
       "id": "QB-ENG-001-3",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-001",
-      "prompt": "Which practice task is most directly linked to Core vocabulary?",
+      "prompt": "Choose the correct word: Please _____ your books on the desk.",
       "options": [
-        "A task mainly testing Reading for main idea.",
-        "A short O/L-style question where the student must use common school, social, and academic vocabulary accurately.",
-        "A task mainly testing Reading for detail.",
-        "Copies a line from the passage without answering the question focus."
+        "keep",
+        "sleep",
+        "drink",
+        "borrowed"
       ],
-      "correct_option_index": 1,
-      "explanation": "The best practice task must require the exact skill in Core vocabulary, not only a related topic.",
-      "difficulty": 2
+      "correct_option_index": 0,
+      "explanation": "Keep means place or leave something in a position.",
+      "difficulty": 1
     },
     {
       "id": "QB-ENG-001-4",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-001",
-      "prompt": "Which answer shows the learner is ready to move forward from Core vocabulary?",
+      "prompt": "Which sentence uses the word “bright” correctly?",
       "options": [
-        "The learner recognises the topic name but cannot explain the steps.",
-        "The learner can answer only when the teacher gives the method.",
-        "Ignores tense, agreement, or punctuation when writing the response.",
-        "The learner solves a new question on Core vocabulary and explains why each step is used."
+        "The bright ate rice.",
+        "She wore a bright red dress.",
+        "Brightly is a noun.",
+        "He bright the door."
       ],
-      "correct_option_index": 3,
-      "explanation": "Readiness means the learner can apply Core vocabulary independently and explain the reasoning.",
+      "correct_option_index": 1,
+      "explanation": "Bright can describe a strong colour or light.",
       "difficulty": 2
     },
     {
       "id": "QB-ENG-001-5",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-001",
-      "prompt": "After a wrong answer in Core vocabulary, which feedback is most useful?",
+      "prompt": "Choose the opposite of “careful”.",
       "options": [
-        "Underline the key words, answer only that focus, and proofread the sentence before submitting.",
-        "Check Sentence grammar first, even though the error happened in Core vocabulary.",
-        "Repeat the same answer and compare only the final mark.",
-        "Read the explanation once but leave the corrected working unwritten."
+        "careless",
+        "kind",
+        "silent",
+        "useful"
       ],
       "correct_option_index": 0,
-      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Core vocabulary.",
-      "difficulty": 3
+      "explanation": "Careless is the opposite of careful.",
+      "difficulty": 1
     },
     {
       "id": "QB-ENG-002-1",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-002",
-      "prompt": "Which answer best describes what Sentence grammar means in an O/L task?",
+      "prompt": "Choose the correct sentence.",
       "options": [
-        "Control tense, agreement, articles, and word order.",
-        "Identify central ideas in short passages.",
-        "Find evidence, facts, and implied information in passages.",
-        "Organize topic sentences, supporting details, and conclusions."
+        "She go to school every day.",
+        "She goes to school every day.",
+        "She going to school every day.",
+        "She gone to school every day."
       ],
-      "correct_option_index": 0,
-      "explanation": "Sentence grammar focuses on: Control tense, agreement, articles, and word order. The other options describe nearby concepts, not this one.",
+      "correct_option_index": 1,
+      "explanation": "With “she” in the present simple tense, use “goes”.",
       "difficulty": 1
     },
     {
       "id": "QB-ENG-002-2",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-002",
-      "prompt": "A learner is losing marks on Sentence grammar. Which correction should come first?",
+      "prompt": "Fill in the blank: They _____ playing cricket now.",
       "options": [
-        "Chooses a word from memory without checking the sentence meaning.",
-        "Practise only Reading for main idea before checking the error in this answer.",
-        "Read the whole sentence or passage, use evidence, and check grammar before choosing the answer.",
-        "Try a harder mixed question before fixing the basic error in Sentence grammar."
+        "is",
+        "am",
+        "are",
+        "was"
       ],
       "correct_option_index": 2,
-      "explanation": "The first correction is a complete method for Sentence grammar: Read the whole sentence or passage, use evidence, and check grammar before choosing the answer.",
+      "explanation": "The plural subject “they” takes “are”.",
       "difficulty": 1
     },
     {
       "id": "QB-ENG-002-3",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-002",
-      "prompt": "Which practice task is most directly linked to Sentence grammar?",
+      "prompt": "Choose the correct article: I saw _____ umbrella near the door.",
       "options": [
-        "A task mainly testing Reading for detail.",
-        "A short O/L-style question where the student must control tense, agreement, articles, and word order.",
-        "A task mainly testing Paragraph structure.",
-        "Copies a line from the passage without answering the question focus."
+        "a",
+        "an",
+        "the only",
+        "no"
       ],
       "correct_option_index": 1,
-      "explanation": "The best practice task must require the exact skill in Sentence grammar, not only a related topic.",
-      "difficulty": 2
+      "explanation": "Use “an” before a vowel sound.",
+      "difficulty": 1
     },
     {
       "id": "QB-ENG-002-4",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-002",
-      "prompt": "Which answer shows the learner is ready to move forward from Sentence grammar?",
+      "prompt": "Choose the correct past tense: We _____ the lesson yesterday.",
       "options": [
-        "The learner recognises the topic name but cannot explain the steps.",
-        "The learner can answer only when the teacher gives the method.",
-        "Ignores tense, agreement, or punctuation when writing the response.",
-        "The learner solves a new question on Sentence grammar and explains why each step is used."
+        "complete",
+        "completed",
+        "completing",
+        "completes"
       ],
-      "correct_option_index": 3,
-      "explanation": "Readiness means the learner can apply Sentence grammar independently and explain the reasoning.",
-      "difficulty": 2
+      "correct_option_index": 1,
+      "explanation": "Yesterday signals the simple past tense.",
+      "difficulty": 1
     },
     {
       "id": "QB-ENG-002-5",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-002",
-      "prompt": "After a wrong answer in Sentence grammar, which feedback is most useful?",
+      "prompt": "Choose the sentence with correct word order.",
       "options": [
-        "Underline the key words, answer only that focus, and proofread the sentence before submitting.",
-        "Check Reading for main idea first, even though the error happened in Sentence grammar.",
-        "Repeat the same answer and compare only the final mark.",
-        "Read the explanation once but leave the corrected working unwritten."
+        "Always she is polite.",
+        "She is always polite.",
+        "Is polite always she.",
+        "Polite always is she."
       ],
-      "correct_option_index": 0,
-      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Sentence grammar.",
-      "difficulty": 3
+      "correct_option_index": 1,
+      "explanation": "The adverb usually goes after the verb “is” in this sentence.",
+      "difficulty": 2
     },
     {
       "id": "QB-ENG-003-1",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-003",
-      "prompt": "Which answer best describes what Reading for main idea means in an O/L task?",
+      "prompt": "Read: “Trees give shade, clean the air, and protect the soil. People should plant more trees.” What is the main idea?",
       "options": [
-        "Identify central ideas in short passages.",
-        "Find evidence, facts, and implied information in passages.",
-        "Organize topic sentences, supporting details, and conclusions.",
-        "Write notices, messages, letters, and short responses using prompts."
+        "Trees are noisy.",
+        "Trees are useful and should be planted.",
+        "Shade is always cold.",
+        "People dislike trees."
       ],
-      "correct_option_index": 0,
-      "explanation": "Reading for main idea focuses on: Identify central ideas in short passages. The other options describe nearby concepts, not this one.",
+      "correct_option_index": 1,
+      "explanation": "The passage explains the benefits of trees and encourages planting them.",
       "difficulty": 1
     },
     {
       "id": "QB-ENG-003-2",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-003",
-      "prompt": "A learner is losing marks on Reading for main idea. Which correction should come first?",
+      "prompt": "Read: “Nimal practised daily for the race. On sports day, he won first place.” What is the main idea?",
       "options": [
-        "Chooses a word from memory without checking the sentence meaning.",
-        "Practise only Reading for detail before checking the error in this answer.",
-        "Read the whole sentence or passage, use evidence, and check grammar before choosing the answer.",
-        "Try a harder mixed question before fixing the basic error in Reading for main idea."
+        "Practice helped Nimal succeed.",
+        "Sports day was cancelled.",
+        "Nimal forgot the race.",
+        "The race was about reading."
       ],
-      "correct_option_index": 2,
-      "explanation": "The first correction is a complete method for Reading for main idea: Read the whole sentence or passage, use evidence, and check grammar before choosing the answer.",
+      "correct_option_index": 0,
+      "explanation": "The passage connects daily practice with success.",
       "difficulty": 1
     },
     {
       "id": "QB-ENG-003-3",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-003",
-      "prompt": "Which practice task is most directly linked to Reading for main idea?",
+      "prompt": "Which sentence is most likely a topic sentence?",
       "options": [
-        "A task mainly testing Paragraph structure.",
-        "A short O/L-style question where the student must identify central ideas in short passages.",
-        "A task mainly testing Guided writing.",
-        "Copies a line from the passage without answering the question focus."
+        "For example, it has two doors.",
+        "In conclusion, it is useful.",
+        "Healthy food helps students learn better.",
+        "Because it was raining."
       ],
-      "correct_option_index": 1,
-      "explanation": "The best practice task must require the exact skill in Reading for main idea, not only a related topic.",
+      "correct_option_index": 2,
+      "explanation": "A topic sentence gives the main idea of a paragraph.",
       "difficulty": 2
     },
     {
       "id": "QB-ENG-003-4",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-003",
-      "prompt": "Which answer shows the learner is ready to move forward from Reading for main idea?",
+      "prompt": "Read: “The old tank stores rainwater for farming during dry months.” What is the passage mainly about?",
       "options": [
-        "The learner recognises the topic name but cannot explain the steps.",
-        "The learner can answer only when the teacher gives the method.",
-        "Ignores tense, agreement, or punctuation when writing the response.",
-        "The learner solves a new question on Reading for main idea and explains why each step is used."
+        "a water source for farming",
+        "a cricket match",
+        "a railway station",
+        "a music lesson"
       ],
-      "correct_option_index": 3,
-      "explanation": "Readiness means the learner can apply Reading for main idea independently and explain the reasoning.",
-      "difficulty": 2
+      "correct_option_index": 0,
+      "explanation": "The sentence focuses on storing water for farming.",
+      "difficulty": 1
     },
     {
       "id": "QB-ENG-003-5",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-003",
-      "prompt": "After a wrong answer in Reading for main idea, which feedback is most useful?",
+      "prompt": "Which detail does not support the main idea “Reading improves language skills”?",
       "options": [
-        "Underline the key words, answer only that focus, and proofread the sentence before submitting.",
-        "Check Reading for detail first, even though the error happened in Reading for main idea.",
-        "Repeat the same answer and compare only the final mark.",
-        "Read the explanation once but leave the corrected working unwritten."
+        "It teaches new words.",
+        "It shows sentence patterns.",
+        "It improves comprehension.",
+        "It makes shoes last longer."
       ],
-      "correct_option_index": 0,
-      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Reading for main idea.",
-      "difficulty": 3
+      "correct_option_index": 3,
+      "explanation": "Shoes lasting longer is unrelated to reading and language skills.",
+      "difficulty": 2
     },
     {
       "id": "QB-ENG-004-1",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-004",
-      "prompt": "Which answer best describes what Reading for detail means in an O/L task?",
+      "prompt": "Read: “The train leaves at 6.30 a.m. from platform 2.” What time does the train leave?",
       "options": [
-        "Find evidence, facts, and implied information in passages.",
-        "Organize topic sentences, supporting details, and conclusions.",
-        "Write notices, messages, letters, and short responses using prompts.",
-        "Condense key ideas while preserving meaning."
+        "2.00 a.m.",
+        "6.30 a.m.",
+        "6.30 p.m.",
+        "8.30 a.m."
       ],
-      "correct_option_index": 0,
-      "explanation": "Reading for detail focuses on: Find evidence, facts, and implied information in passages. The other options describe nearby concepts, not this one.",
+      "correct_option_index": 1,
+      "explanation": "The sentence directly states the time as 6.30 a.m.",
       "difficulty": 1
     },
     {
       "id": "QB-ENG-004-2",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-004",
-      "prompt": "A learner is losing marks on Reading for detail. Which correction should come first?",
+      "prompt": "Read: “Maya bought two pens, a ruler, and a blue notebook.” What colour was the notebook?",
       "options": [
-        "Chooses a word from memory without checking the sentence meaning.",
-        "Practise only Paragraph structure before checking the error in this answer.",
-        "Read the whole sentence or passage, use evidence, and check grammar before choosing the answer.",
-        "Try a harder mixed question before fixing the basic error in Reading for detail."
+        "red",
+        "green",
+        "blue",
+        "black"
       ],
       "correct_option_index": 2,
-      "explanation": "The first correction is a complete method for Reading for detail: Read the whole sentence or passage, use evidence, and check grammar before choosing the answer.",
+      "explanation": "The notebook is described as blue.",
       "difficulty": 1
     },
     {
       "id": "QB-ENG-004-3",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-004",
-      "prompt": "Which practice task is most directly linked to Reading for detail?",
+      "prompt": "Read: “Because the road was flooded, the bus arrived late.” Why did the bus arrive late?",
       "options": [
-        "A task mainly testing Guided writing.",
-        "A short O/L-style question where the student must find evidence, facts, and implied information in passages.",
-        "A task mainly testing Summary writing.",
-        "Copies a line from the passage without answering the question focus."
+        "The driver slept.",
+        "The road was flooded.",
+        "The bus was new.",
+        "The passengers walked."
       ],
       "correct_option_index": 1,
-      "explanation": "The best practice task must require the exact skill in Reading for detail, not only a related topic.",
-      "difficulty": 2
+      "explanation": "The reason given is that the road was flooded.",
+      "difficulty": 1
     },
     {
       "id": "QB-ENG-004-4",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-004",
-      "prompt": "Which answer shows the learner is ready to move forward from Reading for detail?",
+      "prompt": "Read: “Kamal whispered because the baby was sleeping.” What can be inferred?",
       "options": [
-        "The learner recognises the topic name but cannot explain the steps.",
-        "The learner can answer only when the teacher gives the method.",
-        "Ignores tense, agreement, or punctuation when writing the response.",
-        "The learner solves a new question on Reading for detail and explains why each step is used."
+        "Kamal wanted to avoid waking the baby.",
+        "Kamal was singing loudly.",
+        "The baby was running.",
+        "The room was empty."
       ],
-      "correct_option_index": 3,
-      "explanation": "Readiness means the learner can apply Reading for detail independently and explain the reasoning.",
+      "correct_option_index": 0,
+      "explanation": "Whispering suggests he did not want to wake the baby.",
       "difficulty": 2
     },
     {
       "id": "QB-ENG-004-5",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-004",
-      "prompt": "After a wrong answer in Reading for detail, which feedback is most useful?",
+      "prompt": "Read: “The notice says visitors must remove shoes before entering.” What should visitors do?",
       "options": [
-        "Underline the key words, answer only that focus, and proofread the sentence before submitting.",
-        "Check Paragraph structure first, even though the error happened in Reading for detail.",
-        "Repeat the same answer and compare only the final mark.",
-        "Read the explanation once but leave the corrected working unwritten."
+        "wear shoes inside",
+        "remove shoes before entering",
+        "bring extra shoes",
+        "wash shoes only"
       ],
-      "correct_option_index": 0,
-      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Reading for detail.",
-      "difficulty": 3
+      "correct_option_index": 1,
+      "explanation": "The notice gives a clear instruction to remove shoes.",
+      "difficulty": 1
     },
     {
       "id": "QB-ENG-005-1",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-005",
-      "prompt": "Which answer best describes what Paragraph structure means in an O/L task?",
+      "prompt": "Which sentence is the best topic sentence for a paragraph about school gardens?",
       "options": [
-        "Organize topic sentences, supporting details, and conclusions.",
-        "Write notices, messages, letters, and short responses using prompts.",
-        "Condense key ideas while preserving meaning.",
-        "Use language for requests, explanations, descriptions, and opinions."
+        "School gardens help students learn about plants.",
+        "The flower is red.",
+        "After that, we went home.",
+        "It is near the wall."
       ],
       "correct_option_index": 0,
-      "explanation": "Paragraph structure focuses on: Organize topic sentences, supporting details, and conclusions. The other options describe nearby concepts, not this one.",
+      "explanation": "A topic sentence should introduce the whole paragraph idea.",
       "difficulty": 1
     },
     {
       "id": "QB-ENG-005-2",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-005",
-      "prompt": "A learner is losing marks on Paragraph structure. Which correction should come first?",
+      "prompt": "Which sentence best supports “Exercise keeps us healthy”?",
       "options": [
-        "Chooses a word from memory without checking the sentence meaning.",
-        "Practise only Guided writing before checking the error in this answer.",
-        "Read the whole sentence or passage, use evidence, and check grammar before choosing the answer.",
-        "Try a harder mixed question before fixing the basic error in Paragraph structure."
+        "It strengthens the body and improves fitness.",
+        "The pen is on the table.",
+        "My uncle lives in Kandy.",
+        "The sky was cloudy."
       ],
-      "correct_option_index": 2,
-      "explanation": "The first correction is a complete method for Paragraph structure: Read the whole sentence or passage, use evidence, and check grammar before choosing the answer.",
+      "correct_option_index": 0,
+      "explanation": "Strength and fitness directly support the health benefits of exercise.",
       "difficulty": 1
     },
     {
       "id": "QB-ENG-005-3",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-005",
-      "prompt": "Which practice task is most directly linked to Paragraph structure?",
+      "prompt": "Choose the best concluding sentence for a paragraph about saving water.",
       "options": [
-        "A task mainly testing Summary writing.",
-        "A short O/L-style question where the student must organize topic sentences, supporting details, and conclusions.",
-        "A task mainly testing Functional language.",
-        "Copies a line from the passage without answering the question focus."
+        "Therefore, everyone should use water carefully.",
+        "The bell rang loudly.",
+        "Blue is my favourite colour.",
+        "I opened the window."
       ],
-      "correct_option_index": 1,
-      "explanation": "The best practice task must require the exact skill in Paragraph structure, not only a related topic.",
+      "correct_option_index": 0,
+      "explanation": "A conclusion should close the paragraph by returning to the main idea.",
       "difficulty": 2
     },
     {
       "id": "QB-ENG-005-4",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-005",
-      "prompt": "Which answer shows the learner is ready to move forward from Paragraph structure?",
+      "prompt": "Which order makes a clear paragraph?",
       "options": [
-        "The learner recognises the topic name but cannot explain the steps.",
-        "The learner can answer only when the teacher gives the method.",
-        "Ignores tense, agreement, or punctuation when writing the response.",
-        "The learner solves a new question on Paragraph structure and explains why each step is used."
+        "conclusion, examples, topic sentence",
+        "topic sentence, supporting details, conclusion",
+        "details, conclusion, new topic",
+        "question, title, unrelated sentence"
       ],
-      "correct_option_index": 3,
-      "explanation": "Readiness means the learner can apply Paragraph structure independently and explain the reasoning.",
-      "difficulty": 2
+      "correct_option_index": 1,
+      "explanation": "A clear paragraph usually begins with a topic sentence, adds details, and ends with a conclusion.",
+      "difficulty": 1
     },
     {
       "id": "QB-ENG-005-5",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-005",
-      "prompt": "After a wrong answer in Paragraph structure, which feedback is most useful?",
+      "prompt": "Which sentence does not belong in a paragraph about healthy breakfasts?",
       "options": [
-        "Underline the key words, answer only that focus, and proofread the sentence before submitting.",
-        "Check Guided writing first, even though the error happened in Paragraph structure.",
-        "Repeat the same answer and compare only the final mark.",
-        "Read the explanation once but leave the corrected working unwritten."
+        "Breakfast gives energy.",
+        "Fruit and grains are good choices.",
+        "Skipping breakfast can reduce concentration.",
+        "A bicycle has two wheels."
       ],
-      "correct_option_index": 0,
-      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Paragraph structure.",
-      "difficulty": 3
+      "correct_option_index": 3,
+      "explanation": "The bicycle sentence is unrelated to healthy breakfasts.",
+      "difficulty": 2
     },
     {
       "id": "QB-ENG-006-1",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-006",
-      "prompt": "Which answer best describes what Guided writing means in an O/L task?",
+      "prompt": "Choose the best opening for a formal letter to the principal.",
       "options": [
-        "Write notices, messages, letters, and short responses using prompts.",
-        "Condense key ideas while preserving meaning.",
-        "Use language for requests, explanations, descriptions, and opinions.",
-        "Understand spoken information and respond appropriately."
+        "Dear Sir/Madam,",
+        "Hey buddy,",
+        "Yo!",
+        "To my best friend,"
       ],
       "correct_option_index": 0,
-      "explanation": "Guided writing focuses on: Write notices, messages, letters, and short responses using prompts. The other options describe nearby concepts, not this one.",
+      "explanation": "A formal letter should use a respectful greeting.",
       "difficulty": 1
     },
     {
       "id": "QB-ENG-006-2",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-006",
-      "prompt": "A learner is losing marks on Guided writing. Which correction should come first?",
+      "prompt": "Which detail is most important in a notice about a meeting?",
       "options": [
-        "Chooses a word from memory without checking the sentence meaning.",
-        "Practise only Summary writing before checking the error in this answer.",
-        "Read the whole sentence or passage, use evidence, and check grammar before choosing the answer.",
-        "Try a harder mixed question before fixing the basic error in Guided writing."
+        "date, time, place, and purpose",
+        "favourite colour",
+        "shoe size",
+        "a joke"
       ],
-      "correct_option_index": 2,
-      "explanation": "The first correction is a complete method for Guided writing: Read the whole sentence or passage, use evidence, and check grammar before choosing the answer.",
+      "correct_option_index": 0,
+      "explanation": "A meeting notice needs date, time, place, and purpose.",
       "difficulty": 1
     },
     {
       "id": "QB-ENG-006-3",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-006",
-      "prompt": "Which practice task is most directly linked to Guided writing?",
+      "prompt": "Choose the polite request.",
       "options": [
-        "A task mainly testing Functional language.",
-        "A short O/L-style question where the student must write notices, messages, letters, and short responses using prompts.",
-        "A task mainly testing Listening and response.",
-        "Copies a line from the passage without answering the question focus."
+        "Give me that now!",
+        "Could you please lend me your ruler?",
+        "You must obey me.",
+        "I take it."
       ],
       "correct_option_index": 1,
-      "explanation": "The best practice task must require the exact skill in Guided writing, not only a related topic.",
-      "difficulty": 2
+      "explanation": "“Could you please...” is polite request language.",
+      "difficulty": 1
     },
     {
       "id": "QB-ENG-006-4",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-006",
-      "prompt": "Which answer shows the learner is ready to move forward from Guided writing?",
+      "prompt": "Which sentence is suitable for ending a friendly message?",
       "options": [
-        "The learner recognises the topic name but cannot explain the steps.",
-        "The learner can answer only when the teacher gives the method.",
-        "Ignores tense, agreement, or punctuation when writing the response.",
-        "The learner solves a new question on Guided writing and explains why each step is used."
+        "See you soon.",
+        "Hereby I certify.",
+        "The accused is absent.",
+        "No admission without permission."
       ],
-      "correct_option_index": 3,
-      "explanation": "Readiness means the learner can apply Guided writing independently and explain the reasoning.",
-      "difficulty": 2
+      "correct_option_index": 0,
+      "explanation": "“See you soon” suits a friendly message.",
+      "difficulty": 1
     },
     {
       "id": "QB-ENG-006-5",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-006",
-      "prompt": "After a wrong answer in Guided writing, which feedback is most useful?",
+      "prompt": "A lost-property notice should include:",
       "options": [
-        "Underline the key words, answer only that focus, and proofread the sentence before submitting.",
-        "Check Summary writing first, even though the error happened in Guided writing.",
-        "Repeat the same answer and compare only the final mark.",
-        "Read the explanation once but leave the corrected working unwritten."
+        "item description and contact details",
+        "a poem only",
+        "the weather report",
+        "an unrelated story"
       ],
       "correct_option_index": 0,
-      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Guided writing.",
-      "difficulty": 3
+      "explanation": "The reader needs to identify the item and know whom to contact.",
+      "difficulty": 2
     },
     {
       "id": "QB-ENG-007-1",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-007",
-      "prompt": "Which answer best describes what Summary writing means in an O/L task?",
+      "prompt": "Which sentence is best for a summary?",
       "options": [
-        "Condense key ideas while preserving meaning.",
-        "Use language for requests, explanations, descriptions, and opinions.",
-        "Understand spoken information and respond appropriately.",
-        "Plan and write coherent essays or descriptions for assessment tasks."
+        "The passage says forests protect soil and support healthy environments.",
+        "The third word in line two is long.",
+        "I liked the picture very much.",
+        "The writer used a comma."
       ],
       "correct_option_index": 0,
-      "explanation": "Summary writing focuses on: Condense key ideas while preserving meaning. The other options describe nearby concepts, not this one.",
+      "explanation": "A summary should state key ideas briefly.",
       "difficulty": 1
     },
     {
       "id": "QB-ENG-007-2",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-007",
-      "prompt": "A learner is losing marks on Summary writing. Which correction should come first?",
+      "prompt": "What should be avoided in a summary?",
       "options": [
-        "Chooses a word from memory without checking the sentence meaning.",
-        "Practise only Functional language before checking the error in this answer.",
-        "Read the whole sentence or passage, use evidence, and check grammar before choosing the answer.",
-        "Try a harder mixed question before fixing the basic error in Summary writing."
+        "main ideas",
+        "own words",
+        "unnecessary examples",
+        "short clear sentences"
       ],
       "correct_option_index": 2,
-      "explanation": "The first correction is a complete method for Summary writing: Read the whole sentence or passage, use evidence, and check grammar before choosing the answer.",
+      "explanation": "A summary should remove unnecessary details and examples.",
       "difficulty": 1
     },
     {
       "id": "QB-ENG-007-3",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-007",
-      "prompt": "Which practice task is most directly linked to Summary writing?",
+      "prompt": "Read: “The market was crowded, noisy, and full of fresh vegetables.” Which summary is best?",
       "options": [
-        "A task mainly testing Listening and response.",
-        "A short O/L-style question where the student must condense key ideas while preserving meaning.",
-        "A task mainly testing Extended writing.",
-        "Copies a line from the passage without answering the question focus."
+        "The market was busy and had fresh vegetables.",
+        "A tomato is red.",
+        "The writer bought a pen.",
+        "The market closed forever."
       ],
-      "correct_option_index": 1,
-      "explanation": "The best practice task must require the exact skill in Summary writing, not only a related topic.",
+      "correct_option_index": 0,
+      "explanation": "It keeps the key ideas without extra detail.",
       "difficulty": 2
     },
     {
       "id": "QB-ENG-007-4",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-007",
-      "prompt": "Which answer shows the learner is ready to move forward from Summary writing?",
+      "prompt": "Which phrase helps keep meaning while shortening?",
       "options": [
-        "The learner recognises the topic name but cannot explain the steps.",
-        "The learner can answer only when the teacher gives the method.",
-        "Ignores tense, agreement, or punctuation when writing the response.",
-        "The learner solves a new question on Summary writing and explains why each step is used."
+        "in other words",
+        "every single small detail",
+        "copy all examples",
+        "add new opinions"
       ],
-      "correct_option_index": 3,
-      "explanation": "Readiness means the learner can apply Summary writing independently and explain the reasoning.",
-      "difficulty": 2
+      "correct_option_index": 0,
+      "explanation": "Restating in other words helps shorten while preserving meaning.",
+      "difficulty": 1
     },
     {
       "id": "QB-ENG-007-5",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-007",
-      "prompt": "After a wrong answer in Summary writing, which feedback is most useful?",
+      "prompt": "A good summary should be:",
       "options": [
-        "Underline the key words, answer only that focus, and proofread the sentence before submitting.",
-        "Check Functional language first, even though the error happened in Summary writing.",
-        "Repeat the same answer and compare only the final mark.",
-        "Read the explanation once but leave the corrected working unwritten."
+        "short and accurate",
+        "longer than the passage",
+        "full of personal stories",
+        "only copied sentences"
       ],
       "correct_option_index": 0,
-      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Summary writing.",
-      "difficulty": 3
+      "explanation": "A summary should be brief and faithful to the original meaning.",
+      "difficulty": 1
     },
     {
       "id": "QB-ENG-008-1",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-008",
-      "prompt": "Which answer best describes what Functional language means in an O/L task?",
+      "prompt": "Choose the best sentence for giving an opinion.",
       "options": [
-        "Use language for requests, explanations, descriptions, and opinions.",
-        "Understand spoken information and respond appropriately.",
-        "Plan and write coherent essays or descriptions for assessment tasks.",
-        "Use common school, social, and academic vocabulary accurately."
+        "In my view, school libraries are important.",
+        "Close the door immediately!",
+        "At 7 a.m. sharp.",
+        "This is a ruler."
       ],
       "correct_option_index": 0,
-      "explanation": "Functional language focuses on: Use language for requests, explanations, descriptions, and opinions. The other options describe nearby concepts, not this one.",
+      "explanation": "“In my view” introduces an opinion.",
       "difficulty": 1
     },
     {
       "id": "QB-ENG-008-2",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-008",
-      "prompt": "A learner is losing marks on Functional language. Which correction should come first?",
+      "prompt": "Choose the best sentence for describing a place.",
       "options": [
-        "Chooses a word from memory without checking the sentence meaning.",
-        "Practise only Listening and response before checking the error in this answer.",
-        "Read the whole sentence or passage, use evidence, and check grammar before choosing the answer.",
-        "Try a harder mixed question before fixing the basic error in Functional language."
+        "The lake is calm and surrounded by trees.",
+        "Please sign here.",
+        "I disagree with you.",
+        "May I borrow it?"
       ],
-      "correct_option_index": 2,
-      "explanation": "The first correction is a complete method for Functional language: Read the whole sentence or passage, use evidence, and check grammar before choosing the answer.",
+      "correct_option_index": 0,
+      "explanation": "The sentence gives descriptive details about the place.",
       "difficulty": 1
     },
     {
       "id": "QB-ENG-008-3",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-008",
-      "prompt": "Which practice task is most directly linked to Functional language?",
+      "prompt": "Choose the best sentence for explaining a reason.",
       "options": [
-        "A task mainly testing Extended writing.",
-        "A short O/L-style question where the student must use language for requests, explanations, descriptions, and opinions.",
-        "A task mainly testing Core vocabulary.",
-        "Copies a line from the passage without answering the question focus."
+        "I was late because the bus broke down.",
+        "What a nice bag!",
+        "Stand up.",
+        "Blue and green."
       ],
-      "correct_option_index": 1,
-      "explanation": "The best practice task must require the exact skill in Functional language, not only a related topic.",
-      "difficulty": 2
+      "correct_option_index": 0,
+      "explanation": "The word “because” introduces a reason.",
+      "difficulty": 1
     },
     {
       "id": "QB-ENG-008-4",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-008",
-      "prompt": "Which answer shows the learner is ready to move forward from Functional language?",
+      "prompt": "Choose the most polite refusal.",
       "options": [
-        "The learner recognises the topic name but cannot explain the steps.",
-        "The learner can answer only when the teacher gives the method.",
-        "Ignores tense, agreement, or punctuation when writing the response.",
-        "The learner solves a new question on Functional language and explains why each step is used."
+        "No, never!",
+        "I am sorry, but I cannot attend.",
+        "Go away.",
+        "I hate that."
       ],
-      "correct_option_index": 3,
-      "explanation": "Readiness means the learner can apply Functional language independently and explain the reasoning.",
+      "correct_option_index": 1,
+      "explanation": "A polite refusal gives the answer respectfully.",
       "difficulty": 2
     },
     {
       "id": "QB-ENG-008-5",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-008",
-      "prompt": "After a wrong answer in Functional language, which feedback is most useful?",
+      "prompt": "Which sentence asks for information?",
       "options": [
-        "Underline the key words, answer only that focus, and proofread the sentence before submitting.",
-        "Check Listening and response first, even though the error happened in Functional language.",
-        "Repeat the same answer and compare only the final mark.",
-        "Read the explanation once but leave the corrected working unwritten."
+        "Could you tell me the way to the post office?",
+        "I have finished my work.",
+        "The road is narrow.",
+        "They played well."
       ],
       "correct_option_index": 0,
-      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Functional language.",
-      "difficulty": 3
+      "explanation": "The sentence is a polite question asking for directions.",
+      "difficulty": 1
     },
     {
       "id": "QB-ENG-009-1",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-009",
-      "prompt": "Which answer best describes what Listening and response means in an O/L task?",
+      "prompt": "You hear: “Bring your science book tomorrow.” What should you bring?",
       "options": [
-        "Understand spoken information and respond appropriately.",
-        "Plan and write coherent essays or descriptions for assessment tasks.",
-        "Use common school, social, and academic vocabulary accurately.",
-        "Control tense, agreement, articles, and word order."
+        "science book",
+        "sports shoes",
+        "lunch box",
+        "paint brush"
       ],
       "correct_option_index": 0,
-      "explanation": "Listening and response focuses on: Understand spoken information and respond appropriately. The other options describe nearby concepts, not this one.",
+      "explanation": "The instruction names the science book.",
       "difficulty": 1
     },
     {
       "id": "QB-ENG-009-2",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-009",
-      "prompt": "A learner is losing marks on Listening and response. Which correction should come first?",
+      "prompt": "You hear: “The programme begins after the bell.” When does it begin?",
       "options": [
-        "Chooses a word from memory without checking the sentence meaning.",
-        "Practise only Extended writing before checking the error in this answer.",
-        "Read the whole sentence or passage, use evidence, and check grammar before choosing the answer.",
-        "Try a harder mixed question before fixing the basic error in Listening and response."
+        "before the bell",
+        "after the bell",
+        "at midnight",
+        "yesterday"
       ],
-      "correct_option_index": 2,
-      "explanation": "The first correction is a complete method for Listening and response: Read the whole sentence or passage, use evidence, and check grammar before choosing the answer.",
+      "correct_option_index": 1,
+      "explanation": "The phrase “after the bell” gives the time.",
       "difficulty": 1
     },
     {
       "id": "QB-ENG-009-3",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-009",
-      "prompt": "Which practice task is most directly linked to Listening and response?",
+      "prompt": "A speaker says, “Please lower your voice.” What is the best response?",
       "options": [
-        "A task mainly testing Core vocabulary.",
-        "A short O/L-style question where the student must understand spoken information and respond appropriately.",
-        "A task mainly testing Sentence grammar.",
-        "Copies a line from the passage without answering the question focus."
+        "Speak more quietly.",
+        "Run outside.",
+        "Switch on the fan.",
+        "Write your name."
       ],
-      "correct_option_index": 1,
-      "explanation": "The best practice task must require the exact skill in Listening and response, not only a related topic.",
-      "difficulty": 2
+      "correct_option_index": 0,
+      "explanation": "Lowering your voice means speaking more quietly.",
+      "difficulty": 1
     },
     {
       "id": "QB-ENG-009-4",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-009",
-      "prompt": "Which answer shows the learner is ready to move forward from Listening and response?",
+      "prompt": "You hear a warning: “Do not touch the wet paint.” What should you do?",
       "options": [
-        "The learner recognises the topic name but cannot explain the steps.",
-        "The learner can answer only when the teacher gives the method.",
-        "Ignores tense, agreement, or punctuation when writing the response.",
-        "The learner solves a new question on Listening and response and explains why each step is used."
+        "touch it quickly",
+        "avoid touching it",
+        "wash it with ink",
+        "sit on it"
       ],
-      "correct_option_index": 3,
-      "explanation": "Readiness means the learner can apply Listening and response independently and explain the reasoning.",
-      "difficulty": 2
+      "correct_option_index": 1,
+      "explanation": "The warning tells you not to touch the wet paint.",
+      "difficulty": 1
     },
     {
       "id": "QB-ENG-009-5",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-009",
-      "prompt": "After a wrong answer in Listening and response, which feedback is most useful?",
+      "prompt": "You hear: “The left gate is closed; use the right gate.” Which gate should be used?",
       "options": [
-        "Underline the key words, answer only that focus, and proofread the sentence before submitting.",
-        "Check Extended writing first, even though the error happened in Listening and response.",
-        "Repeat the same answer and compare only the final mark.",
-        "Read the explanation once but leave the corrected working unwritten."
+        "left gate",
+        "right gate",
+        "both gates",
+        "no gate"
       ],
-      "correct_option_index": 0,
-      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Listening and response.",
-      "difficulty": 3
+      "correct_option_index": 1,
+      "explanation": "The instruction says to use the right gate.",
+      "difficulty": 1
     },
     {
       "id": "QB-ENG-010-1",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-010",
-      "prompt": "Which answer best describes what Extended writing means in an O/L task?",
+      "prompt": "Which plan best fits an essay about protecting the environment?",
       "options": [
-        "Plan and write coherent essays or descriptions for assessment tasks.",
-        "Use common school, social, and academic vocabulary accurately.",
-        "Control tense, agreement, articles, and word order.",
-        "Identify central ideas in short passages."
+        "introduction, causes, solutions, conclusion",
+        "ending, unrelated joke, title only, blank page",
+        "shopping list, recipe, address, date",
+        "one sentence repeated"
       ],
       "correct_option_index": 0,
-      "explanation": "Extended writing focuses on: Plan and write coherent essays or descriptions for assessment tasks. The other options describe nearby concepts, not this one.",
-      "difficulty": 1
+      "explanation": "A clear essay plan has an introduction, developed points, and a conclusion.",
+      "difficulty": 2
     },
     {
       "id": "QB-ENG-010-2",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-010",
-      "prompt": "A learner is losing marks on Extended writing. Which correction should come first?",
+      "prompt": "Choose the best thesis sentence.",
       "options": [
-        "Chooses a word from memory without checking the sentence meaning.",
-        "Practise only Core vocabulary before checking the error in this answer.",
-        "Read the whole sentence or passage, use evidence, and check grammar before choosing the answer.",
-        "Try a harder mixed question before fixing the basic error in Extended writing."
+        "Plastic waste harms rivers, soil, and people.",
+        "There are many things.",
+        "I am writing now.",
+        "The book is on the table."
       ],
-      "correct_option_index": 2,
-      "explanation": "The first correction is a complete method for Extended writing: Read the whole sentence or passage, use evidence, and check grammar before choosing the answer.",
-      "difficulty": 1
+      "correct_option_index": 0,
+      "explanation": "A thesis sentence states the main idea of the essay clearly.",
+      "difficulty": 2
     },
     {
       "id": "QB-ENG-010-3",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-010",
-      "prompt": "Which practice task is most directly linked to Extended writing?",
+      "prompt": "Which connector shows contrast?",
       "options": [
-        "A task mainly testing Sentence grammar.",
-        "A short O/L-style question where the student must plan and write coherent essays or descriptions for assessment tasks.",
-        "A task mainly testing Reading for main idea.",
-        "Copies a line from the passage without answering the question focus."
+        "however",
+        "therefore",
+        "firstly",
+        "because"
       ],
-      "correct_option_index": 1,
-      "explanation": "The best practice task must require the exact skill in Extended writing, not only a related topic.",
-      "difficulty": 2
+      "correct_option_index": 0,
+      "explanation": "“However” introduces a contrast.",
+      "difficulty": 1
     },
     {
       "id": "QB-ENG-010-4",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-010",
-      "prompt": "Which answer shows the learner is ready to move forward from Extended writing?",
+      "prompt": "Which sentence is suitable for a descriptive essay?",
       "options": [
-        "The learner recognises the topic name but cannot explain the steps.",
-        "The learner can answer only when the teacher gives the method.",
-        "Ignores tense, agreement, or punctuation when writing the response.",
-        "The learner solves a new question on Extended writing and explains why each step is used."
+        "The morning mist covered the tea fields like a silver cloth.",
+        "2 + 3 = 5.",
+        "Click File and Save.",
+        "The meeting starts at 10."
       ],
-      "correct_option_index": 3,
-      "explanation": "Readiness means the learner can apply Extended writing independently and explain the reasoning.",
+      "correct_option_index": 0,
+      "explanation": "The sentence uses sensory description and imagery.",
       "difficulty": 2
     },
     {
       "id": "QB-ENG-010-5",
       "subject_id": "OL-ENG",
       "concept_id": "ENG-010",
-      "prompt": "After a wrong answer in Extended writing, which feedback is most useful?",
+      "prompt": "What should the final paragraph of an essay usually do?",
       "options": [
-        "Underline the key words, answer only that focus, and proofread the sentence before submitting.",
-        "Check Core vocabulary first, even though the error happened in Extended writing.",
-        "Repeat the same answer and compare only the final mark.",
-        "Read the explanation once but leave the corrected working unwritten."
+        "summarize the main idea and close the writing",
+        "introduce many new unrelated points",
+        "repeat only one word",
+        "list random spellings"
       ],
       "correct_option_index": 0,
-      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Extended writing.",
-      "difficulty": 3
+      "explanation": "A conclusion should bring the writing back to the main idea and end clearly.",
+      "difficulty": 2
     }
   ]
 }

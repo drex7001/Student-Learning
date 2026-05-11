@@ -1,5 +1,5 @@
 {
-  "version": "2026-04-26",
+  "version": "2026-05-11",
   "subject_id": "OL-MATH",
   "subject_name": "Mathematics",
   "questions": [
@@ -7,1151 +7,1151 @@
       "id": "QB-MATH-001-1",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-001",
-      "prompt": "Which answer best describes what Number operations means in an O/L task?",
+      "prompt": "Calculate 3/4 + 2/5.",
       "options": [
-        "Use integers, fractions, decimals, and percentages accurately.",
-        "Compare quantities and solve proportional situations.",
-        "Translate relationships into algebraic expressions.",
-        "Collect like terms and apply basic algebraic manipulation."
+        "1 3/20",
+        "5/9",
+        "1/20",
+        "1 1/5"
       ],
       "correct_option_index": 0,
-      "explanation": "Number operations focuses on: Use integers, fractions, decimals, and percentages accurately. The other options describe nearby concepts, not this one.",
+      "explanation": "Use a common denominator of 20: 15/20 + 8/20 = 23/20 = 1 3/20.",
       "difficulty": 1,
-      "prompt_si": "O/L ප්‍රශ්නයකදී සංඛ්‍යා ක්‍රියා යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "prompt_si": "3/4 + 2/5 ගණනය කරන්න.",
       "options_si": [
-        "පූර්ණ සංඛ්‍යා, භාග, දශම සහ ප්‍රතිශත නිවැරදිව භාවිතා කිරීම.",
-        "ප්‍රමාණ සැසඳීම සහ සමානුපාතික අවස්ථා විසඳීම.",
-        "සම්බන්ධතා වීජගණිත ප්‍රකාශන බවට පරිවර්තනය කිරීම.",
-        "සමාන පද එකතු කිරීම සහ මූලික වීජගණිත හැසිරවීම."
+        "1 3/20",
+        "5/9",
+        "1/20",
+        "1 1/5"
       ],
-      "explanation_si": "සංඛ්‍යා ක්‍රියා හි මූලික අදහස: පූර්ණ සංඛ්‍යා, භාග, දශම සහ ප්‍රතිශත නිවැරදිව භාවිතා කිරීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+      "explanation_si": "නිවැරදි පිළිතුර: 1 3/20. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-001-2",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-001",
-      "prompt": "A learner is losing marks on Number operations. Which correction should come first?",
+      "prompt": "A price of Rs. 800 is reduced by 15%. What is the new price?",
       "options": [
-        "Uses a memorised formula without checking what the question asks.",
-        "Practise only Ratio and proportion before checking the error in this answer.",
-        "Write the given values, choose the correct operation or formula, and show the working line by line.",
-        "Try a harder mixed question before fixing the basic error in Number operations."
+        "Rs. 120",
+        "Rs. 680",
+        "Rs. 785",
+        "Rs. 920"
       ],
-      "correct_option_index": 2,
-      "explanation": "The first correction is a complete method for Number operations: Write the given values, choose the correct operation or formula, and show the working line by line.",
+      "correct_option_index": 1,
+      "explanation": "15% of 800 is 120, so the new price is 800 - 120 = Rs. 680.",
       "difficulty": 1,
-      "prompt_si": "ශිෂ්‍යයෙකුට සංඛ්‍යා ක්‍රියා ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "prompt_si": "රු. 800ක මිල 15%කින් අඩු කළහොත් නව මිල කීයද?",
       "options_si": [
-        "ප්‍රශ්නය ඉල්ලන දේ පරීක්ෂා නොකර මතක සූත්‍රයක් භාවිතා කිරීම.",
-        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර අනුපාත සහ සමානුපාත පමණක් පුහුණු වීම.",
-        "දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම.",
-        "සංඛ්‍යා ක්‍රියා හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+        "රු. 120",
+        "රු. 680",
+        "රු. 785",
+        "රු. 920"
       ],
-      "explanation_si": "සංඛ්‍යා ක්‍රියා සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම."
+      "explanation_si": "නිවැරදි පිළිතුර: රු. 680. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-001-3",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-001",
-      "prompt": "Which practice task is most directly linked to Number operations?",
+      "prompt": "Which value is the largest?",
       "options": [
-        "A task mainly testing Algebraic notation.",
-        "A short O/L-style question where the student must use integers, fractions, decimals, and percentages accurately.",
-        "A task mainly testing Simplifying expressions.",
-        "Skips working steps and writes only the final answer."
+        "0.65",
+        "2/3",
+        "63%",
+        "0.6"
       ],
       "correct_option_index": 1,
-      "explanation": "The best practice task must require the exact skill in Number operations, not only a related topic.",
+      "explanation": "2/3 is about 0.667, which is larger than 0.65, 0.63, and 0.6.",
       "difficulty": 2,
-      "prompt_si": "සංඛ්‍යා ක්‍රියා සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "prompt_si": "පහත අගයන් අතරින් විශාලම අගය කුමක්ද?",
       "options_si": [
-        "ප්‍රධාන වශයෙන් වීජගණිත ලකුණු කිරීම පරීක්ෂා කරන කාර්යයක්.",
-        "ශිෂ්‍යයා පූර්ණ සංඛ්‍යා, භාග, දශම සහ ප්‍රතිශත නිවැරදිව භාවිතා කිරීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
-        "ප්‍රධාන වශයෙන් ප්‍රකාශන සරල කිරීම පරීක්ෂා කරන කාර්යයක්.",
-        "වැඩ කිරීමේ පියවර නොපෙන්වා අවසාන පිළිතුර පමණක් ලිවීම."
+        "0.65",
+        "2/3",
+        "63%",
+        "0.6"
       ],
-      "explanation_si": "හොඳම පුහුණු කාර්යය සංඛ්‍යා ක්‍රියා හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+      "explanation_si": "නිවැරදි පිළිතුර: 2/3. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-001-4",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-001",
-      "prompt": "Which answer shows the learner is ready to move forward from Number operations?",
+      "prompt": "Evaluate -6 + 14 ÷ 2.",
       "options": [
-        "The learner recognises the topic name but cannot explain the steps.",
-        "The learner can answer only when the teacher gives the method.",
-        "Changes units or signs without explaining the reason.",
-        "The learner solves a new question on Number operations and explains why each step is used."
+        "1",
+        "4",
+        "-10",
+        "7"
       ],
-      "correct_option_index": 3,
-      "explanation": "Readiness means the learner can apply Number operations independently and explain the reasoning.",
+      "correct_option_index": 0,
+      "explanation": "Do division first: 14 ÷ 2 = 7, then -6 + 7 = 1.",
       "difficulty": 2,
-      "prompt_si": "ශිෂ්‍යයා සංඛ්‍යා ක්‍රියා සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "prompt_si": "-6 + 14 ÷ 2 හි අගය සොයන්න.",
       "options_si": [
-        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
-        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
-        "හේතුව පැහැදිලි නොකර ඒකක හෝ සලකුණු වෙනස් කිරීම.",
-        "ශිෂ්‍යයා සංඛ්‍යා ක්‍රියා පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+        "1",
+        "4",
+        "-10",
+        "7"
       ],
-      "explanation_si": "සූදානම් බව යනු සංඛ්‍යා ක්‍රියා ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+      "explanation_si": "නිවැරදි පිළිතුර: 1. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-001-5",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-001",
-      "prompt": "After a wrong answer in Number operations, which feedback is most useful?",
+      "prompt": "A tank contains 18.5 L of water. If 6.75 L is used, how much remains?",
       "options": [
-        "Go back to the first incorrect working line, correct that step, and then complete the calculation again.",
-        "Check Ratio and proportion first, even though the error happened in Number operations.",
-        "Repeat the same answer and compare only the final mark.",
-        "Read the explanation once but leave the corrected working unwritten."
+        "11.25 L",
+        "11.75 L",
+        "12.25 L",
+        "25.25 L"
       ],
-      "correct_option_index": 0,
-      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Number operations.",
-      "difficulty": 3,
-      "prompt_si": "සංඛ්‍යා ක්‍රියා ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "correct_option_index": 1,
+      "explanation": "18.50 - 6.75 = 11.75 L.",
+      "difficulty": 2,
+      "prompt_si": "ටැංකියක ජලය ලීටර් 18.5ක් ඇත. ලීටර් 6.75ක් භාවිතා කළහොත් ඉතිරි වන්නේ කොපමණද?",
       "options_si": [
-        "මුල් වැරදි වැඩ පියවරට ආපසු ගොස් එය නිවැරදි කර, ගණනය නැවත සම්පූර්ණ කිරීම.",
-        "වැරැද්ද සංඛ්‍යා ක්‍රියා තුළ ඇති නමුත් මුලින්ම අනුපාත සහ සමානුපාත පරීක්ෂා කිරීම.",
-        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
-        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+        "11.25 L",
+        "11.75 L",
+        "12.25 L",
+        "25.25 L"
       ],
-      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය සංඛ්‍යා ක්‍රියා හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+      "explanation_si": "නිවැරදි පිළිතුර: 11.75 L. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-002-1",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-002",
-      "prompt": "Which answer best describes what Ratio and proportion means in an O/L task?",
+      "prompt": "Simplify the ratio 24:36.",
       "options": [
-        "Compare quantities and solve proportional situations.",
-        "Translate relationships into algebraic expressions.",
-        "Collect like terms and apply basic algebraic manipulation.",
-        "Solve one-variable linear equations using inverse operations."
+        "2:3",
+        "3:2",
+        "4:6",
+        "12:18"
       ],
       "correct_option_index": 0,
-      "explanation": "Ratio and proportion focuses on: Compare quantities and solve proportional situations. The other options describe nearby concepts, not this one.",
+      "explanation": "Divide both parts by 12 to get 2:3.",
       "difficulty": 1,
-      "prompt_si": "O/L ප්‍රශ්නයකදී අනුපාත සහ සමානුපාත යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "prompt_si": "24:36 අනුපාතය සරල කරන්න.",
       "options_si": [
-        "ප්‍රමාණ සැසඳීම සහ සමානුපාතික අවස්ථා විසඳීම.",
-        "සම්බන්ධතා වීජගණිත ප්‍රකාශන බවට පරිවර්තනය කිරීම.",
-        "සමාන පද එකතු කිරීම සහ මූලික වීජගණිත හැසිරවීම.",
-        "ප්‍රතිලෝම ක්‍රියා භාවිතයෙන් එක් චල්‍ය රේඛීය සමීකරණ විසඳීම."
+        "2:3",
+        "3:2",
+        "4:6",
+        "12:18"
       ],
-      "explanation_si": "අනුපාත සහ සමානුපාත හි මූලික අදහස: ප්‍රමාණ සැසඳීම සහ සමානුපාතික අවස්ථා විසඳීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+      "explanation_si": "නිවැරදි පිළිතුර: 2:3. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-002-2",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-002",
-      "prompt": "A learner is losing marks on Ratio and proportion. Which correction should come first?",
+      "prompt": "If 5 notebooks cost Rs. 450, what is the cost of 8 notebooks?",
       "options": [
-        "Uses a memorised formula without checking what the question asks.",
-        "Practise only Algebraic notation before checking the error in this answer.",
-        "Write the given values, choose the correct operation or formula, and show the working line by line.",
-        "Try a harder mixed question before fixing the basic error in Ratio and proportion."
+        "Rs. 720",
+        "Rs. 560",
+        "Rs. 900",
+        "Rs. 360"
       ],
-      "correct_option_index": 2,
-      "explanation": "The first correction is a complete method for Ratio and proportion: Write the given values, choose the correct operation or formula, and show the working line by line.",
+      "correct_option_index": 0,
+      "explanation": "One notebook costs Rs. 90, so 8 notebooks cost 8 x 90 = Rs. 720.",
       "difficulty": 1,
-      "prompt_si": "ශිෂ්‍යයෙකුට අනුපාත සහ සමානුපාත ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "prompt_si": "පොත් 5ක මිල රු. 450 නම් පොත් 8ක මිල කීයද?",
       "options_si": [
-        "ප්‍රශ්නය ඉල්ලන දේ පරීක්ෂා නොකර මතක සූත්‍රයක් භාවිතා කිරීම.",
-        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර වීජගණිත ලකුණු කිරීම පමණක් පුහුණු වීම.",
-        "දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම.",
-        "අනුපාත සහ සමානුපාත හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+        "රු. 720",
+        "රු. 560",
+        "රු. 900",
+        "රු. 360"
       ],
-      "explanation_si": "අනුපාත සහ සමානුපාත සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම."
+      "explanation_si": "නිවැරදි පිළිතුර: රු. 720. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-002-3",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-002",
-      "prompt": "Which practice task is most directly linked to Ratio and proportion?",
+      "prompt": "Share Rs. 1,200 in the ratio 2:3.",
       "options": [
-        "A task mainly testing Simplifying expressions.",
-        "A short O/L-style question where the student must compare quantities and solve proportional situations.",
-        "A task mainly testing Linear equations.",
-        "Skips working steps and writes only the final answer."
+        "Rs. 400 and Rs. 800",
+        "Rs. 480 and Rs. 720",
+        "Rs. 600 and Rs. 600",
+        "Rs. 300 and Rs. 900"
       ],
       "correct_option_index": 1,
-      "explanation": "The best practice task must require the exact skill in Ratio and proportion, not only a related topic.",
+      "explanation": "There are 5 parts. One part is Rs. 240, so the shares are Rs. 480 and Rs. 720.",
       "difficulty": 2,
-      "prompt_si": "අනුපාත සහ සමානුපාත සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "prompt_si": "රු. 1,200ක් 2:3 අනුපාතයට බෙදන්න.",
       "options_si": [
-        "ප්‍රධාන වශයෙන් ප්‍රකාශන සරල කිරීම පරීක්ෂා කරන කාර්යයක්.",
-        "ශිෂ්‍යයා ප්‍රමාණ සැසඳීම සහ සමානුපාතික අවස්ථා විසඳීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
-        "ප්‍රධාන වශයෙන් රේඛීය සමීකරණ පරීක්ෂා කරන කාර්යයක්.",
-        "වැඩ කිරීමේ පියවර නොපෙන්වා අවසාන පිළිතුර පමණක් ලිවීම."
+        "රු. 400 සහ රු. 800",
+        "රු. 480 සහ රු. 720",
+        "රු. 600 සහ රු. 600",
+        "රු. 300 සහ රු. 900"
       ],
-      "explanation_si": "හොඳම පුහුණු කාර්යය අනුපාත සහ සමානුපාත හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+      "explanation_si": "නිවැරදි පිළිතුර: රු. 480 සහ රු. 720. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-002-4",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-002",
-      "prompt": "Which answer shows the learner is ready to move forward from Ratio and proportion?",
+      "prompt": "A map scale is 1 cm:5 km. What real distance is shown by 7 cm?",
       "options": [
-        "The learner recognises the topic name but cannot explain the steps.",
-        "The learner can answer only when the teacher gives the method.",
-        "Changes units or signs without explaining the reason.",
-        "The learner solves a new question on Ratio and proportion and explains why each step is used."
+        "12 km",
+        "35 km",
+        "50 km",
+        "75 km"
       ],
-      "correct_option_index": 3,
-      "explanation": "Readiness means the learner can apply Ratio and proportion independently and explain the reasoning.",
+      "correct_option_index": 1,
+      "explanation": "Each centimetre represents 5 km, so 7 cm represents 35 km.",
       "difficulty": 2,
-      "prompt_si": "ශිෂ්‍යයා අනුපාත සහ සමානුපාත සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "prompt_si": "සිතියම් පරිමාණය 1 cm:5 km නම් 7 cm මඟින් නිරූපණය වන සැබෑ දුර කීයද?",
       "options_si": [
-        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
-        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
-        "හේතුව පැහැදිලි නොකර ඒකක හෝ සලකුණු වෙනස් කිරීම.",
-        "ශිෂ්‍යයා අනුපාත සහ සමානුපාත පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+        "12 km",
+        "35 km",
+        "50 km",
+        "75 km"
       ],
-      "explanation_si": "සූදානම් බව යනු අනුපාත සහ සමානුපාත ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+      "explanation_si": "නිවැරදි පිළිතුර: 35 km. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-002-5",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-002",
-      "prompt": "After a wrong answer in Ratio and proportion, which feedback is most useful?",
+      "prompt": "Which pair is proportional to 6:9?",
       "options": [
-        "Go back to the first incorrect working line, correct that step, and then complete the calculation again.",
-        "Check Algebraic notation first, even though the error happened in Ratio and proportion.",
-        "Repeat the same answer and compare only the final mark.",
-        "Read the explanation once but leave the corrected working unwritten."
+        "8:10",
+        "10:15",
+        "12:15",
+        "14:18"
       ],
-      "correct_option_index": 0,
-      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Ratio and proportion.",
-      "difficulty": 3,
-      "prompt_si": "අනුපාත සහ සමානුපාත ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "correct_option_index": 1,
+      "explanation": "6:9 simplifies to 2:3, and 10:15 also simplifies to 2:3.",
+      "difficulty": 2,
+      "prompt_si": "6:9 ට සමානුපාතික යුගලය කුමක්ද?",
       "options_si": [
-        "මුල් වැරදි වැඩ පියවරට ආපසු ගොස් එය නිවැරදි කර, ගණනය නැවත සම්පූර්ණ කිරීම.",
-        "වැරැද්ද අනුපාත සහ සමානුපාත තුළ ඇති නමුත් මුලින්ම වීජගණිත ලකුණු කිරීම පරීක්ෂා කිරීම.",
-        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
-        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+        "8:10",
+        "10:15",
+        "12:15",
+        "14:18"
       ],
-      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය අනුපාත සහ සමානුපාත හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+      "explanation_si": "නිවැරදි පිළිතුර: 10:15. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-003-1",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-003",
-      "prompt": "Which answer best describes what Algebraic notation means in an O/L task?",
+      "prompt": "Write an expression for 5 more than twice x.",
       "options": [
-        "Translate relationships into algebraic expressions.",
-        "Collect like terms and apply basic algebraic manipulation.",
-        "Solve one-variable linear equations using inverse operations.",
-        "Interpret points, gradients, and straight-line relationships."
+        "2x + 5",
+        "5x + 2",
+        "2(x + 5)",
+        "x/2 + 5"
       ],
       "correct_option_index": 0,
-      "explanation": "Algebraic notation focuses on: Translate relationships into algebraic expressions. The other options describe nearby concepts, not this one.",
+      "explanation": "Twice x is 2x, and 5 more gives 2x + 5.",
       "difficulty": 1,
-      "prompt_si": "O/L ප්‍රශ්නයකදී වීජගණිත ලකුණු කිරීම යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "prompt_si": "x හි දෙගුණයට 5ක් එකතු කළ ප්‍රකාශනය ලියන්න.",
       "options_si": [
-        "සම්බන්ධතා වීජගණිත ප්‍රකාශන බවට පරිවර්තනය කිරීම.",
-        "සමාන පද එකතු කිරීම සහ මූලික වීජගණිත හැසිරවීම.",
-        "ප්‍රතිලෝම ක්‍රියා භාවිතයෙන් එක් චල්‍ය රේඛීය සමීකරණ විසඳීම.",
-        "ලක්ෂ්‍ය, ධාල සහ සෘජු රේඛා සම්බන්ධතා අර්ථ දැක්වීම."
+        "2x + 5",
+        "5x + 2",
+        "2(x + 5)",
+        "x/2 + 5"
       ],
-      "explanation_si": "වීජගණිත ලකුණු කිරීම හි මූලික අදහස: සම්බන්ධතා වීජගණිත ප්‍රකාශන බවට පරිවර්තනය කිරීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+      "explanation_si": "නිවැරදි පිළිතුර: 2x + 5. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-003-2",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-003",
-      "prompt": "A learner is losing marks on Algebraic notation. Which correction should come first?",
+      "prompt": "If a pencil costs p rupees, what is the cost of 12 pencils?",
       "options": [
-        "Uses a memorised formula without checking what the question asks.",
-        "Practise only Simplifying expressions before checking the error in this answer.",
-        "Write the given values, choose the correct operation or formula, and show the working line by line.",
-        "Try a harder mixed question before fixing the basic error in Algebraic notation."
+        "p + 12",
+        "12p",
+        "p/12",
+        "12 - p"
       ],
-      "correct_option_index": 2,
-      "explanation": "The first correction is a complete method for Algebraic notation: Write the given values, choose the correct operation or formula, and show the working line by line.",
+      "correct_option_index": 1,
+      "explanation": "The total cost is the unit cost multiplied by 12.",
       "difficulty": 1,
-      "prompt_si": "ශිෂ්‍යයෙකුට වීජගණිත ලකුණු කිරීම ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "prompt_si": "පැන්සලක මිල රු. p නම් පැන්සල් 12ක මිල කුමක්ද?",
       "options_si": [
-        "ප්‍රශ්නය ඉල්ලන දේ පරීක්ෂා නොකර මතක සූත්‍රයක් භාවිතා කිරීම.",
-        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර ප්‍රකාශන සරල කිරීම පමණක් පුහුණු වීම.",
-        "දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම.",
-        "වීජගණිත ලකුණු කිරීම හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+        "p + 12",
+        "12p",
+        "p/12",
+        "12 - p"
       ],
-      "explanation_si": "වීජගණිත ලකුණු කිරීම සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම."
+      "explanation_si": "නිවැරදි පිළිතුර: 12p. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-003-3",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-003",
-      "prompt": "Which practice task is most directly linked to Algebraic notation?",
+      "prompt": "Which expression represents the perimeter of a rectangle with length l and width w?",
       "options": [
-        "A task mainly testing Linear equations.",
-        "A short O/L-style question where the student must translate relationships into algebraic expressions.",
-        "A task mainly testing Coordinate geometry.",
-        "Skips working steps and writes only the final answer."
+        "lw",
+        "2l + 2w",
+        "l + w",
+        "2lw"
       ],
       "correct_option_index": 1,
-      "explanation": "The best practice task must require the exact skill in Algebraic notation, not only a related topic.",
+      "explanation": "A rectangle has two lengths and two widths, so the perimeter is 2l + 2w.",
       "difficulty": 2,
-      "prompt_si": "වීජගණිත ලකුණු කිරීම සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "prompt_si": "දිග l සහ පළල w වන සෘජුකෝණාස්‍රයක පරිමිතිය නිරූපණය කරන ප්‍රකාශනය කුමක්ද?",
       "options_si": [
-        "ප්‍රධාන වශයෙන් රේඛීය සමීකරණ පරීක්ෂා කරන කාර්යයක්.",
-        "ශිෂ්‍යයා සම්බන්ධතා වීජගණිත ප්‍රකාශන බවට පරිවර්තනය කිරීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
-        "ප්‍රධාන වශයෙන් ඛණ්ඩාංක ජ්‍යාමිතිය පරීක්ෂා කරන කාර්යයක්.",
-        "වැඩ කිරීමේ පියවර නොපෙන්වා අවසාන පිළිතුර පමණක් ලිවීම."
+        "lw",
+        "2l + 2w",
+        "l + w",
+        "2lw"
       ],
-      "explanation_si": "හොඳම පුහුණු කාර්යය වීජගණිත ලකුණු කිරීම හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+      "explanation_si": "නිවැරදි පිළිතුර: 2l + 2w. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-003-4",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-003",
-      "prompt": "Which answer shows the learner is ready to move forward from Algebraic notation?",
+      "prompt": "Translate “three less than n” into algebra.",
       "options": [
-        "The learner recognises the topic name but cannot explain the steps.",
-        "The learner can answer only when the teacher gives the method.",
-        "Changes units or signs without explaining the reason.",
-        "The learner solves a new question on Algebraic notation and explains why each step is used."
+        "3 - n",
+        "n - 3",
+        "3n",
+        "n + 3"
       ],
-      "correct_option_index": 3,
-      "explanation": "Readiness means the learner can apply Algebraic notation independently and explain the reasoning.",
-      "difficulty": 2,
-      "prompt_si": "ශිෂ්‍යයා වීජගණිත ලකුණු කිරීම සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "correct_option_index": 1,
+      "explanation": "Three less than n means subtract 3 from n.",
+      "difficulty": 1,
+      "prompt_si": "“n ට වඩා 3ක් අඩු” යන්න වීජගණිතයෙන් ලියන්න.",
       "options_si": [
-        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
-        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
-        "හේතුව පැහැදිලි නොකර ඒකක හෝ සලකුණු වෙනස් කිරීම.",
-        "ශිෂ්‍යයා වීජගණිත ලකුණු කිරීම පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+        "3 - n",
+        "n - 3",
+        "3n",
+        "n + 3"
       ],
-      "explanation_si": "සූදානම් බව යනු වීජගණිත ලකුණු කිරීම ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+      "explanation_si": "නිවැරදි පිළිතුර: n - 3. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-003-5",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-003",
-      "prompt": "After a wrong answer in Algebraic notation, which feedback is most useful?",
+      "prompt": "A number is divided by 4 and then 7 is added. Which expression shows this?",
       "options": [
-        "Go back to the first incorrect working line, correct that step, and then complete the calculation again.",
-        "Check Simplifying expressions first, even though the error happened in Algebraic notation.",
-        "Repeat the same answer and compare only the final mark.",
-        "Read the explanation once but leave the corrected working unwritten."
+        "x/(4 + 7)",
+        "4x + 7",
+        "x/4 + 7",
+        "7x/4"
       ],
-      "correct_option_index": 0,
-      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Algebraic notation.",
-      "difficulty": 3,
-      "prompt_si": "වීජගණිත ලකුණු කිරීම ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "correct_option_index": 2,
+      "explanation": "First divide x by 4, then add 7.",
+      "difficulty": 2,
+      "prompt_si": "සංඛ්‍යාවක් 4න් බෙදා 7ක් එකතු කරයි. එය නිරූපණය කරන ප්‍රකාශනය කුමක්ද?",
       "options_si": [
-        "මුල් වැරදි වැඩ පියවරට ආපසු ගොස් එය නිවැරදි කර, ගණනය නැවත සම්පූර්ණ කිරීම.",
-        "වැරැද්ද වීජගණිත ලකුණු කිරීම තුළ ඇති නමුත් මුලින්ම ප්‍රකාශන සරල කිරීම පරීක්ෂා කිරීම.",
-        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
-        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+        "x/(4 + 7)",
+        "4x + 7",
+        "x/4 + 7",
+        "7x/4"
       ],
-      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය වීජගණිත ලකුණු කිරීම හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+      "explanation_si": "නිවැරදි පිළිතුර: x/4 + 7. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-004-1",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-004",
-      "prompt": "Which answer best describes what Simplifying expressions means in an O/L task?",
+      "prompt": "Simplify 3a + 5a - 2a.",
       "options": [
-        "Collect like terms and apply basic algebraic manipulation.",
-        "Solve one-variable linear equations using inverse operations.",
-        "Interpret points, gradients, and straight-line relationships.",
-        "Draw and interpret graphs of linear equations."
+        "6a",
+        "10a",
+        "3a",
+        "6a²"
       ],
       "correct_option_index": 0,
-      "explanation": "Simplifying expressions focuses on: Collect like terms and apply basic algebraic manipulation. The other options describe nearby concepts, not this one.",
+      "explanation": "Combine like terms: 3 + 5 - 2 = 6.",
       "difficulty": 1,
-      "prompt_si": "O/L ප්‍රශ්නයකදී ප්‍රකාශන සරල කිරීම යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "prompt_si": "3a + 5a - 2a සරල කරන්න.",
       "options_si": [
-        "සමාන පද එකතු කිරීම සහ මූලික වීජගණිත හැසිරවීම.",
-        "ප්‍රතිලෝම ක්‍රියා භාවිතයෙන් එක් චල්‍ය රේඛීය සමීකරණ විසඳීම.",
-        "ලක්ෂ්‍ය, ධාල සහ සෘජු රේඛා සම්බන්ධතා අර්ථ දැක්වීම.",
-        "රේඛීය සමීකරණ ප්‍රස්ථාර ඇඳීම සහ අර්ථ දැක්වීම."
+        "6a",
+        "10a",
+        "3a",
+        "6a²"
       ],
-      "explanation_si": "ප්‍රකාශන සරල කිරීම හි මූලික අදහස: සමාන පද එකතු කිරීම සහ මූලික වීජගණිත හැසිරවීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+      "explanation_si": "නිවැරදි පිළිතුර: 6a. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-004-2",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-004",
-      "prompt": "A learner is losing marks on Simplifying expressions. Which correction should come first?",
+      "prompt": "Expand 4(x + 3).",
       "options": [
-        "Uses a memorised formula without checking what the question asks.",
-        "Practise only Linear equations before checking the error in this answer.",
-        "Write the given values, choose the correct operation or formula, and show the working line by line.",
-        "Try a harder mixed question before fixing the basic error in Simplifying expressions."
+        "4x + 3",
+        "x + 12",
+        "4x + 12",
+        "7x"
       ],
       "correct_option_index": 2,
-      "explanation": "The first correction is a complete method for Simplifying expressions: Write the given values, choose the correct operation or formula, and show the working line by line.",
+      "explanation": "Multiply both terms inside the bracket by 4.",
       "difficulty": 1,
-      "prompt_si": "ශිෂ්‍යයෙකුට ප්‍රකාශන සරල කිරීම ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "prompt_si": "4(x + 3) විස්තාරණය කරන්න.",
       "options_si": [
-        "ප්‍රශ්නය ඉල්ලන දේ පරීක්ෂා නොකර මතක සූත්‍රයක් භාවිතා කිරීම.",
-        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර රේඛීය සමීකරණ පමණක් පුහුණු වීම.",
-        "දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම.",
-        "ප්‍රකාශන සරල කිරීම හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+        "4x + 3",
+        "x + 12",
+        "4x + 12",
+        "7x"
       ],
-      "explanation_si": "ප්‍රකාශන සරල කිරීම සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම."
+      "explanation_si": "නිවැරදි පිළිතුර: 4x + 12. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-004-3",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-004",
-      "prompt": "Which practice task is most directly linked to Simplifying expressions?",
+      "prompt": "Simplify 2m + 3n + 5m - n.",
       "options": [
-        "A task mainly testing Coordinate geometry.",
-        "A short O/L-style question where the student must collect like terms and apply basic algebraic manipulation.",
-        "A task mainly testing Graphs of linear functions.",
-        "Skips working steps and writes only the final answer."
+        "7m + 2n",
+        "10mn",
+        "7m + 4n",
+        "3m + 2n"
       ],
-      "correct_option_index": 1,
-      "explanation": "The best practice task must require the exact skill in Simplifying expressions, not only a related topic.",
+      "correct_option_index": 0,
+      "explanation": "Combine m terms and n terms separately: 7m + 2n.",
       "difficulty": 2,
-      "prompt_si": "ප්‍රකාශන සරල කිරීම සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "prompt_si": "2m + 3n + 5m - n සරල කරන්න.",
       "options_si": [
-        "ප්‍රධාන වශයෙන් ඛණ්ඩාංක ජ්‍යාමිතිය පරීක්ෂා කරන කාර්යයක්.",
-        "ශිෂ්‍යයා සමාන පද එකතු කිරීම සහ මූලික වීජගණිත හැසිරවීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
-        "ප්‍රධාන වශයෙන් රේඛීය ශ්‍රිත ප්‍රස්ථාර පරීක්ෂා කරන කාර්යයක්.",
-        "වැඩ කිරීමේ පියවර නොපෙන්වා අවසාන පිළිතුර පමණක් ලිවීම."
+        "7m + 2n",
+        "10mn",
+        "7m + 4n",
+        "3m + 2n"
       ],
-      "explanation_si": "හොඳම පුහුණු කාර්යය ප්‍රකාශන සරල කිරීම හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+      "explanation_si": "නිවැරදි පිළිතුර: 7m + 2n. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-004-4",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-004",
-      "prompt": "Which answer shows the learner is ready to move forward from Simplifying expressions?",
+      "prompt": "Factorize 6x + 9.",
       "options": [
-        "The learner recognises the topic name but cannot explain the steps.",
-        "The learner can answer only when the teacher gives the method.",
-        "Changes units or signs without explaining the reason.",
-        "The learner solves a new question on Simplifying expressions and explains why each step is used."
+        "3(2x + 3)",
+        "6(x + 9)",
+        "9(x + 6)",
+        "15x"
       ],
-      "correct_option_index": 3,
-      "explanation": "Readiness means the learner can apply Simplifying expressions independently and explain the reasoning.",
+      "correct_option_index": 0,
+      "explanation": "The highest common factor of 6x and 9 is 3.",
       "difficulty": 2,
-      "prompt_si": "ශිෂ්‍යයා ප්‍රකාශන සරල කිරීම සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "prompt_si": "6x + 9 සාධකගත කරන්න.",
       "options_si": [
-        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
-        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
-        "හේතුව පැහැදිලි නොකර ඒකක හෝ සලකුණු වෙනස් කිරීම.",
-        "ශිෂ්‍යයා ප්‍රකාශන සරල කිරීම පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+        "3(2x + 3)",
+        "6(x + 9)",
+        "9(x + 6)",
+        "15x"
       ],
-      "explanation_si": "සූදානම් බව යනු ප්‍රකාශන සරල කිරීම ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+      "explanation_si": "නිවැරදි පිළිතුර: 3(2x + 3). ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-004-5",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-004",
-      "prompt": "After a wrong answer in Simplifying expressions, which feedback is most useful?",
+      "prompt": "Simplify 5(2y - 1) - 3y.",
       "options": [
-        "Go back to the first incorrect working line, correct that step, and then complete the calculation again.",
-        "Check Linear equations first, even though the error happened in Simplifying expressions.",
-        "Repeat the same answer and compare only the final mark.",
-        "Read the explanation once but leave the corrected working unwritten."
+        "7y - 5",
+        "10y - 8",
+        "13y - 5",
+        "7y + 5"
       ],
       "correct_option_index": 0,
-      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Simplifying expressions.",
+      "explanation": "Expand first: 10y - 5 - 3y = 7y - 5.",
       "difficulty": 3,
-      "prompt_si": "ප්‍රකාශන සරල කිරීම ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "prompt_si": "5(2y - 1) - 3y සරල කරන්න.",
       "options_si": [
-        "මුල් වැරදි වැඩ පියවරට ආපසු ගොස් එය නිවැරදි කර, ගණනය නැවත සම්පූර්ණ කිරීම.",
-        "වැරැද්ද ප්‍රකාශන සරල කිරීම තුළ ඇති නමුත් මුලින්ම රේඛීය සමීකරණ පරීක්ෂා කිරීම.",
-        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
-        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+        "7y - 5",
+        "10y - 8",
+        "13y - 5",
+        "7y + 5"
       ],
-      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය ප්‍රකාශන සරල කිරීම හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+      "explanation_si": "නිවැරදි පිළිතුර: 7y - 5. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-005-1",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-005",
-      "prompt": "Which answer best describes what Linear equations means in an O/L task?",
+      "prompt": "Solve x + 7 = 19.",
       "options": [
-        "Solve one-variable linear equations using inverse operations.",
-        "Interpret points, gradients, and straight-line relationships.",
-        "Draw and interpret graphs of linear equations.",
-        "Calculate perimeter, area, volume, and unit conversions."
+        "12",
+        "26",
+        "7",
+        "19"
       ],
       "correct_option_index": 0,
-      "explanation": "Linear equations focuses on: Solve one-variable linear equations using inverse operations. The other options describe nearby concepts, not this one.",
+      "explanation": "Subtract 7 from both sides to get x = 12.",
       "difficulty": 1,
-      "prompt_si": "O/L ප්‍රශ්නයකදී රේඛීය සමීකරණ යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "prompt_si": "x + 7 = 19 විසඳන්න.",
       "options_si": [
-        "ප්‍රතිලෝම ක්‍රියා භාවිතයෙන් එක් චල්‍ය රේඛීය සමීකරණ විසඳීම.",
-        "ලක්ෂ්‍ය, ධාල සහ සෘජු රේඛා සම්බන්ධතා අර්ථ දැක්වීම.",
-        "රේඛීය සමීකරණ ප්‍රස්ථාර ඇඳීම සහ අර්ථ දැක්වීම.",
-        "පරිමිතිය, වර්ගඵලය, පරිමාව සහ ඒකක පරිවර්තන ගණනය කිරීම."
+        "12",
+        "26",
+        "7",
+        "19"
       ],
-      "explanation_si": "රේඛීය සමීකරණ හි මූලික අදහස: ප්‍රතිලෝම ක්‍රියා භාවිතයෙන් එක් චල්‍ය රේඛීය සමීකරණ විසඳීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+      "explanation_si": "නිවැරදි පිළිතුර: 12. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-005-2",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-005",
-      "prompt": "A learner is losing marks on Linear equations. Which correction should come first?",
+      "prompt": "Solve 3x = 24.",
       "options": [
-        "Uses a memorised formula without checking what the question asks.",
-        "Practise only Coordinate geometry before checking the error in this answer.",
-        "Write the given values, choose the correct operation or formula, and show the working line by line.",
-        "Try a harder mixed question before fixing the basic error in Linear equations."
+        "6",
+        "8",
+        "21",
+        "72"
       ],
-      "correct_option_index": 2,
-      "explanation": "The first correction is a complete method for Linear equations: Write the given values, choose the correct operation or formula, and show the working line by line.",
+      "correct_option_index": 1,
+      "explanation": "Divide both sides by 3 to get x = 8.",
       "difficulty": 1,
-      "prompt_si": "ශිෂ්‍යයෙකුට රේඛීය සමීකරණ ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "prompt_si": "3x = 24 විසඳන්න.",
       "options_si": [
-        "ප්‍රශ්නය ඉල්ලන දේ පරීක්ෂා නොකර මතක සූත්‍රයක් භාවිතා කිරීම.",
-        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර ඛණ්ඩාංක ජ්‍යාමිතිය පමණක් පුහුණු වීම.",
-        "දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම.",
-        "රේඛීය සමීකරණ හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+        "6",
+        "8",
+        "21",
+        "72"
       ],
-      "explanation_si": "රේඛීය සමීකරණ සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම."
+      "explanation_si": "නිවැරදි පිළිතුර: 8. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-005-3",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-005",
-      "prompt": "Which practice task is most directly linked to Linear equations?",
+      "prompt": "Solve 2x - 5 = 13.",
       "options": [
-        "A task mainly testing Graphs of linear functions.",
-        "A short O/L-style question where the student must solve one-variable linear equations using inverse operations.",
-        "A task mainly testing Mensuration basics.",
-        "Skips working steps and writes only the final answer."
+        "4",
+        "9",
+        "16",
+        "36"
       ],
       "correct_option_index": 1,
-      "explanation": "The best practice task must require the exact skill in Linear equations, not only a related topic.",
+      "explanation": "Add 5 to get 2x = 18, then divide by 2.",
       "difficulty": 2,
-      "prompt_si": "රේඛීය සමීකරණ සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "prompt_si": "2x - 5 = 13 විසඳන්න.",
       "options_si": [
-        "ප්‍රධාන වශයෙන් රේඛීය ශ්‍රිත ප්‍රස්ථාර පරීක්ෂා කරන කාර්යයක්.",
-        "ශිෂ්‍යයා ප්‍රතිලෝම ක්‍රියා භාවිතයෙන් එක් චල්‍ය රේඛීය සමීකරණ විසඳීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
-        "ප්‍රධාන වශයෙන් මිනුම් මූලිකතා පරීක්ෂා කරන කාර්යයක්.",
-        "වැඩ කිරීමේ පියවර නොපෙන්වා අවසාන පිළිතුර පමණක් ලිවීම."
+        "4",
+        "9",
+        "16",
+        "36"
       ],
-      "explanation_si": "හොඳම පුහුණු කාර්යය රේඛීය සමීකරණ හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+      "explanation_si": "නිවැරදි පිළිතුර: 9. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-005-4",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-005",
-      "prompt": "Which answer shows the learner is ready to move forward from Linear equations?",
+      "prompt": "Solve (x/4) + 3 = 10.",
       "options": [
-        "The learner recognises the topic name but cannot explain the steps.",
-        "The learner can answer only when the teacher gives the method.",
-        "Changes units or signs without explaining the reason.",
-        "The learner solves a new question on Linear equations and explains why each step is used."
+        "7",
+        "13",
+        "28",
+        "52"
       ],
-      "correct_option_index": 3,
-      "explanation": "Readiness means the learner can apply Linear equations independently and explain the reasoning.",
+      "correct_option_index": 2,
+      "explanation": "Subtract 3 to get x/4 = 7, so x = 28.",
       "difficulty": 2,
-      "prompt_si": "ශිෂ්‍යයා රේඛීය සමීකරණ සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "prompt_si": "(x/4) + 3 = 10 විසඳන්න.",
       "options_si": [
-        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
-        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
-        "හේතුව පැහැදිලි නොකර ඒකක හෝ සලකුණු වෙනස් කිරීම.",
-        "ශිෂ්‍යයා රේඛීය සමීකරණ පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+        "7",
+        "13",
+        "28",
+        "52"
       ],
-      "explanation_si": "සූදානම් බව යනු රේඛීය සමීකරණ ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+      "explanation_si": "නිවැරදි පිළිතුර: 28. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-005-5",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-005",
-      "prompt": "After a wrong answer in Linear equations, which feedback is most useful?",
+      "prompt": "Which equation has the solution x = 5?",
       "options": [
-        "Go back to the first incorrect working line, correct that step, and then complete the calculation again.",
-        "Check Coordinate geometry first, even though the error happened in Linear equations.",
-        "Repeat the same answer and compare only the final mark.",
-        "Read the explanation once but leave the corrected working unwritten."
+        "2x + 1 = 9",
+        "3x - 4 = 11",
+        "x + 8 = 10",
+        "4x = 24"
       ],
-      "correct_option_index": 0,
-      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Linear equations.",
-      "difficulty": 3,
-      "prompt_si": "රේඛීය සමීකරණ ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "correct_option_index": 1,
+      "explanation": "When x = 5, 3x - 4 = 15 - 4 = 11.",
+      "difficulty": 2,
+      "prompt_si": "x = 5 විසඳුම ඇති සමීකරණය කුමක්ද?",
       "options_si": [
-        "මුල් වැරදි වැඩ පියවරට ආපසු ගොස් එය නිවැරදි කර, ගණනය නැවත සම්පූර්ණ කිරීම.",
-        "වැරැද්ද රේඛීය සමීකරණ තුළ ඇති නමුත් මුලින්ම ඛණ්ඩාංක ජ්‍යාමිතිය පරීක්ෂා කිරීම.",
-        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
-        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+        "2x + 1 = 9",
+        "3x - 4 = 11",
+        "x + 8 = 10",
+        "4x = 24"
       ],
-      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය රේඛීය සමීකරණ හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+      "explanation_si": "නිවැරදි පිළිතුර: 3x - 4 = 11. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-006-1",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-006",
-      "prompt": "Which answer best describes what Coordinate geometry means in an O/L task?",
+      "prompt": "What is the midpoint of A(2, 4) and B(8, 10)?",
       "options": [
-        "Interpret points, gradients, and straight-line relationships.",
-        "Draw and interpret graphs of linear equations.",
-        "Calculate perimeter, area, volume, and unit conversions.",
-        "Use sine, cosine, and tangent in right-angled triangles."
+        "(5, 7)",
+        "(6, 6)",
+        "(10, 14)",
+        "(3, 7)"
       ],
       "correct_option_index": 0,
-      "explanation": "Coordinate geometry focuses on: Interpret points, gradients, and straight-line relationships. The other options describe nearby concepts, not this one.",
-      "difficulty": 1,
-      "prompt_si": "O/L ප්‍රශ්නයකදී ඛණ්ඩාංක ජ්‍යාමිතිය යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "explanation": "Average the x-values and y-values: ((2+8)/2, (4+10)/2) = (5, 7).",
+      "difficulty": 2,
+      "prompt_si": "A(2, 4) සහ B(8, 10) ලක්ෂ්‍ය දෙකේ මධ්‍ය ලක්ෂ්‍යය කුමක්ද?",
       "options_si": [
-        "ලක්ෂ්‍ය, ධාල සහ සෘජු රේඛා සම්බන්ධතා අර්ථ දැක්වීම.",
-        "රේඛීය සමීකරණ ප්‍රස්ථාර ඇඳීම සහ අර්ථ දැක්වීම.",
-        "පරිමිතිය, වර්ගඵලය, පරිමාව සහ ඒකක පරිවර්තන ගණනය කිරීම.",
-        "සෘජුකෝණාස්‍ර ත්‍රිකෝණවල sine, cosine, tangent භාවිතය."
+        "(5, 7)",
+        "(6, 6)",
+        "(10, 14)",
+        "(3, 7)"
       ],
-      "explanation_si": "ඛණ්ඩාංක ජ්‍යාමිතිය හි මූලික අදහස: ලක්ෂ්‍ය, ධාල සහ සෘජු රේඛා සම්බන්ධතා අර්ථ දැක්වීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+      "explanation_si": "නිවැරදි පිළිතුර: (5, 7). ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-006-2",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-006",
-      "prompt": "A learner is losing marks on Coordinate geometry. Which correction should come first?",
+      "prompt": "Find the gradient of the line through (1, 2) and (3, 8).",
       "options": [
-        "Uses a memorised formula without checking what the question asks.",
-        "Practise only Graphs of linear functions before checking the error in this answer.",
-        "Write the given values, choose the correct operation or formula, and show the working line by line.",
-        "Try a harder mixed question before fixing the basic error in Coordinate geometry."
+        "2",
+        "3",
+        "4",
+        "6"
       ],
-      "correct_option_index": 2,
-      "explanation": "The first correction is a complete method for Coordinate geometry: Write the given values, choose the correct operation or formula, and show the working line by line.",
-      "difficulty": 1,
-      "prompt_si": "ශිෂ්‍යයෙකුට ඛණ්ඩාංක ජ්‍යාමිතිය ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "correct_option_index": 1,
+      "explanation": "Gradient = change in y ÷ change in x = (8-2)/(3-1) = 6/2 = 3.",
+      "difficulty": 2,
+      "prompt_si": "(1, 2) සහ (3, 8) හරහා යන රේඛාවේ ධාලය සොයන්න.",
       "options_si": [
-        "ප්‍රශ්නය ඉල්ලන දේ පරීක්ෂා නොකර මතක සූත්‍රයක් භාවිතා කිරීම.",
-        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර රේඛීය ශ්‍රිත ප්‍රස්ථාර පමණක් පුහුණු වීම.",
-        "දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම.",
-        "ඛණ්ඩාංක ජ්‍යාමිතිය හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+        "2",
+        "3",
+        "4",
+        "6"
       ],
-      "explanation_si": "ඛණ්ඩාංක ජ්‍යාමිතිය සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම."
+      "explanation_si": "නිවැරදි පිළිතුර: 3. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-006-3",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-006",
-      "prompt": "Which practice task is most directly linked to Coordinate geometry?",
+      "prompt": "Which point lies on the y-axis?",
       "options": [
-        "A task mainly testing Mensuration basics.",
-        "A short O/L-style question where the student must interpret points, gradients, and straight-line relationships.",
-        "A task mainly testing Trigonometric ratios.",
-        "Skips working steps and writes only the final answer."
+        "(0, 5)",
+        "(5, 0)",
+        "(3, 3)",
+        "(-2, 4)"
       ],
-      "correct_option_index": 1,
-      "explanation": "The best practice task must require the exact skill in Coordinate geometry, not only a related topic.",
-      "difficulty": 2,
-      "prompt_si": "ඛණ්ඩාංක ජ්‍යාමිතිය සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "correct_option_index": 0,
+      "explanation": "Every point on the y-axis has x-coordinate 0.",
+      "difficulty": 1,
+      "prompt_si": "y-අක්ෂය මත පිහිටන ලක්ෂ්‍යය කුමක්ද?",
       "options_si": [
-        "ප්‍රධාන වශයෙන් මිනුම් මූලිකතා පරීක්ෂා කරන කාර්යයක්.",
-        "ශිෂ්‍යයා ලක්ෂ්‍ය, ධාල සහ සෘජු රේඛා සම්බන්ධතා අර්ථ දැක්වීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
-        "ප්‍රධාන වශයෙන් ත්‍රිකෝණමිතික අනුපාත පරීක්ෂා කරන කාර්යයක්.",
-        "වැඩ කිරීමේ පියවර නොපෙන්වා අවසාන පිළිතුර පමණක් ලිවීම."
+        "(0, 5)",
+        "(5, 0)",
+        "(3, 3)",
+        "(-2, 4)"
       ],
-      "explanation_si": "හොඳම පුහුණු කාර්යය ඛණ්ඩාංක ජ්‍යාමිතිය හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+      "explanation_si": "නිවැරදි පිළිතුර: (0, 5). ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-006-4",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-006",
-      "prompt": "Which answer shows the learner is ready to move forward from Coordinate geometry?",
+      "prompt": "For the line y = 2x + 1, what is y when x = 4?",
       "options": [
-        "The learner recognises the topic name but cannot explain the steps.",
-        "The learner can answer only when the teacher gives the method.",
-        "Changes units or signs without explaining the reason.",
-        "The learner solves a new question on Coordinate geometry and explains why each step is used."
+        "7",
+        "8",
+        "9",
+        "10"
       ],
-      "correct_option_index": 3,
-      "explanation": "Readiness means the learner can apply Coordinate geometry independently and explain the reasoning.",
-      "difficulty": 2,
-      "prompt_si": "ශිෂ්‍යයා ඛණ්ඩාංක ජ්‍යාමිතිය සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "correct_option_index": 2,
+      "explanation": "Substitute x = 4: y = 2(4) + 1 = 9.",
+      "difficulty": 1,
+      "prompt_si": "y = 2x + 1 රේඛාව සඳහා x = 4 නම් y කීයද?",
       "options_si": [
-        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
-        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
-        "හේතුව පැහැදිලි නොකර ඒකක හෝ සලකුණු වෙනස් කිරීම.",
-        "ශිෂ්‍යයා ඛණ්ඩාංක ජ්‍යාමිතිය පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+        "7",
+        "8",
+        "9",
+        "10"
       ],
-      "explanation_si": "සූදානම් බව යනු ඛණ්ඩාංක ජ්‍යාමිතිය ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+      "explanation_si": "නිවැරදි පිළිතුර: 9. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-006-5",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-006",
-      "prompt": "After a wrong answer in Coordinate geometry, which feedback is most useful?",
+      "prompt": "A horizontal line has which property?",
       "options": [
-        "Go back to the first incorrect working line, correct that step, and then complete the calculation again.",
-        "Check Graphs of linear functions first, even though the error happened in Coordinate geometry.",
-        "Repeat the same answer and compare only the final mark.",
-        "Read the explanation once but leave the corrected working unwritten."
+        "Its gradient is 0.",
+        "Its gradient is undefined.",
+        "It passes only through the origin.",
+        "Its equation is always x = 0."
       ],
       "correct_option_index": 0,
-      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Coordinate geometry.",
-      "difficulty": 3,
-      "prompt_si": "ඛණ්ඩාංක ජ්‍යාමිතිය ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "explanation": "A horizontal line has no rise, so its gradient is 0.",
+      "difficulty": 2,
+      "prompt_si": "තිරස් රේඛාවක ලක්ෂණය කුමක්ද?",
       "options_si": [
-        "මුල් වැරදි වැඩ පියවරට ආපසු ගොස් එය නිවැරදි කර, ගණනය නැවත සම්පූර්ණ කිරීම.",
-        "වැරැද්ද ඛණ්ඩාංක ජ්‍යාමිතිය තුළ ඇති නමුත් මුලින්ම රේඛීය ශ්‍රිත ප්‍රස්ථාර පරීක්ෂා කිරීම.",
-        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
-        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+        "එහි ධාලය 0 වේ.",
+        "එහි ධාලය නිර්වචනය කළ නොහැක.",
+        "එය මූල ලක්ෂ්‍යය හරහා පමණක් යයි.",
+        "එහි සමීකරණය සෑමවිටම x = 0 වේ."
       ],
-      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය ඛණ්ඩාංක ජ්‍යාමිතිය හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+      "explanation_si": "නිවැරදි පිළිතුර: එහි ධාලය 0 වේ.. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-007-1",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-007",
-      "prompt": "Which answer best describes what Graphs of linear functions means in an O/L task?",
+      "prompt": "Which point is on the graph of y = x + 2?",
       "options": [
-        "Draw and interpret graphs of linear equations.",
-        "Calculate perimeter, area, volume, and unit conversions.",
-        "Use sine, cosine, and tangent in right-angled triangles.",
-        "Select and combine mathematical methods in exam-style problems."
+        "(1, 2)",
+        "(2, 4)",
+        "(3, 4)",
+        "(0, -2)"
       ],
-      "correct_option_index": 0,
-      "explanation": "Graphs of linear functions focuses on: Draw and interpret graphs of linear equations. The other options describe nearby concepts, not this one.",
+      "correct_option_index": 1,
+      "explanation": "When x = 2, y = 4, so (2, 4) lies on the line.",
       "difficulty": 1,
-      "prompt_si": "O/L ප්‍රශ්නයකදී රේඛීය ශ්‍රිත ප්‍රස්ථාර යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "prompt_si": "y = x + 2 ප්‍රස්ථාරය මත ඇති ලක්ෂ්‍යය කුමක්ද?",
       "options_si": [
-        "රේඛීය සමීකරණ ප්‍රස්ථාර ඇඳීම සහ අර්ථ දැක්වීම.",
-        "පරිමිතිය, වර්ගඵලය, පරිමාව සහ ඒකක පරිවර්තන ගණනය කිරීම.",
-        "සෘජුකෝණාස්‍ර ත්‍රිකෝණවල sine, cosine, tangent භාවිතය.",
-        "විභාග ආකාරයේ ගැටලු සඳහා ගණිත ක්‍රම තෝරා ඒකාබද්ධ කිරීම."
+        "(1, 2)",
+        "(2, 4)",
+        "(3, 4)",
+        "(0, -2)"
       ],
-      "explanation_si": "රේඛීය ශ්‍රිත ප්‍රස්ථාර හි මූලික අදහස: රේඛීය සමීකරණ ප්‍රස්ථාර ඇඳීම සහ අර්ථ දැක්වීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+      "explanation_si": "නිවැරදි පිළිතුර: (2, 4). ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-007-2",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-007",
-      "prompt": "A learner is losing marks on Graphs of linear functions. Which correction should come first?",
+      "prompt": "What is the y-intercept of y = 3x - 5?",
       "options": [
-        "Uses a memorised formula without checking what the question asks.",
-        "Practise only Mensuration basics before checking the error in this answer.",
-        "Write the given values, choose the correct operation or formula, and show the working line by line.",
-        "Try a harder mixed question before fixing the basic error in Graphs of linear functions."
+        "3",
+        "-5",
+        "5",
+        "-3"
       ],
-      "correct_option_index": 2,
-      "explanation": "The first correction is a complete method for Graphs of linear functions: Write the given values, choose the correct operation or formula, and show the working line by line.",
+      "correct_option_index": 1,
+      "explanation": "The y-intercept is the constant term in y = mx + c.",
       "difficulty": 1,
-      "prompt_si": "ශිෂ්‍යයෙකුට රේඛීය ශ්‍රිත ප්‍රස්ථාර ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "prompt_si": "y = 3x - 5 හි y-අන්තර්ඡේදය කුමක්ද?",
       "options_si": [
-        "ප්‍රශ්නය ඉල්ලන දේ පරීක්ෂා නොකර මතක සූත්‍රයක් භාවිතා කිරීම.",
-        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර මිනුම් මූලිකතා පමණක් පුහුණු වීම.",
-        "දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම.",
-        "රේඛීය ශ්‍රිත ප්‍රස්ථාර හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+        "3",
+        "-5",
+        "5",
+        "-3"
       ],
-      "explanation_si": "රේඛීය ශ්‍රිත ප්‍රස්ථාර සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම."
+      "explanation_si": "නිවැරදි පිළිතුර: -5. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-007-3",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-007",
-      "prompt": "Which practice task is most directly linked to Graphs of linear functions?",
+      "prompt": "A line has gradient 2 and y-intercept 1. Which equation matches it?",
       "options": [
-        "A task mainly testing Trigonometric ratios.",
-        "A short O/L-style question where the student must draw and interpret graphs of linear equations.",
-        "A task mainly testing Applied problem solving.",
-        "Skips working steps and writes only the final answer."
+        "y = x + 2",
+        "y = 2x + 1",
+        "y = 2x - 1",
+        "y = x - 2"
       ],
       "correct_option_index": 1,
-      "explanation": "The best practice task must require the exact skill in Graphs of linear functions, not only a related topic.",
+      "explanation": "Use y = mx + c with m = 2 and c = 1.",
       "difficulty": 2,
-      "prompt_si": "රේඛීය ශ්‍රිත ප්‍රස්ථාර සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "prompt_si": "ධාලය 2 සහ y-අන්තර්ඡේදය 1 වන රේඛාවේ සමීකරණය කුමක්ද?",
       "options_si": [
-        "ප්‍රධාන වශයෙන් ත්‍රිකෝණමිතික අනුපාත පරීක්ෂා කරන කාර්යයක්.",
-        "ශිෂ්‍යයා රේඛීය සමීකරණ ප්‍රස්ථාර ඇඳීම සහ අර්ථ දැක්වීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
-        "ප්‍රධාන වශයෙන් යෙදුම් ගැටලු විසඳීම පරීක්ෂා කරන කාර්යයක්.",
-        "වැඩ කිරීමේ පියවර නොපෙන්වා අවසාන පිළිතුර පමණක් ලිවීම."
+        "y = x + 2",
+        "y = 2x + 1",
+        "y = 2x - 1",
+        "y = x - 2"
       ],
-      "explanation_si": "හොඳම පුහුණු කාර්යය රේඛීය ශ්‍රිත ප්‍රස්ථාර හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+      "explanation_si": "නිවැරදි පිළිතුර: y = 2x + 1. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-007-4",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-007",
-      "prompt": "Which answer shows the learner is ready to move forward from Graphs of linear functions?",
+      "prompt": "For y = -x + 4, what happens to y when x increases by 1?",
       "options": [
-        "The learner recognises the topic name but cannot explain the steps.",
-        "The learner can answer only when the teacher gives the method.",
-        "Changes units or signs without explaining the reason.",
-        "The learner solves a new question on Graphs of linear functions and explains why each step is used."
+        "It increases by 4.",
+        "It increases by 1.",
+        "It decreases by 1.",
+        "It becomes 0."
       ],
-      "correct_option_index": 3,
-      "explanation": "Readiness means the learner can apply Graphs of linear functions independently and explain the reasoning.",
+      "correct_option_index": 2,
+      "explanation": "The gradient is -1, so y decreases by 1 for each increase of 1 in x.",
       "difficulty": 2,
-      "prompt_si": "ශිෂ්‍යයා රේඛීය ශ්‍රිත ප්‍රස්ථාර සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "prompt_si": "y = -x + 4 සඳහා x එකකින් වැඩි වන විට y ට කුමක් සිදුවේද?",
       "options_si": [
-        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
-        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
-        "හේතුව පැහැදිලි නොකර ඒකක හෝ සලකුණු වෙනස් කිරීම.",
-        "ශිෂ්‍යයා රේඛීය ශ්‍රිත ප්‍රස්ථාර පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+        "එය 4කින් වැඩි වේ.",
+        "එය 1කින් වැඩි වේ.",
+        "එය 1කින් අඩු වේ.",
+        "එය 0 වේ."
       ],
-      "explanation_si": "සූදානම් බව යනු රේඛීය ශ්‍රිත ප්‍රස්ථාර ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+      "explanation_si": "නිවැරදි පිළිතුර: එය 1කින් අඩු වේ.. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-007-5",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-007",
-      "prompt": "After a wrong answer in Graphs of linear functions, which feedback is most useful?",
+      "prompt": "Which table matches y = 2x?",
       "options": [
-        "Go back to the first incorrect working line, correct that step, and then complete the calculation again.",
-        "Check Mensuration basics first, even though the error happened in Graphs of linear functions.",
-        "Repeat the same answer and compare only the final mark.",
-        "Read the explanation once but leave the corrected working unwritten."
+        "x: 1,2,3; y: 2,4,6",
+        "x: 1,2,3; y: 3,4,5",
+        "x: 1,2,3; y: 1,4,9",
+        "x: 1,2,3; y: 2,3,4"
       ],
       "correct_option_index": 0,
-      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Graphs of linear functions.",
-      "difficulty": 3,
-      "prompt_si": "රේඛීය ශ්‍රිත ප්‍රස්ථාර ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "explanation": "For y = 2x, the y-values are twice the x-values.",
+      "difficulty": 2,
+      "prompt_si": "y = 2x සමඟ ගැළපෙන වගුව කුමක්ද?",
       "options_si": [
-        "මුල් වැරදි වැඩ පියවරට ආපසු ගොස් එය නිවැරදි කර, ගණනය නැවත සම්පූර්ණ කිරීම.",
-        "වැරැද්ද රේඛීය ශ්‍රිත ප්‍රස්ථාර තුළ ඇති නමුත් මුලින්ම මිනුම් මූලිකතා පරීක්ෂා කිරීම.",
-        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
-        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+        "x: 1,2,3; y: 2,4,6",
+        "x: 1,2,3; y: 3,4,5",
+        "x: 1,2,3; y: 1,4,9",
+        "x: 1,2,3; y: 2,3,4"
       ],
-      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය රේඛීය ශ්‍රිත ප්‍රස්ථාර හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+      "explanation_si": "නිවැරදි පිළිතුර: x: 1,2,3; y: 2,4,6. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-008-1",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-008",
-      "prompt": "Which answer best describes what Mensuration basics means in an O/L task?",
+      "prompt": "Find the area of a rectangle 8 cm long and 5 cm wide.",
       "options": [
-        "Calculate perimeter, area, volume, and unit conversions.",
-        "Use sine, cosine, and tangent in right-angled triangles.",
-        "Select and combine mathematical methods in exam-style problems.",
-        "Use integers, fractions, decimals, and percentages accurately."
+        "13 cm²",
+        "26 cm²",
+        "40 cm²",
+        "80 cm²"
       ],
-      "correct_option_index": 0,
-      "explanation": "Mensuration basics focuses on: Calculate perimeter, area, volume, and unit conversions. The other options describe nearby concepts, not this one.",
+      "correct_option_index": 2,
+      "explanation": "Area of a rectangle is length x width = 8 x 5 = 40 cm².",
       "difficulty": 1,
-      "prompt_si": "O/L ප්‍රශ්නයකදී මිනුම් මූලිකතා යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "prompt_si": "දිග 8 cm සහ පළල 5 cm වන සෘජුකෝණාස්‍රයක වර්ගඵලය සොයන්න.",
       "options_si": [
-        "පරිමිතිය, වර්ගඵලය, පරිමාව සහ ඒකක පරිවර්තන ගණනය කිරීම.",
-        "සෘජුකෝණාස්‍ර ත්‍රිකෝණවල sine, cosine, tangent භාවිතය.",
-        "විභාග ආකාරයේ ගැටලු සඳහා ගණිත ක්‍රම තෝරා ඒකාබද්ධ කිරීම.",
-        "පූර්ණ සංඛ්‍යා, භාග, දශම සහ ප්‍රතිශත නිවැරදිව භාවිතා කිරීම."
+        "13 cm²",
+        "26 cm²",
+        "40 cm²",
+        "80 cm²"
       ],
-      "explanation_si": "මිනුම් මූලිකතා හි මූලික අදහස: පරිමිතිය, වර්ගඵලය, පරිමාව සහ ඒකක පරිවර්තන ගණනය කිරීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+      "explanation_si": "නිවැරදි පිළිතුර: 40 cm². ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-008-2",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-008",
-      "prompt": "A learner is losing marks on Mensuration basics. Which correction should come first?",
+      "prompt": "Find the perimeter of a square with side 6 cm.",
       "options": [
-        "Uses a memorised formula without checking what the question asks.",
-        "Practise only Trigonometric ratios before checking the error in this answer.",
-        "Write the given values, choose the correct operation or formula, and show the working line by line.",
-        "Try a harder mixed question before fixing the basic error in Mensuration basics."
+        "12 cm",
+        "24 cm",
+        "30 cm",
+        "36 cm"
       ],
-      "correct_option_index": 2,
-      "explanation": "The first correction is a complete method for Mensuration basics: Write the given values, choose the correct operation or formula, and show the working line by line.",
+      "correct_option_index": 1,
+      "explanation": "Perimeter of a square is 4 x side = 24 cm.",
       "difficulty": 1,
-      "prompt_si": "ශිෂ්‍යයෙකුට මිනුම් මූලිකතා ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "prompt_si": "පැත්ත 6 cm වන චතුරස්‍රයක පරිමිතිය සොයන්න.",
       "options_si": [
-        "ප්‍රශ්නය ඉල්ලන දේ පරීක්ෂා නොකර මතක සූත්‍රයක් භාවිතා කිරීම.",
-        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර ත්‍රිකෝණමිතික අනුපාත පමණක් පුහුණු වීම.",
-        "දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම.",
-        "මිනුම් මූලිකතා හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+        "12 cm",
+        "24 cm",
+        "30 cm",
+        "36 cm"
       ],
-      "explanation_si": "මිනුම් මූලිකතා සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම."
+      "explanation_si": "නිවැරදි පිළිතුර: 24 cm. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-008-3",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-008",
-      "prompt": "Which practice task is most directly linked to Mensuration basics?",
+      "prompt": "Convert 2.5 m into centimetres.",
       "options": [
-        "A task mainly testing Applied problem solving.",
-        "A short O/L-style question where the student must calculate perimeter, area, volume, and unit conversions.",
-        "A task mainly testing Number operations.",
-        "Skips working steps and writes only the final answer."
+        "25 cm",
+        "250 cm",
+        "2,500 cm",
+        "0.25 cm"
       ],
       "correct_option_index": 1,
-      "explanation": "The best practice task must require the exact skill in Mensuration basics, not only a related topic.",
-      "difficulty": 2,
-      "prompt_si": "මිනුම් මූලිකතා සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "explanation": "1 m is 100 cm, so 2.5 m is 250 cm.",
+      "difficulty": 1,
+      "prompt_si": "2.5 m සෙන්ටිමීටරවලට පරිවර්තනය කරන්න.",
       "options_si": [
-        "ප්‍රධාන වශයෙන් යෙදුම් ගැටලු විසඳීම පරීක්ෂා කරන කාර්යයක්.",
-        "ශිෂ්‍යයා පරිමිතිය, වර්ගඵලය, පරිමාව සහ ඒකක පරිවර්තන ගණනය කිරීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
-        "ප්‍රධාන වශයෙන් සංඛ්‍යා ක්‍රියා පරීක්ෂා කරන කාර්යයක්.",
-        "වැඩ කිරීමේ පියවර නොපෙන්වා අවසාන පිළිතුර පමණක් ලිවීම."
+        "25 cm",
+        "250 cm",
+        "2,500 cm",
+        "0.25 cm"
       ],
-      "explanation_si": "හොඳම පුහුණු කාර්යය මිනුම් මූලිකතා හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+      "explanation_si": "නිවැරදි පිළිතුර: 250 cm. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-008-4",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-008",
-      "prompt": "Which answer shows the learner is ready to move forward from Mensuration basics?",
+      "prompt": "Find the volume of a cuboid 4 cm by 3 cm by 5 cm.",
       "options": [
-        "The learner recognises the topic name but cannot explain the steps.",
-        "The learner can answer only when the teacher gives the method.",
-        "Changes units or signs without explaining the reason.",
-        "The learner solves a new question on Mensuration basics and explains why each step is used."
+        "12 cm³",
+        "20 cm³",
+        "47 cm³",
+        "60 cm³"
       ],
       "correct_option_index": 3,
-      "explanation": "Readiness means the learner can apply Mensuration basics independently and explain the reasoning.",
+      "explanation": "Volume = length x width x height = 4 x 3 x 5 = 60 cm³.",
       "difficulty": 2,
-      "prompt_si": "ශිෂ්‍යයා මිනුම් මූලිකතා සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "prompt_si": "4 cm, 3 cm, 5 cm වන ඝනකාභයක පරිමාව සොයන්න.",
       "options_si": [
-        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
-        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
-        "හේතුව පැහැදිලි නොකර ඒකක හෝ සලකුණු වෙනස් කිරීම.",
-        "ශිෂ්‍යයා මිනුම් මූලිකතා පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+        "12 cm³",
+        "20 cm³",
+        "47 cm³",
+        "60 cm³"
       ],
-      "explanation_si": "සූදානම් බව යනු මිනුම් මූලිකතා ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+      "explanation_si": "නිවැරදි පිළිතුර: 60 cm³. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-008-5",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-008",
-      "prompt": "After a wrong answer in Mensuration basics, which feedback is most useful?",
+      "prompt": "The radius of a circle is 7 cm. Using pi = 22/7, find its circumference.",
       "options": [
-        "Go back to the first incorrect working line, correct that step, and then complete the calculation again.",
-        "Check Trigonometric ratios first, even though the error happened in Mensuration basics.",
-        "Repeat the same answer and compare only the final mark.",
-        "Read the explanation once but leave the corrected working unwritten."
+        "22 cm",
+        "44 cm",
+        "49 cm",
+        "154 cm"
       ],
-      "correct_option_index": 0,
-      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Mensuration basics.",
-      "difficulty": 3,
-      "prompt_si": "මිනුම් මූලිකතා ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "correct_option_index": 1,
+      "explanation": "Circumference = 2πr = 2 x 22/7 x 7 = 44 cm.",
+      "difficulty": 2,
+      "prompt_si": "වෘත්තයක අරය 7 cm වේ. pi = 22/7 ලෙස ගෙන පරිධිය සොයන්න.",
       "options_si": [
-        "මුල් වැරදි වැඩ පියවරට ආපසු ගොස් එය නිවැරදි කර, ගණනය නැවත සම්පූර්ණ කිරීම.",
-        "වැරැද්ද මිනුම් මූලිකතා තුළ ඇති නමුත් මුලින්ම ත්‍රිකෝණමිතික අනුපාත පරීක්ෂා කිරීම.",
-        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
-        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+        "22 cm",
+        "44 cm",
+        "49 cm",
+        "154 cm"
       ],
-      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය මිනුම් මූලිකතා හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+      "explanation_si": "නිවැරදි පිළිතුර: 44 cm. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-009-1",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-009",
-      "prompt": "Which answer best describes what Trigonometric ratios means in an O/L task?",
+      "prompt": "In a right-angled triangle, sin θ equals:",
       "options": [
-        "Use sine, cosine, and tangent in right-angled triangles.",
-        "Select and combine mathematical methods in exam-style problems.",
-        "Use integers, fractions, decimals, and percentages accurately.",
-        "Compare quantities and solve proportional situations."
+        "opposite/hypotenuse",
+        "adjacent/hypotenuse",
+        "opposite/adjacent",
+        "hypotenuse/opposite"
       ],
       "correct_option_index": 0,
-      "explanation": "Trigonometric ratios focuses on: Use sine, cosine, and tangent in right-angled triangles. The other options describe nearby concepts, not this one.",
+      "explanation": "Sine is the ratio of the opposite side to the hypotenuse.",
       "difficulty": 1,
-      "prompt_si": "O/L ප්‍රශ්නයකදී ත්‍රිකෝණමිතික අනුපාත යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "prompt_si": "සෘජුකෝණ ත්‍රිකෝණයක sin θ සමාන වන්නේ කුමකටද?",
       "options_si": [
-        "සෘජුකෝණාස්‍ර ත්‍රිකෝණවල sine, cosine, tangent භාවිතය.",
-        "විභාග ආකාරයේ ගැටලු සඳහා ගණිත ක්‍රම තෝරා ඒකාබද්ධ කිරීම.",
-        "පූර්ණ සංඛ්‍යා, භාග, දශම සහ ප්‍රතිශත නිවැරදිව භාවිතා කිරීම.",
-        "ප්‍රමාණ සැසඳීම සහ සමානුපාතික අවස්ථා විසඳීම."
+        "ප්‍රතිමුඛ පාදය/කර්ණය",
+        "අසල් පාදය/කර්ණය",
+        "ප්‍රතිමුඛ පාදය/අසල් පාදය",
+        "කර්ණය/ප්‍රතිමුඛ පාදය"
       ],
-      "explanation_si": "ත්‍රිකෝණමිතික අනුපාත හි මූලික අදහස: සෘජුකෝණාස්‍ර ත්‍රිකෝණවල sine, cosine, tangent භාවිතය. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+      "explanation_si": "නිවැරදි පිළිතුර: ප්‍රතිමුඛ පාදය/කර්ණය. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-009-2",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-009",
-      "prompt": "A learner is losing marks on Trigonometric ratios. Which correction should come first?",
+      "prompt": "If tan θ = opposite/adjacent and opposite = 6, adjacent = 8, what is tan θ?",
       "options": [
-        "Uses a memorised formula without checking what the question asks.",
-        "Practise only Applied problem solving before checking the error in this answer.",
-        "Write the given values, choose the correct operation or formula, and show the working line by line.",
-        "Try a harder mixed question before fixing the basic error in Trigonometric ratios."
+        "3/4",
+        "4/3",
+        "6/14",
+        "8/6"
       ],
-      "correct_option_index": 2,
-      "explanation": "The first correction is a complete method for Trigonometric ratios: Write the given values, choose the correct operation or formula, and show the working line by line.",
+      "correct_option_index": 0,
+      "explanation": "tan θ = 6/8 = 3/4.",
       "difficulty": 1,
-      "prompt_si": "ශිෂ්‍යයෙකුට ත්‍රිකෝණමිතික අනුපාත ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "prompt_si": "tan θ = ප්‍රතිමුඛ/අසල් නම්, ප්‍රතිමුඛ = 6 සහ අසල් = 8 විට tan θ කීයද?",
       "options_si": [
-        "ප්‍රශ්නය ඉල්ලන දේ පරීක්ෂා නොකර මතක සූත්‍රයක් භාවිතා කිරීම.",
-        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර යෙදුම් ගැටලු විසඳීම පමණක් පුහුණු වීම.",
-        "දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම.",
-        "ත්‍රිකෝණමිතික අනුපාත හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+        "3/4",
+        "4/3",
+        "6/14",
+        "8/6"
       ],
-      "explanation_si": "ත්‍රිකෝණමිතික අනුපාත සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම."
+      "explanation_si": "නිවැරදි පිළිතුර: 3/4. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-009-3",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-009",
-      "prompt": "Which practice task is most directly linked to Trigonometric ratios?",
+      "prompt": "A right triangle has hypotenuse 10 cm and side opposite θ equal to 5 cm. What is sin θ?",
       "options": [
-        "A task mainly testing Number operations.",
-        "A short O/L-style question where the student must use sine, cosine, and tangent in right-angled triangles.",
-        "A task mainly testing Ratio and proportion.",
-        "Skips working steps and writes only the final answer."
+        "1/2",
+        "2",
+        "5",
+        "10"
       ],
-      "correct_option_index": 1,
-      "explanation": "The best practice task must require the exact skill in Trigonometric ratios, not only a related topic.",
+      "correct_option_index": 0,
+      "explanation": "sin θ = opposite/hypotenuse = 5/10 = 1/2.",
       "difficulty": 2,
-      "prompt_si": "ත්‍රිකෝණමිතික අනුපාත සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "prompt_si": "සෘජුකෝණ ත්‍රිකෝණයක කර්ණය 10 cm සහ θ ට ප්‍රතිමුඛ පාදය 5 cm නම් sin θ කීයද?",
       "options_si": [
-        "ප්‍රධාන වශයෙන් සංඛ්‍යා ක්‍රියා පරීක්ෂා කරන කාර්යයක්.",
-        "ශිෂ්‍යයා සෘජුකෝණාස්‍ර ත්‍රිකෝණවල sine, cosine, tangent භාවිතය කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
-        "ප්‍රධාන වශයෙන් අනුපාත සහ සමානුපාත පරීක්ෂා කරන කාර්යයක්.",
-        "වැඩ කිරීමේ පියවර නොපෙන්වා අවසාන පිළිතුර පමණක් ලිවීම."
+        "1/2",
+        "2",
+        "5",
+        "10"
       ],
-      "explanation_si": "හොඳම පුහුණු කාර්යය ත්‍රිකෝණමිතික අනුපාත හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+      "explanation_si": "නිවැරදි පිළිතුර: 1/2. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-009-4",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-009",
-      "prompt": "Which answer shows the learner is ready to move forward from Trigonometric ratios?",
+      "prompt": "Which ratio should be used to find an angle when opposite and adjacent sides are known?",
       "options": [
-        "The learner recognises the topic name but cannot explain the steps.",
-        "The learner can answer only when the teacher gives the method.",
-        "Changes units or signs without explaining the reason.",
-        "The learner solves a new question on Trigonometric ratios and explains why each step is used."
+        "sine",
+        "cosine",
+        "tangent",
+        "area"
       ],
-      "correct_option_index": 3,
-      "explanation": "Readiness means the learner can apply Trigonometric ratios independently and explain the reasoning.",
+      "correct_option_index": 2,
+      "explanation": "Tangent connects the opposite and adjacent sides.",
       "difficulty": 2,
-      "prompt_si": "ශිෂ්‍යයා ත්‍රිකෝණමිතික අනුපාත සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "prompt_si": "ප්‍රතිමුඛ සහ අසල් පාද දන්නා විට කෝණය සොයා ගැනීමට භාවිතා කළ යුතු අනුපාතය කුමක්ද?",
       "options_si": [
-        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
-        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
-        "හේතුව පැහැදිලි නොකර ඒකක හෝ සලකුණු වෙනස් කිරීම.",
-        "ශිෂ්‍යයා ත්‍රිකෝණමිතික අනුපාත පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+        "sine",
+        "cosine",
+        "tangent",
+        "වර්ගඵලය"
       ],
-      "explanation_si": "සූදානම් බව යනු ත්‍රිකෝණමිතික අනුපාත ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+      "explanation_si": "නිවැරදි පිළිතුර: tangent. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-009-5",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-009",
-      "prompt": "After a wrong answer in Trigonometric ratios, which feedback is most useful?",
+      "prompt": "If cos θ = 12/13 in a right triangle, which side could be adjacent to θ?",
       "options": [
-        "Go back to the first incorrect working line, correct that step, and then complete the calculation again.",
-        "Check Applied problem solving first, even though the error happened in Trigonometric ratios.",
-        "Repeat the same answer and compare only the final mark.",
-        "Read the explanation once but leave the corrected working unwritten."
+        "5 when hypotenuse is 13",
+        "12 when hypotenuse is 13",
+        "13 when hypotenuse is 12",
+        "12 when opposite is 13"
       ],
-      "correct_option_index": 0,
-      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Trigonometric ratios.",
-      "difficulty": 3,
-      "prompt_si": "ත්‍රිකෝණමිතික අනුපාත ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "correct_option_index": 1,
+      "explanation": "Cosine is adjacent/hypotenuse, so adjacent = 12 when hypotenuse = 13.",
+      "difficulty": 2,
+      "prompt_si": "සෘජුකෝණ ත්‍රිකෝණයක cos θ = 12/13 නම් θ ට අසල් පාදය විය හැක්කේ කුමක්ද?",
       "options_si": [
-        "මුල් වැරදි වැඩ පියවරට ආපසු ගොස් එය නිවැරදි කර, ගණනය නැවත සම්පූර්ණ කිරීම.",
-        "වැරැද්ද ත්‍රිකෝණමිතික අනුපාත තුළ ඇති නමුත් මුලින්ම යෙදුම් ගැටලු විසඳීම පරීක්ෂා කිරීම.",
-        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
-        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+        "කර්ණය 13 නම් 5",
+        "කර්ණය 13 නම් 12",
+        "කර්ණය 12 නම් 13",
+        "ප්‍රතිමුඛය 13 නම් 12"
       ],
-      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය ත්‍රිකෝණමිතික අනුපාත හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+      "explanation_si": "නිවැරදි පිළිතුර: කර්ණය 13 නම් 12. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-010-1",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-010",
-      "prompt": "Which answer best describes what Applied problem solving means in an O/L task?",
+      "prompt": "A bus travels 120 km in 3 hours. What is its average speed?",
       "options": [
-        "Select and combine mathematical methods in exam-style problems.",
-        "Use integers, fractions, decimals, and percentages accurately.",
-        "Compare quantities and solve proportional situations.",
-        "Translate relationships into algebraic expressions."
+        "30 km/h",
+        "40 km/h",
+        "60 km/h",
+        "360 km/h"
       ],
-      "correct_option_index": 0,
-      "explanation": "Applied problem solving focuses on: Select and combine mathematical methods in exam-style problems. The other options describe nearby concepts, not this one.",
+      "correct_option_index": 1,
+      "explanation": "Average speed = distance ÷ time = 120 ÷ 3 = 40 km/h.",
       "difficulty": 1,
-      "prompt_si": "O/L ප්‍රශ්නයකදී යෙදුම් ගැටලු විසඳීම යන්න හොඳින් විස්තර කරන පිළිතුර කුමක්ද?",
+      "prompt_si": "බස් රථයක් පැය 3කදී 120 km ගමන් කරයි. සාමාන්‍ය වේගය කීයද?",
       "options_si": [
-        "විභාග ආකාරයේ ගැටලු සඳහා ගණිත ක්‍රම තෝරා ඒකාබද්ධ කිරීම.",
-        "පූර්ණ සංඛ්‍යා, භාග, දශම සහ ප්‍රතිශත නිවැරදිව භාවිතා කිරීම.",
-        "ප්‍රමාණ සැසඳීම සහ සමානුපාතික අවස්ථා විසඳීම.",
-        "සම්බන්ධතා වීජගණිත ප්‍රකාශන බවට පරිවර්තනය කිරීම."
+        "30 km/h",
+        "40 km/h",
+        "60 km/h",
+        "360 km/h"
       ],
-      "explanation_si": "යෙදුම් ගැටලු විසඳීම හි මූලික අදහස: විභාග ආකාරයේ ගැටලු සඳහා ගණිත ක්‍රම තෝරා ඒකාබද්ධ කිරීම. අනෙක් පිළිතුරු අසල සංකල්ප විස්තර කරයි."
+      "explanation_si": "නිවැරදි පිළිතුර: 40 km/h. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-010-2",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-010",
-      "prompt": "A learner is losing marks on Applied problem solving. Which correction should come first?",
+      "prompt": "A shop buys an item for Rs. 1,500 and sells it for Rs. 1,800. What is the profit?",
       "options": [
-        "Uses a memorised formula without checking what the question asks.",
-        "Practise only Number operations before checking the error in this answer.",
-        "Write the given values, choose the correct operation or formula, and show the working line by line.",
-        "Try a harder mixed question before fixing the basic error in Applied problem solving."
+        "Rs. 300",
+        "Rs. 450",
+        "Rs. 1,500",
+        "Rs. 3,300"
       ],
-      "correct_option_index": 2,
-      "explanation": "The first correction is a complete method for Applied problem solving: Write the given values, choose the correct operation or formula, and show the working line by line.",
+      "correct_option_index": 0,
+      "explanation": "Profit = selling price - cost price = Rs. 300.",
       "difficulty": 1,
-      "prompt_si": "ශිෂ්‍යයෙකුට යෙදුම් ගැටලු විසඳීම ප්‍රශ්නවල ලකුණු අහිමි වේ. මුලින්ම කළ යුතු නිවැරදි කිරීම කුමක්ද?",
+      "prompt_si": "වෙළඳසැලක් භාණ්ඩයක් රු. 1,500කට මිලදී ගෙන රු. 1,800කට විකුණයි. ලාභය කීයද?",
       "options_si": [
-        "ප්‍රශ්නය ඉල්ලන දේ පරීක්ෂා නොකර මතක සූත්‍රයක් භාවිතා කිරීම.",
-        "මෙම පිළිතුරේ වැරැද්ද පරීක්ෂා කිරීමට පෙර සංඛ්‍යා ක්‍රියා පමණක් පුහුණු වීම.",
-        "දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම.",
-        "යෙදුම් ගැටලු විසඳීම හි මූලික වැරැද්ද නිවැරදි කිරීමට පෙර වැඩි දුෂ්කර මිශ්‍ර ප්‍රශ්නයක් උත්සාහ කිරීම."
+        "රු. 300",
+        "රු. 450",
+        "රු. 1,500",
+        "රු. 3,300"
       ],
-      "explanation_si": "යෙදුම් ගැටලු විසඳීම සඳහා මුල් නිවැරදි කිරීම සම්පූර්ණ ක්‍රමයකි: දෙන ලද අගයන් ලියා, නිවැරදි ක්‍රියාව හෝ සූත්‍රය තෝරා, පියවරෙන් පියවර වැඩ පෙන්වීම."
+      "explanation_si": "නිවැරදි පිළිතුර: රු. 300. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-010-3",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-010",
-      "prompt": "Which practice task is most directly linked to Applied problem solving?",
+      "prompt": "A rectangular garden is 12 m by 9 m. A fence goes around it. How much fencing is needed?",
       "options": [
-        "A task mainly testing Ratio and proportion.",
-        "A short O/L-style question where the student must select and combine mathematical methods in exam-style problems.",
-        "A task mainly testing Algebraic notation.",
-        "Skips working steps and writes only the final answer."
+        "21 m",
+        "42 m",
+        "54 m",
+        "108 m"
       ],
       "correct_option_index": 1,
-      "explanation": "The best practice task must require the exact skill in Applied problem solving, not only a related topic.",
+      "explanation": "Fencing around the garden is the perimeter: 2(12 + 9) = 42 m.",
       "difficulty": 2,
-      "prompt_si": "යෙදුම් ගැටලු විසඳීම සමඟ සෘජුවම සම්බන්ධ පුහුණු කාර්යය කුමක්ද?",
+      "prompt_si": "12 m × 9 m වන සෘජුකෝණාස්‍ර උද්‍යානයකට වටේ වැටක් දමයි. අවශ්‍ය වැට දිග කීයද?",
       "options_si": [
-        "ප්‍රධාන වශයෙන් අනුපාත සහ සමානුපාත පරීක්ෂා කරන කාර්යයක්.",
-        "ශිෂ්‍යයා විභාග ආකාරයේ ගැටලු සඳහා ගණිත ක්‍රම තෝරා ඒකාබද්ධ කිරීම කළ යුතු කෙටි O/L ආකාරයේ ප්‍රශ්නයක්.",
-        "ප්‍රධාන වශයෙන් වීජගණිත ලකුණු කිරීම පරීක්ෂා කරන කාර්යයක්.",
-        "වැඩ කිරීමේ පියවර නොපෙන්වා අවසාන පිළිතුර පමණක් ලිවීම."
+        "21 m",
+        "42 m",
+        "54 m",
+        "108 m"
       ],
-      "explanation_si": "හොඳම පුහුණු කාර්යය යෙදුම් ගැටලු විසඳීම හි නිශ්චිත කුසලතාව ඉල්ලා සිටිය යුතුය."
+      "explanation_si": "නිවැරදි පිළිතුර: 42 m. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-010-4",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-010",
-      "prompt": "Which answer shows the learner is ready to move forward from Applied problem solving?",
+      "prompt": "A recipe uses rice and dhal in the ratio 4:1. If 2 kg of rice is used, how much dhal is needed?",
       "options": [
-        "The learner recognises the topic name but cannot explain the steps.",
-        "The learner can answer only when the teacher gives the method.",
-        "Changes units or signs without explaining the reason.",
-        "The learner solves a new question on Applied problem solving and explains why each step is used."
+        "0.25 kg",
+        "0.5 kg",
+        "1 kg",
+        "4 kg"
       ],
-      "correct_option_index": 3,
-      "explanation": "Readiness means the learner can apply Applied problem solving independently and explain the reasoning.",
+      "correct_option_index": 1,
+      "explanation": "Rice:dhal = 4:1, so dhal is 2 ÷ 4 = 0.5 kg.",
       "difficulty": 2,
-      "prompt_si": "ශිෂ්‍යයා යෙදුම් ගැටලු විසඳීම සංකල්පයෙන් ඉදිරියට යාමට සූදානම් බව පෙන්වන පිළිතුර කුමක්ද?",
+      "prompt_si": "වට්ටෝරුවක සහල් සහ පරිප්පු අනුපාතය 4:1 වේ. සහල් 2 kg භාවිතා කළහොත් පරිප්පු කොපමණ අවශ්‍යද?",
       "options_si": [
-        "ශිෂ්‍යයා මාතෘකාවේ නම හඳුනන නමුත් පියවර පැහැදිලි කළ නොහැක.",
-        "ගුරුවරයා ක්‍රමය දුන් විට පමණක් පිළිතුරු දිය හැක.",
-        "හේතුව පැහැදිලි නොකර ඒකක හෝ සලකුණු වෙනස් කිරීම.",
-        "ශිෂ්‍යයා යෙදුම් ගැටලු විසඳීම පිළිබඳ නව ප්‍රශ්නයක් විසඳා සෑම පියවරක්ම භාවිතා කරන හේතුව පැහැදිලි කරයි."
+        "0.25 kg",
+        "0.5 kg",
+        "1 kg",
+        "4 kg"
       ],
-      "explanation_si": "සූදානම් බව යනු යෙදුම් ගැටලු විසඳීම ස්වාධීනව යෙදවිය හැකිවීම සහ තර්කය පැහැදිලි කළ හැකිවීමයි."
+      "explanation_si": "නිවැරදි පිළිතුර: 0.5 kg. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     },
     {
       "id": "QB-MATH-010-5",
       "subject_id": "OL-MATH",
       "concept_id": "MATH-010",
-      "prompt": "After a wrong answer in Applied problem solving, which feedback is most useful?",
+      "prompt": "A phone price increases from Rs. 40,000 to Rs. 44,000. What is the percentage increase?",
       "options": [
-        "Go back to the first incorrect working line, correct that step, and then complete the calculation again.",
-        "Check Number operations first, even though the error happened in Applied problem solving.",
-        "Repeat the same answer and compare only the final mark.",
-        "Read the explanation once but leave the corrected working unwritten."
+        "4%",
+        "10%",
+        "40%",
+        "90%"
       ],
-      "correct_option_index": 0,
-      "explanation": "Useful feedback tells the learner what to check and how to improve the next attempt in Applied problem solving.",
+      "correct_option_index": 1,
+      "explanation": "Increase is Rs. 4,000. Percentage increase = 4,000/40,000 x 100 = 10%.",
       "difficulty": 3,
-      "prompt_si": "යෙදුම් ගැටලු විසඳීම ප්‍රශ්නයක වැරදි පිළිතුරකට පසු වඩාත් ප්‍රයෝජනවත් ප්‍රතිචාරය කුමක්ද?",
+      "prompt_si": "දුරකථනයක මිල රු. 40,000 සිට රු. 44,000 දක්වා වැඩි වේ. ප්‍රතිශත වැඩිවීම කීයද?",
       "options_si": [
-        "මුල් වැරදි වැඩ පියවරට ආපසු ගොස් එය නිවැරදි කර, ගණනය නැවත සම්පූර්ණ කිරීම.",
-        "වැරැද්ද යෙදුම් ගැටලු විසඳීම තුළ ඇති නමුත් මුලින්ම සංඛ්‍යා ක්‍රියා පරීක්ෂා කිරීම.",
-        "එම පිළිතුරම නැවත කර අවසාන ලකුණ පමණක් සැසඳීම.",
-        "පැහැදිලි කිරීම වරක් කියවා නිවැරදි වැඩ කිරීම නොලියා තැබීම."
+        "4%",
+        "10%",
+        "40%",
+        "90%"
       ],
-      "explanation_si": "ප්‍රයෝජනවත් ප්‍රතිචාරය යෙදුම් ගැටලු විසඳීම හි ඊළඟ උත්සාහය සඳහා පරීක්ෂා කළ යුතු දේ සහ වැඩිදියුණු කරන ආකාරය කියයි."
+      "explanation_si": "නිවැරදි පිළිතුර: 10%. ප්‍රශ්නයේ දත්ත සහ අදහස අනුව මෙය ගැළපෙන පිළිතුරයි."
     }
   ]
 }
