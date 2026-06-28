@@ -20,3 +20,15 @@ class GenerateSyntheticDataResponse(BaseModel):
     student_count: int
     assessment_count: int
     concept_score_count: int
+
+
+class TrainSupportModelResponse(BaseModel):
+    model_version: str
+    label_strategy: str
+    subject_count: int
+    training_examples: int
+    label_counts: dict[str, int]
+    accuracy: float
+    f1_macro: float
+    model_path: str
+    metrics_path: str
