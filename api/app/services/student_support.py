@@ -9,6 +9,7 @@ from app.schemas.student_support import (
     SupportRiskFactor,
     SupportRiskFeatures,
 )
+from app.services.student_support_model import SupportModelRegistry
 
 WEAK_THRESHOLD = 0.60
 STRONG_THRESHOLD = 0.75
@@ -46,11 +47,10 @@ def _downstream_impact_by_concept(edges: list[dict]) -> dict[str, int]:
 
 
 class StudentSupportEngine:
-    """Builds an explainable academic-support risk profile from existing learning evidence.
+    """Builds an explainable academic-support profile from existing learning evidence.
 
-    This is the first deployable baseline. It behaves like a deterministic risk model with
-    additive local feature attribution. A trained model + real SHAP explainer can later
-    replace the scoring function without changing the API/UI response shape.
+    If a trained Random Forest artifact exists, it uses the ML model and SHAP explanation.
+    If no artifact exists yet, it falls back to the deterministic baseline so the UI still works.
     """
 
     def build_profile(
@@ -65,7 +65,7 @@ class StudentSupportEngine:
         cohort_mastery_by_concept: dict[str, float | None],
         assessment_summary: dict,
     ) -> StudentSupportProfileResponse:
-        features = self._build_features(
+        features = self.build_features(
             concepts=concepts,
             edges=edges,
             latest_scores=latest_scores,
@@ -73,26 +73,61 @@ class StudentSupportEngine:
             cohort_mastery_by_concept=cohort_mastery_by_concept,
             assessment_summary=assessment_summary,
         )
-        risk, factors = self._score(features)
-        actions = self._recommended_actions(features, risk, factors)
 
+        ml_prediction = SupportModelRegistry.predict(features)
+        if ml_prediction is not None:
+            risk = SupportRisk(
+                score=ml_prediction.score,
+                band=ml_prediction.band,
+                confidence=ml_prediction.confidence,
+            )
+            factors = ml_prediction.factors
+            explanation_method = ml_prediction.method
+        else:
+            risk, factors = self._score(features)
+            explanation_method = "additive_feature_attribution_baseline_shap_ready"
+
+        actions = self._recommended_actions(features, risk, factors)
         top_positive_factors = [factor for factor in factors if factor.direction == "increases_risk" and factor.impact > 0]
         top_positive_factors.sort(key=lambda factor: factor.impact, reverse=True)
-        main_reason = top_positive_factors[0].label if top_positive_factors else "No major risk factor"
+        main_reason = top_positive_factors[0].label if top_positive_factors else "No major factor"
+        method_text = (
+            "using a trained Random Forest model with SHAP explanations"
+            if explanation_method.startswith("ml_random_forest_shap")
+            else "using the deterministic baseline while no trained model artifact is available"
+        )
 
         return StudentSupportProfileResponse(
             student=StudentSummary(**student),
             subject=SubjectNode(**subject),
             risk=risk,
             features=features,
-            explanation_method="additive_feature_attribution_baseline_shap_ready",
+            explanation_method=explanation_method,
             explanation_summary=(
-                f"This learner is marked as {risk.band.replace('_', ' ')} mainly because of {main_reason.lower()}. "
-                "The current explanation is a SHAP-ready baseline: the API shape is designed so a trained "
-                "model and SHAP values can replace the deterministic attribution later."
+                f"This learner is marked as {risk.band.replace('_', ' ')} mainly because of {main_reason.lower()}, "
+                f"{method_text}."
             ),
             factors=factors,
             recommended_actions=actions,
+        )
+
+    def build_features(
+        self,
+        *,
+        concepts: list[dict],
+        edges: list[dict],
+        latest_scores: dict[str, dict],
+        recent_scores_by_concept: dict[str, list[dict]],
+        cohort_mastery_by_concept: dict[str, float | None],
+        assessment_summary: dict,
+    ) -> SupportRiskFeatures:
+        return self._build_features(
+            concepts=concepts,
+            edges=edges,
+            latest_scores=latest_scores,
+            recent_scores_by_concept=recent_scores_by_concept,
+            cohort_mastery_by_concept=cohort_mastery_by_concept,
+            assessment_summary=assessment_summary,
         )
 
     def _build_features(
@@ -189,7 +224,7 @@ class StudentSupportEngine:
                 value=features.avg_mastery,
                 impact=round(max(0.0, 1.0 - features.avg_mastery) * 0.34, 4),
                 direction="increases_risk",
-                explanation="Lower subject mastery increases support risk.",
+                explanation="Lower subject mastery increases support priority.",
             ),
             SupportRiskFactor(
                 feature="weak_concept_count",
@@ -213,7 +248,7 @@ class StudentSupportEngine:
                 value=features.cohort_gap_avg,
                 impact=round(min(negative_cohort_gap, 0.35) / 0.35 * 0.12, 4),
                 direction="increases_risk",
-                explanation="A larger gap from the class average increases prioritisation risk.",
+                explanation="A larger gap from the class average increases prioritisation.",
             ),
             SupportRiskFactor(
                 feature="root_cause_count",
@@ -245,7 +280,7 @@ class StudentSupportEngine:
                 value=features.strong_concept_count,
                 impact=round(-(features.strong_concept_count / concept_count) * 0.08, 4),
                 direction="reduces_risk",
-                explanation="Strong concepts reduce overall support risk.",
+                explanation="Strong concepts reduce overall support priority.",
             ),
         ]
 
