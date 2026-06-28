@@ -50,6 +50,12 @@ export default function RootLayout({
                 Home
               </Link>
               <Link
+                href="/support"
+                className="rounded-full px-4 py-2 text-sm text-muted transition-colors hover:bg-white/70 hover:text-foreground"
+              >
+                Student Help
+              </Link>
+              <Link
                 href="/students"
                 className="rounded-full px-4 py-2 text-sm text-muted transition-colors hover:bg-white/70 hover:text-foreground"
               >
