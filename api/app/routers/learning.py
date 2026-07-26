@@ -4,6 +4,8 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from app.core.config import settings
+from app.core.deps import CurrentUser, authorise_student_access, current_user
+from app.db import models
 from app.db.postgres import get_session
 from app.repositories.graph_repository import GraphRepository
 from app.repositories.postgres_repository import PostgresRepository
@@ -63,8 +65,10 @@ def _load_subject_map(student_id: str, subject_id: str, session: Session):
 def get_learning_profile(
     student_id: str,
     subject_id: str,
+    user: CurrentUser = Depends(current_user),
     session: Session = Depends(get_session),
 ) -> LearningProfileResponse:
+    authorise_student_access(user, student_id)
     ensure_quiz_questions_seeded(session, settings.quiz_bank_path)
     subject_map = _load_subject_map(student_id, subject_id, session)
     return build_learning_profile(
@@ -76,8 +80,10 @@ def get_learning_profile(
 @router.post("/quiz/start", response_model=QuizAttemptResponse)
 def start_quiz(
     payload: QuizStartRequest,
+    user: CurrentUser = Depends(current_user),
     session: Session = Depends(get_session),
 ) -> QuizAttemptResponse:
+    authorise_student_access(user, payload.student_id)
     ensure_quiz_questions_seeded(session, settings.quiz_bank_path)
     subject_map = _load_subject_map(payload.student_id, payload.subject_id, session)
     requested_concepts = payload.concept_ids or [
@@ -115,8 +121,13 @@ def start_quiz(
 def submit_quiz(
     attempt_id: str,
     payload: QuizSubmitRequest,
+    user: CurrentUser = Depends(current_user),
     session: Session = Depends(get_session),
 ) -> QuizSubmitResponse:
+    attempt = session.get(models.QuizAttempt, attempt_id)
+    if attempt is None:
+        raise HTTPException(status_code=404, detail="Quiz attempt not found.")
+    authorise_student_access(user, attempt.student_id)
     try:
         return submit_quiz_attempt(
             session=session,

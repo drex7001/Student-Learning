@@ -3,6 +3,7 @@ from __future__ import annotations
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 
+from app.core.deps import require_staff
 from app.db.postgres import get_session
 from app.repositories.graph_repository import GraphRepository
 from app.repositories.postgres_repository import PostgresRepository
@@ -15,7 +16,11 @@ from app.schemas.student_support import (
 )
 from app.services.student_support import StudentSupportEngine
 
-router = APIRouter(prefix="/api", tags=["student-support"])
+router = APIRouter(
+    prefix="/api",
+    tags=["student-support"],
+    dependencies=[Depends(require_staff)],
+)
 
 
 def _load_subject_context(subject_id: str) -> tuple[dict, list[dict], list[dict]]:

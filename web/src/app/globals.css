@@ -1,33 +1,105 @@
 @import "tailwindcss";
 
+/*
+  Design language: the attendance register.
+
+  Borrowed from the object this tool replaces — ruled hairlines, ledger stock, a
+  registrar's indigo for structure, and a warm ramp for how much adult attention a
+  line needs. The ramp is deliberately NOT a traffic light: its low end is a pale
+  neutral, never green, because nothing here marks a student as good.
+
+  Only two hues are ever used to encode state: `attention` (act now) and `watch`.
+  Everything else is ink and paper. Both were validated against both surfaces for
+  colour-vision separation, chroma and contrast before being adopted.
+*/
+
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #f2efe8;
-  --foreground: #132034;
-  --surface: rgba(255, 255, 255, 0.78);
-  --surface-strong: #ffffff;
-  --muted: #5e6878;
-  --line: rgba(19, 32, 52, 0.12);
-  --accent: #d9613d;
-  --accent-soft: rgba(217, 97, 61, 0.14);
-  --teal: #1b7f8a;
-  --gold: #e1b04b;
-  --font-sans: var(--font-space-grotesk);
-  --font-mono: var(--font-plex-mono);
+  color-scheme: light;
+
+  /* paper and ink */
+  --paper: #eceade;
+  --surface: #f4f3ee;
+  --surface-raised: #fbfaf6;
+  --surface-sunken: #e5e3d7;
+  --ink: #1a1e1b;
+  --ink-secondary: #4c5150;
+  --ink-muted: #6f7472;
+  --rule: rgba(26, 30, 27, 0.14);
+  --rule-strong: rgba(26, 30, 27, 0.26);
+
+  /* structure */
+  --indigo: #37427e;
+  --indigo-soft: rgba(55, 66, 126, 0.1);
+
+  /* state — the only two encoding hues */
+  --attention: #a03a26;
+  --attention-soft: rgba(160, 58, 38, 0.12);
+  --watch: #b5842a;
+  --watch-soft: rgba(181, 132, 42, 0.13);
+  --calm: #6f7472;
+  --calm-soft: rgba(111, 116, 114, 0.1);
+
+  --focus: #37427e;
+
+  --radius: 3px;
+  --radius-lg: 6px;
+
+  --font-sans: var(--font-ui), system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-num: var(--font-num), ui-monospace, "Cascadia Mono", "Consolas", monospace;
+}
+
+.dark {
+  color-scheme: dark;
+
+  --paper: #101317;
+  --surface: #171a1f;
+  --surface-raised: #1e222a;
+  --surface-sunken: #0c0f12;
+  --ink: #f2f3f0;
+  --ink-secondary: #b4b9bc;
+  --ink-muted: #878d92;
+  --rule: rgba(242, 243, 240, 0.13);
+  --rule-strong: rgba(242, 243, 240, 0.24);
+
+  --indigo: #8b96d8;
+  --indigo-soft: rgba(139, 150, 216, 0.14);
+
+  --attention: #d24a3e;
+  --attention-soft: rgba(210, 74, 62, 0.16);
+  --watch: #bb8d14;
+  --watch-soft: rgba(187, 141, 20, 0.16);
+  --calm: #878d92;
+  --calm-soft: rgba(135, 141, 146, 0.12);
+
+  --focus: #8b96d8;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-paper: var(--paper);
   --color-surface: var(--surface);
-  --color-surface-strong: var(--surface-strong);
-  --color-muted: var(--muted);
-  --color-line: var(--line);
-  --color-accent: var(--accent);
-  --color-accent-soft: var(--accent-soft);
-  --color-teal: var(--teal);
-  --color-gold: var(--gold);
+  --color-raised: var(--surface-raised);
+  --color-sunken: var(--surface-sunken);
+  --color-ink: var(--ink);
+  --color-ink-secondary: var(--ink-secondary);
+  --color-ink-muted: var(--ink-muted);
+  --color-rule: var(--rule);
+  --color-rule-strong: var(--rule-strong);
+  --color-indigo: var(--indigo);
+  --color-indigo-soft: var(--indigo-soft);
+  --color-attention: var(--attention);
+  --color-attention-soft: var(--attention-soft);
+  --color-watch: var(--watch);
+  --color-watch-soft: var(--watch-soft);
+  --color-calm: var(--calm);
+  --color-calm-soft: var(--calm-soft);
+
+  --radius-card: var(--radius-lg);
+  --radius-chip: var(--radius);
+
   --font-sans: var(--font-sans);
-  --font-mono: var(--font-mono);
+  --font-num: var(--font-num);
 }
 
 * {
@@ -36,18 +108,18 @@
 
 html {
   min-height: 100%;
-  background:
-    radial-gradient(circle at top left, rgba(225, 176, 75, 0.35), transparent 30%),
-    radial-gradient(circle at top right, rgba(27, 127, 138, 0.18), transparent 26%),
-    linear-gradient(180deg, #fbf7f0 0%, #eef2ef 100%);
+  background: var(--paper);
 }
 
 body {
   margin: 0;
-  min-height: 100vh;
-  color: var(--foreground);
-  font-family: var(--font-space-grotesk), sans-serif;
-  background: transparent;
+  min-height: 100svh;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -56,11 +128,46 @@ a {
 
 button,
 input,
-select {
+select,
+textarea {
   font: inherit;
+  color: inherit;
 }
 
-canvas {
-  display: block;
-  touch-action: none;
+/* Every figure aligns in its column. */
+.num,
+th,
+td,
+input[type="number"] {
+  font-family: var(--font-num);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+/* One visible focus treatment for everything, replacing the old `outline-none`. */
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: var(--radius);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* React Flow inherits the page surfaces rather than shipping its own theme. */
+.react-flow__attribution {
+  display: none;
+}
+.react-flow__edge-path {
+  stroke: var(--rule-strong);
+}
+.react-flow__handle {
+  opacity: 0;
+  pointer-events: none;
 }

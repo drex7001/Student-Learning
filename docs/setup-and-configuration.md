@@ -1,161 +1,121 @@
 # Setup And Configuration
 
-This project is a monorepo with a FastAPI backend, a Next.js frontend, PostgreSQL for student assessment evidence, and Neo4j for the curriculum knowledge graph.
-
 ## Prerequisites
 
 - Docker and Docker Compose
-- Node.js 22 if running the frontend outside Docker
-- Python 3.12 if running the API or tests outside Docker
+- Node.js 22 and Python 3.12 if running outside Docker
+
+## Full stack
+
+```powershell
+Copy-Item .env.example .env
+docker compose up --build -d
+.\scripts\reset-and-seed.ps1
+```
+
+The seed script prints demonstration accounts. All use the password `wellbeing2026`.
+
+| Service | URL |
+|---|---|
+| Application | http://localhost:3000 |
+| API | http://localhost:8000 |
+| API docs | http://localhost:8000/docs |
+| Neo4j browser | http://localhost:7474 |
+| PostgreSQL | localhost:5432 |
 
 ## Environment
 
-Copy `.env.example` to `.env` before starting the stack.
-
 | Variable | Purpose | Default |
-| --- | --- | --- |
-| `POSTGRES_DB` | PostgreSQL database name | `kgis` |
-| `POSTGRES_USER` | PostgreSQL user | `kgis` |
-| `POSTGRES_PASSWORD` | PostgreSQL password | `kgis` |
-| `POSTGRES_PORT` | Host port for PostgreSQL | `5432` |
-| `DATABASE_URL` | SQLAlchemy database URL used by the API | `postgresql+psycopg://kgis:kgis@postgres:5432/kgis` |
-| `NEO4J_URI` | Neo4j Bolt URI | `bolt://neo4j:7687` |
-| `NEO4J_USERNAME` | Neo4j user | `neo4j` |
-| `NEO4J_PASSWORD` | Neo4j password | `knowledge-graph-secret` |
-| `NEXT_PUBLIC_API_BASE_URL` | Browser-facing API base URL | `http://localhost:8000` |
-| `CORS_ORIGINS` | Allowed frontend origins for FastAPI CORS | `http://localhost:3000,http://127.0.0.1:3000` |
+|---|---|---|
+| `POSTGRES_DB` / `POSTGRES_USER` / `POSTGRES_PASSWORD` | PostgreSQL credentials | `kgis` |
+| `DATABASE_URL` | SQLAlchemy URL | `postgresql+psycopg://kgis:kgis@postgres:5432/kgis` |
+| `NEO4J_URI` / `NEO4J_USERNAME` / `NEO4J_PASSWORD` | Neo4j connection | `bolt://neo4j:7687`, `neo4j`, `knowledge-graph-secret` |
+| `API_ORIGIN` | Where Next rewrites `/api/*` | `http://api:8000` |
+| `JWT_SECRET` | Session signing key | generated per process if unset — **sessions reset on every restart** |
+| `RISK_MODEL_VARIANT` | `amended` or `baseline` | `amended` |
+| `CORS_ORIGINS` | Allowed origins for direct API calls | `http://localhost:3000,http://127.0.0.1:3000` |
 
-For local API execution outside Docker, use localhost service URLs:
+The browser never calls the API cross-origin: it calls `/api/*` on its own origin and
+Next rewrites to the API. That keeps the session cookie first-party and means the API
+target is read at request time rather than inlined into the bundle at build time.
+
+## Local development
+
+Run the databases in Docker and the two apps natively:
 
 ```powershell
+docker compose up -d postgres neo4j
+
+# API
+cd api
 $env:DATABASE_URL='postgresql+psycopg://kgis:kgis@localhost:5432/kgis'
 $env:NEO4J_URI='bolt://localhost:7687'
-$env:PYTHONPATH='.'
+$env:JWT_SECRET='dev-secret'
+..\.venv\Scripts\python.exe -m uvicorn app.main:app --reload --port 8000
+
+# Frontend
+cd web
+npm run dev
 ```
 
-## Start The Full Stack
+**Use `http://localhost:3000`, not `127.0.0.1`.** The Next dev server blocks
+cross-origin requests to its own dev resources, and browsing the app on a different
+host than the dev server expects silently prevents hydration — React handlers never
+attach and the page looks broken for no visible reason.
+
+### Python environment
+
+Use the project virtualenv, not a system or Anaconda Python:
 
 ```powershell
-docker compose up --build
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r api\requirements.txt -r api\requirements-dev.txt
 ```
 
-Services:
-
-- Frontend: `http://localhost:3000`
-- API: `http://localhost:8000`
-- API docs: `http://localhost:8000/docs`
-- Neo4j browser: `http://localhost:7474`
-- PostgreSQL: `localhost:5432`
-
-## First-Time Data Setup
-
-The API creates PostgreSQL tables on startup, but curriculum and synthetic evidence are loaded through internal endpoints.
-
-```powershell
-Invoke-RestMethod -Method Post -Uri http://localhost:8000/internal/import/curriculum
-Invoke-RestMethod -Method Post -Uri http://localhost:8000/internal/generate/synthetic-data -ContentType 'application/json' -Body '{}'
-```
-
-Expected current seed summary:
-
-- 4 subjects
-- 40 concepts
-- 45 prerequisite edges
-- 240 students
-- 960 assessments
-- 38,400 concept scores
-
-## Development Commands
-
-Backend tests:
+## Checks
 
 ```powershell
 cd api
-$env:PYTHONPATH='.'
-pytest
-```
+..\.venv\Scripts\python.exe -m pytest     # 206 tests, incl. the 133 model tests
 
-Frontend checks:
-
-```powershell
-cd web
+cd ..\web
 npm run lint
 npm run build
 ```
 
-Frontend dev server outside Docker:
+`api/pyproject.toml` sets `pythonpath`, so `PYTHONPATH` no longer needs setting by hand.
+
+## Reseeding
 
 ```powershell
-cd web
-npm run dev
+# Preserve the schema, replace the data (needs an administrator sign-in)
+.\scripts\reset-and-seed.ps1 -SkipBuild -AdminUser <principal-username>
+
+# After a model change: drop and rebuild the schema first
+.\scripts\reset-and-seed.ps1 -Recreate
 ```
 
-If port `3000` is already used by Docker, run:
+`-Recreate` is needed after any change to `api/app/db/models.py`. The API creates
+tables on startup but never alters them, so a new column on an existing table is
+invisible without it. All data is generated, so this costs nothing.
+
+Order matters and the script enforces it: curriculum → risk model → roster →
+assessments → derived evidence → graph projection.
+
+## Regenerating the research artefacts
+
+The risk model's parameters, the authored copy and the research report must stay in
+step. `build_ui_data.py` cross-validates `REPORT.md`'s edge table against the code and
+fails the build on drift.
 
 ```powershell
-npm run dev -- --port 3001
+cd research\dropout-ews
+..\..\.venv\Scripts\python.exe ui\build_ui_data.py ui\ui_data.json
+..\..\.venv\Scripts\python.exe ui\export_model.py ui\case_data.json
+node ui\verify_infer.cjs ui\case_data.json
+cd ..\..
+.\.venv\Scripts\python.exe scripts\build_risk_factor_copy.py
 ```
 
-## Resetting Seed Data
-
-To replace existing synthetic evidence without deleting Docker volumes:
-
-```powershell
-Invoke-RestMethod -Method Post -Uri http://localhost:8000/internal/import/curriculum
-Invoke-RestMethod -Method Post -Uri http://localhost:8000/internal/generate/synthetic-data -ContentType 'application/json' -Body '{}'
-```
-
-`/internal/import/curriculum` replaces Neo4j subject and concept nodes. `/internal/generate/synthetic-data` replaces PostgreSQL students, assessments, questions, question results, and concept scores.
-
-
-
-## Hot reload 
-
-Yes, you can avoid rebuilding every time, but **the current Docker setup is production-style**, not hot reload.
-
-Right now:
-
-- `web/Dockerfile` runs `npm run build` then `npm run start`
-- `api/Dockerfile` runs `uvicorn` without `--reload`
-- `docker-compose.yml` does not mount source code volumes
-
-So Docker works, but it is **not hot reload Docker** yet.
-
-Best current dev workflow:
-
-```powershell
-docker compose up -d postgres neo4j
-```
-
-Run API locally with reload:
-
-```powershell
-cd api
-$env:PYTHONPATH='.'
-$env:DATABASE_URL='postgresql+psycopg://kgis:kgis@localhost:5432/kgis'
-$env:NEO4J_URI='bolt://localhost:7687'
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-```
-
-Run frontend locally with hot reload:
-
-```powershell
-cd web
-npm run dev
-```
-
-Then open:
-
-```text
-http://localhost:3000
-```
-
-If Docker web is already using port `3000`, run:
-
-```powershell
-npm run dev -- --port 3001
-```
-
-So: **yes, you can run without rebuilding**, but for now hot reload is easiest outside Docker while Docker runs only Postgres and Neo4j.
-
-A proper next improvement would be adding `docker-compose.dev.yml` with mounted volumes and reload commands for both `api` and `web`.
+A test asserts that `data/seeds/risk_factor_copy.json` carries the running model's
+fingerprint, so a stale copy file fails the suite rather than shipping wrong labels.

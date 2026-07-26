@@ -1,116 +1,192 @@
 # Architecture
 
-The system is a teacher-facing Sri Lankan O/L learning intelligence prototype. It combines prerequisite graph traversal with synthetic assessment evidence to identify likely root-cause learning gaps.
+An early-support screening and learning-intelligence system for Sri Lankan schools
+(R26-IT-165, Component 3 — Monitoring, Visualization & AI Learning Support Dashboard).
+
+It answers two different questions, and keeps them apart on purpose:
+
+| | Disengagement risk | Academic support |
+|---|---|---|
+| Question | Which learners may stop attending, and what would help? | Which learners need teaching attention in this subject, and why? |
+| Engine | Discrete Bayesian network, exact inference (`app/risk`) | Deterministic prerequisite-graph diagnosis (`app/services/diagnosis.py`) |
+| Output | Distribution over `Low / Medium / High` | Band `high_support / watch / stable` |
+| Audience | Teachers and counsellors only | Teachers; learners see the learning half |
+
+Conflating them would be the easiest way to make this system harmful. A learner who is
+behind in mathematics is not thereby a learner who will leave school.
 
 ## Components
 
-- `web`: Next.js 16 application with the teacher dashboard, support queue, student diagnosis, and concept map.
-- `api`: FastAPI service for curriculum import, synthetic data generation, graph lookup, support queues, and diagnosis.
-- PostgreSQL: stores students, assessments, questions, question results, and computed concept scores.
-- Neo4j: stores O/L subjects, concepts, and `REQUIRED_FOR` prerequisite relationships.
-- `data`: stores the prototype curriculum bundle, synthetic data generator configuration, and subject-wise quiz banks.
+```
+                        Next.js 16 (App Router)
+     /login    /student/*  (learning only)    /teacher/*  (risk + learning)
+                            │  same-origin /api/*  →  rewrite  →  FastAPI
+                            ▼
+                        FastAPI (one service)
+ ┌─────────┬────────────┬──────────────┬────────────┬───────────┬──────────┐
+ │ auth    │ risk (BN)  │ graph (Neo4j)│ diagnosis  │ learn     │ internal │
+ └─────────┴────────────┴──────────────┴────────────┴───────────┴──────────┘
+        │           │             │             │           │
+        ▼           ▼             ▼             ▼           ▼
+ ┌────────────────────────────┐        ┌───────────────────────────────┐
+ │ PostgreSQL  (of record)    │───────▶│ Neo4j  (derived view)         │
+ │ users, schools, classes,   │project │ School/Class/Teacher/Student  │
+ │ teachers, students, terms, │        │ Subject/Concept/RiskFactor    │
+ │ attendance, risk evidence, │        │ REQUIRED_FOR, INFLUENCES,     │
+ │ risk_assessments (audit),  │        │ HAS_MASTERY, HAS_EVIDENCE,    │
+ │ concept scores, quizzes    │        │ IN_CLASS, FRIENDS_WITH        │
+ └────────────────────────────┘        └───────────────────────────────┘
+```
 
-## Data Flow
+One Python environment. `pgmpy` coexists with the API's existing pins
+(`numpy 2.2.5 / pandas 2.2.3 / scikit-learn 1.6.1`), so the risk engine is a module,
+not a second service.
 
-1. `POST /internal/import/curriculum` reads `data/curriculum/ol_subject_curriculum.json`.
-2. The API validates each subject graph and writes subjects/concepts/edges into Neo4j.
-3. `POST /internal/generate/synthetic-data` reads the same curriculum and `data/seeds/generator_config.json`.
-4. Synthetic students, assessments, question results, and concept scores are written into PostgreSQL.
-5. Frontend workflows request subject-filtered concepts through `GET /api/options?subject_id=...`.
-6. The student diagnosis page requests a subject-wide support map, then loads detailed diagnosis for the selected concept.
+## The risk engine
 
-## Main API Surface
+`api/app/risk/dropout_ews_bn.py` is the network described in
+`research/dropout-ews/REPORT.md`, vendored unchanged so the API and the research build
+scripts share exactly one copy of the model and its parameters. 25 nodes, 42 edges in
+the `amended` variant, fingerprint `f12dd7f40c61ecd0`.
 
-Internal setup endpoints:
+The model is built once at startup into `app.state.risk_model` and shared; `RiskModel`
+is a frozen dataclass, so reuse is safe.
 
-- `POST /internal/import/curriculum`
-- `POST /internal/generate/synthetic-data`
+**The outcome has exactly three parents** — `Current_Attendance`, `Grade_Band` and
+`School_Engagement`. A complete register therefore determines the headline figure
+exactly: the whole screen is twelve numbers (`GET /api/risk/screening-matrix`).
+Everything else in a record tells you *what to do*, not *what to expect*.
 
-Teacher workflow endpoints:
+### Explanation — what replaces SHAP
 
-- `GET /api/subjects`
-- `GET /api/options?subject_id=OL-MATH`
-- `GET /api/overview/concept/{concept_id}`
-- `GET /api/diagnosis/student/{student_id}/subject/{subject_id}/map`
-- `GET /api/concepts/{concept_id}/prerequisites`
-- `GET /api/diagnosis/student/{student_id}/concept/{concept_id}`
-- `GET /api/learn/student/{student_id}/subject/{subject_id}`
-- `POST /api/learn/quiz/start`
-- `POST /api/learn/quiz/{attempt_id}/submit`
+Four exact estimands, in `app/services/risk_explain.py`:
 
-## Frontend Workflows
+| Function | Estimand | Panel |
+|---|---|---|
+| `drivers` | `P(High \| bg, X=concern) − P(High \| bg, X=reference)` | What's behind it |
+| `action_candidates` | `P(High \| do(levers ∪ {X:=target}), bg) − P(High \| do(levers), bg)` | What would help |
+| `worth_asking` | swing over the states of an unrecorded variable | What to find out next |
+| `circumstance_gap` | `P(High \| do(levers), bg)` minus the register score | Circumstances ahead |
 
-Dashboard:
+`routes` — how a factor reaches the outcome — is a Neo4j path query.
 
-- Entry point at `/`.
-- Selects an O/L subject and concept.
-- Shows support summary counts.
-- Links to support queue, diagnosis, and concept map with query parameters.
+Two conditioning rules do the real work:
 
-Support Queue:
+1. **Drivers and actions never condition on the register.** Condition on the outcome's
+   parents and every other variable becomes d-separated from it, collapsing all
+   contributions to exactly zero.
+2. **Actions condition only on non-descendants of any lever**, computed from the graph
+   rather than hardcoded. Conditioning on a variable an action is meant to change
+   would block its own effect.
 
-- Route: `/students?subject=OL-MATH&concept=MATH-010`
-- Ranks learners by readiness for the selected concept.
-- Opens individual diagnosis for a learner.
+## Constraints enforced in code
 
-Student Diagnosis:
+1. `do()` is an allowlist. Intervening on `Neuro_Type`, `Sector`, `Grade_Band` or
+   `Parent_Education` returns **403**, not 422 — a forbidden question, not a malformed
+   one. Invalid evidence returns 422.
+2. Every risk response carries `provenance`, `caveat`, `interpretation`,
+   `model_variant` and `model_fingerprint` as **required** fields.
+3. `observational_conditional` and `interventional_do` are never conflated.
+4. **Students never see a risk score.** Enforced by `deny_students` in the API, not by
+   omitting it from the UI.
+5. A student may read only their own learning record (`authorise_student_access`).
+6. Every profile view writes a `risk_assessments` row: who asked, about whom, on what
+   evidence, against which fingerprint.
+7. No raw identifier reaches a screen — the authored copy in
+   `data/seeds/risk_factor_copy.json` covers every node and state, and a test fails if
+   it drifts from the model.
 
-- Route: `/diagnosis?subject=OL-ENG&student=STU-001&concept=ENG-010`
-- Shows every concept in the selected subject as a support map for the learner.
-- Opens detailed root-cause diagnosis, trends, and remediation order when a concept node is selected.
+## Data flow
 
-Concept Map:
+1. `POST /internal/import/curriculum` — subjects, concepts, `REQUIRED_FOR` into Neo4j.
+2. `POST /internal/import/risk-model` — the 25 factors and 42 causal edges into Neo4j,
+   carrying each edge's mechanism and evidence level from the edge-justification table.
+3. `POST /internal/seed/school-data` — three schools across the Urban/Rural/Estate
+   sectors, their classes, teachers, students, login accounts, wellbeing evidence and
+   attendance. Evidence is drawn by ancestral sampling from the network itself, with
+   `Sector` pinned from the school and `Grade_Band` from the class, so a learner's
+   circumstances are internally consistent.
+4. `POST /internal/generate/synthetic-data` — assessment evidence for those learners.
+   Mastery is depressed by an academic penalty derived from the same evidence draw, so
+   the two halves describe one child.
+5. `POST /internal/generate/evidence` — `Current_Academic_Performance` derived from
+   the resulting concept scores.
+6. `POST /internal/project/graph` — the Neo4j read view.
 
-- Route: `/concepts?subject=OL-SCI&concept=SCI-010`
-- Shows upstream prerequisite paths and downstream dependent concepts.
+Internal endpoints are administrator-only, except while the database has no accounts
+at all: the seed creates the first administrator, so requiring one would deadlock.
 
-Learn:
+## Neo4j
 
-- Route: `/learn?subject=OL-MATH&student=STU-001`
-- Shows student-facing lesson cards for weak concepts.
-- Starts a personalized multiple-choice quiz from the highest-priority support concepts.
-- Offers Sinhala quiz display for Mathematics, Science, and ICT when translated bank fields exist.
-- Submitting a quiz creates assessment-compatible rows so later diagnosis uses the updated evidence.
+Postgres is the system of record; the graph is a derived view, rebuilt rather than
+incrementally maintained. It exists to answer questions that span boundaries the
+relational schema keeps apart.
 
-## Diagnosis Logic
+```cypher
+(:Student)-[:IN_CLASS]->(:Class)-[:AT_SCHOOL]->(:School)
+(:Teacher)-[:TEACHES_CLASS]->(:Class)
+(:Student)-[:HAS_MASTERY {score, band}]->(:Concept)-[:REQUIRED_FOR]->(:Concept)
+(:Student)-[:HAS_EVIDENCE {state, concern, source}]->(:RiskFactor)
+(:RiskFactor)-[:INFLUENCES {evidence, mechanism, confounders, concern}]->(:RiskFactor)
+(:Student)-[:FRIENDS_WITH]->(:Student)
+```
 
-The diagnosis engine is deterministic. It does not run probabilistic graph inference.
+Four queries earn the graph its place:
 
-Inputs:
+- **Causal routes** — `(:RiskFactor)-[:INFLUENCES*1..6]->(outcome)`. This is the
+  "why this flag?" surface, and it makes visible that no protected characteristic
+  reaches the outcome except through something a school can change.
+- **Shared conditions** — concerns many learners hold in common. A factor half a
+  school shares is a condition of that school with a school-level fix, not a list of
+  children to watch. This reading is the ethical point of the whole screen.
+- **Peer ties** — few connections is a prompt to look. Ties are generated, not
+  surveyed, and are labelled as such wherever shown.
+- **Root causes** — weak concepts joined to their prerequisite chain in one traversal.
 
-- selected student
-- target concept
-- prerequisite paths from Neo4j
-- latest and recent concept scores from PostgreSQL
-- cohort mastery for comparison
+## Frontend
 
-Outputs:
+Next.js 16 App Router, Tailwind v4 with a token-based design system, light and dark.
 
-- readiness status
-- weak prerequisite concepts
-- root-cause candidates
-- concept trends
-- remediation order
-- teacher-facing explanation
+The API is reached same-origin through a rewrite (`/api/*` → the API container), so the
+session cookie is first-party and the target is read at request time rather than
+inlined at build time.
 
-Thresholds:
+`src/proxy.ts` is an optimistic route guard only — it checks a cookie exists so an
+unauthenticated visitor lands on sign-in rather than an empty dashboard. Every rule
+that matters is enforced by the API against a verified token.
 
-- strong: `>= 0.75`
-- borderline: `0.60-0.74`
-- weak: `< 0.60`
+Design language: the attendance register. Ruled hairlines, ledger stock, a registrar's
+indigo for structure, and a warm ramp for how much adult attention a line needs. The
+ramp is **not** a traffic light — its low end is a pale neutral, never green, because
+nothing here marks a student as good. Only two hues encode state; everything else is
+ink and paper. Both were validated for colour-vision separation, chroma and contrast
+against both surfaces.
 
-## Storage Notes
+## Frontend routes
 
-Concept IDs are globally unique across subjects. This lets PostgreSQL keep `concept_id` as a simple string without an extra subject column on concept score rows.
+```
+/login                            portal picker and credentials
 
-Quiz banks live as one JSON file per subject in `data/quiz`. PostgreSQL stores the English prompt/options/explanation used for grading and assessment evidence. Sinhala quiz text remains in the seed files and is attached to quiz API responses for display, avoiding a database migration for translated UI text.
+/teacher                          overview: bands, shared conditions, screening matrix
+/teacher/caseload                 ranked list, review-threshold slider, burden readout
+/teacher/students/[id]            the record screen (below)
+/teacher/classes                  peer ties and shared conditions for one class
+/teacher/queue                    academic support queue
+/teacher/concepts                 prerequisite concept map
 
-Neo4j stores:
+/student                          progress — no risk score
+/student/lessons                  the learner's own concept map
+/student/quiz                     personalised practice quiz
+```
 
-- `(:Subject {id, name, name_si, description, description_si, default_concept_id})`
-- `(:Concept {id, subject_id, name, name_si, description, description_si})`
-- `(source:Concept)-[:REQUIRED_FOR]->(target:Concept)`
-- `(concept:Concept)-[:IN_SUBJECT]->(subject:Subject)`
+### The record screen, in action-first order
 
-PostgreSQL stores synthetic assessment evidence only. It does not store curriculum metadata.
-Quiz questions, attempts, and answers are also stored in PostgreSQL. Quiz submission writes practice assessments, question results, and concept scores so teacher and student workflows use the same mastery evidence.
+1. The figure, framed as a share of a cohort, with the register pattern that produced it
+2. What's behind it — observational contrasts
+3. What would help — true `do()` interventions; select several for the joint effect,
+   shown beside the sum of the separate effects because the two differ
+4. What to find out next — value of information
+5. How it reaches the outcome — the causal routes, from the graph
+6. The record — every field editable, "not recorded" always available
+7. Not a lever — protected characteristics, with a button that invokes the engine and
+   **displays the refusal** rather than describing it

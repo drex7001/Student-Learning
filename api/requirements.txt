@@ -4,8 +4,18 @@ sqlalchemy==2.0.40
 psycopg[binary]==3.2.6
 neo4j==5.28.1
 pydantic==2.12.5
+
+# Disengagement risk engine (app/risk/dropout_ews_bn.py).
+# pgmpy 1.1.2 requires numpy>=2.0, pandas>=1.5, scikit-learn>=1.2, networkx>=3.0,
+# which the pins below satisfy. Re-check the CausalInference workaround in
+# research/dropout-ews/REPORT.md section 8.3 before upgrading pgmpy.
+pgmpy==1.1.2
+networkx==3.6.1
 numpy==2.2.5
 pandas==2.2.3
 scikit-learn==1.6.1
 joblib==1.4.2
-shap==0.47.2
+
+# Authentication
+bcrypt==4.2.1
+pyjwt==2.10.1

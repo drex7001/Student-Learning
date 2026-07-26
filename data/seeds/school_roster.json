@@ -1,0 +1,211 @@
+{
+  "provenance": {
+    "status": "DEMONSTRATION DATA",
+    "note": "Realistic but fictional Sri Lankan schools, students, teachers and guardians. Names are drawn from authentic Sri Lankan naming conventions; no row describes a real person. Schools are composites, not real institutions. Must not be presented as empirical evidence.",
+    "seed": 20260726
+  },
+  "schools": [
+    {
+      "id": "SCH-WP-001",
+      "name": "Ruwanwella Central College",
+      "name_si": "රුවන්වැල්ල මධ්‍ය මහා විද්‍යාලය",
+      "name_ta": "ருவன்வெல்ல மத்திய கல்லூரி",
+      "census_no": "01/02/014",
+      "district": "Colombo",
+      "province": "Western",
+      "sector": "Urban",
+      "school_type": "1AB National School",
+      "medium_primary": "Sinhala",
+      "name_pool": "sinhala",
+      "secondary_pool": "muslim",
+      "secondary_share": 0.18,
+      "class_sections": ["A", "B", "C", "D"],
+      "medium_by_section": {"A": "Sinhala", "B": "Sinhala", "C": "Sinhala", "D": "English"}
+    },
+    {
+      "id": "SCH-UV-002",
+      "name": "Mahaweli Maha Vidyalaya, Girandurukotte",
+      "name_si": "මහවැලි මහා විද්‍යාලය, ගිරාඳුරුකෝට්ටේ",
+      "name_ta": "மகாவலி மகா வித்தியாலயம், கிரந்துருகொட்டே",
+      "census_no": "09/03/047",
+      "district": "Badulla",
+      "province": "Uva",
+      "sector": "Rural",
+      "school_type": "1C School",
+      "medium_primary": "Sinhala",
+      "name_pool": "sinhala",
+      "secondary_pool": "muslim",
+      "secondary_share": 0.08,
+      "class_sections": ["A", "B", "C"],
+      "medium_by_section": {"A": "Sinhala", "B": "Sinhala", "C": "Sinhala"}
+    },
+    {
+      "id": "SCH-CP-003",
+      "name": "Bogawantalawa Tamil Maha Vidyalayam",
+      "name_si": "බෝගවන්තලාව දෙමළ මහා විද්‍යාලය",
+      "name_ta": "பொகவந்தலாவை தமிழ் மகா வித்தியாலயம்",
+      "census_no": "05/04/031",
+      "district": "Nuwara Eliya",
+      "province": "Central",
+      "sector": "Estate",
+      "school_type": "Type 2 School",
+      "medium_primary": "Tamil",
+      "name_pool": "tamil_estate",
+      "secondary_pool": "tamil_jaffna",
+      "secondary_share": 0.12,
+      "class_sections": ["A", "B"],
+      "medium_by_section": {"A": "Tamil", "B": "Tamil"}
+    }
+  ],
+  "name_pools": {
+    "sinhala": {
+      "male_given": [
+        {"en": "Kasun", "si": "කසුන්"}, {"en": "Nuwan", "si": "නුවන්"},
+        {"en": "Chamara", "si": "චමර"}, {"en": "Dilshan", "si": "දිල්ශාන්"},
+        {"en": "Thilina", "si": "තිලින"}, {"en": "Ruwan", "si": "රුවන්"},
+        {"en": "Malith", "si": "මලිත්"}, {"en": "Vihanga", "si": "විහඟ"},
+        {"en": "Kavindu", "si": "කවිඳු"}, {"en": "Yasas", "si": "යසස්"},
+        {"en": "Sahan", "si": "සහන්"}, {"en": "Isuru", "si": "ඉසුරු"},
+        {"en": "Dinuka", "si": "දිනුක"}, {"en": "Lahiru", "si": "ලහිරු"},
+        {"en": "Pasindu", "si": "පසිඳු"}, {"en": "Tharindu", "si": "තරිඳු"},
+        {"en": "Sanjaya", "si": "සංජය"}, {"en": "Chathura", "si": "චතුර"},
+        {"en": "Nimesh", "si": "නිමේෂ්"}, {"en": "Hasitha", "si": "හසිත"},
+        {"en": "Supun", "si": "සුපුන්"}, {"en": "Janith", "si": "ජනිත්"},
+        {"en": "Ravindu", "si": "රවිඳු"}, {"en": "Gimhana", "si": "ගිම්හාන"},
+        {"en": "Buddhika", "si": "බුද්ධික"}
+      ],
+      "female_given": [
+        {"en": "Sanduni", "si": "සඳුනි"}, {"en": "Hiruni", "si": "හිරුණි"},
+        {"en": "Tharushi", "si": "තරුෂි"}, {"en": "Nethmi", "si": "නෙත්මි"},
+        {"en": "Ishara", "si": "ඉෂාරා"}, {"en": "Amaya", "si": "අමායා"},
+        {"en": "Sachini", "si": "සචිනි"}, {"en": "Senuri", "si": "සෙනුරි"},
+        {"en": "Oshadi", "si": "ඔෂධි"}, {"en": "Imesha", "si": "ඉමේෂා"},
+        {"en": "Nadeesha", "si": "නදීෂා"}, {"en": "Rashmi", "si": "රශ්මි"},
+        {"en": "Dilini", "si": "දිලිනි"}, {"en": "Piumi", "si": "පියුමි"},
+        {"en": "Thilini", "si": "තිලිනි"}, {"en": "Chathurika", "si": "චතුරිකා"},
+        {"en": "Nipuni", "si": "නිපුනි"}, {"en": "Sewwandi", "si": "සෙව්වන්දි"},
+        {"en": "Hasini", "si": "හසිනි"}, {"en": "Upeksha", "si": "උපේක්ෂා"},
+        {"en": "Malsha", "si": "මල්ෂා"}, {"en": "Yasodha", "si": "යශෝධා"},
+        {"en": "Kaveesha", "si": "කවීෂා"}, {"en": "Dulanjali", "si": "දුලංජලී"}
+      ],
+      "surnames": [
+        {"en": "Perera", "si": "පෙරේරා"}, {"en": "Fernando", "si": "ප්‍රනාන්දු"},
+        {"en": "Silva", "si": "සිල්වා"}, {"en": "Jayawardena", "si": "ජයවර්ධන"},
+        {"en": "Bandara", "si": "බණ්ඩාර"}, {"en": "Wickramasinghe", "si": "වික්‍රමසිංහ"},
+        {"en": "Gunasekara", "si": "ගුණසේකර"}, {"en": "Dissanayake", "si": "දිසානායක"},
+        {"en": "Ekanayake", "si": "ඒකනායක"}, {"en": "Herath", "si": "හේරත්"},
+        {"en": "Senanayake", "si": "සේනානායක"}, {"en": "Weerasinghe", "si": "වීරසිංහ"},
+        {"en": "Amarasinghe", "si": "අමරසිංහ"}, {"en": "Karunaratne", "si": "කරුණාරත්න"},
+        {"en": "Wijesinghe", "si": "විජේසිංහ"}, {"en": "Abeysekara", "si": "අබේසේකර"},
+        {"en": "Rathnayake", "si": "රත්නායක"}, {"en": "Samarasinghe", "si": "සමරසිංහ"},
+        {"en": "Kumarasinghe", "si": "කුමාරසිංහ"}, {"en": "Liyanage", "si": "ලියනගේ"},
+        {"en": "Athukorala", "si": "අතුකෝරල"}, {"en": "Wijeratne", "si": "විජේරත්න"},
+        {"en": "Gamage", "si": "ගමගේ"}, {"en": "Jayasuriya", "si": "ජයසූරිය"},
+        {"en": "Pathirana", "si": "පතිරණ"}, {"en": "Seneviratne", "si": "සෙනෙවිරත්න"}
+      ],
+      "style": "surname_first"
+    },
+    "tamil_jaffna": {
+      "male_given": [
+        {"en": "Arulnesan"}, {"en": "Sivakumar"}, {"en": "Mahendran"},
+        {"en": "Vasanthan"}, {"en": "Kumaran"}, {"en": "Jeyakumar"},
+        {"en": "Anandan"}, {"en": "Vignesh"}, {"en": "Tharshan"},
+        {"en": "Mathavan"}, {"en": "Nirmalan"}, {"en": "Ravichandran"}
+      ],
+      "female_given": [
+        {"en": "Mathangi"}, {"en": "Kavitha"}, {"en": "Thanuja"},
+        {"en": "Vithya"}, {"en": "Nirosha"}, {"en": "Shalini"},
+        {"en": "Abirami"}, {"en": "Yalini"}, {"en": "Kalaivani"},
+        {"en": "Nithya"}, {"en": "Saranya"}, {"en": "Dharshini"}
+      ],
+      "surnames": [
+        {"en": "Rajendran"}, {"en": "Thevarajah"}, {"en": "Balasubramaniam"},
+        {"en": "Selvarajah"}, {"en": "Kanagaratnam"}, {"en": "Nadarajah"},
+        {"en": "Arumugam"}, {"en": "Sinnathamby"}, {"en": "Ponnambalam"},
+        {"en": "Chandrasekaran"}, {"en": "Ratnasingham"}, {"en": "Kandasamy"}
+      ],
+      "style": "patronymic_first"
+    },
+    "tamil_estate": {
+      "male_given": [
+        {"en": "Murugan"}, {"en": "Thangavelu"}, {"en": "Veerasamy"},
+        {"en": "Chinnaiah"}, {"en": "Palanisamy"}, {"en": "Ramasamy"},
+        {"en": "Karuppiah"}, {"en": "Sundaram"}, {"en": "Ganesan"},
+        {"en": "Perumal"}, {"en": "Muthukumar"}, {"en": "Sellathurai"}
+      ],
+      "female_given": [
+        {"en": "Muthulakshmi"}, {"en": "Valliamma"}, {"en": "Sellamma"},
+        {"en": "Rajeswari"}, {"en": "Pushpa"}, {"en": "Lakshmi"},
+        {"en": "Kamatchi"}, {"en": "Sivagami"}, {"en": "Poongodi"},
+        {"en": "Amirtham"}, {"en": "Vasanthi"}, {"en": "Chandrakala"}
+      ],
+      "surnames": [
+        {"en": "Subramaniam"}, {"en": "Ramasamy"}, {"en": "Karuppiah"},
+        {"en": "Palanisamy"}, {"en": "Veerasamy"}, {"en": "Thangaraj"},
+        {"en": "Marimuthu"}, {"en": "Kandasamy"}, {"en": "Ponnusamy"},
+        {"en": "Rangasamy"}, {"en": "Arumugam"}, {"en": "Chinnasamy"}
+      ],
+      "style": "patronymic_first"
+    },
+    "muslim": {
+      "male_given": [
+        {"en": "Mohamed Rizwan", "si": "මොහොමඩ් රිස්වාන්"},
+        {"en": "Ahamed Faiz", "si": "අහමඩ් ෆයිස්"},
+        {"en": "Mohamed Nazeer", "si": "මොහොමඩ් නසීර්"},
+        {"en": "Mohamed Irshad", "si": "මොහොමඩ් ඉර්ෂාද්"},
+        {"en": "Ahamed Rilwan", "si": "අහමඩ් රිල්වාන්"},
+        {"en": "Mohamed Sajith", "si": "මොහොමඩ් සජිත්"},
+        {"en": "Fazal Rahman", "si": "ෆසල් රහ්මාන්"},
+        {"en": "Mohamed Ashraff", "si": "මොහොමඩ් අෂ්‍රොෆ්"}
+      ],
+      "female_given": [
+        {"en": "Fathima Nusrath", "si": "ෆාතිමා නුස්රත්"},
+        {"en": "Fathima Rizna", "si": "ෆාතිමා රිස්නා"},
+        {"en": "Aysha Nafla", "si": "ආයිෂා නෆ්ලා"},
+        {"en": "Fathima Shifana", "si": "ෆාතිමා ෂිෆානා"},
+        {"en": "Zahra Farhana", "si": "සහ්රා ෆර්හානා"},
+        {"en": "Fathima Hafsa", "si": "ෆාතිමා හෆ්සා"},
+        {"en": "Aysha Rifka", "si": "ආයිෂා රිෆ්කා"},
+        {"en": "Fathima Ilma", "si": "ෆාතිමා ඉල්මා"}
+      ],
+      "surnames": [
+        {"en": "Mohideen", "si": "මොහිදීන්"}, {"en": "Cassim", "si": "කාසිම්"},
+        {"en": "Marikkar", "si": "මාරික්කාර්"}, {"en": "Lafir", "si": "ලාෆිර්"},
+        {"en": "Hameed", "si": "හමීඩ්"}, {"en": "Nizam", "si": "නිසාම්"},
+        {"en": "Rauf", "si": "රවුෆ්"}, {"en": "Saleem", "si": "සලීම්"}
+      ],
+      "style": "given_first"
+    }
+  },
+  "teacher_roles": [
+    "Class Teacher",
+    "Subject Teacher",
+    "Sectional Head",
+    "School Counsellor",
+    "Deputy Principal",
+    "Principal"
+  ],
+  "guardian": {
+    "relationships": ["Mother", "Father", "Grandmother", "Grandfather", "Aunt", "Uncle", "Elder sister"],
+    "occupations_by_sector": {
+      "Urban": [
+        "Government clerk", "Bank employee", "Three-wheeler driver", "Shop owner",
+        "Garment factory worker", "Security officer", "School teacher", "Nurse",
+        "Construction supervisor", "Self-employed tailor"
+      ],
+      "Rural": [
+        "Paddy farmer", "Mason", "Day labourer", "Samurdhi beneficiary",
+        "Carpenter", "Small shop keeper", "Dairy farmer", "Three-wheeler driver",
+        "Overseas domestic worker", "Chena cultivator"
+      ],
+      "Estate": [
+        "Tea plucker", "Estate field labourer", "Tea factory worker", "Estate line supervisor",
+        "Day labourer", "Overseas domestic worker", "Small trader", "Estate crèche attendant"
+      ]
+    }
+  },
+  "terms": [
+    {"id": "TERM-2026-1", "year": 2026, "term_number": 1, "starts_on": "2026-01-12", "ends_on": "2026-04-03", "is_current": false},
+    {"id": "TERM-2026-2", "year": 2026, "term_number": 2, "starts_on": "2026-04-27", "ends_on": "2026-07-31", "is_current": true}
+  ]
+}

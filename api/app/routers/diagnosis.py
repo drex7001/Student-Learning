@@ -3,6 +3,7 @@ from __future__ import annotations
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
+from app.core.deps import require_staff
 from app.db.postgres import get_session
 from app.repositories.graph_repository import GraphRepository
 from app.repositories.postgres_repository import PostgresRepository
@@ -21,7 +22,12 @@ from app.services.diagnosis import DiagnosisEngine
 from app.services.subject_diagnosis import SubjectDiagnosisEngine
 
 
-router = APIRouter(prefix="/api", tags=["diagnosis"])
+router = APIRouter(
+    prefix="/api",
+    tags=["diagnosis"],
+    # Teacher-facing analysis across the whole cohort: staff only.
+    dependencies=[Depends(require_staff)],
+)
 
 
 @router.get("/options", response_model=SelectorOptionsResponse)

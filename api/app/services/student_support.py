@@ -9,8 +9,6 @@ from app.schemas.student_support import (
     SupportRiskFactor,
     SupportRiskFeatures,
 )
-from app.services.student_support_model import SupportModelRegistry
-
 WEAK_THRESHOLD = 0.60
 STRONG_THRESHOLD = 0.75
 LOW_CONFIDENCE_THRESHOLD = 0.55
@@ -47,10 +45,17 @@ def _downstream_impact_by_concept(edges: list[dict]) -> dict[str, int]:
 
 
 class StudentSupportEngine:
-    """Builds an explainable academic-support profile from existing learning evidence.
+    """Builds an explainable *academic support* profile from learning evidence.
 
-    If a trained Random Forest artifact exists, it uses the ML model and SHAP explanation.
-    If no artifact exists yet, it falls back to the deterministic baseline so the UI still works.
+    This is deliberately a different quantity from disengagement risk. It answers
+    "which learners need teaching attention in this subject, and why?" using concept
+    mastery, prerequisite weakness, confidence, trend and cohort comparison. It makes
+    no claim about a student leaving school -- that is the Bayesian network's job
+    (``app.risk``), and the two are kept verbally and visually distinct in the UI.
+
+    Scoring is a transparent additive attribution: every factor's contribution is a
+    named, signed weight, so the explanation is the computation rather than a
+    post-hoc approximation of it.
     """
 
     def build_profile(
@@ -74,28 +79,17 @@ class StudentSupportEngine:
             assessment_summary=assessment_summary,
         )
 
-        ml_prediction = SupportModelRegistry.predict(features)
-        if ml_prediction is not None:
-            risk = SupportRisk(
-                score=ml_prediction.score,
-                band=ml_prediction.band,
-                confidence=ml_prediction.confidence,
-            )
-            factors = ml_prediction.factors
-            explanation_method = ml_prediction.method
-        else:
-            risk, factors = self._score(features)
-            explanation_method = "additive_feature_attribution_baseline_shap_ready"
+        risk, factors = self._score(features)
+        explanation_method = "additive_feature_attribution"
 
         actions = self._recommended_actions(features, risk, factors)
-        top_positive_factors = [factor for factor in factors if factor.direction == "increases_risk" and factor.impact > 0]
+        top_positive_factors = [
+            factor
+            for factor in factors
+            if factor.direction == "increases_risk" and factor.impact > 0
+        ]
         top_positive_factors.sort(key=lambda factor: factor.impact, reverse=True)
         main_reason = top_positive_factors[0].label if top_positive_factors else "No major factor"
-        method_text = (
-            "using a trained Random Forest model with SHAP explanations"
-            if explanation_method.startswith("ml_random_forest_shap")
-            else "using the deterministic baseline while no trained model artifact is available"
-        )
 
         return StudentSupportProfileResponse(
             student=StudentSummary(**student),
@@ -104,8 +98,8 @@ class StudentSupportEngine:
             features=features,
             explanation_method=explanation_method,
             explanation_summary=(
-                f"This learner is marked as {risk.band.replace('_', ' ')} mainly because of {main_reason.lower()}, "
-                f"{method_text}."
+                f"This learner needs {risk.band.replace('_', ' ')} in this subject, "
+                f"mainly because of {main_reason.lower()}."
             ),
             factors=factors,
             recommended_actions=actions,

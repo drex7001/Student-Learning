@@ -10,9 +10,40 @@ class ImportCurriculumResponse(BaseModel):
     source: str
 
 
+class ImportRiskModelResponse(BaseModel):
+    model_variant: str
+    model_fingerprint: str
+    factor_count: int
+    influence_count: int
+
+
+class SeedSchoolDataRequest(BaseModel):
+    seed: int | None = Field(default=None)
+    students_per_class: int | None = Field(default=None, ge=5, le=45)
+
+
+class DemoCredential(BaseModel):
+    role: str
+    username: str
+    password: str
+    display_name: str
+    school: str
+    role_title: str
+
+
+class SeedSchoolDataResponse(BaseModel):
+    seed: int
+    school_count: int
+    class_count: int
+    teacher_count: int
+    student_count: int
+    user_count: int
+    evidence_count: int
+    demo_credentials: list[DemoCredential]
+
+
 class GenerateSyntheticDataRequest(BaseModel):
     seed: int | None = Field(default=None)
-    student_count: int | None = Field(default=None, ge=30, le=1000)
 
 
 class GenerateSyntheticDataResponse(BaseModel):
@@ -22,13 +53,17 @@ class GenerateSyntheticDataResponse(BaseModel):
     concept_score_count: int
 
 
-class TrainSupportModelResponse(BaseModel):
-    model_version: str
-    label_strategy: str
-    subject_count: int
-    training_examples: int
-    label_counts: dict[str, int]
-    accuracy: float
-    f1_macro: float
-    model_path: str
-    metrics_path: str
+class DeriveEvidenceResponse(BaseModel):
+    term_id: str
+    derived_count: int
+    variable: str
+
+
+class ProjectGraphResponse(BaseModel):
+    school_count: int
+    class_count: int
+    teacher_count: int
+    student_count: int
+    mastery_edge_count: int
+    evidence_edge_count: int
+    peer_edge_count: int

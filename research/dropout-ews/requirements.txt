@@ -1,0 +1,10 @@
+# Pinned to the versions this work was developed and verified against.
+# NOTE: pgmpy 1.1.2 has a bug in CausalInference.query -- it silently drops evidence
+# outside its chosen back-door adjustment set whenever the intervened variable has
+# parents. dropout_ews_bn.py works around this (see estimate_intervention_effect and
+# audit_pgmpy_causal_api). Re-check that workaround before upgrading pgmpy.
+pgmpy==1.1.2
+pandas==3.0.5
+numpy==2.5.1
+networkx==3.6.1
+pytest==9.1.1

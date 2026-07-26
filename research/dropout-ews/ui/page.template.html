@@ -1,0 +1,1315 @@
+<meta charset="utf-8" />
+<title>Early-support screen — causal model workbench</title>
+
+<style>
+/* ============================================================ tokens */
+:root {
+  color-scheme: light;
+  --paper:        #F1F3F0;
+  --surface:      #FBFCFA;
+  --surface-sunk: #E7EBE6;
+  --ink:          #171D1C;
+  --ink-soft:     #47524F;
+  --ink-faint:    #6E7A76;
+  --rule:         #CFD6D1;
+  --rule-soft:    #E1E6E1;
+
+  --verdigris:    #1A6B65;
+  --verdigris-lo: #DCE9E7;
+  --brass:        #8A6A26;
+  --brass-lo:     #EFE7D6;
+  --lacquer:      #9E3B34;
+  --lacquer-lo:   #F4E2E0;
+  --sage:         #5F7269;
+
+  --sev-low:      #7E9189;
+  --sev-mid:      #B08432;
+  --sev-high:     #9E3B34;
+
+  --shadow:       0 1px 2px rgba(23,29,28,.06), 0 8px 24px -12px rgba(23,29,28,.14);
+
+  --serif: "Palatino Linotype", Palatino, "Book Antiqua", "Iowan Old Style", "URW Palladio L", Georgia, serif;
+  --sans: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --mono: "Cascadia Mono", Consolas, "SF Mono", "Menlo", "DejaVu Sans Mono", monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --paper:        #101615;
+    --surface:      #181F1E;
+    --surface-sunk: #0B100F;
+    --ink:          #E4EAE7;
+    --ink-soft:     #A7B3AF;
+    --ink-faint:    #7C8884;
+    --rule:         #2C3634;
+    --rule-soft:    #222B29;
+
+    --verdigris:    #5FBDB2;
+    --verdigris-lo: #17302E;
+    --brass:        #C9A15C;
+    --brass-lo:     #2A2418;
+    --lacquer:      #D98078;
+    --lacquer-lo:   #2E1A18;
+    --sage:         #8CA096;
+
+    --sev-low:      #7E9189;
+    --sev-mid:      #C9A15C;
+    --sev-high:     #CF7A72;
+
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 30px -14px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #101615; --surface: #181F1E; --surface-sunk: #0B100F;
+  --ink: #E4EAE7; --ink-soft: #A7B3AF; --ink-faint: #7C8884;
+  --rule: #2C3634; --rule-soft: #222B29;
+  --verdigris: #5FBDB2; --verdigris-lo: #17302E;
+  --brass: #C9A15C; --brass-lo: #2A2418;
+  --lacquer: #D98078; --lacquer-lo: #2E1A18;
+  --sage: #8CA096;
+  --sev-low: #7E9189; --sev-mid: #C9A15C; --sev-high: #CF7A72;
+  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 30px -14px rgba(0,0,0,.6);
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --paper: #F1F3F0; --surface: #FBFCFA; --surface-sunk: #E7EBE6;
+  --ink: #171D1C; --ink-soft: #47524F; --ink-faint: #6E7A76;
+  --rule: #CFD6D1; --rule-soft: #E1E6E1;
+  --verdigris: #1A6B65; --verdigris-lo: #DCE9E7;
+  --brass: #8A6A26; --brass-lo: #EFE7D6;
+  --lacquer: #9E3B34; --lacquer-lo: #F4E2E0;
+  --sage: #5F7269;
+  --sev-low: #7E9189; --sev-mid: #B08432; --sev-high: #9E3B34;
+  --shadow: 0 1px 2px rgba(23,29,28,.06), 0 8px 24px -12px rgba(23,29,28,.14);
+}
+
+/* ============================================================ base */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 15.5px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 { font-family: var(--serif); font-weight: 600; text-wrap: balance; margin: 0; letter-spacing: -.005em; }
+p { margin: 0; }
+a { color: var(--verdigris); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+code, .mono { font-family: var(--mono); font-variant-ligatures: none; }
+:focus-visible { outline: 2px solid var(--verdigris); outline-offset: 2px; border-radius: 2px; }
+
+.eyebrow {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: .13em;
+  text-transform: uppercase; color: var(--ink-faint);
+}
+.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+/* ============================================================ shell */
+.shell { display: grid; grid-template-columns: 232px minmax(0, 1fr); gap: 0; max-width: 1500px; margin: 0 auto; }
+.rail { border-right: 1px solid var(--rule); padding: 30px 20px 40px 26px; }
+.rail-inner { position: sticky; top: 24px; display: flex; flex-direction: column; gap: 22px; }
+.main { min-width: 0; padding: 30px 34px 96px; display: flex; flex-direction: column; gap: 0; }
+@media (max-width: 900px) {
+  .shell { grid-template-columns: minmax(0, 1fr); }
+  .rail { border-right: 0; border-bottom: 1px solid var(--rule); padding: 22px 20px 24px; }
+  .rail-inner { position: static; }
+  .main { padding: 24px 20px 72px; }
+}
+
+/* nav */
+.brandmark { display: flex; flex-direction: column; gap: 3px; }
+.brandmark b { font-family: var(--serif); font-size: 17px; font-weight: 600; line-height: 1.2; }
+.nav { display: flex; flex-direction: column; gap: 1px; }
+.nav a {
+  display: grid; grid-template-columns: 22px 1fr; gap: 6px; align-items: baseline;
+  padding: 4px 6px; border-radius: 3px; text-decoration: none;
+  color: var(--ink-soft); font-size: 13.2px; line-height: 1.35;
+}
+.nav a:hover { background: var(--surface-sunk); color: var(--ink); }
+.nav a span:first-child { font-family: var(--mono); font-size: 10px; color: var(--ink-faint); }
+.railnote {
+  border-left: 2px solid var(--lacquer); padding: 2px 0 2px 10px;
+  font-size: 11.6px; line-height: 1.5; color: var(--ink-soft);
+}
+.railnote b { color: var(--lacquer); }
+.themebtn {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase;
+  background: transparent; border: 1px solid var(--rule); color: var(--ink-soft);
+  padding: 6px 9px; border-radius: 3px; cursor: pointer; text-align: left;
+}
+.themebtn:hover { border-color: var(--verdigris); color: var(--verdigris); }
+
+/* ============================================================ masthead */
+.masthead { display: flex; flex-direction: column; gap: 18px; padding-bottom: 26px; border-bottom: 2px solid var(--ink); }
+.masthead h1 { font-size: clamp(30px, 4.4vw, 46px); line-height: 1.06; }
+.thesis { font-family: var(--serif); font-size: clamp(17px, 2.1vw, 21px); line-height: 1.48; color: var(--ink-soft); max-width: 62ch; }
+.thesis em { color: var(--ink); font-style: italic; }
+
+.redline {
+  display: grid; grid-template-columns: auto minmax(0,1fr); gap: 14px; align-items: start;
+  background: var(--lacquer-lo); border: 1px solid color-mix(in srgb, var(--lacquer) 40%, transparent);
+  border-radius: 3px; padding: 13px 16px; font-size: 13.4px; line-height: 1.5;
+}
+.redline .tag {
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--lacquer); border: 1px solid currentColor; border-radius: 2px; padding: 2px 6px; white-space: nowrap;
+}
+
+.readout { display: flex; flex-wrap: wrap; gap: 0; border: 1px solid var(--rule); border-radius: 3px; background: var(--surface); overflow: hidden; }
+.readout div { padding: 9px 15px; border-right: 1px solid var(--rule-soft); display: flex; flex-direction: column; gap: 1px; flex: 1 1 auto; }
+.readout div:last-child { border-right: 0; }
+.readout dt { font-family: var(--mono); font-size: 9.5px; letter-spacing: .11em; text-transform: uppercase; color: var(--ink-faint); }
+.readout dd { margin: 0; font-family: var(--mono); font-size: 14px; font-variant-numeric: tabular-nums; }
+
+/* ============================================================ sections */
+.sec { padding: 46px 0 0; display: flex; flex-direction: column; gap: 20px; }
+.sec + .sec { border-top: 1px solid var(--rule-soft); margin-top: 46px; }
+.sechead { display: flex; flex-direction: column; gap: 7px; }
+.sechead .ref { font-family: var(--mono); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--verdigris); }
+.sechead h2 { font-size: clamp(21px, 2.6vw, 27px); line-height: 1.16; }
+.lede { color: var(--ink-soft); max-width: 74ch; }
+.prose { max-width: 74ch; display: flex; flex-direction: column; gap: 13px; }
+.prose strong { color: var(--ink); font-weight: 600; }
+
+/* findings */
+.findings { display: flex; flex-direction: column; gap: 0; counter-reset: f; }
+.finding {
+  display: grid; grid-template-columns: 46px minmax(0,1fr) auto; gap: 20px; align-items: start;
+  padding: 20px 0; border-top: 1px solid var(--rule-soft);
+}
+.finding:first-child { border-top: 1px solid var(--rule); }
+.finding .fnum { font-family: var(--serif); font-size: 30px; line-height: 1; color: var(--brass); }
+.finding .fbody { display: flex; flex-direction: column; gap: 7px; max-width: 66ch; }
+.finding .fbody b { font-weight: 600; }
+.finding .fbody p { font-size: 14.4px; color: var(--ink-soft); }
+.finding .fstat { text-align: right; display: flex; flex-direction: column; gap: 1px; min-width: 96px; }
+.finding .fstat .v { font-family: var(--mono); font-size: 25px; font-variant-numeric: tabular-nums; line-height: 1.1; }
+.finding .fstat .k { font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-faint); }
+@media (max-width: 620px) {
+  .finding { grid-template-columns: 34px minmax(0,1fr); }
+  .finding .fstat { grid-column: 2; text-align: left; align-items: flex-start; }
+}
+
+/* controls */
+.controls { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; padding: 11px 0; }
+.ctrl { display: flex; align-items: center; gap: 7px; }
+.ctrl > span { font-family: var(--mono); font-size: 9.5px; letter-spacing: .11em; text-transform: uppercase; color: var(--ink-faint); }
+.seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 3px; overflow: hidden; background: var(--surface); }
+.seg button {
+  font-family: var(--mono); font-size: 11.5px; padding: 5px 11px; border: 0; cursor: pointer;
+  background: transparent; color: var(--ink-soft); border-right: 1px solid var(--rule-soft);
+}
+.seg button:last-child { border-right: 0; }
+.seg button:hover { color: var(--ink); background: var(--surface-sunk); }
+.seg button[aria-pressed="true"] { background: var(--verdigris); color: var(--paper); }
+:root[data-theme="dark"] .seg button[aria-pressed="true"],
+:root:not([data-theme="light"]) .seg button[aria-pressed="true"] { color: #0B100F; }
+select, input[type="search"] {
+  font-family: var(--mono); font-size: 11.5px; padding: 5px 8px; border: 1px solid var(--rule);
+  border-radius: 3px; background: var(--surface); color: var(--ink); max-width: 240px;
+}
+.linkbtn {
+  font-family: var(--mono); font-size: 11.5px; background: transparent; border: 1px dashed var(--lacquer);
+  color: var(--lacquer); padding: 5px 10px; border-radius: 3px; cursor: pointer;
+}
+.linkbtn:hover { background: var(--lacquer-lo); }
+
+/* ============================================================ graph */
+.graphwrap { display: grid; grid-template-columns: minmax(0,1fr) 296px; gap: 18px; align-items: start; }
+@media (max-width: 1080px) { .graphwrap { grid-template-columns: minmax(0,1fr); } }
+.canvas {
+  border: 1px solid var(--rule); border-radius: 3px; background: var(--surface);
+  overflow-x: auto; overflow-y: hidden; box-shadow: var(--shadow);
+}
+.canvas svg { display: block; }
+.scrollhint { font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint); }
+
+.n-box { rx: 3; stroke-width: 1.25; transition: opacity .16s ease, stroke-width .16s ease; }
+.n-label { font-family: var(--mono); font-size: 9.6px; pointer-events: none; }
+.node { cursor: pointer; }
+.node.dim { opacity: .17; }
+.node.sel .n-box { stroke-width: 2.75; }
+.node.lit .n-box { stroke-width: 2; }
+
+.e-path { fill: none; transition: opacity .16s ease, stroke-width .16s ease; cursor: pointer; }
+.e-hit { fill: none; stroke: transparent; stroke-width: 11; cursor: pointer; }
+.e-path.dim { opacity: .07; }
+.e-path.lit { stroke-width: 2.4; }
+.bandlab { font-family: var(--mono); font-size: 9.4px; letter-spacing: .06em; text-transform: uppercase; fill: var(--ink-faint); }
+.bandrule { stroke: var(--rule-soft); stroke-width: 1; }
+
+.legend { display: flex; flex-wrap: wrap; gap: 6px 20px; padding-top: 4px; }
+.legend section { display: flex; flex-direction: column; gap: 5px; }
+.legend h4 { font-family: var(--mono); font-size: 9.5px; letter-spacing: .11em; text-transform: uppercase; color: var(--ink-faint); font-weight: 400; }
+.legend ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 14px; }
+.legend li { display: flex; align-items: center; gap: 6px; font-size: 12.3px; color: var(--ink-soft); }
+.swatch { width: 16px; height: 11px; border-radius: 2px; border: 1.25px solid; flex: none; }
+.dashkey { width: 26px; height: 0; border-top-width: 1.6px; border-top-style: solid; flex: none; }
+
+/* inspector */
+.inspect { border: 1px solid var(--rule); border-radius: 3px; background: var(--surface); box-shadow: var(--shadow); }
+.inspect-head { padding: 11px 14px; border-bottom: 1px solid var(--rule-soft); display: flex; flex-direction: column; gap: 4px; }
+.inspect-head .k { font-family: var(--mono); font-size: 9.5px; letter-spacing: .11em; text-transform: uppercase; color: var(--ink-faint); }
+.inspect-head .t { font-family: var(--mono); font-size: 13.4px; line-height: 1.3; word-break: break-word; }
+.inspect-body { padding: 12px 14px; display: flex; flex-direction: column; gap: 12px; font-size: 13px; }
+.field { display: flex; flex-direction: column; gap: 3px; }
+.field .k { font-family: var(--mono); font-size: 9.5px; letter-spacing: .11em; text-transform: uppercase; color: var(--ink-faint); }
+.field .v { color: var(--ink-soft); line-height: 1.5; }
+.field .v.mono { font-size: 11.8px; color: var(--ink); }
+.chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.chip {
+  font-family: var(--mono); font-size: 10.5px; padding: 2px 7px; border-radius: 2px;
+  border: 1px solid var(--rule); color: var(--ink-soft); background: var(--paper);
+}
+.chip.adverse { border-color: var(--lacquer); color: var(--lacquer); background: var(--lacquer-lo); }
+.chip.ref { border-color: var(--verdigris); color: var(--verdigris); background: var(--verdigris-lo); }
+.chip.flag { border-color: var(--brass); color: var(--brass); background: var(--brass-lo); }
+.evbadge {
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: .07em; padding: 1px 5px;
+  border-radius: 2px; border: 1px solid; white-space: nowrap;
+}
+.ev-SL  { color: var(--verdigris); border-color: var(--verdigris); background: var(--verdigris-lo); }
+.ev-INT { color: var(--brass); border-color: var(--brass); background: var(--brass-lo); }
+.ev-EXP { color: var(--lacquer); border-color: var(--lacquer); background: var(--lacquer-lo); }
+
+.assertion {
+  border: 1px solid color-mix(in srgb, var(--verdigris) 40%, transparent); background: var(--verdigris-lo);
+  border-radius: 3px; padding: 12px 14px; display: flex; flex-direction: column; gap: 7px; font-size: 13.2px;
+}
+.assertion .hd { display: flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--verdigris); }
+.assertion .hd::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--verdigris); flex: none; }
+.assertion p { color: var(--ink-soft); }
+.assertion .mono { font-size: 12px; color: var(--ink); }
+
+/* ============================================================ tables */
+.tablewrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 3px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+thead th {
+  font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-faint); font-weight: 400; text-align: left; padding: 8px 12px;
+  border-bottom: 1px solid var(--rule); white-space: nowrap; background: var(--surface);
+  position: sticky; top: 0; z-index: 1;
+}
+tbody td { padding: 9px 12px; border-bottom: 1px solid var(--rule-soft); vertical-align: top; line-height: 1.45; }
+tbody tr:last-child td { border-bottom: 0; }
+tbody tr:hover { background: var(--surface-sunk); }
+td.n, th.n { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+td.m { font-family: var(--mono); font-size: 11.8px; }
+.pair { font-family: var(--mono); font-size: 11.6px; line-height: 1.4; }
+.pair i { color: var(--ink-faint); font-style: normal; }
+.narrow { color: var(--ink-soft); font-size: 12.6px; min-width: 220px; }
+/* Evidence sets are `Node=State` strings with no spaces. Sized to fit the longest one
+   (Child_Labour_Household_Duties=High, 34 chars) so nothing breaks mid-identifier;
+   break-word is only a safety net. */
+.evset { font-family: var(--mono); font-size: 10.8px; line-height: 1.55; min-width: 234px; overflow-wrap: break-word; }
+.evset i { color: var(--ink-faint); font-style: normal; }
+.concern { color: var(--ink-soft); font-size: 12.6px; min-width: 200px; }
+.rowmark { border-left: 3px solid var(--brass); }
+
+/* bars */
+.bar { position: relative; height: 8px; border-radius: 1px; background: var(--surface-sunk); min-width: 60px; overflow: hidden; }
+.bar > i { position: absolute; inset: 0 auto 0 0; border-radius: 1px; display: block; }
+.stack { display: flex; height: 15px; border-radius: 2px; overflow: hidden; min-width: 150px; border: 1px solid var(--rule-soft); }
+.stack > i { display: block; }
+.stacklab { display: flex; gap: 10px; font-family: var(--mono); font-size: 10.5px; color: var(--ink-faint); }
+.stacklab b { color: var(--ink-soft); font-weight: 400; }
+.dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex: none; }
+
+/* decay cascade */
+.routes { display: flex; flex-direction: column; gap: 16px; }
+.route { border: 1px solid var(--rule); border-radius: 3px; background: var(--surface); padding: 13px 15px; display: flex; flex-direction: column; gap: 10px; }
+.route.primary { border-color: color-mix(in srgb, var(--verdigris) 45%, transparent); }
+.route-head { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; justify-content: space-between; }
+.route-head .nm { font-family: var(--serif); font-size: 16px; }
+.route-head .tx { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+.route-head .tx b { font-size: 16px; color: var(--ink); font-weight: 400; }
+.hops { display: flex; flex-direction: column; gap: 5px; }
+.hop { display: grid; grid-template-columns: minmax(130px, 214px) minmax(0,1fr) 64px; gap: 10px; align-items: center; }
+.hop .hn { font-family: var(--mono); font-size: 11.2px; color: var(--ink-soft); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hop .hv { font-family: var(--mono); font-size: 11.5px; font-variant-numeric: tabular-nums; text-align: right; }
+.hop.grew .hv { color: var(--lacquer); }
+.hop.grew .hn { color: var(--lacquer); }
+@media (max-width: 560px) { .hop { grid-template-columns: minmax(90px,140px) minmax(0,1fr) 56px; } }
+.routenote { font-size: 12.6px; color: var(--ink-soft); border-left: 2px solid var(--lacquer); padding-left: 10px; }
+
+/* callout */
+.callout {
+  border: 1px solid var(--rule); border-left: 3px solid var(--brass); background: var(--surface);
+  border-radius: 0 3px 3px 0; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px;
+}
+.callout h4 { font-size: 15.5px; }
+.callout p { font-size: 13.6px; color: var(--ink-soft); max-width: 72ch; }
+.callout.warn { border-left-color: var(--lacquer); }
+.callout.ok { border-left-color: var(--verdigris); }
+pre {
+  margin: 0; font-family: var(--mono); font-size: 11.6px; line-height: 1.55; background: var(--surface-sunk);
+  border: 1px solid var(--rule-soft); border-radius: 3px; padding: 11px 13px; overflow-x: auto; color: var(--ink);
+  white-space: pre-wrap; word-break: break-word;
+}
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+.tick { color: var(--verdigris); font-family: var(--mono); }
+.cross { color: var(--lacquer); font-family: var(--mono); }
+.muted { color: var(--ink-faint); }
+
+ul.plain { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 9px; }
+ul.plain > li { display: grid; grid-template-columns: 16px minmax(0,1fr); gap: 9px; font-size: 13.6px; color: var(--ink-soft); }
+ul.plain > li > span:first-child { font-family: var(--mono); color: var(--verdigris); }
+ul.plain b { color: var(--ink); font-weight: 600; }
+
+.footer { padding-top: 40px; margin-top: 46px; border-top: 2px solid var(--ink); display: flex; flex-direction: column; gap: 10px; font-size: 12.8px; color: var(--ink-faint); }
+.footer .mono { font-size: 11.4px; }
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+
+<div class="shell">
+  <nav class="rail">
+    <div class="rail-inner">
+      <div class="brandmark">
+        <span class="eyebrow">Research prototype</span>
+        <b>Early-support screen</b>
+        <span class="eyebrow">Causal model workbench</span>
+      </div>
+      <div class="nav">
+        <a href="#findings"><span>§0</span><span>What we found</span></a>
+        <a href="#graph"><span>§3</span><span>The network</span></a>
+        <a href="#decay"><span>§1</span><span>Signal transmission</span></a>
+        <a href="#scenarios"><span>§7</span><span>Scenarios</span></a>
+        <a href="#causal"><span>§8</span><span>Observe vs intervene</span></a>
+        <a href="#sensitivity"><span>§9</span><span>Sensitivity</span></a>
+        <a href="#burden"><span>§11</span><span>Who gets flagged</span></a>
+        <a href="#register"><span>§2</span><span>Edge register</span></a>
+        <a href="#guardrails"><span>§11</span><span>Guardrails in code</span></a>
+        <a href="#review"><span>A</span><span>Review pass</span></a>
+      </div>
+      <p class="railnote"><b>Not for use on a real student.</b> Every probability on this page comes from illustrative priors, not measured Sri Lankan data.</p>
+      <button class="themebtn" id="themebtn" type="button">Theme: auto</button>
+    </div>
+  </nav>
+
+  <main class="main">
+    <header class="masthead">
+      <span class="eyebrow">Bayesian network · 25 nodes · two periods · Sri Lankan school context</span>
+      <h1>A screen that points at the school, not at the child</h1>
+      <p class="thesis">The model estimates next-term disengagement risk from household, school-environment and prior-term evidence. Its central commitment is structural: <em>no path runs from a student's neurotype to the outcome except through something a school can change.</em> Testing that commitment is what turned up the findings below — including one that says the network, as specified, can barely see its own most important lever.</p>
+      <div class="redline">
+        <span class="tag">Read first</span>
+        <span id="redline-text"></span>
+      </div>
+      <dl class="readout" id="readout"></dl>
+    </header>
+
+    <!-- ============================================ findings -->
+    <section class="sec" id="findings">
+      <div class="sechead">
+        <span class="ref">§0 · Headline</span>
+        <h2>Three results that matter more than the model</h2>
+        <p class="lede">Ranked by how much they would change what a team does next. All three are arithmetic properties of the specified structure, reproducible from the committed seed.</p>
+      </div>
+      <div class="findings" id="findings-list"></div>
+      <div class="callout warn">
+        <h4>And a fourth, about scale</h4>
+        <p id="scale-note"></p>
+      </div>
+    </section>
+
+    <!-- ============================================ graph -->
+    <section class="sec" id="graph">
+      <div class="sechead">
+        <span class="ref">§3 · Structure</span>
+        <h2>The network, and how to interrogate it</h2>
+        <p class="lede">Columns are causal depth, so every arrow points rightwards and the forecast horizon sits at the far right. Line style carries evidence quality — and that is the uncomfortable part: the chain carrying the whole inclusion argument is drawn from the thinnest evidence in the model.</p>
+      </div>
+
+      <div class="controls">
+        <div class="ctrl"><span>Variant</span>
+          <div class="seg" id="variant-seg">
+            <button type="button" data-variant="baseline">baseline · 35</button>
+            <button type="button" data-variant="amended">amended · 42</button>
+          </div>
+        </div>
+        <div class="ctrl"><span>Evidence</span>
+          <div class="seg" id="ev-seg">
+            <button type="button" data-ev="all">all</button>
+            <button type="button" data-ev="SL">SL</button>
+            <button type="button" data-ev="INT">INT</button>
+            <button type="button" data-ev="EXP">EXP</button>
+          </div>
+        </div>
+        <div class="ctrl"><span>Trace to outcome from</span>
+          <select id="trace-select"></select>
+        </div>
+        <button class="linkbtn" type="button" id="audit-btn">Audit Neuro_Type &rarr;</button>
+      </div>
+
+      <div class="graphwrap">
+        <div style="display:flex;flex-direction:column;gap:9px;min-width:0">
+          <div class="canvas" id="canvas"></div>
+          <p class="scrollhint">Click a node or an arrow to inspect it. Scroll the panel sideways to follow the chain.</p>
+          <div class="legend" id="legend"></div>
+        </div>
+        <aside class="inspect" id="inspect"></aside>
+      </div>
+
+      <div class="assertion" id="audit-panel"></div>
+    </section>
+
+    <!-- ============================================ decay -->
+    <section class="sec" id="decay">
+      <div class="sechead">
+        <span class="ref">§1 C5 · Signal transmission</span>
+        <h2>What happens to the accommodation signal on its way to the outcome</h2>
+        <p class="lede">One student, one building, one change: school accommodation switched from inadequate to adequate. Each bar is how far that single change moves the adverse state of the next node along the chain. The question is what is left when it arrives.</p>
+      </div>
+      <div class="routes" id="routes"></div>
+      <div class="prose">
+        <p>Read the first route and the second together. Same chain, same parameters — the only difference is that the amended variant restores two edges the brief omits, and the signal arriving at the outcome grows sevenfold. Nothing about the accommodation effect changed; the model simply gained somewhere to put it.</p>
+        <p>The third route is the one that was missing. <strong>It carries 5.8× more signal at its final mediator than the attendance route does</strong> — 0.1648 at <code>School_Engagement</code> against 0.0286 at <code>Current_Attendance</code> — which reframes the diagnosis. The brief's error was not that its chain was too long. It was that distress reached the outcome only through attendance, the narrowest channel available, while the affective route to disengagement was left out entirely.</p>
+        <p class="muted">Reading the bars precisely: every hop except the last is specific to that route. The final value is marked <code>∑</code> because the outcome shift is a property of the whole model, not of one path through it — in the amended variant four directed paths connect these endpoints, so no single route can claim it. Conflating the two is what made the middle chart look like decay when it was really interference.</p>
+      </div>
+    </section>
+
+    <!-- ============================================ scenarios -->
+    <section class="sec" id="scenarios">
+      <div class="sechead">
+        <span class="ref">§7 · Inference</span>
+        <h2>Seven students the model was asked about</h2>
+        <p class="lede">Three groups, each built as a contrast rather than a single case, because a risk number on its own says nothing a team can act on. Bars are the full posterior over the outcome; the callout is P(High).</p>
+      </div>
+      <div class="controls">
+        <div class="ctrl"><span>Variant</span>
+          <div class="seg" id="scen-seg">
+            <button type="button" data-variant="baseline">baseline</button>
+            <button type="button" data-variant="amended">amended</button>
+          </div>
+        </div>
+        <div class="stacklab">
+          <span><i class="dot" style="background:var(--sev-low)"></i> <b>Low</b></span>
+          <span><i class="dot" style="background:var(--sev-mid)"></i> <b>Medium</b></span>
+          <span><i class="dot" style="background:var(--sev-high)"></i> <b>High</b></span>
+        </div>
+      </div>
+      <div class="tablewrap"><table id="scen-table"></table></div>
+      <div id="contrast-blocks" class="grid2"></div>
+    </section>
+
+    <!-- ============================================ causal -->
+    <section class="sec" id="causal">
+      <div class="sechead">
+        <span class="ref">§8 · Causal semantics</span>
+        <h2>Seeing a value is not setting it</h2>
+        <p class="lede">Conditioning on <code>School_Accommodation=Adequate</code> asks about students who happen to attend accommodating schools. Intervening asks what happens if this school starts accommodating. Only the second is a policy question, and the two coincide only when the structure says they must.</p>
+      </div>
+      <div class="tablewrap"><table id="obsint-table"></table></div>
+      <div class="grid2">
+        <div class="callout ok">
+          <h4>The guardrail</h4>
+          <p>Interventions are restricted to an allowlist of modifiable school and household factors. Asking the model what a child's risk would be <em>if they were not autistic</em> is a forbidden question, not a malformed one, so it is refused rather than answered.</p>
+          <pre id="guardrail-pre"></pre>
+        </div>
+        <div class="callout warn">
+          <h4>A library bug we had to route around</h4>
+          <p id="libcaveat-text"></p>
+          <div class="tablewrap"><table id="probe-table"></table></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ sensitivity -->
+    <section class="sec" id="sensitivity">
+      <div class="sechead">
+        <span class="ref">§9 · Sensitivity</span>
+        <h2>How much of this survives being wrong about the parameters</h2>
+        <p class="lede">Every parameter here was elicited, not estimated, so the only honest question is whether the conclusions are robust to getting them wrong. Each of the four most load-bearing assumptions was perturbed ±10% and all seven scenarios re-run.</p>
+      </div>
+      <div class="tablewrap"><table id="sens-table"></table></div>
+      <div class="grid2" id="sens-summary"></div>
+      <div class="prose"><p class="muted" id="sens-limits"></p></div>
+    </section>
+
+    <!-- ============================================ burden -->
+    <section class="sec" id="burden">
+      <div class="sechead">
+        <span class="ref">§11.1 · Deployment arithmetic</span>
+        <h2>Who a threshold actually flags</h2>
+        <p class="lede">This is the section that decides whether the model is safe to deploy, and it needs no external data — the model's own numbers are enough. Precision is capped by the base rate: no ranking, however good, can beat <code>prevalence / flag&nbsp;rate</code>.</p>
+      </div>
+      <div class="tablewrap"><table id="burden-table"></table></div>
+      <div class="callout warn">
+        <h4 id="burden-head"></h4>
+        <p id="burden-note"></p>
+        <p id="burden-note2"></p>
+        <p class="muted"><strong>Reading the ceiling columns.</strong> Each is <code>min(1, prevalence / flag&nbsp;rate)</code> — the best precision any ranking could achieve at that threshold if the true leaving rate were 1%, 2% or 5%. <em>Not capped</em> means the ratio exceeded 1, so the base rate imposes no limit there; it does not mean precision would be perfect. Nothing in these columns is a measurement — they are upper bounds implied by arithmetic, and the model has never been compared against a real outcome.</p>
+      </div>
+    </section>
+
+    <!-- ============================================ register -->
+    <section class="sec" id="register">
+      <div class="sechead">
+        <span class="ref">§2 · Edge register</span>
+        <h2>Every connection, and what we are claiming by drawing it</h2>
+        <p class="lede">An arrow is a causal claim. Each one here carries its mechanism, its evidence grade, the confounders that could explain it away instead, whether anyone can change it, and the specific way it could be misread about a real child.</p>
+      </div>
+      <div class="controls">
+        <div class="ctrl"><span>Show</span>
+          <div class="seg" id="reg-seg">
+            <button type="button" data-reg="all">all 42</button>
+            <button type="button" data-reg="baseline">brief's 35</button>
+            <button type="button" data-reg="amendment">amendments</button>
+            <button type="button" data-reg="EXP">unvalidated</button>
+          </div>
+        </div>
+        <div class="ctrl"><span>Filter</span>
+          <input type="search" id="reg-search" placeholder="node or mechanism&hellip;" />
+        </div>
+        <span class="scrollhint" id="reg-count"></span>
+      </div>
+      <div class="tablewrap" style="max-height:620px;overflow-y:auto"><table id="reg-table"></table></div>
+    </section>
+
+    <!-- ============================================ guardrails -->
+    <section class="sec" id="guardrails">
+      <div class="sechead">
+        <span class="ref">§11 · Governance</span>
+        <h2>The commitments are in the code, not the documentation</h2>
+        <p class="lede">A promise in a report is not a constraint. Each of these is enforced at runtime and covered by a test that fails if someone removes it.</p>
+      </div>
+      <ul class="plain" id="guardrail-list"></ul>
+      <div class="callout warn">
+        <h4>Must never be used to</h4>
+        <p>Deny or restrict education · discipline, stream or exclude a student · rank schools or teachers · label a child in any permanent record · report families to police, labour or child-protection authorities automatically.</p>
+        <p>Because most flagged students would not have left school anyway, every output must lead to an <strong>offer</strong> of support that costs the student nothing if the flag was wrong. That is not a nicety; it is the only posture the false-positive arithmetic permits.</p>
+      </div>
+    </section>
+
+    <!-- ============================================ review -->
+    <section class="sec" id="review">
+      <div class="sechead">
+        <span class="ref">Appendix A · Review pass</span>
+        <h2>Six defects found by attacking our own work</h2>
+        <p class="lede">A self-review run as an adversarial probe of invariants the original suite did not cover. All six are fixed and regression-tested, 124 → 133 tests. Two of them changed a claim in the report, and one produced a new finding.</p>
+      </div>
+      <div class="tablewrap"><table id="defect-table"></table></div>
+      <div class="prose">
+        <p><strong>Why the first 124 tests missed three of these.</strong> They checked the happy path of each function against itself, and the arithmetic was right, so nothing failed. What found D1, D2 and D5 was asking what a <em>caller</em> could do wrong, and what an invariant would look like if it were violated. D2 was the worst case: it was hiding behind a test that passed for the right reason on the wrong model.</p>
+        <p><strong>D3 is the general lesson.</strong> Any fact stated in two places will eventually disagree. The fix was not to proofread more carefully but to delete the second copy — evidence levels became data, and the report section is generated from them. This page is built the same way: its structure, edge narratives and numbers are extracted from the module and the report at build time, and the build fails if the two disagree.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p><strong>Status.</strong> The code runs, the tests pass, and the numbers are internally coherent. None of them are about Sri Lankan schools yet — the outcome node is not an observable event, so nothing here can currently be calibrated or falsified. That is the prerequisite for everything else.</p>
+      <p class="mono" id="footer-prov"></p>
+    </footer>
+  </main>
+</div>
+
+<script>
+const DATA = /*__DATA__*/null;
+
+/* ---------------------------------------------------------------- utils */
+const $ = (s, r = document) => r.querySelector(s);
+const el = (tag, attrs = {}, ...kids) => {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "class") n.className = v;
+    else if (k === "html") n.innerHTML = v;
+    else if (k === "text") n.textContent = v;
+    else if (k.startsWith("on")) n.addEventListener(k.slice(2), v);
+    else if (v !== null && v !== undefined) n.setAttribute(k, v);
+  }
+  for (const c of kids.flat()) if (c != null) n.append(c.nodeType ? c : document.createTextNode(String(c)));
+  return n;
+};
+const svgEl = (tag, attrs = {}) => {
+  const n = document.createElementNS("http://www.w3.org/2000/svg", tag);
+  for (const [k, v] of Object.entries(attrs)) if (v !== null && v !== undefined) n.setAttribute(k, String(v));
+  return n;
+};
+const p3 = v => v.toFixed(3);
+const p4 = v => v.toFixed(4);
+const pct = (v, d = 1) => (v * 100).toFixed(d) + "%";
+const signed = v => (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(4);
+const nodeByName = Object.fromEntries(DATA.nodes.map(n => [n.name, n]));
+const TARGET = DATA.meta.target;
+const prettyLabel = s => s.replace(/^[A-C]\d_/, "").replace(/_/g, " ");
+/* Source strings come from the module in plain ASCII with *asterisk* emphasis.
+   Escape first, then render the dashes and emphasis. */
+const dashes = s => s.replace(/ -- /g, " — ");
+const esc = s => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const rich = s => dashes(esc(s)).replace(/\*([^*]+)\*/g, "<em>$1</em>");
+const EV_NAME = { SL: "Sri Lankan evidence", INT: "International evidence", EXP: "Expert hypothesis — unvalidated" };
+const ROLE_NAME = { ctx: "Background context", prot: "Protected characteristic", mod: "Modifiable factor", med: "Mediator", out: "Outcome" };
+const ROLE_COLOR = { ctx: "--sage", prot: "--lacquer", mod: "--verdigris", med: "--brass", out: "--lacquer" };
+const DASH = { SL: null, INT: "5 3", EXP: "1.6 3" };
+
+/* ---------------------------------------------------------------- masthead */
+$("#redline-text").innerHTML =
+  "This is a research prototype built on assumed parameters. All probabilities are <em>illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.</em> " +
+  "It is not a diagnostic, disciplinary, or automated decision-making system, and no output may be shown to or used about a real student.";
+
+const readout = [
+  ["Nodes", DATA.structure.baseline.n_nodes],
+  ["Edges", DATA.structure.baseline.n_edges + " / " + DATA.structure.amended.n_edges],
+  ["Unvalidated", pct(DATA.evidence.baseline.expertShare, 1)],
+  ["Largest CPD", DATA.structure.baseline.max_cpd_columns + " cols"],
+  ["Tests", "133 pass"],
+  ["Seed", DATA.meta.seed],
+  ["Fingerprint", DATA.meta.baselineFingerprint.slice(0, 8)],
+];
+$("#readout").append(...readout.map(([k, v]) => el("div", {}, el("dt", { text: k }), el("dd", { text: String(v) }))));
+$("#footer-prov").textContent =
+  DATA.meta.provenance + "  ·  seed " + DATA.meta.seed +
+  "  ·  baseline " + DATA.meta.baselineFingerprint.slice(0, 8) +
+  "  ·  amended " + DATA.meta.amendedFingerprint.slice(0, 8) +
+  "  ·  computed " + DATA.meta.generatedAt;
+
+/* ---------------------------------------------------------------- findings */
+const B = DATA.pathways.baseline, AA = DATA.pathways.amendedAttendance, AE = DATA.pathways.amendedEngagement;
+const engFinal = AE.steps[AE.steps.length - 2].absolute_shift;
+const attFinal = AA.steps[AA.steps.length - 2].absolute_shift;
+const badProbe = DATA.libraryCaveat.probes.reduce((a, b) => (b.max_abs_difference > a.max_abs_difference ? b : a));
+
+const FINDINGS = [
+  {
+    stat: pct(B.transmission_to_outcome, 1), statk: "signal survives",
+    title: "As specified, the network is nearly blind to its own most important modifiable lever.",
+    body: "Switching accommodation from inadequate to adequate moves <code>Support_Mismatch</code> by " +
+      p3(B.shift_at_first_mediator) + " — decisive — but moves the outcome by only <strong>" + p4(B.shift_at_outcome) +
+      "</strong>. Scenario A, which the brief calls the ethically important comparison, is therefore invisible to any realistic triage threshold. This is arithmetic, not a coding error.",
+  },
+  {
+    stat: pct(AA.transmission_to_outcome, 1), statk: "after two edges",
+    title: "Two omitted edges cause most of that loss.",
+    body: "The brief gives accommodation <em>no academic pathway at all</em> and routes distress to the outcome only through attendance. Restoring <code>Support_Mismatch → Current_Academic_Performance</code> and <code>School_Distress → School_Engagement</code> raises transmission from " +
+      pct(B.transmission_to_outcome, 1) + " to <strong>" + pct(AA.transmission_to_outcome, 1) + "</strong> — a 7× gain that puts the inclusion contrast on par with the socio-economic one.",
+  },
+  {
+    stat: p4(badProbe.truncated_factorisation_p_high), statk: "correct answer",
+    title: "pgmpy 1.1.2 cannot be trusted for conditional interventional queries.",
+    body: "Whenever the intervened variable has parents, <code>CausalInference.query</code> silently discards evidence outside its chosen adjustment set. With <code>" +
+      Object.entries(badProbe.conditioning_evidence).map(([k, v]) => k + "=" + v).join(", ") + "</code> it returns <strong>" +
+      p4(badProbe.pgmpy_causalinference_p_high) + "</strong> — the no-evidence value — where the correct answer is " +
+      p4(badProbe.truncated_factorisation_p_high) + ". Nearly a factor of two, with no warning. This module computes <code>do()</code> on the mutilated graph instead.",
+  },
+];
+$("#findings-list").append(...FINDINGS.map((f, i) => el("div", { class: "finding" },
+  el("div", { class: "fnum num", text: String(i + 1) }),
+  el("div", { class: "fbody" }, el("b", { html: f.title }), el("p", { html: f.body })),
+  el("div", { class: "fstat" }, el("span", { class: "v", text: f.stat }), el("span", { class: "k", text: f.statk })),
+)));
+
+const t35 = DATA.screening.thresholds.find(t => t.threshold === 0.35);
+$("#scale-note").innerHTML =
+  "At a 0.35 threshold the model refers <strong>" + t35.flagged_per_1000_students.toFixed(0) +
+  " of every 1,000 students</strong> for review. If the true leaving rate were 2%, then at most <strong>" +
+  pct(t35.precision_ceiling_by_assumed_true_rate["2%"], 0) + "</strong> of those referrals could be correct — " +
+  "however good the ranking, because precision cannot exceed prevalence divided by flag rate. " +
+  "That single inequality fixes the only safe deployment posture, and it is derived from the model's own output rather than from any external claim.";
+
+/* ---------------------------------------------------------------- graph */
+const GS = { W: 148, H: 42, COLW: 190, ROWH: 58, PADX: 26, PADY: 34 };
+let gVariant = "baseline", gEvidence = "all", gSelNode = null, gSelEdge = null, gTrace = null;
+
+const edgesFor = v => v === "amended" ? DATA.edges : DATA.edges.filter(e => !e.amendment);
+const depthKey = v => v === "amended" ? "depthAmended" : "depth";
+
+function wrapLabel(name) {
+  if (name.length <= 21) return [name];
+  const parts = name.split("_");
+  let best = null;
+  for (let i = 1; i < parts.length; i++) {
+    const a = parts.slice(0, i).join("_") + "_", b = parts.slice(i).join("_");
+    const score = Math.abs(a.length - b.length) + Math.max(a.length, b.length) * 1.4;
+    if (!best || score < best.score) best = { a, b, score };
+  }
+  return [best.a, best.b];
+}
+
+function computeLayout(variant) {
+  const dk = depthKey(variant), edges = edgesFor(variant);
+  const cols = [];
+  for (const n of DATA.nodes) { const d = n[dk]; (cols[d] = cols[d] || []).push(n.name); }
+  const preds = new Map(), succs = new Map();
+  for (const n of DATA.nodes) { preds.set(n.name, []); succs.set(n.name, []); }
+  for (const e of edges) { succs.get(e.parent).push(e.child); preds.get(e.child).push(e.parent); }
+  const maxRows = Math.max(...cols.map(c => c.length));
+  /* Barycentres must compare *vertical positions*, not row indices: columns hold
+     different numbers of nodes and are centred, so row 2 of a 3-node column sits far
+     below row 2 of a 10-node column. Averaging raw indices drags nodes away from their
+     own neighbours. */
+  const colOf = new Map();
+  cols.forEach((c, ci) => c.forEach(n => colOf.set(n, ci)));
+  const offset = cols.map(c => (maxRows - c.length) / 2);
+  const row = new Map();
+  cols.forEach(c => c.forEach((n, i) => row.set(n, i)));
+  const vpos = n => offset[colOf.get(n)] + row.get(n);
+  for (let it = 0; it < 24; it++) {
+    const down = it % 2 === 0;
+    const order = cols.map((_, i) => i);
+    if (!down) order.reverse();
+    for (const ci of order) {
+      const nbr = down ? preds : succs;
+      const scored = cols[ci].map(n => {
+        const ns = nbr.get(n);
+        return { n, b: ns.length ? ns.reduce((s, m) => s + vpos(m), 0) / ns.length : vpos(n) };
+      });
+      scored.sort((a, b) => a.b - b.b || a.n.localeCompare(b.n));
+      cols[ci] = scored.map(s => s.n);
+      cols[ci].forEach((n, i) => row.set(n, i));
+    }
+  }
+  const pos = {};
+  cols.forEach((c, ci) => {
+    const off = (maxRows - c.length) / 2;
+    c.forEach((n, ri) => {
+      pos[n] = { x: GS.PADX + ci * GS.COLW, y: GS.PADY + (off + ri) * GS.ROWH, col: ci };
+    });
+  });
+  return {
+    pos, cols,
+    width: GS.PADX * 2 + (cols.length - 1) * GS.COLW + GS.W,
+    height: GS.PADY * 2 + maxRows * GS.ROWH,
+  };
+}
+
+/* reachability: edge (u,v) lies on a directed path s->t iff s reaches u and v reaches t */
+function onPathSets(variant, source) {
+  const edges = edgesFor(variant);
+  const out = new Map(), inn = new Map();
+  for (const n of DATA.nodes) { out.set(n.name, []); inn.set(n.name, []); }
+  for (const e of edges) { out.get(e.parent).push(e.child); inn.get(e.child).push(e.parent); }
+  const walk = (start, adj) => {
+    const seen = new Set([start]), stack = [start];
+    while (stack.length) for (const nx of adj.get(stack.pop())) if (!seen.has(nx)) { seen.add(nx); stack.push(nx); }
+    return seen;
+  };
+  const fromS = walk(source, out), toT = walk(TARGET, inn);
+  const onEdge = new Set(), onNode = new Set();
+  for (const e of edges) if (fromS.has(e.parent) && toT.has(e.child) && toT.has(e.parent) && fromS.has(e.child)) {
+    onEdge.add(e.parent + "→" + e.child); onNode.add(e.parent); onNode.add(e.child);
+  }
+  /* exact path count over topological order */
+  const dk = depthKey(variant);
+  const order = [...DATA.nodes].sort((a, b) => a[dk] - b[dk]).map(n => n.name);
+  const ways = new Map(order.map(n => [n, 0]));
+  ways.set(source, 1);
+  for (const n of order) { const w = ways.get(n); if (w) for (const c of out.get(n)) ways.set(c, ways.get(c) + w); }
+  return { onEdge, onNode, nPaths: ways.get(TARGET), children: out.get(source) };
+}
+
+function renderGraph() {
+  const L = computeLayout(gVariant), edges = edgesFor(gVariant);
+  const trace = gTrace ? onPathSets(gVariant, gTrace) : null;
+  const svg = svgEl("svg", { width: L.width, height: L.height, viewBox: `0 0 ${L.width} ${L.height}`, role: "img" });
+  const svgTitle = svgEl("title");
+  svgTitle.textContent =
+    `Causal network, ${gVariant} variant: ${DATA.nodes.length} nodes, ${edges.length} directed edges, forecast target ${TARGET}.`;
+  svg.append(svgTitle);
+
+  const defs = svgEl("defs");
+  for (const [id, tone] of [["dim", "--rule"], ["base", "--ink-faint"], ["hot", "--verdigris"], ["amd", "--brass"]]) {
+    const mk = svgEl("marker", { id: "ah-" + id, viewBox: "0 0 8 6", refX: 7.2, refY: 3, markerWidth: 6.4, markerHeight: 5, orient: "auto-start-reverse" });
+    mk.append(svgEl("path", { d: "M0,0 L8,3 L0,6 z", fill: `var(${tone})` }));
+    defs.append(mk);
+  }
+  svg.append(defs);
+
+  /* column guides */
+  const gGuide = svgEl("g");
+  L.cols.forEach((_, ci) => {
+    const x = GS.PADX + ci * GS.COLW + GS.W / 2;
+    gGuide.append(svgEl("line", { x1: x, y1: 18, x2: x, y2: L.height - 12, class: "bandrule" }));
+    const t = svgEl("text", { x, y: 12, "text-anchor": "middle", class: "bandlab" });
+    t.textContent = ci === 0 ? "root" : ci === L.cols.length - 1 ? "horizon" : "depth " + ci;
+    gGuide.append(t);
+  });
+  svg.append(gGuide);
+
+  /* edges */
+  const gEdges = svgEl("g");
+  const edgeNodes = [];
+  for (const e of edges) {
+    const a = L.pos[e.parent], b = L.pos[e.child];
+    const x1 = a.x + GS.W, y1 = a.y + GS.H / 2, x2 = b.x, y2 = b.y + GS.H / 2;
+    const dx = Math.max(34, (x2 - x1) * 0.5);
+    const d = `M${x1},${y1} C${x1 + dx},${y1} ${x2 - dx},${y2} ${x2},${y2}`;
+    const key = e.parent + "→" + e.child;
+    const evOK = gEvidence === "all" || e.evidence === gEvidence;
+    const lit = trace ? trace.onEdge.has(key) : false;
+    const stroke = e.amendment ? "var(--brass)" : lit ? "var(--verdigris)" : "var(--ink-faint)";
+    const path = svgEl("path", {
+      d, class: "e-path", stroke, "stroke-width": lit ? 2.4 : 1.15,
+      "stroke-dasharray": DASH[e.evidence], opacity: 0.62,
+      "marker-end": "url(#ah-" + (lit ? "hot" : e.amendment ? "amd" : "base") + ")",
+    });
+    const hit = svgEl("path", { d, class: "e-hit" });
+    const dim = (!evOK) || (trace && !lit) || (gSelEdge && gSelEdge !== key);
+    if (dim) path.classList.add("dim");
+    if (lit) path.classList.add("lit");
+    const pick = ev => { ev.stopPropagation(); gSelEdge = key; gSelNode = null; renderGraph(); showEdge(e); };
+    hit.addEventListener("click", pick);
+    path.addEventListener("click", pick);
+    const tt = svgEl("title");
+    tt.textContent = `${key}  [${e.evidence}] ${e.mechanism}`;
+    hit.append(tt);
+    gEdges.append(path, hit);
+    edgeNodes.push({ e, path });
+  }
+  svg.append(gEdges);
+
+  /* nodes */
+  const gNodes = svgEl("g");
+  for (const n of DATA.nodes) {
+    const p = L.pos[n.name];
+    const tone = ROLE_COLOR[n.role];
+    const g = svgEl("g", { class: "node", tabindex: 0, role: "button", "aria-label": n.name + ", " + ROLE_NAME[n.role] });
+    const isSel = gSelNode === n.name, isTrace = gTrace === n.name;
+    const lit = trace ? trace.onNode.has(n.name) : false;
+    const box = svgEl("rect", {
+      x: p.x, y: p.y, width: GS.W, height: GS.H, class: "n-box",
+      fill: n.target ? "var(--lacquer-lo)" : isTrace ? "var(--verdigris-lo)" : "var(--surface)",
+      stroke: `var(${tone})`,
+      "stroke-dasharray": n.protected ? "3 2" : null,
+    });
+    if (isSel || isTrace) g.classList.add("sel");
+    else if (lit) g.classList.add("lit");
+    if (trace && !lit && !isTrace) g.classList.add("dim");
+    const ntt = svgEl("title");
+    ntt.textContent = `${n.name} — ${ROLE_NAME[n.role]}. States: ${n.states.join(" / ")}.`;
+    g.append(ntt, box);
+    const lines = wrapLabel(n.name);
+    lines.forEach((ln, i) => {
+      const t = svgEl("text", {
+        x: p.x + GS.W / 2, y: p.y + GS.H / 2 + (lines.length === 1 ? 3.4 : i === 0 ? -3 : 9),
+        "text-anchor": "middle", class: "n-label", fill: n.target ? "var(--lacquer)" : "var(--ink)",
+      });
+      t.textContent = ln;
+      g.append(t);
+    });
+    if (n.protected) {
+      const m = svgEl("text", { x: p.x + GS.W - 5, y: p.y + 10, "text-anchor": "end", class: "n-label", fill: "var(--lacquer)" });
+      m.textContent = "◆"; g.append(m);
+    } else if (n.modifiable) {
+      const m = svgEl("text", { x: p.x + GS.W - 5, y: p.y + 10, "text-anchor": "end", class: "n-label", fill: "var(--verdigris)" });
+      m.textContent = "▲"; g.append(m);
+    }
+    const act = ev => { ev.stopPropagation(); gSelNode = n.name; gSelEdge = null; gTrace = n.name; $("#trace-select").value = n.name; renderGraph(); showNode(n); };
+    g.addEventListener("click", act);
+    g.addEventListener("keydown", ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); act(ev); } });
+    gNodes.append(g);
+  }
+  svg.append(gNodes);
+  svg.addEventListener("click", () => { gSelEdge = null; gSelNode = null; renderGraph(); });
+
+  const c = $("#canvas");
+  c.replaceChildren(svg);
+  renderAudit(trace);
+}
+
+function renderLegend() {
+  const roles = ["ctx", "prot", "mod", "med", "out"];
+  $("#legend").replaceChildren(
+    el("section", {}, el("h4", { text: "Node role" }), el("ul", {}, roles.map(r => el("li", {},
+      el("i", { class: "swatch", style: `border-color:var(${ROLE_COLOR[r]});background:${r === "out" ? "var(--lacquer-lo)" : "var(--surface)"};${r === "prot" ? "border-style:dashed" : ""}` }),
+      ROLE_NAME[r])))),
+    el("section", {}, el("h4", { text: "Edge evidence" }), el("ul", {}, ["SL", "INT", "EXP"].map(k => el("li", {},
+      el("i", { class: "dashkey", style: `border-top-color:var(--ink-faint);border-top-style:${k === "SL" ? "solid" : k === "INT" ? "dashed" : "dotted"}` }),
+      k + " · " + EV_NAME[k])))),
+    el("section", {}, el("h4", { text: "Marks" }), el("ul", {},
+      el("li", {}, el("span", { class: "tick", text: "▲" }), "do() permitted"),
+      el("li", {}, el("span", { class: "cross", text: "◆" }), "never a do() target"),
+      el("li", {}, el("i", { class: "dashkey", style: "border-top-color:var(--brass);border-top-style:solid" }), "amendment edge"))),
+  );
+}
+
+function showNode(n) {
+  const variant = gVariant;
+  const edges = edgesFor(variant);
+  const parents = edges.filter(e => e.child === n.name).map(e => e.parent);
+  const children = edges.filter(e => e.parent === n.name).map(e => e.child);
+  const t = n.name === TARGET ? null : onPathSets(variant, n.name);
+  const flags = [];
+  if (n.protected) flags.push(["flag", "never a do() target"]);
+  if (n.modifiable) flags.push(["ref", "modifiable lever"]);
+  if (n.observable) flags.push(["flag", "observable at screening"]);
+  if (n.target) flags.push(["adverse", "forecast target"]);
+  $("#inspect").replaceChildren(
+    el("div", { class: "inspect-head" },
+      el("span", { class: "k", text: ROLE_NAME[n.role] }),
+      el("span", { class: "t", text: n.name })),
+    el("div", { class: "inspect-body" },
+      flags.length ? el("div", { class: "chips" }, flags.map(([c, s]) => el("span", { class: "chip " + c, text: s }))) : null,
+      el("div", { class: "field" }, el("span", { class: "k", text: "States" }),
+        el("div", { class: "chips" }, n.states.map((s, i) =>
+          el("span", { class: "chip " + (i === 0 ? "ref" : i === n.states.length - 1 && n.states.length > 1 ? "adverse" : ""), text: s })))),
+      el("div", { class: "field" }, el("span", { class: "k", text: "Period" }),
+        el("span", { class: "v", text: DATA.meta.periods[n.period] })),
+      el("div", { class: "field" }, el("span", { class: "k", text: `Parents (${parents.length})` }),
+        el("span", { class: "v mono", text: parents.length ? parents.join(", ") : "— root node" })),
+      el("div", { class: "field" }, el("span", { class: "k", text: `Children (${children.length})` }),
+        el("span", { class: "v mono", text: children.length ? children.join(", ") : "— sink" })),
+      t ? el("div", { class: "field" }, el("span", { class: "k", text: "Routes to outcome" }),
+        el("span", { class: "v", html: t.nPaths ? "<b class='num'>" + t.nPaths + "</b> distinct directed path" + (t.nPaths === 1 ? "" : "s") + " to <code>" + TARGET + "</code>" : "No directed path to the outcome in this variant." })) : null,
+    ));
+}
+
+function showEdge(e) {
+  $("#inspect").replaceChildren(
+    el("div", { class: "inspect-head" },
+      el("span", { class: "k", text: "Edge " + e.id + (e.amendment ? " · amendment" : "") }),
+      el("span", { class: "t", html: e.parent + "<br>&rarr; " + e.child })),
+    el("div", { class: "inspect-body" },
+      el("div", { class: "chips" },
+        el("span", { class: "evbadge ev-" + e.evidence, text: e.evidence }),
+        el("span", { class: "chip", text: EV_NAME[e.evidence] })),
+      el("div", { class: "field" }, el("span", { class: "k", text: "Proposed mechanism" }), el("span", { class: "v", text: e.mechanism })),
+      el("div", { class: "field" }, el("span", { class: "k", text: "Could be explained instead by" }), el("span", { class: "v", text: e.confounders })),
+      el("div", { class: "field" }, el("span", { class: "k", text: "Modifiable" }), el("span", { class: "v", text: e.modifiable })),
+      el("div", { class: "field" }, el("span", { class: "k", text: "Ethical hazard" }), el("span", { class: "v", text: e.concern })),
+    ));
+}
+
+function renderAudit(trace) {
+  const panel = $("#audit-panel");
+  if (!gTrace) {
+    panel.replaceChildren(
+      el("div", { class: "hd" }, "structural guarantee"),
+      el("p", { html: "Select a node to trace every directed path it has to the outcome. The one that matters is <code>Neuro_Type</code>: the model is only defensible if none of its paths reach the outcome directly." }));
+    return;
+  }
+  const n = nodeByName[gTrace];
+  const direct = trace.children.includes(TARGET);
+  const gateways = trace.children;
+  panel.replaceChildren(
+    el("div", { class: "hd" }, gTrace === "Neuro_Type" ? "neurotype audit · " + gVariant : "path trace · " + gVariant),
+    el("p", { html:
+      "<span class='mono'>" + gTrace + "</span> reaches the outcome by <b class='num'>" + trace.nPaths +
+      "</b> distinct directed path" + (trace.nPaths === 1 ? "" : "s") + ". Direct edge to <code>" + TARGET + "</code>: " +
+      (direct ? "<span class='cross'>present</span>" : "<span class='tick'>none</span>") + "." }),
+    gateways.length ? el("p", { html:
+      "Every one of those paths must leave through " + (gateways.length === 1 ? "a single gateway" : "one of " + gateways.length + " gateways") +
+      ": <span class='mono'>" + gateways.join("</span>, <span class='mono'>") + "</span>." }) : null,
+    gTrace === "Neuro_Type" ? el("p", { html: !direct && gateways.every(g => nodeByName[g].modifiable || nodeByName[g].role === "med")
+      ? "<b>This is the commitment holding.</b> Risk for a neurodivergent student is routed entirely through environmental mechanisms a school can change — never through the neurotype itself. A test fails if anyone adds the direct edge."
+      : "<b>The commitment is broken in this configuration.</b>" }) : null,
+  );
+}
+
+/* controls */
+function segInit(sel, attr, get, set) {
+  const seg = $(sel);
+  const sync = () => [...seg.children].forEach(b => b.setAttribute("aria-pressed", String(b.dataset[attr] === get())));
+  seg.addEventListener("click", ev => {
+    const b = ev.target.closest("button"); if (!b) return;
+    set(b.dataset[attr]); sync();
+  });
+  sync();
+  return sync;
+}
+segInit("#variant-seg", "variant", () => gVariant, v => {
+  gVariant = v;
+  if (gTrace) { gSelNode = gTrace; }
+  renderGraph();
+  if (gSelNode) showNode(nodeByName[gSelNode]); else renderInspectDefault();
+});
+segInit("#ev-seg", "ev", () => gEvidence, v => { gEvidence = v; renderGraph(); });
+
+const tsel = $("#trace-select");
+tsel.append(el("option", { value: "", text: "— nothing selected" }),
+  ...DATA.nodes.filter(n => !n.target).map(n => el("option", { value: n.name, text: n.name })));
+tsel.addEventListener("change", () => {
+  gTrace = tsel.value || null; gSelNode = gTrace; gSelEdge = null;
+  renderGraph();
+  if (gTrace) showNode(nodeByName[gTrace]); else renderInspectDefault();
+});
+$("#audit-btn").addEventListener("click", () => {
+  gTrace = "Neuro_Type"; gSelNode = "Neuro_Type"; gSelEdge = null; tsel.value = "Neuro_Type";
+  renderGraph(); showNode(nodeByName["Neuro_Type"]);
+  $("#audit-panel").scrollIntoView({ behavior: "smooth", block: "center" });
+});
+function renderInspectDefault() {
+  $("#inspect").replaceChildren(
+    el("div", { class: "inspect-head" },
+      el("span", { class: "k", text: "Inspector" }),
+      el("span", { class: "t", text: "Nothing selected" })),
+    el("div", { class: "inspect-body" },
+      el("p", { class: "muted", html: "Click any node to see its states, parents and every route it has to the outcome. Click an arrow to see the causal claim it makes, the confounders that could explain it away, and how it could be misread about a real child." }),
+      el("div", { class: "field" }, el("span", { class: "k", text: "Evidence mix, this variant" }),
+        el("span", { class: "v mono", id: "evmix" })),
+    ));
+  const m = DATA.evidence[gVariant].counts;
+  $("#evmix").textContent = `SL ${m.SL} · INT ${m.INT} · EXP ${m.EXP}  (${pct(DATA.evidence[gVariant].expertShare, 1)} unvalidated)`;
+}
+
+/* ---------------------------------------------------------------- decay */
+const ROUTES = [
+  { key: "baseline", data: B, name: "Brief's route, via attendance", tag: "baseline", primary: false },
+  { key: "amendedAttendance", data: AA, name: "Same route, amended model", tag: "amended", primary: false },
+  { key: "amendedEngagement", data: AE, name: "The restored route, via engagement", tag: "amended · A5", primary: true },
+];
+const maxShift = Math.max(...ROUTES.flatMap(r => r.data.steps.map(s => s.absolute_shift)));
+$("#routes").replaceChildren(...ROUTES.map(r => {
+  const st = r.data.steps;
+  const grew = new Set((r.data.parallel_pathway_signals || []).map(p => p.at_node));
+  return el("div", { class: "route" + (r.primary ? " primary" : "") },
+    el("div", { class: "route-head" },
+      el("span", { class: "nm" }, r.name, " ", el("span", { class: "eyebrow", text: r.tag })),
+      el("span", { class: "tx", html: "outcome shift, all routes <b>" + p4(r.data.shift_at_outcome) + "</b> · " + pct(r.data.transmission_to_outcome, 1) + " of origin" })),
+    el("div", { class: "hops" }, st.map((s, i) => el("div", { class: "hop" + (grew.has(s.node) ? " grew" : "") },
+      el("span", { class: "hn", title: s.node + " = " + s.adverse_state + (i === st.length - 1 ? " (shared endpoint — total across all routes)" : "") },
+        s.node, i === st.length - 1 ? el("span", { class: "muted", text: " ∑" }) : null),
+      el("span", { class: "bar" }, el("i", {
+        style: `width:${(s.absolute_shift / maxShift * 100).toFixed(2)}%;background:${grew.has(s.node) ? "var(--lacquer)" : r.primary ? "var(--verdigris)" : "var(--sage)"}`
+      })),
+      el("span", { class: "hv", text: p4(s.absolute_shift) }),
+    ))),
+    grew.size ? el("p", { class: "routenote", html:
+      "Marked hop <em>increases</em>. Decay along a single route cannot grow, so this is signal arriving from a parallel route — " +
+      "the model has <b class='num'>" + r.data.n_directed_paths_first_to_last + "</b> directed paths between these endpoints, not one. " +
+      "Reporting this curve as “attenuation” was defect D2." }) : null,
+  );
+}));
+
+/* ---------------------------------------------------------------- scenarios */
+let scenVariant = "baseline";
+const GROUP_NAME = {
+  A_environmental_mismatch: "A · Environmental mismatch",
+  B_socioeconomic_access: "B · Socio-economic access",
+  C_protective_factors: "C · Protective factors",
+};
+function renderScenarios() {
+  const S = DATA.scenarios[scenVariant];
+  const base = DATA.scenarios.baseline.results;
+  const rows = [];
+  let lastGroup = null;
+  for (const r of S.results) {
+    const grp = DATA.scenarios.baseline.results.find(b => b.label === r.label).group;
+    if (grp !== lastGroup) {
+      rows.push(el("tr", {}, el("td", { colspan: 5, class: "m", style: "background:var(--surface-sunk);color:var(--ink-faint);letter-spacing:.08em;font-size:10px;text-transform:uppercase", text: GROUP_NAME[grp] })));
+      lastGroup = grp;
+    }
+    const po = r.posterior;
+    rows.push(el("tr", {},
+      el("td", {}, el("div", { class: "pair", text: r.label.replace(/_/g, " ") }),
+        el("div", { class: "narrow", style: "min-width:0", text: dashes(r.note || "") })),
+      el("td", { class: "evset" }, Object.entries(r.evidence).map(([k, v]) =>
+        el("div", {}, k, el("i", {}, "="), v))),
+      el("td", {}, el("div", { class: "stack" },
+        el("i", { style: `width:${po.Low * 100}%;background:var(--sev-low)`, title: "Low " + p3(po.Low) }),
+        el("i", { style: `width:${po.Medium * 100}%;background:var(--sev-mid)`, title: "Medium " + p3(po.Medium) }),
+        el("i", { style: `width:${po.High * 100}%;background:var(--sev-high)`, title: "High " + p3(po.High) })),
+        el("div", { class: "stacklab", style: "padding-top:4px" },
+          el("span", { html: "<b>" + p3(po.Low) + "</b>" }), el("span", { html: "<b>" + p3(po.Medium) + "</b>" }), el("span", { html: "<b>" + p3(po.High) + "</b>" }))),
+      el("td", { class: "n", style: "font-size:15px" }, p4(po.High)),
+      el("td", { class: "n muted" }, scenVariant === "amended"
+        ? signed(po.High - base.find(b => b.label === r.label).posterior.High) : "—"),
+    ));
+  }
+  $("#scen-table").replaceChildren(
+    el("thead", {}, el("tr", {},
+      el("th", { text: "Scenario" }), el("th", { text: "Evidence set" }),
+      el("th", { text: "Posterior over " + TARGET }), el("th", { class: "n", text: "P(High)" }),
+      el("th", { class: "n", text: "vs baseline" }))),
+    el("tbody", {}, rows));
+
+  $("#contrast-blocks").replaceChildren(...Object.entries(S.contrasts).map(([grp, list]) =>
+    el("div", { class: "callout" + (grp === "A_environmental_mismatch" ? " ok" : "") },
+      el("h4", { text: GROUP_NAME[grp] }),
+      ...list.map(c => el("p", { html:
+        "<code>" + prettyLabel(c.reference) + "</code> → <code>" + prettyLabel(c.comparison) + "</code><br>" +
+        "ΔP(High) <b class='num'>" + signed(c.delta_p_high) + "</b> · relative <b class='num'>" + pct(c.relative_change_p_high, 1) + "</b>" +
+        (c.argmax_changed ? " · <span class='tick'>most-likely state changes</span>" : " · <span class='muted'>most-likely state unchanged</span>") })),
+      grp === "A_environmental_mismatch"
+        ? el("p", { class: "muted", text: scenVariant === "baseline"
+          ? "This is the comparison the brief calls ethically important, and in the baseline it moves the outcome by less than a percentage point — below what any review team could act on."
+          : "With the two restored edges the same comparison now moves the outcome by over four points, which a triage threshold can actually resolve." })
+        : null)));
+}
+segInit("#scen-seg", "variant", () => scenVariant, v => { scenVariant = v; renderScenarios(); });
+
+/* ---------------------------------------------------------------- obs vs int */
+$("#obsint-table").replaceChildren(
+  el("thead", {}, el("tr", {},
+    el("th", { text: "Intervention" }), el("th", { text: "Conditioned on" }), el("th", { class: "n", text: "Parents" }),
+    el("th", { class: "n", text: "max |do − obs|" }), el("th", { text: "Why" }))),
+  el("tbody", {}, DATA.obsInt.baseline.map(r => el("tr", { class: r.identical_in_this_dag ? "" : "rowmark" },
+    el("td", { class: "m" }, "do(" + r.variable + "=" + r.state + ")"),
+    el("td", { class: "m muted" }, Object.keys(r.conditioning_evidence).length
+      ? Object.entries(r.conditioning_evidence).map(([k, v]) => k + "=" + v).join(", ") : "—"),
+    el("td", { class: "n" }, r.parents_of_variable.length),
+    el("td", { class: "n", style: r.identical_in_this_dag ? "" : "color:var(--brass)" }, p4(r.max_abs_difference)),
+    el("td", { class: "narrow", html: rich(r.explanation) }),
+  ))));
+
+$("#guardrail-pre").textContent =
+  ">>> " + DATA.guardrail.attempted + "\nNonModifiableInterventionError:\n" + DATA.guardrail.refused_with;
+
+$("#libcaveat-text").innerHTML =
+  "<code>pgmpy.CausalInference.query</code> in 1.1.2 silently drops evidence outside its chosen back-door adjustment set whenever the intervened variable has parents. " +
+  "We found it by cross-checking against a manual computation on the mutilated graph. Of " + DATA.libraryCaveat.probes.length +
+  " probes of <code>" + DATA.libraryCaveat.query + "</code>, <strong>" + DATA.libraryCaveat.n_disagreements +
+  " disagree</strong>. This module therefore treats truncated factorisation as primary and the library as a no-evidence cross-check only.";
+
+$("#probe-table").replaceChildren(
+  el("thead", {}, el("tr", {},
+    el("th", { text: "Conditioned on" }), el("th", { class: "n", text: "Correct" }),
+    el("th", { class: "n", text: "pgmpy" }), el("th", { class: "n", text: "Δ" }))),
+  el("tbody", {}, DATA.libraryCaveat.probes.map(p => el("tr", { class: p.agrees ? "" : "rowmark" },
+    el("td", { class: "m" }, Object.keys(p.conditioning_evidence).length
+      ? Object.entries(p.conditioning_evidence).map(([k, v]) => k + "=" + v).join(", ") : "no evidence"),
+    el("td", { class: "n" }, p4(p.truncated_factorisation_p_high)),
+    el("td", { class: "n", style: p.agrees ? "" : "color:var(--lacquer)" }, p4(p.pgmpy_causalinference_p_high)),
+    el("td", { class: "n" }, p.agrees ? el("span", { class: "tick", text: "—" }) : p4(p.max_abs_difference)),
+  ))));
+
+/* ---------------------------------------------------------------- sensitivity */
+const sensMax = Math.max(...DATA.sensitivity.records.map(r => r.max_abs_shift));
+const SCEN_ORDER = DATA.sensitivity.baselineRanking;
+$("#sens-table").replaceChildren(
+  el("thead", {}, el("tr", {},
+    el("th", { text: "Perturbed parameter" }), el("th", { class: "n", text: "Δ" }),
+    el("th", { text: "Largest resulting shift in P(High)" }), el("th", { class: "n", text: "Worst case" }),
+    el("th", { text: "Most affected" }), el("th", { class: "n", text: "Ranking" }))),
+  el("tbody", {}, DATA.sensitivity.records.map(r => el("tr", {},
+    el("td", {}, el("div", { class: "m" }, r.perturbed_parameter), el("div", { class: "narrow", style: "min-width:0" }, r.question)),
+    el("td", { class: "n" }, (r.relative_delta > 0 ? "+" : "−") + Math.abs(r.relative_delta * 100).toFixed(0) + "%"),
+    el("td", {}, el("div", { class: "bar" }, el("i", {
+      style: `width:${(r.max_abs_shift / sensMax * 100).toFixed(2)}%;background:${r.max_abs_shift > 0.02 ? "var(--sev-mid)" : "var(--sage)"}`
+    }))),
+    el("td", { class: "n" }, p4(r.max_abs_shift)),
+    el("td", { class: "m muted" }, prettyLabel(r.most_affected_scenario)),
+    el("td", { class: "n" }, r.ranking_preserved
+      ? el("span", { class: "tick", text: "held" }) : el("span", { class: "cross", text: "changed" })),
+  ))));
+
+const S = DATA.sensitivity;
+$("#sens-summary").replaceChildren(
+  el("div", { class: "callout ok" }, el("h4", { text: "The ordering is stable" }),
+    el("p", { html: "Across all <b class='num'>" + S.nPerturbations + "</b> perturbations the scenario ranking changed <b class='num'>" + S.nRankChanges + "</b> times. The largest shift in any single P(High) was <b class='num'>" + p4(S.largestShift) + "</b>." }),
+    el("p", { class: "muted", html: "That matters more than the absolute numbers: the model is used to <em>order</em> students for review, and the order is what survives the parameters being wrong." })),
+  el("div", { class: "callout warn" }, el("h4", { text: "But stability is not correctness" }),
+    el("p", { html: "A ranking robust to ±10% on four parameters is still a ranking derived entirely from elicited priors. Robustness to perturbation is not evidence of validity — a confidently wrong model is also stable." })),
+);
+$("#sens-limits").innerHTML = "Limitations carried in the output: " + S.limitations.map(rich).join(" · ");
+
+/* ---------------------------------------------------------------- burden */
+const SCR = DATA.screening;
+$("#burden-table").replaceChildren(
+  el("thead", {}, el("tr", {},
+    el("th", { class: "n", text: "Threshold" }), el("th", { class: "n", text: "Flagged / 1,000" }),
+    el("th", { text: "Referral load" }), el("th", { class: "n", text: "Self-reported precision" }),
+    el("th", { class: "n", text: "Ceiling @1%" }), el("th", { class: "n", text: "@2%" }), el("th", { class: "n", text: "@5%" }))),
+  el("tbody", {}, SCR.thresholds.map(t => el("tr", { class: t.threshold === 0.35 ? "rowmark" : "" },
+    el("td", { class: "n" }, "P(High) ≥ " + t.threshold.toFixed(2)),
+    el("td", { class: "n", style: "font-size:15px" }, t.flagged_per_1000_students.toFixed(0)),
+    el("td", {}, el("div", { class: "bar", style: "min-width:110px" }, el("i", {
+      style: `width:${(t.flag_rate / SCR.thresholds[0].flag_rate * 100).toFixed(1)}%;background:var(--sev-mid)`
+    }))),
+    el("td", { class: "n muted" }, pct(t.self_consistency.precision, 1)),
+    ...["1%", "2%", "5%"].map(rate => {
+      const c = t.precision_ceiling_by_assumed_true_rate[rate];
+      /* A ceiling of exactly 1 is min(1, prevalence/flag_rate) saturating: the base rate
+         has stopped constraining precision. Printing "100.0%" would read as achievable
+         perfect precision, which is the opposite of what it means. */
+      return c >= 1
+        ? el("td", { class: "n muted", title: "prevalence / flag rate = " + (parseFloat(rate) / 100 / t.flag_rate).toFixed(2) + ", so the base rate imposes no cap here" }, "not capped")
+        : el("td", { class: "n", style: rate === "5%" ? "" : "color:var(--lacquer)" }, pct(c, 1));
+    }),
+  ))));
+
+const tTop = SCR.thresholds[SCR.thresholds.length - 1];
+$("#burden-head").textContent = "The self-reported precision column is not a real number";
+$("#burden-note").innerHTML =
+  "Precision measured against the model's own synthetic sample — " + pct(t35.self_consistency.precision, 1) +
+  " at the 0.35 threshold — only says the model agrees with itself, because the labels were generated by the same parameters. " +
+  "The honest bound is the ceiling: <code>precision ≤ prevalence / flag&nbsp;rate</code>. At a 2% true leaving rate that ceiling is <strong>" +
+  pct(t35.precision_ceiling_by_assumed_true_rate["2%"], 1) + "</strong>, so roughly four in five flagged students would not have left.";
+$("#burden-note2").innerHTML =
+  "Raising the bar to " + tTop.threshold.toFixed(2) + " cuts referrals to " + tTop.flagged_per_1000_students.toFixed(0) +
+  " per 1,000 and lifts the 1% ceiling from " + pct(t35.precision_ceiling_by_assumed_true_rate["1%"], 1) + " to " +
+  pct(tTop.precision_ceiling_by_assumed_true_rate["1%"], 1) + " — a <b class='num'>" +
+  (tTop.precision_ceiling_by_assumed_true_rate["1%"] / SCR.thresholds[0].precision_ceiling_by_assumed_true_rate["1%"]).toFixed(1) +
+  "×</b> improvement bought by finding far fewer of the students who need help. There is no threshold that escapes this trade; " +
+  "there is only a choice about which error to make, and that choice belongs to the people accountable for the consequences.";
+
+/* ---------------------------------------------------------------- register */
+let regFilter = "all", regQuery = "";
+function renderRegister() {
+  const q = regQuery.trim().toLowerCase();
+  const rows = DATA.edges.filter(e => {
+    if (regFilter === "baseline" && e.amendment) return false;
+    if (regFilter === "amendment" && !e.amendment) return false;
+    if (regFilter === "EXP" && e.evidence !== "EXP") return false;
+    if (!q) return true;
+    return (e.parent + " " + e.child + " " + e.mechanism + " " + e.confounders + " " + e.concern).toLowerCase().includes(q);
+  });
+  $("#reg-count").textContent = rows.length + " of " + DATA.edges.length + " edges";
+  $("#reg-table").replaceChildren(
+    el("thead", {}, el("tr", {},
+      el("th", { class: "n", text: "#" }), el("th", { text: "Claim" }), el("th", { text: "Ev" }),
+      el("th", { text: "Mechanism" }), el("th", { text: "Could instead be" }),
+      el("th", { text: "Modifiable" }), el("th", { text: "Ethical hazard" }))),
+    el("tbody", {}, rows.map(e => el("tr", { class: e.amendment ? "rowmark" : "" },
+      el("td", { class: "n muted" }, e.id),
+      el("td", {}, el("div", { class: "pair" }, e.parent, el("br"), el("i", {}, "→ " + e.child))),
+      el("td", {}, el("span", { class: "evbadge ev-" + e.evidence, text: e.evidence })),
+      el("td", { class: "narrow" }, e.mechanism),
+      el("td", { class: "narrow muted" }, e.confounders),
+      el("td", { class: "narrow", style: "min-width:130px" }, e.modifiable),
+      el("td", { class: "concern" }, e.concern),
+    ))));
+}
+segInit("#reg-seg", "reg", () => regFilter, v => { regFilter = v; renderRegister(); });
+$("#reg-search").addEventListener("input", ev => { regQuery = ev.target.value; renderRegister(); });
+
+/* ---------------------------------------------------------------- guardrails */
+const GUARDS = [
+  ["◆", "<b>No direct edge from <code>Neuro_Type</code> to the outcome.</b> Every path from a student's neurotype runs through an environmental mechanism a school can change. Enforced by <code>_assert_no_protected_shortcut</code> at model construction, so the model will not build if someone adds it."],
+  ["▲", "<b><code>do()</code> is restricted to an allowlist</b> of nine modifiable school and household factors. Interventions on <code>Neuro_Type</code>, <code>Sector</code>, <code>Grade_Band</code> or <code>Parent_Education</code> raise <code>NonModifiableInterventionError</code> — a 403, not a 422, because the question is forbidden rather than malformed."],
+  ["≠", "<b>No CPD entry may be exactly 0 or 1.</b> No elicited prior about a child's circumstances earns the claim <em>impossible</em>. <code>validate_cpds</code> rejects deterministic cells."],
+  ["⌗", "<b>Every result carries its provenance.</b> A parameter fingerprint, the priors banner and a decision-support caveat travel with each number, so the warning cannot be detached downstream. The fingerprint hashes parent order and state names too — that was defect D5."],
+  ["⊙", "<b>The synthetic dataset is labelled synthetic in its filename, header and metadata</b>, carries no student-identifying fields, and cannot validate anything — it was generated by the same parameters it would be testing."],
+];
+$("#guardrail-list").replaceChildren(...GUARDS.map(([g, t]) => el("li", {}, el("span", { text: g }), el("span", { html: t }))));
+
+/* ---------------------------------------------------------------- defects */
+const DEFECTS = [
+  ["D1", "Neither inference function validated <code>target</code>. A bad one reached pgmpy and surfaced as a raw <code>NetworkXError</code> — HTTP 500 from a service layer, where the whole point of <code>EvidenceError</code> is a 422.", "Real · service-facing", "<code>validate_evidence</code> now rejects an unknown target with <code>UnknownNodeError</code>, listing valid names."],
+  ["D2", "<code>trace_pathway_attenuation</code> presented the amended model's <b>non-monotone</b> curve as “attenuation”. Decay along one route cannot increase — the growth was undetected signal from a parallel route. The test only covered the baseline, where the chain happens to be the only route.", "Real · invalid interpretation", "Non-monotone steps are now detected and reported with a path count; tracing a non-path raises. <b>Produced a new finding</b>: the engagement route carries 5.8× the attendance route."],
+  ["D3", "§1.4's evidence classification covered 34 of 35 edges and contradicted §2's table on six. §2 was correct throughout.", "Real · report integrity", "Evidence levels became data (<code>EDGE_EVIDENCE</code>) with tests asserting they partition the edge set exactly; the prose section is generated from them."],
+  ["D4", "<code>json.dumps(..., default=str)</code> would have silently written a leaked numpy scalar as the string <code>\"0.132\"</code>, corrupting downstream analysis with no error.", "Latent", "Fallback removed, so a type leak fails loudly. A test asserts key bundle values are genuinely numeric."],
+  ["D5", "<code>model_fingerprint</code> hashed names and values but not parent order or state names, so two models with identical matrices under different column layouts collided — defeating the audit-log guarantee.", "Latent · audit integrity", "Parent order and state names are now hashed. Tested with a deliberately relabelled CPD."],
+  ["D6", "<code>Food_Health_Burden</code> sat on the <code>do()</code> allowlist while critique C7 argued the intervention has no unique referent. Code and critique contradicted each other.", "Minor · consistency", "Retained for the §8 demonstration with the ambiguity documented at the allowlist, and the C7 wording aligned."],
+];
+$("#defect-table").replaceChildren(
+  el("thead", {}, el("tr", {},
+    el("th", { class: "n", text: "#" }), el("th", { text: "Defect" }), el("th", { text: "Severity" }), el("th", { text: "Fix" }))),
+  el("tbody", {}, DEFECTS.map(([id, d, sev, fix]) => el("tr", {},
+    el("td", { class: "n m" }, id),
+    el("td", { class: "narrow", html: d }),
+    el("td", { class: "m", style: "white-space:nowrap;color:" + (sev.startsWith("Real") ? "var(--lacquer)" : "var(--ink-faint)") }, sev),
+    el("td", { class: "narrow", html: fix }),
+  ))));
+
+/* ---------------------------------------------------------------- theme */
+const tb = $("#themebtn");
+const modes = ["auto", "light", "dark"];
+let mi = 0;
+tb.addEventListener("click", () => {
+  mi = (mi + 1) % 3;
+  const m = modes[mi];
+  if (m === "auto") document.documentElement.removeAttribute("data-theme");
+  else document.documentElement.setAttribute("data-theme", m);
+  tb.textContent = "Theme: " + m;
+});
+
+/* ---------------------------------------------------------------- boot */
+renderLegend();
+renderInspectDefault();
+renderGraph();
+renderScenarios();
+renderRegister();
+</script>

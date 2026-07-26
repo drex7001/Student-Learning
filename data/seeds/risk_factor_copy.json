@@ -1,0 +1,774 @@
+{
+  "source": "research/dropout-ews/ui/export_model.py via scripts/build_risk_factor_copy.py",
+  "model_variant": "amended",
+  "model_fingerprint": "f12dd7f40c61ecd0",
+  "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+  "guardrail_message": "Refusing to intervene on a protected or immutable characteristic. do() is restricted to modifiable school and household factors. Immutable or protected characteristics such as neurotype are never valid intervention targets.",
+  "register_fields": [
+    "Previous_Attendance",
+    "Current_Attendance",
+    "School_Engagement",
+    "Grade_Band"
+  ],
+  "target": "Next_Term_Dropout_Risk",
+  "target_states": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "factors": [
+    {
+      "id": "Sector",
+      "label": "School sector",
+      "label_si": "පාසල් අංශය",
+      "group": "Context",
+      "group_si": "පසුබිම",
+      "states": [
+        "Urban",
+        "Rural",
+        "Estate"
+      ],
+      "state_labels": [
+        "Urban",
+        "Rural",
+        "Estate"
+      ],
+      "state_labels_si": [
+        "නාගරික",
+        "ග්‍රාමීය",
+        "වතු"
+      ],
+      "concern": [
+        false,
+        false,
+        false
+      ],
+      "modifiable": false,
+      "protected": true,
+      "register": false,
+      "why_not_actionable": "Where the school is. Changes with policy and infrastructure, not casework."
+    },
+    {
+      "id": "Grade_Band",
+      "label": "Grade band",
+      "label_si": "ශ්‍රේණි කාණ්ඩය",
+      "group": "Context",
+      "group_si": "පසුබිම",
+      "states": [
+        "Primary",
+        "Junior_Secondary",
+        "OLevel_ALevel"
+      ],
+      "state_labels": [
+        "Primary",
+        "Junior secondary",
+        "O/A Level"
+      ],
+      "state_labels_si": [
+        "ප්‍රාථමික",
+        "කනිෂ්ඨ ද්විතීයික",
+        "සා.පෙළ / උ.පෙළ"
+      ],
+      "concern": [
+        false,
+        false,
+        false
+      ],
+      "modifiable": false,
+      "protected": true,
+      "register": true,
+      "why_not_actionable": "The student's stage of schooling."
+    },
+    {
+      "id": "Economic_Strain",
+      "label": "Household economic strain",
+      "label_si": "ගෘහ ආර්ථික පීඩනය",
+      "group": "Home",
+      "group_si": "නිවස",
+      "states": [
+        "Low",
+        "Moderate",
+        "High"
+      ],
+      "state_labels": [
+        "Not under strain",
+        "Some strain",
+        "Under real strain"
+      ],
+      "state_labels_si": [
+        "පීඩනයක් නැත",
+        "යම් පීඩනයක්",
+        "දැඩි පීඩනයක්"
+      ],
+      "concern": [
+        false,
+        false,
+        true
+      ],
+      "modifiable": false,
+      "protected": false,
+      "register": false,
+      "why_not_actionable": "Real and important, but not something a school can change directly. It is a reason for a welfare referral, not a school intervention."
+    },
+    {
+      "id": "Parent_Education",
+      "label": "Parent's own schooling",
+      "label_si": "දෙමාපියන්ගේ අධ්‍යාපනය",
+      "group": "Home",
+      "group_si": "නිවස",
+      "states": [
+        "Low",
+        "Secondary",
+        "Post_Secondary"
+      ],
+      "state_labels": [
+        "Left school early",
+        "Finished secondary",
+        "Studied beyond school"
+      ],
+      "state_labels_si": [
+        "පාසල අඩාළ විය",
+        "ද්විතීයික අවසන් කළා",
+        "පාසලෙන් ඔබ්බට"
+      ],
+      "concern": [
+        false,
+        false,
+        false
+      ],
+      "modifiable": false,
+      "protected": true,
+      "register": false,
+      "why_not_actionable": "A fact about the parent's own past. Acting on it is not possible and treating it as a deficit is not acceptable."
+    },
+    {
+      "id": "Parent_Availability",
+      "label": "Parent present at home",
+      "label_si": "දෙමාපියන් නිවසේ සිටීම",
+      "group": "Home",
+      "group_si": "නිවස",
+      "states": [
+        "Available",
+        "Limited_or_Away"
+      ],
+      "state_labels": [
+        "At home",
+        "Away or rarely available"
+      ],
+      "state_labels_si": [
+        "නිවසේ සිටී",
+        "ඈත් වී හෝ කලාතුරකින්"
+      ],
+      "concern": [
+        false,
+        true
+      ],
+      "modifiable": false,
+      "protected": false,
+      "register": false,
+      "why_not_actionable": "Often migration for work. The school can work around it — see study support — but cannot change it."
+    },
+    {
+      "id": "Neuro_Type",
+      "label": "Neurotype",
+      "label_si": "ස්නායු වර්ගය",
+      "group": "Context",
+      "group_si": "පසුබිම",
+      "states": [
+        "Typical",
+        "ADHD",
+        "ASD"
+      ],
+      "state_labels": [
+        "Not identified as neurodivergent",
+        "ADHD",
+        "Autistic"
+      ],
+      "state_labels_si": [
+        "ස්නායු විවිධත්වයක් හඳුනාගෙන නැත",
+        "ADHD",
+        "ඔටිසම්"
+      ],
+      "concern": [
+        false,
+        false,
+        false
+      ],
+      "modifiable": false,
+      "protected": true,
+      "register": false,
+      "why_not_actionable": "A characteristic of the student, never a target. The model refuses to estimate what would happen 'if this student were not autistic', and the network has no direct arrow from neurotype to leaving school — only arrows through how the school responds."
+    },
+    {
+      "id": "Child_Labour_Household_Duties",
+      "label": "Work and household duties",
+      "label_si": "රැකියා හා ගෘහ කටයුතු",
+      "group": "Home",
+      "group_si": "නිවස",
+      "states": [
+        "Low",
+        "High"
+      ],
+      "state_labels": [
+        "Little or none",
+        "Heavy duties or paid work"
+      ],
+      "state_labels_si": [
+        "ඉතා අඩුයි",
+        "බර වැඩ හෝ ගෙවන රැකියාවක්"
+      ],
+      "concern": [
+        false,
+        true
+      ],
+      "modifiable": true,
+      "protected": false,
+      "register": false,
+      "action": {
+        "action": "Refer household duties to welfare, with a family visit",
+        "owner": "Zonal welfare officer",
+        "target": "Low",
+        "detail": "The duties usually exist for a reason. Address the reason — income, a sick relative, childcare — before asking the family to change.",
+        "action_si": "ගෘහ කටයුතු සුබසාධන අංශයට යොමු කර පවුල හමුවන්න"
+      }
+    },
+    {
+      "id": "Transport_Burden",
+      "label": "Getting to school",
+      "label_si": "පාසලට පැමිණීමේ පහසුව",
+      "group": "Access",
+      "group_si": "ප්‍රවේශය",
+      "states": [
+        "Low",
+        "High"
+      ],
+      "state_labels": [
+        "Manageable journey",
+        "Long or costly journey"
+      ],
+      "state_labels_si": [
+        "ගමන පහසුයි",
+        "දිගු හෝ මිල අධික ගමනක්"
+      ],
+      "concern": [
+        false,
+        true
+      ],
+      "modifiable": true,
+      "protected": false,
+      "register": false,
+      "action": {
+        "action": "Arrange transport support",
+        "owner": "Zonal welfare officer",
+        "target": "Low",
+        "detail": "Season ticket, shared van place, or a route change. Confirm the journey actually works in the monsoon, not just on paper.",
+        "action_si": "ප්‍රවාහන සහාය සකසන්න"
+      }
+    },
+    {
+      "id": "Food_Health_Burden",
+      "label": "Food and health",
+      "label_si": "ආහාර හා සෞඛ්‍යය",
+      "group": "Home",
+      "group_si": "නිවස",
+      "states": [
+        "Low",
+        "High"
+      ],
+      "state_labels": [
+        "No major issue",
+        "Going hungry or unwell"
+      ],
+      "state_labels_si": [
+        "විශේෂ ගැටලුවක් නැත",
+        "කුසගින්න හෝ අසනීප"
+      ],
+      "concern": [
+        false,
+        true
+      ],
+      "modifiable": true,
+      "protected": false,
+      "register": false,
+      "action": {
+        "action": "Refer for school meals and a health check",
+        "owner": "Principal + PHI",
+        "target": "Low",
+        "detail": "Meals and health screening are separate programmes with separate owners.",
+        "caveat": "This variable bundles hunger with illness (report critique C7), so the estimate below has no single real-world action behind it. Treat the number as indicative only and split the referral in practice.",
+        "action_si": "පාසල් ආහාර හා සෞඛ්‍ය පරීක්ෂාවට යොමු කරන්න"
+      }
+    },
+    {
+      "id": "Home_Educational_Support",
+      "label": "Help with schoolwork at home",
+      "label_si": "නිවසේ පාඩම් සඳහා සහාය",
+      "group": "Home",
+      "group_si": "නිවස",
+      "states": [
+        "Adequate",
+        "Limited"
+      ],
+      "state_labels": [
+        "Someone helps",
+        "Studies alone"
+      ],
+      "state_labels_si": [
+        "කවුරුන් හෝ උදව් කරයි",
+        "තනිවම ඉගෙන ගනී"
+      ],
+      "concern": [
+        false,
+        true
+      ],
+      "modifiable": true,
+      "protected": false,
+      "register": false,
+      "action": {
+        "action": "Set up study support outside the home",
+        "owner": "Class teacher",
+        "target": "Adequate",
+        "detail": "Supervised study hour at school, a volunteer tutor, or a take-home pack. Do not depend on a parent who is not there.",
+        "action_si": "නිවසින් පිටත පාඩම් සහාය සකසන්න"
+      }
+    },
+    {
+      "id": "WASH_Quality",
+      "label": "School toilets and water",
+      "label_si": "පාසල් වැසිකිළි හා ජලය",
+      "group": "School",
+      "group_si": "පාසල",
+      "states": [
+        "Adequate",
+        "Inadequate"
+      ],
+      "state_labels": [
+        "Usable",
+        "Not usable"
+      ],
+      "state_labels_si": [
+        "භාවිතයට සුදුසුයි",
+        "භාවිතයට නුසුදුසුයි"
+      ],
+      "concern": [
+        false,
+        true
+      ],
+      "modifiable": true,
+      "protected": false,
+      "register": false,
+      "action": {
+        "action": "Repair and maintain toilets and water supply",
+        "owner": "Principal + zonal maintenance",
+        "target": "Adequate",
+        "detail": "A school-level fix, not a student-level one. Affects every student in the building, and older girls most.",
+        "action_si": "වැසිකිළි හා ජල සැපයුම අලුත්වැඩියා කර නඩත්තු කරන්න"
+      }
+    },
+    {
+      "id": "Sensory_Environment",
+      "label": "Classroom sensory load",
+      "label_si": "පන්ති කාමරයේ සංවේදී බර",
+      "group": "School",
+      "group_si": "පාසල",
+      "states": [
+        "Supportive",
+        "Overloading"
+      ],
+      "state_labels": [
+        "Manageable",
+        "Overwhelming"
+      ],
+      "state_labels_si": [
+        "දරාගත හැකියි",
+        "අධික ලෙස බර"
+      ],
+      "concern": [
+        false,
+        true
+      ],
+      "modifiable": true,
+      "protected": false,
+      "register": false,
+      "action": {
+        "action": "Reduce sensory load in the classroom",
+        "owner": "Class teacher",
+        "target": "Supportive",
+        "detail": "Quieter seating, permission to leave the room, a low-stimulus space at interval. Benefits the whole class, so needs no label on one student.",
+        "action_si": "පන්ති කාමරයේ සංවේදී බර අඩු කරන්න"
+      }
+    },
+    {
+      "id": "School_Accommodation",
+      "label": "Learning accommodations in place",
+      "label_si": "ඉගෙනුම් පහසුකම් සකසා තිබීම",
+      "group": "School",
+      "group_si": "පාසල",
+      "states": [
+        "Adequate",
+        "Inadequate"
+      ],
+      "state_labels": [
+        "In place and working",
+        "Missing or not working"
+      ],
+      "state_labels_si": [
+        "සකසා ඇත, ක්‍රියාත්මකයි",
+        "නොමැත හෝ ක්‍රියා නොකරයි"
+      ],
+      "concern": [
+        false,
+        true
+      ],
+      "modifiable": true,
+      "protected": false,
+      "register": false,
+      "action": {
+        "action": "Put a learning accommodation plan in place",
+        "owner": "Class teacher + section head",
+        "target": "Adequate",
+        "detail": "Written plan: seating, extra time, instructions given in writing, a named adult to check in weekly.",
+        "action_si": "ඉගෙනුම් පහසුකම් සැලැස්මක් සකසන්න"
+      }
+    },
+    {
+      "id": "Bullying_Social_Exclusion",
+      "label": "Bullying and exclusion",
+      "label_si": "හිරිහැර හා කොන් කිරීම",
+      "group": "School",
+      "group_si": "පාසල",
+      "states": [
+        "Low",
+        "High"
+      ],
+      "state_labels": [
+        "None reported",
+        "Being bullied or left out"
+      ],
+      "state_labels_si": [
+        "වාර්තා වී නැත",
+        "හිරිහැර හෝ කොන් කිරීම්"
+      ],
+      "concern": [
+        false,
+        true
+      ],
+      "modifiable": true,
+      "protected": false,
+      "register": false,
+      "action": {
+        "action": "Open the anti-bullying and peer-inclusion protocol",
+        "owner": "Section head + counsellor",
+        "target": "Low",
+        "detail": "Investigate, act on the behaviour of the students doing it, and build a peer group around the student. Do not make the target change class.",
+        "action_si": "හිරිහැර වැළැක්වීමේ ක්‍රියාපටිපාටිය ආරම්භ කරන්න"
+      }
+    },
+    {
+      "id": "Teacher_Resource_Adequacy",
+      "label": "Teaching resources",
+      "label_si": "ඉගැන්වීම් සම්පත්",
+      "group": "School",
+      "group_si": "පාසල",
+      "states": [
+        "Adequate",
+        "Limited"
+      ],
+      "state_labels": [
+        "Sufficient",
+        "Stretched"
+      ],
+      "state_labels_si": [
+        "ප්‍රමාණවත්",
+        "අඩුපාඩු සහිතයි"
+      ],
+      "concern": [
+        false,
+        true
+      ],
+      "modifiable": true,
+      "protected": false,
+      "register": false,
+      "action": {
+        "action": "Assign teaching resources or relief staff",
+        "owner": "Zonal office",
+        "target": "Adequate",
+        "detail": "School-level. Under-resourcing shows up as individual student risk, which is a reason to fund the school, not to flag the child.",
+        "action_si": "ඉගැන්වීම් සම්පත් හෝ සහාය කාර්ය මණ්ඩලය වෙන් කරන්න"
+      }
+    },
+    {
+      "id": "Support_Mismatch",
+      "label": "Support does not match need",
+      "label_si": "සහාය අවශ්‍යතාවයට නොගැලපීම",
+      "group": "Signals",
+      "group_si": "ලකුණු",
+      "states": [
+        "Low",
+        "High"
+      ],
+      "state_labels": [
+        "Support fits",
+        "Support does not fit"
+      ],
+      "state_labels_si": [
+        "සහාය ගැලපේ",
+        "සහාය නොගැලපේ"
+      ],
+      "concern": [
+        false,
+        true
+      ],
+      "modifiable": false,
+      "protected": false,
+      "register": false,
+      "why_not_actionable": "A summary of other factors, not a lever of its own. Act on the accommodation and sensory factors that feed it."
+    },
+    {
+      "id": "School_Distress",
+      "label": "Distress at school",
+      "label_si": "පාසලේ පීඩනය",
+      "group": "Signals",
+      "group_si": "ලකුණු",
+      "states": [
+        "Low",
+        "High"
+      ],
+      "state_labels": [
+        "Settled",
+        "Distressed"
+      ],
+      "state_labels_si": [
+        "සන්සුන්",
+        "පීඩනයෙන්"
+      ],
+      "concern": [
+        false,
+        true
+      ],
+      "modifiable": false,
+      "protected": false,
+      "register": false,
+      "why_not_actionable": "A signal, not a lever. Act on its causes."
+    },
+    {
+      "id": "Access_Barrier",
+      "label": "Practical barrier to attending",
+      "label_si": "පැමිණීමට ඇති ප්‍රායෝගික බාධාව",
+      "group": "Signals",
+      "group_si": "ලකුණු",
+      "states": [
+        "Low",
+        "High"
+      ],
+      "state_labels": [
+        "Can get in",
+        "Struggles to get in"
+      ],
+      "state_labels_si": [
+        "පැමිණිය හැක",
+        "පැමිණීම අපහසුයි"
+      ],
+      "concern": [
+        false,
+        true
+      ],
+      "modifiable": false,
+      "protected": false,
+      "register": false,
+      "why_not_actionable": "A signal, not a lever. Act on transport, duties, food and health."
+    },
+    {
+      "id": "Previous_Attendance",
+      "label": "Attendance last term",
+      "label_si": "පසුගිය වාරයේ පැමිණීම",
+      "group": "Register",
+      "group_si": "පැමිණීම් ලේඛනය",
+      "states": [
+        "Regular",
+        "Irregular"
+      ],
+      "state_labels": [
+        "Regular",
+        "Irregular"
+      ],
+      "state_labels_si": [
+        "නිතිපතා",
+        "අක්‍රමවත්"
+      ],
+      "concern": [
+        false,
+        true
+      ],
+      "modifiable": false,
+      "protected": false,
+      "register": true,
+      "why_not_actionable": "A record of what happened. It cannot be changed, only responded to."
+    },
+    {
+      "id": "Current_Academic_Performance",
+      "label": "Academic performance",
+      "label_si": "අධ්‍යයන කාර්යසාධනය",
+      "group": "Signals",
+      "group_si": "ලකුණු",
+      "states": [
+        "Adequate",
+        "Low"
+      ],
+      "state_labels": [
+        "Keeping up",
+        "Falling behind"
+      ],
+      "state_labels_si": [
+        "ගැලපෙමින් යයි",
+        "පසුබසිමින්"
+      ],
+      "concern": [
+        false,
+        true
+      ],
+      "modifiable": false,
+      "protected": false,
+      "register": false,
+      "why_not_actionable": "An outcome of support, not a lever to pull directly."
+    },
+    {
+      "id": "Current_Academic_Stress",
+      "label": "Academic stress",
+      "label_si": "අධ්‍යයන ආතතිය",
+      "group": "Signals",
+      "group_si": "ලකුණු",
+      "states": [
+        "Low",
+        "High"
+      ],
+      "state_labels": [
+        "Coping",
+        "Under pressure"
+      ],
+      "state_labels_si": [
+        "මුහුණ දෙයි",
+        "පීඩනය යටතේ"
+      ],
+      "concern": [
+        false,
+        true
+      ],
+      "modifiable": false,
+      "protected": false,
+      "register": false,
+      "why_not_actionable": "A signal, not a lever."
+    },
+    {
+      "id": "Psychological_Attendance_Barrier",
+      "label": "Reluctance to come in",
+      "label_si": "පාසලට පැමිණීමට මැලිකම",
+      "group": "Signals",
+      "group_si": "ලකුණු",
+      "states": [
+        "Low",
+        "High"
+      ],
+      "state_labels": [
+        "Willing to come",
+        "Avoiding school"
+      ],
+      "state_labels_si": [
+        "පැමිණීමට කැමතියි",
+        "පාසල මඟහරියි"
+      ],
+      "concern": [
+        false,
+        true
+      ],
+      "modifiable": false,
+      "protected": false,
+      "register": false,
+      "why_not_actionable": "A signal, not a lever. Act on distress and bullying."
+    },
+    {
+      "id": "Current_Attendance",
+      "label": "Attendance this term",
+      "label_si": "මෙම වාරයේ පැමිණීම",
+      "group": "Register",
+      "group_si": "පැමිණීම් ලේඛනය",
+      "states": [
+        "Regular",
+        "Irregular"
+      ],
+      "state_labels": [
+        "Regular",
+        "Irregular"
+      ],
+      "state_labels_si": [
+        "නිතිපතා",
+        "අක්‍රමවත්"
+      ],
+      "concern": [
+        false,
+        true
+      ],
+      "modifiable": false,
+      "protected": false,
+      "register": true,
+      "why_not_actionable": "The thing we are trying to protect, not a lever. Marking a student present does not keep them in school."
+    },
+    {
+      "id": "School_Engagement",
+      "label": "Engagement at school",
+      "label_si": "පාසලේ නිරත වීම",
+      "group": "Register",
+      "group_si": "පැමිණීම් ලේඛනය",
+      "states": [
+        "High",
+        "Low"
+      ],
+      "state_labels": [
+        "Engaged",
+        "Withdrawn"
+      ],
+      "state_labels_si": [
+        "නිරතයි",
+        "ඉවත් වී"
+      ],
+      "concern": [
+        false,
+        true
+      ],
+      "modifiable": false,
+      "protected": false,
+      "register": true,
+      "why_not_actionable": "The thing we are trying to protect, not a lever."
+    },
+    {
+      "id": "Next_Term_Dropout_Risk",
+      "label": "Risk of leaving next term",
+      "label_si": "ඊළඟ වාරයේ පාසල හැර යාමේ අවදානම",
+      "group": "Outcome",
+      "group_si": "ප්‍රතිඵලය",
+      "states": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "state_labels": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "state_labels_si": [
+        "අඩු",
+        "මධ්‍යම",
+        "ඉහළ"
+      ],
+      "concern": [
+        false,
+        false,
+        false
+      ],
+      "modifiable": false,
+      "protected": false,
+      "register": false
+    }
+  ]
+}

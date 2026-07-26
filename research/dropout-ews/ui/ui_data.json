@@ -1,0 +1,2887 @@
+{
+ "meta": {
+  "target": "Next_Term_Dropout_Risk",
+  "seed": 20250725,
+  "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+  "generatedAt": "2026-07-25T10:45:20+00:00",
+  "notFor": "diagnosis, discipline, exclusion, school ranking, permanent labelling, or automatic referral of families to any authority",
+  "periods": {
+   "standing": "Standing context — fixed or slow-moving before the term begins",
+   "prior": "Prior term (t−1) — environment, household and the mediators they drive",
+   "current": "Current term (t) — observed this term",
+   "next": "Next term (t+1) — the forecast horizon"
+  },
+  "baselineFingerprint": "c1b90a898747cc01",
+  "amendedFingerprint": "f12dd7f40c61ecd0"
+ },
+ "nodes": [
+  {
+   "name": "Sector",
+   "states": [
+    "Urban",
+    "Rural",
+    "Estate"
+   ],
+   "role": "ctx",
+   "period": "standing",
+   "depth": 0,
+   "depthAmended": 0,
+   "modifiable": false,
+   "protected": true,
+   "observable": false,
+   "target": false
+  },
+  {
+   "name": "Grade_Band",
+   "states": [
+    "Primary",
+    "Junior_Secondary",
+    "OLevel_ALevel"
+   ],
+   "role": "ctx",
+   "period": "standing",
+   "depth": 0,
+   "depthAmended": 0,
+   "modifiable": false,
+   "protected": true,
+   "observable": true,
+   "target": false
+  },
+  {
+   "name": "Economic_Strain",
+   "states": [
+    "Low",
+    "Moderate",
+    "High"
+   ],
+   "role": "ctx",
+   "period": "standing",
+   "depth": 0,
+   "depthAmended": 1,
+   "modifiable": false,
+   "protected": false,
+   "observable": false,
+   "target": false
+  },
+  {
+   "name": "Parent_Education",
+   "states": [
+    "Low",
+    "Secondary",
+    "Post_Secondary"
+   ],
+   "role": "ctx",
+   "period": "standing",
+   "depth": 0,
+   "depthAmended": 0,
+   "modifiable": false,
+   "protected": true,
+   "observable": false,
+   "target": false
+  },
+  {
+   "name": "Parent_Availability",
+   "states": [
+    "Available",
+    "Limited_or_Away"
+   ],
+   "role": "ctx",
+   "period": "standing",
+   "depth": 0,
+   "depthAmended": 0,
+   "modifiable": false,
+   "protected": false,
+   "observable": false,
+   "target": false
+  },
+  {
+   "name": "Neuro_Type",
+   "states": [
+    "Typical",
+    "ADHD",
+    "ASD"
+   ],
+   "role": "prot",
+   "period": "standing",
+   "depth": 0,
+   "depthAmended": 0,
+   "modifiable": false,
+   "protected": true,
+   "observable": false,
+   "target": false
+  },
+  {
+   "name": "Child_Labour_Household_Duties",
+   "states": [
+    "Low",
+    "High"
+   ],
+   "role": "mod",
+   "period": "prior",
+   "depth": 1,
+   "depthAmended": 2,
+   "modifiable": true,
+   "protected": false,
+   "observable": false,
+   "target": false
+  },
+  {
+   "name": "Transport_Burden",
+   "states": [
+    "Low",
+    "High"
+   ],
+   "role": "mod",
+   "period": "prior",
+   "depth": 1,
+   "depthAmended": 2,
+   "modifiable": true,
+   "protected": false,
+   "observable": false,
+   "target": false
+  },
+  {
+   "name": "Food_Health_Burden",
+   "states": [
+    "Low",
+    "High"
+   ],
+   "role": "mod",
+   "period": "prior",
+   "depth": 2,
+   "depthAmended": 2,
+   "modifiable": true,
+   "protected": false,
+   "observable": false,
+   "target": false
+  },
+  {
+   "name": "Home_Educational_Support",
+   "states": [
+    "Adequate",
+    "Limited"
+   ],
+   "role": "mod",
+   "period": "prior",
+   "depth": 1,
+   "depthAmended": 1,
+   "modifiable": true,
+   "protected": false,
+   "observable": false,
+   "target": false
+  },
+  {
+   "name": "WASH_Quality",
+   "states": [
+    "Adequate",
+    "Inadequate"
+   ],
+   "role": "mod",
+   "period": "prior",
+   "depth": 1,
+   "depthAmended": 1,
+   "modifiable": true,
+   "protected": false,
+   "observable": false,
+   "target": false
+  },
+  {
+   "name": "Sensory_Environment",
+   "states": [
+    "Supportive",
+    "Overloading"
+   ],
+   "role": "mod",
+   "period": "prior",
+   "depth": 0,
+   "depthAmended": 0,
+   "modifiable": true,
+   "protected": false,
+   "observable": false,
+   "target": false
+  },
+  {
+   "name": "School_Accommodation",
+   "states": [
+    "Adequate",
+    "Inadequate"
+   ],
+   "role": "mod",
+   "period": "prior",
+   "depth": 0,
+   "depthAmended": 2,
+   "modifiable": true,
+   "protected": false,
+   "observable": false,
+   "target": false
+  },
+  {
+   "name": "Bullying_Social_Exclusion",
+   "states": [
+    "Low",
+    "High"
+   ],
+   "role": "mod",
+   "period": "prior",
+   "depth": 0,
+   "depthAmended": 3,
+   "modifiable": true,
+   "protected": false,
+   "observable": false,
+   "target": false
+  },
+  {
+   "name": "Teacher_Resource_Adequacy",
+   "states": [
+    "Adequate",
+    "Limited"
+   ],
+   "role": "mod",
+   "period": "prior",
+   "depth": 1,
+   "depthAmended": 1,
+   "modifiable": true,
+   "protected": false,
+   "observable": false,
+   "target": false
+  },
+  {
+   "name": "Support_Mismatch",
+   "states": [
+    "Low",
+    "High"
+   ],
+   "role": "med",
+   "period": "prior",
+   "depth": 1,
+   "depthAmended": 3,
+   "modifiable": false,
+   "protected": false,
+   "observable": false,
+   "target": false
+  },
+  {
+   "name": "School_Distress",
+   "states": [
+    "Low",
+    "High"
+   ],
+   "role": "med",
+   "period": "prior",
+   "depth": 2,
+   "depthAmended": 4,
+   "modifiable": false,
+   "protected": false,
+   "observable": false,
+   "target": false
+  },
+  {
+   "name": "Access_Barrier",
+   "states": [
+    "Low",
+    "High"
+   ],
+   "role": "med",
+   "period": "prior",
+   "depth": 3,
+   "depthAmended": 3,
+   "modifiable": false,
+   "protected": false,
+   "observable": false,
+   "target": false
+  },
+  {
+   "name": "Previous_Attendance",
+   "states": [
+    "Regular",
+    "Irregular"
+   ],
+   "role": "med",
+   "period": "prior",
+   "depth": 0,
+   "depthAmended": 0,
+   "modifiable": false,
+   "protected": false,
+   "observable": true,
+   "target": false
+  },
+  {
+   "name": "Current_Academic_Performance",
+   "states": [
+    "Adequate",
+    "Low"
+   ],
+   "role": "med",
+   "period": "current",
+   "depth": 2,
+   "depthAmended": 4,
+   "modifiable": false,
+   "protected": false,
+   "observable": false,
+   "target": false
+  },
+  {
+   "name": "Current_Academic_Stress",
+   "states": [
+    "Low",
+    "High"
+   ],
+   "role": "med",
+   "period": "current",
+   "depth": 3,
+   "depthAmended": 5,
+   "modifiable": false,
+   "protected": false,
+   "observable": false,
+   "target": false
+  },
+  {
+   "name": "Psychological_Attendance_Barrier",
+   "states": [
+    "Low",
+    "High"
+   ],
+   "role": "med",
+   "period": "current",
+   "depth": 4,
+   "depthAmended": 6,
+   "modifiable": false,
+   "protected": false,
+   "observable": false,
+   "target": false
+  },
+  {
+   "name": "Current_Attendance",
+   "states": [
+    "Regular",
+    "Irregular"
+   ],
+   "role": "med",
+   "period": "current",
+   "depth": 5,
+   "depthAmended": 7,
+   "modifiable": false,
+   "protected": false,
+   "observable": true,
+   "target": false
+  },
+  {
+   "name": "School_Engagement",
+   "states": [
+    "High",
+    "Low"
+   ],
+   "role": "med",
+   "period": "current",
+   "depth": 3,
+   "depthAmended": 5,
+   "modifiable": false,
+   "protected": false,
+   "observable": true,
+   "target": false
+  },
+  {
+   "name": "Next_Term_Dropout_Risk",
+   "states": [
+    "Low",
+    "Medium",
+    "High"
+   ],
+   "role": "out",
+   "period": "next",
+   "depth": 6,
+   "depthAmended": 8,
+   "modifiable": false,
+   "protected": false,
+   "observable": false,
+   "target": true
+  }
+ ],
+ "edges": [
+  {
+   "id": "1",
+   "parent": "Sector",
+   "child": "Transport_Burden",
+   "mechanism": "Distance, terrain, bus frequency and fare cost rise from urban to rural to estate",
+   "evidence": "SL",
+   "confounders": "Household location choice; road investment",
+   "modifiable": "Partly — bus subsidy, hostels, siting",
+   "concern": "Sector is a proxy for structural neglect; must not read as a trait of rural/estate families",
+   "amendment": false
+  },
+  {
+   "id": "2",
+   "parent": "Sector",
+   "child": "Teacher_Resource_Adequacy",
+   "mechanism": "Deployment, subject specialists and medium-of-instruction coverage thin out outside urban schools",
+   "evidence": "SL",
+   "confounders": "Teacher preference; school size; political allocation",
+   "modifiable": "Yes — deployment policy, incentives",
+   "concern": "Risk of ranking or penalising schools for a resourcing failure not of their making",
+   "amendment": false
+  },
+  {
+   "id": "3",
+   "parent": "Sector",
+   "child": "WASH_Quality",
+   "mechanism": "Water supply, toilet ratios and MHM facilities weaker in small rural/estate schools",
+   "evidence": "SL",
+   "confounders": "School age and size; capital budget cycles",
+   "modifiable": "Yes — capital investment",
+   "concern": "Same as #2; also dignity-sensitive",
+   "amendment": false
+  },
+  {
+   "id": "4",
+   "parent": "Economic_Strain",
+   "child": "Child_Labour_Household_Duties",
+   "mechanism": "Income pressure converts into paid work and unpaid household/sibling care",
+   "evidence": "SL",
+   "confounders": "Local labour demand; household composition; shocks",
+   "modifiable": "Yes — cash transfers, meals, enforcement",
+   "concern": "Must never trigger punitive action against families (§11)",
+   "amendment": false
+  },
+  {
+   "id": "5",
+   "parent": "Economic_Strain",
+   "child": "Food_Health_Burden",
+   "mechanism": "Food insecurity driven by income",
+   "evidence": "SL",
+   "confounders": "Food prices; agricultural season; safety nets",
+   "modifiable": "Yes — school meals",
+   "concern": "Node conflates nutrition and illness (C7)",
+   "amendment": false
+  },
+  {
+   "id": "6",
+   "parent": "Economic_Strain",
+   "child": "Transport_Burden",
+   "mechanism": "Ability to pay fares",
+   "evidence": "SL",
+   "confounders": "Fuel/fare policy",
+   "modifiable": "Yes — subsidy",
+   "concern": "—",
+   "amendment": false
+  },
+  {
+   "id": "7",
+   "parent": "Parent_Education",
+   "child": "Home_Educational_Support",
+   "mechanism": "Capacity to help with schoolwork and to negotiate with the school",
+   "evidence": "SL",
+   "confounders": "Intergenerational SES; parental literacy in medium of instruction",
+   "modifiable": "Not for the child — but substitutable via school support",
+   "concern": "Must be read as opportunity, not as how much a family values education. Deficit framing is the main hazard in this whole model",
+   "amendment": false
+  },
+  {
+   "id": "8",
+   "parent": "Parent_Availability",
+   "child": "Home_Educational_Support",
+   "mechanism": "A present caregiver can supervise and advocate",
+   "evidence": "INT",
+   "confounders": "Migration selection; family structure",
+   "modifiable": "Partly — after-school support",
+   "concern": "Migrant-worker families (esp. mothers abroad) must not be stigmatised",
+   "amendment": false
+  },
+  {
+   "id": "9",
+   "parent": "Parent_Availability",
+   "child": "Child_Labour_Household_Duties",
+   "mechanism": "Absent caregiver transfers household and sibling care to the child",
+   "evidence": "SL",
+   "confounders": "As #8; birth order; gender norms",
+   "modifiable": "Partly — childcare provision",
+   "concern": "Gendered burden is invisible without a gender variable (C4)",
+   "amendment": false
+  },
+  {
+   "id": "10",
+   "parent": "Neuro_Type",
+   "child": "Support_Mismatch",
+   "mechanism": "Different learners need different things from the setting",
+   "evidence": "EXP",
+   "confounders": "Assessment access (C3) — differential identification",
+   "modifiable": "No, and never a do() target",
+   "concern": "Appropriate *only* with the accommodation interaction present; otherwise becomes \"neurodivergence causes dropout\"",
+   "amendment": false
+  },
+  {
+   "id": "11",
+   "parent": "School_Accommodation",
+   "child": "Support_Mismatch",
+   "mechanism": "Accommodations close the gap between need and provision",
+   "evidence": "EXP",
+   "confounders": "Teacher capacity; school leadership; catchment SES",
+   "modifiable": "Yes — the primary lever",
+   "concern": "Under-provision must not be recoded as student deficit",
+   "amendment": false
+  },
+  {
+   "id": "12",
+   "parent": "Support_Mismatch",
+   "child": "School_Distress",
+   "mechanism": "Sustained unmet need is distressing",
+   "evidence": "EXP",
+   "confounders": "Baseline temperament; home stressors",
+   "modifiable": "Via #11",
+   "concern": "Distress is not a diagnosis; must not enter any health record without consent",
+   "amendment": false
+  },
+  {
+   "id": "13",
+   "parent": "Sensory_Environment",
+   "child": "School_Distress",
+   "mechanism": "Noise, crowding, heat, lighting raise load",
+   "evidence": "EXP",
+   "confounders": "Class size; building age; correlates with #2, #3",
+   "modifiable": "Yes — low-cost adjustments",
+   "concern": "—",
+   "amendment": false
+  },
+  {
+   "id": "14",
+   "parent": "Bullying_Social_Exclusion",
+   "child": "School_Distress",
+   "mechanism": "Peer victimisation is directly distressing",
+   "evidence": "INT",
+   "confounders": "Supervision; school climate; neurotype (A3)",
+   "modifiable": "Yes — anti-bullying practice",
+   "concern": "Must never be recorded in a way that identifies or penalises the victim",
+   "amendment": false
+  },
+  {
+   "id": "15",
+   "parent": "WASH_Quality",
+   "child": "Food_Health_Burden",
+   "mechanism": "Water and sanitation quality drive illness episodes",
+   "evidence": "INT",
+   "confounders": "Community WASH; nutrition; seasonality",
+   "modifiable": "Yes",
+   "concern": "—",
+   "amendment": false
+  },
+  {
+   "id": "16",
+   "parent": "WASH_Quality",
+   "child": "School_Distress",
+   "mechanism": "Indignity, lack of privacy, MHM barriers, sensory discomfort",
+   "evidence": "EXP",
+   "confounders": "Gender and pubertal status — unmodelled (C4)",
+   "modifiable": "Yes",
+   "concern": "Population-averaging a sharply gender-specific mechanism misrepresents it for all students",
+   "amendment": false
+  },
+  {
+   "id": "17",
+   "parent": "Transport_Burden",
+   "child": "Access_Barrier",
+   "mechanism": "Cannot reliably get to school",
+   "evidence": "SL",
+   "confounders": "Weather; safety; sibling escort",
+   "modifiable": "Yes",
+   "concern": "—",
+   "amendment": false
+  },
+  {
+   "id": "18",
+   "parent": "Child_Labour_Household_Duties",
+   "child": "Access_Barrier",
+   "mechanism": "Needed elsewhere during school hours",
+   "evidence": "SL",
+   "confounders": "Seasonality; employer demand",
+   "modifiable": "Yes",
+   "concern": "Detection must trigger support, never prosecution of the family",
+   "amendment": false
+  },
+  {
+   "id": "19",
+   "parent": "Food_Health_Burden",
+   "child": "Access_Barrier",
+   "mechanism": "Illness and hunger prevent attendance",
+   "evidence": "INT",
+   "confounders": "Healthcare access; distance to clinic",
+   "modifiable": "Yes",
+   "concern": "Health data is special-category (§11)",
+   "amendment": false
+  },
+  {
+   "id": "20",
+   "parent": "School_Distress",
+   "child": "Psychological_Attendance_Barrier",
+   "mechanism": "School avoidance as a response to a distressing setting",
+   "evidence": "EXP",
+   "confounders": "Home mental-health context; prior trauma",
+   "modifiable": "Via upstream levers",
+   "concern": "Must be framed as avoidance, never as truancy or defiance",
+   "amendment": false
+  },
+  {
+   "id": "21",
+   "parent": "Current_Academic_Stress",
+   "child": "Psychological_Attendance_Barrier",
+   "mechanism": "Avoidance of academic failure and shame",
+   "evidence": "EXP",
+   "confounders": "Exam pressure; private tuition culture",
+   "modifiable": "Partly",
+   "concern": "—",
+   "amendment": false
+  },
+  {
+   "id": "22",
+   "parent": "Previous_Attendance",
+   "child": "Current_Attendance",
+   "mechanism": "Strong term-to-term persistence in habit and circumstance",
+   "evidence": "INT",
+   "confounders": "All persistent unmeasured causes (C6)",
+   "modifiable": "Historical — not modifiable",
+   "concern": "Its dominance means the model largely re-flags the already-flagged",
+   "amendment": false
+  },
+  {
+   "id": "23",
+   "parent": "Access_Barrier",
+   "child": "Current_Attendance",
+   "mechanism": "Practical inability to attend",
+   "evidence": "SL",
+   "confounders": "—",
+   "modifiable": "Via #17–19",
+   "concern": "—",
+   "amendment": false
+  },
+  {
+   "id": "24",
+   "parent": "Psychological_Attendance_Barrier",
+   "child": "Current_Attendance",
+   "mechanism": "Distress-driven non-attendance",
+   "evidence": "EXP",
+   "confounders": "—",
+   "modifiable": "Via #20–21",
+   "concern": "—",
+   "amendment": false
+  },
+  {
+   "id": "25",
+   "parent": "Previous_Attendance",
+   "child": "Current_Academic_Performance",
+   "mechanism": "Lost instructional time depresses attainment",
+   "evidence": "INT",
+   "confounders": "Prior attainment; ability tracking",
+   "modifiable": "Historical",
+   "concern": "—",
+   "amendment": false
+  },
+  {
+   "id": "26",
+   "parent": "Teacher_Resource_Adequacy",
+   "child": "Current_Academic_Performance",
+   "mechanism": "Teaching capacity drives learning",
+   "evidence": "INT",
+   "confounders": "Catchment SES; peer effects; selection",
+   "modifiable": "Yes",
+   "concern": "Do not convert into school league tables",
+   "amendment": false
+  },
+  {
+   "id": "27",
+   "parent": "Home_Educational_Support",
+   "child": "Current_Academic_Performance",
+   "mechanism": "Scaffolding and homework supervision",
+   "evidence": "INT",
+   "confounders": "Parental education; tuition access",
+   "modifiable": "Partly",
+   "concern": "Deficit-framing hazard as #7",
+   "amendment": false
+  },
+  {
+   "id": "28",
+   "parent": "Current_Academic_Performance",
+   "child": "Current_Academic_Stress",
+   "mechanism": "Falling behind is stressful",
+   "evidence": "EXP",
+   "confounders": "Aspiration; comparison; parental pressure",
+   "modifiable": "Via #26–27",
+   "concern": "—",
+   "amendment": false
+  },
+  {
+   "id": "29",
+   "parent": "Grade_Band",
+   "child": "Current_Academic_Stress",
+   "mechanism": "Public-examination stakes amplify stress",
+   "evidence": "SL",
+   "confounders": "Cohort effects; tuition intensity",
+   "modifiable": "No",
+   "concern": "—",
+   "amendment": false
+  },
+  {
+   "id": "30",
+   "parent": "Current_Academic_Performance",
+   "child": "School_Engagement",
+   "mechanism": "Work that feels impossible erodes effort",
+   "evidence": "INT",
+   "confounders": "Belonging; teacher relationships",
+   "modifiable": "Via #26–27",
+   "concern": "—",
+   "amendment": false
+  },
+  {
+   "id": "31",
+   "parent": "Home_Educational_Support",
+   "child": "School_Engagement",
+   "mechanism": "Encouragement sustains engagement",
+   "evidence": "INT",
+   "confounders": "As #27",
+   "modifiable": "Partly",
+   "concern": "As #7",
+   "amendment": false
+  },
+  {
+   "id": "32",
+   "parent": "Bullying_Social_Exclusion",
+   "child": "School_Engagement",
+   "mechanism": "Social unsafety destroys belonging",
+   "evidence": "INT",
+   "confounders": "School climate; neurotype (A3)",
+   "modifiable": "Yes",
+   "concern": "As #14",
+   "amendment": false
+  },
+  {
+   "id": "33",
+   "parent": "Current_Attendance",
+   "child": "Next_Term_Dropout_Risk",
+   "mechanism": "Chronic absence is the classic precursor",
+   "evidence": "INT",
+   "confounders": "Definitional overlap with engagement (C8)",
+   "modifiable": "Via #23–24",
+   "concern": "Dominant driver; near-tautological if the outcome is attendance-defined (C1)",
+   "amendment": false
+  },
+  {
+   "id": "34",
+   "parent": "School_Engagement",
+   "child": "Next_Term_Dropout_Risk",
+   "mechanism": "Disengagement precedes leaving",
+   "evidence": "INT",
+   "confounders": "As #33",
+   "modifiable": "Via #30–32",
+   "concern": "Double counting inflates the highest-risk profile",
+   "amendment": false
+  },
+  {
+   "id": "35",
+   "parent": "Grade_Band",
+   "child": "Next_Term_Dropout_Risk",
+   "mechanism": "Structural exit points at Grade 5 and O-Level",
+   "evidence": "SL",
+   "confounders": "Cohort; policy changes; exam timing",
+   "modifiable": "No",
+   "concern": "Carries C2's aggregation problem; the least interpretable edge in the model",
+   "amendment": false
+  },
+  {
+   "id": "A1",
+   "parent": "Sector",
+   "child": "Economic_Strain",
+   "mechanism": "Poverty concentrated in estate/rural sectors",
+   "evidence": "SL",
+   "confounders": "Regional development; migration",
+   "modifiable": "Policy-level only",
+   "concern": "Corrects an under-estimate of estate risk (C9)",
+   "amendment": true
+  },
+  {
+   "id": "A2",
+   "parent": "Teacher_Resource_Adequacy",
+   "child": "School_Accommodation",
+   "mechanism": "Accommodations need trained staff, time and sited specialist support",
+   "evidence": "EXP",
+   "confounders": "School leadership; catchment SES",
+   "modifiable": "Yes",
+   "concern": "Makes accommodation *confounded*, so §8's distinction stops being vacuous",
+   "amendment": true
+  },
+  {
+   "id": "A2",
+   "parent": "Sector",
+   "child": "School_Accommodation",
+   "mechanism": "Accommodations need trained staff, time and sited specialist support",
+   "evidence": "EXP",
+   "confounders": "School leadership; catchment SES",
+   "modifiable": "Yes",
+   "concern": "Makes accommodation *confounded*, so §8's distinction stops being vacuous",
+   "amendment": true
+  },
+  {
+   "id": "A3",
+   "parent": "Neuro_Type",
+   "child": "Bullying_Social_Exclusion",
+   "mechanism": "Neurodivergent students are victimised at markedly higher rates",
+   "evidence": "INT",
+   "confounders": "Supervision; school climate; identification (C3)",
+   "modifiable": "The bullying, yes",
+   "concern": "Encodes what is done to students, not what they cause. Must be presented as victimisation",
+   "amendment": true
+  },
+  {
+   "id": "A4",
+   "parent": "School_Accommodation",
+   "child": "Bullying_Social_Exclusion",
+   "mechanism": "Schools that accommodate well also supervise and intervene better",
+   "evidence": "EXP",
+   "confounders": "Leadership; staffing",
+   "modifiable": "Yes",
+   "concern": "—",
+   "amendment": true
+  },
+  {
+   "id": "A5",
+   "parent": "School_Distress",
+   "child": "School_Engagement",
+   "mechanism": "A distressed student disengages; the affective route to belonging",
+   "evidence": "INT",
+   "confounders": "Home stressors; temperament",
+   "modifiable": "Via upstream",
+   "concern": "Restores a pathway whose absence made the model blind to inclusion (C5)",
+   "amendment": true
+  },
+  {
+   "id": "A6",
+   "parent": "Support_Mismatch",
+   "child": "Current_Academic_Performance",
+   "mechanism": "Unaccommodated need blocks curriculum access",
+   "evidence": "INT",
+   "confounders": "Prior attainment; identification",
+   "modifiable": "Via accommodation",
+   "concern": "The most important omission in the brief: accommodations exist primarily so a student can *learn*",
+   "amendment": true
+  }
+ ],
+ "evidence": {
+  "baseline": {
+   "variant": "baseline",
+   "n_edges": 35,
+   "counts": {
+    "SL": 13,
+    "INT": 13,
+    "EXP": 9
+   },
+   "edges_by_level": {
+    "SL": [
+     "Access_Barrier->Current_Attendance",
+     "Child_Labour_Household_Duties->Access_Barrier",
+     "Economic_Strain->Child_Labour_Household_Duties",
+     "Economic_Strain->Food_Health_Burden",
+     "Economic_Strain->Transport_Burden",
+     "Grade_Band->Current_Academic_Stress",
+     "Grade_Band->Next_Term_Dropout_Risk",
+     "Parent_Availability->Child_Labour_Household_Duties",
+     "Parent_Education->Home_Educational_Support",
+     "Sector->Teacher_Resource_Adequacy",
+     "Sector->Transport_Burden",
+     "Sector->WASH_Quality",
+     "Transport_Burden->Access_Barrier"
+    ],
+    "INT": [
+     "Bullying_Social_Exclusion->School_Distress",
+     "Bullying_Social_Exclusion->School_Engagement",
+     "Current_Academic_Performance->School_Engagement",
+     "Current_Attendance->Next_Term_Dropout_Risk",
+     "Food_Health_Burden->Access_Barrier",
+     "Home_Educational_Support->Current_Academic_Performance",
+     "Home_Educational_Support->School_Engagement",
+     "Parent_Availability->Home_Educational_Support",
+     "Previous_Attendance->Current_Academic_Performance",
+     "Previous_Attendance->Current_Attendance",
+     "School_Engagement->Next_Term_Dropout_Risk",
+     "Teacher_Resource_Adequacy->Current_Academic_Performance",
+     "WASH_Quality->Food_Health_Burden"
+    ],
+    "EXP": [
+     "Current_Academic_Performance->Current_Academic_Stress",
+     "Current_Academic_Stress->Psychological_Attendance_Barrier",
+     "Neuro_Type->Support_Mismatch",
+     "Psychological_Attendance_Barrier->Current_Attendance",
+     "School_Accommodation->Support_Mismatch",
+     "School_Distress->Psychological_Attendance_Barrier",
+     "Sensory_Environment->School_Distress",
+     "Support_Mismatch->School_Distress",
+     "WASH_Quality->School_Distress"
+    ]
+   },
+   "expert_hypothesis_share": 0.2571
+  },
+  "amended": {
+   "variant": "amended",
+   "n_edges": 42,
+   "counts": {
+    "SL": 14,
+    "INT": 16,
+    "EXP": 12
+   },
+   "edges_by_level": {
+    "SL": [
+     "Access_Barrier->Current_Attendance",
+     "Child_Labour_Household_Duties->Access_Barrier",
+     "Economic_Strain->Child_Labour_Household_Duties",
+     "Economic_Strain->Food_Health_Burden",
+     "Economic_Strain->Transport_Burden",
+     "Grade_Band->Current_Academic_Stress",
+     "Grade_Band->Next_Term_Dropout_Risk",
+     "Parent_Availability->Child_Labour_Household_Duties",
+     "Parent_Education->Home_Educational_Support",
+     "Sector->Economic_Strain",
+     "Sector->Teacher_Resource_Adequacy",
+     "Sector->Transport_Burden",
+     "Sector->WASH_Quality",
+     "Transport_Burden->Access_Barrier"
+    ],
+    "INT": [
+     "Bullying_Social_Exclusion->School_Distress",
+     "Bullying_Social_Exclusion->School_Engagement",
+     "Current_Academic_Performance->School_Engagement",
+     "Current_Attendance->Next_Term_Dropout_Risk",
+     "Food_Health_Burden->Access_Barrier",
+     "Home_Educational_Support->Current_Academic_Performance",
+     "Home_Educational_Support->School_Engagement",
+     "Neuro_Type->Bullying_Social_Exclusion",
+     "Parent_Availability->Home_Educational_Support",
+     "Previous_Attendance->Current_Academic_Performance",
+     "Previous_Attendance->Current_Attendance",
+     "School_Distress->School_Engagement",
+     "School_Engagement->Next_Term_Dropout_Risk",
+     "Support_Mismatch->Current_Academic_Performance",
+     "Teacher_Resource_Adequacy->Current_Academic_Performance",
+     "WASH_Quality->Food_Health_Burden"
+    ],
+    "EXP": [
+     "Current_Academic_Performance->Current_Academic_Stress",
+     "Current_Academic_Stress->Psychological_Attendance_Barrier",
+     "Neuro_Type->Support_Mismatch",
+     "Psychological_Attendance_Barrier->Current_Attendance",
+     "School_Accommodation->Bullying_Social_Exclusion",
+     "School_Accommodation->Support_Mismatch",
+     "School_Distress->Psychological_Attendance_Barrier",
+     "Sector->School_Accommodation",
+     "Sensory_Environment->School_Distress",
+     "Support_Mismatch->School_Distress",
+     "Teacher_Resource_Adequacy->School_Accommodation",
+     "WASH_Quality->School_Distress"
+    ]
+   },
+   "expert_hypothesis_share": 0.2857
+  }
+ },
+ "scenarios": {
+  "baseline": {
+   "target": "Next_Term_Dropout_Risk",
+   "model_variant": "baseline",
+   "model_fingerprint": "c1b90a898747cc01",
+   "results": [
+    {
+     "label": "A1_ASD_unsupported",
+     "target": "Next_Term_Dropout_Risk",
+     "interpretation": "observational_conditional",
+     "posterior": {
+      "Low": 0.605235,
+      "Medium": 0.250031,
+      "High": 0.144734
+     },
+     "highest_state": "Low",
+     "highest_probability": 0.605235,
+     "evidence": {
+      "Neuro_Type": "ASD",
+      "WASH_Quality": "Inadequate",
+      "Sensory_Environment": "Overloading",
+      "School_Accommodation": "Inadequate"
+     },
+     "n_evidence": 4,
+     "model_variant": "baseline",
+     "model_fingerprint": "c1b90a898747cc01",
+     "computed_at": "2026-07-25T10:45:19+00:00",
+     "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+     "caveat": "Decision-support only. Not a diagnosis, not a prediction about this individual, and not a basis for any automated action. Requires human review.",
+     "group": "A_environmental_mismatch",
+     "note": "ASD student in a school that accommodates nothing."
+    },
+    {
+     "label": "A2_ASD_accommodated",
+     "target": "Next_Term_Dropout_Risk",
+     "interpretation": "observational_conditional",
+     "posterior": {
+      "Low": 0.614474,
+      "Medium": 0.247085,
+      "High": 0.138441
+     },
+     "highest_state": "Low",
+     "highest_probability": 0.614474,
+     "evidence": {
+      "Neuro_Type": "ASD",
+      "WASH_Quality": "Inadequate",
+      "Sensory_Environment": "Overloading",
+      "School_Accommodation": "Adequate"
+     },
+     "n_evidence": 4,
+     "model_variant": "baseline",
+     "model_fingerprint": "c1b90a898747cc01",
+     "computed_at": "2026-07-25T10:45:19+00:00",
+     "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+     "caveat": "Decision-support only. Not a diagnosis, not a prediction about this individual, and not a basis for any automated action. Requires human review.",
+     "group": "A_environmental_mismatch",
+     "note": "Same student, same building, accommodation switched on. This is the ethically important comparison: it asks what the SCHOOL can change, not what the child should be."
+    },
+    {
+     "label": "A3_typical_same_school",
+     "target": "Next_Term_Dropout_Risk",
+     "interpretation": "observational_conditional",
+     "posterior": {
+      "Low": 0.615603,
+      "Medium": 0.246725,
+      "High": 0.137672
+     },
+     "highest_state": "Low",
+     "highest_probability": 0.615603,
+     "evidence": {
+      "Neuro_Type": "Typical",
+      "WASH_Quality": "Inadequate",
+      "Sensory_Environment": "Overloading",
+      "School_Accommodation": "Inadequate"
+     },
+     "n_evidence": 4,
+     "model_variant": "baseline",
+     "model_fingerprint": "c1b90a898747cc01",
+     "computed_at": "2026-07-25T10:45:19+00:00",
+     "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+     "caveat": "Decision-support only. Not a diagnosis, not a prediction about this individual, and not a basis for any automated action. Requires human review.",
+     "group": "A_environmental_mismatch",
+     "note": "Typical student exposed to the identical poor conditions; isolates how much of A1 is the environment alone."
+    },
+    {
+     "label": "B1_strain_with_barriers",
+     "target": "Next_Term_Dropout_Risk",
+     "interpretation": "observational_conditional",
+     "posterior": {
+      "Low": 0.556386,
+      "Medium": 0.266864,
+      "High": 0.17675
+     },
+     "highest_state": "Low",
+     "highest_probability": 0.556386,
+     "evidence": {
+      "Economic_Strain": "High",
+      "Child_Labour_Household_Duties": "High",
+      "Transport_Burden": "High"
+     },
+     "n_evidence": 3,
+     "model_variant": "baseline",
+     "model_fingerprint": "c1b90a898747cc01",
+     "computed_at": "2026-07-25T10:45:19+00:00",
+     "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+     "caveat": "Decision-support only. Not a diagnosis, not a prediction about this individual, and not a basis for any automated action. Requires human review.",
+     "group": "B_socioeconomic_access",
+     "note": "Economic strain that has already converted into work demands and travel cost."
+    },
+    {
+     "label": "B2_strain_barriers_relieved",
+     "target": "Next_Term_Dropout_Risk",
+     "interpretation": "observational_conditional",
+     "posterior": {
+      "Low": 0.636584,
+      "Medium": 0.239627,
+      "High": 0.123789
+     },
+     "highest_state": "Low",
+     "highest_probability": 0.636584,
+     "evidence": {
+      "Economic_Strain": "High",
+      "Child_Labour_Household_Duties": "Low",
+      "Transport_Burden": "Low"
+     },
+     "n_evidence": 3,
+     "model_variant": "baseline",
+     "model_fingerprint": "c1b90a898747cc01",
+     "computed_at": "2026-07-25T10:45:19+00:00",
+     "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+     "caveat": "Decision-support only. Not a diagnosis, not a prediction about this individual, and not a basis for any automated action. Requires human review.",
+     "group": "B_socioeconomic_access",
+     "note": "Same strain, but the two access barriers are relieved -- the shape of a transport-subsidy plus household-support package."
+    },
+    {
+     "label": "C1_irregular_unprotected",
+     "target": "Next_Term_Dropout_Risk",
+     "interpretation": "observational_conditional",
+     "posterior": {
+      "Low": 0.058053,
+      "Medium": 0.244852,
+      "High": 0.697095
+     },
+     "highest_state": "High",
+     "highest_probability": 0.697095,
+     "evidence": {
+      "Current_Attendance": "Irregular",
+      "Home_Educational_Support": "Limited",
+      "Bullying_Social_Exclusion": "High",
+      "School_Engagement": "Low"
+     },
+     "n_evidence": 4,
+     "model_variant": "baseline",
+     "model_fingerprint": "c1b90a898747cc01",
+     "computed_at": "2026-07-25T10:45:19+00:00",
+     "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+     "caveat": "Decision-support only. Not a diagnosis, not a prediction about this individual, and not a basis for any automated action. Requires human review.",
+     "group": "C_protective_factors",
+     "note": "Irregular attender with no protective factors present."
+    },
+    {
+     "label": "C2_irregular_protected",
+     "target": "Next_Term_Dropout_Risk",
+     "interpretation": "observational_conditional",
+     "posterior": {
+      "Low": 0.303825,
+      "Medium": 0.440783,
+      "High": 0.255393
+     },
+     "highest_state": "Medium",
+     "highest_probability": 0.440783,
+     "evidence": {
+      "Current_Attendance": "Irregular",
+      "Home_Educational_Support": "Adequate",
+      "Bullying_Social_Exclusion": "Low",
+      "School_Engagement": "High"
+     },
+     "n_evidence": 4,
+     "model_variant": "baseline",
+     "model_fingerprint": "c1b90a898747cc01",
+     "computed_at": "2026-07-25T10:45:19+00:00",
+     "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+     "caveat": "Decision-support only. Not a diagnosis, not a prediction about this individual, and not a basis for any automated action. Requires human review.",
+     "group": "C_protective_factors",
+     "note": "Equally irregular attender who is supported at home, socially safe and still engaged."
+    }
+   ],
+   "contrasts": {
+    "A_environmental_mismatch": [
+     {
+      "reference": "A1_ASD_unsupported",
+      "comparison": "A2_ASD_accommodated",
+      "difference_by_state": {
+       "Low": 0.009239,
+       "Medium": -0.002946,
+       "High": -0.006293
+      },
+      "delta_p_high": -0.006293,
+      "relative_change_p_high": -0.0435,
+      "argmax_changed": false
+     },
+     {
+      "reference": "A1_ASD_unsupported",
+      "comparison": "A3_typical_same_school",
+      "difference_by_state": {
+       "Low": 0.010368,
+       "Medium": -0.003306,
+       "High": -0.007062
+      },
+      "delta_p_high": -0.007062,
+      "relative_change_p_high": -0.0488,
+      "argmax_changed": false
+     }
+    ],
+    "B_socioeconomic_access": [
+     {
+      "reference": "B1_strain_with_barriers",
+      "comparison": "B2_strain_barriers_relieved",
+      "difference_by_state": {
+       "Low": 0.080198,
+       "Medium": -0.027237,
+       "High": -0.052961
+      },
+      "delta_p_high": -0.052961,
+      "relative_change_p_high": -0.2996,
+      "argmax_changed": false
+     }
+    ],
+    "C_protective_factors": [
+     {
+      "reference": "C1_irregular_unprotected",
+      "comparison": "C2_irregular_protected",
+      "difference_by_state": {
+       "Low": 0.245772,
+       "Medium": 0.195931,
+       "High": -0.441702
+      },
+      "delta_p_high": -0.441702,
+      "relative_change_p_high": -0.6336,
+      "argmax_changed": true
+     }
+    ]
+   },
+   "ranking_by_p_high_descending": [
+    "C1_irregular_unprotected",
+    "C2_irregular_protected",
+    "B1_strain_with_barriers",
+    "A1_ASD_unsupported",
+    "A2_ASD_accommodated",
+    "A3_typical_same_school",
+    "B2_strain_barriers_relieved"
+   ],
+   "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates."
+  },
+  "amended": {
+   "target": "Next_Term_Dropout_Risk",
+   "model_variant": "amended",
+   "model_fingerprint": "f12dd7f40c61ecd0",
+   "results": [
+    {
+     "label": "A1_ASD_unsupported",
+     "target": "Next_Term_Dropout_Risk",
+     "interpretation": "observational_conditional",
+     "posterior": {
+      "Low": 0.488045,
+      "Medium": 0.297223,
+      "High": 0.214732
+     },
+     "highest_state": "Low",
+     "highest_probability": 0.488045,
+     "evidence": {
+      "Neuro_Type": "ASD",
+      "WASH_Quality": "Inadequate",
+      "Sensory_Environment": "Overloading",
+      "School_Accommodation": "Inadequate"
+     },
+     "n_evidence": 4,
+     "model_variant": "amended",
+     "model_fingerprint": "f12dd7f40c61ecd0",
+     "computed_at": "2026-07-25T10:45:19+00:00",
+     "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+     "caveat": "Decision-support only. Not a diagnosis, not a prediction about this individual, and not a basis for any automated action. Requires human review.",
+     "group": "A_environmental_mismatch",
+     "note": "ASD student in a school that accommodates nothing."
+    },
+    {
+     "label": "A2_ASD_accommodated",
+     "target": "Next_Term_Dropout_Risk",
+     "interpretation": "observational_conditional",
+     "posterior": {
+      "Low": 0.561085,
+      "Medium": 0.269014,
+      "High": 0.169901
+     },
+     "highest_state": "Low",
+     "highest_probability": 0.561085,
+     "evidence": {
+      "Neuro_Type": "ASD",
+      "WASH_Quality": "Inadequate",
+      "Sensory_Environment": "Overloading",
+      "School_Accommodation": "Adequate"
+     },
+     "n_evidence": 4,
+     "model_variant": "amended",
+     "model_fingerprint": "f12dd7f40c61ecd0",
+     "computed_at": "2026-07-25T10:45:19+00:00",
+     "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+     "caveat": "Decision-support only. Not a diagnosis, not a prediction about this individual, and not a basis for any automated action. Requires human review.",
+     "group": "A_environmental_mismatch",
+     "note": "Same student, same building, accommodation switched on. This is the ethically important comparison: it asks what the SCHOOL can change, not what the child should be."
+    },
+    {
+     "label": "A3_typical_same_school",
+     "target": "Next_Term_Dropout_Risk",
+     "interpretation": "observational_conditional",
+     "posterior": {
+      "Low": 0.570619,
+      "Medium": 0.264991,
+      "High": 0.164389
+     },
+     "highest_state": "Low",
+     "highest_probability": 0.570619,
+     "evidence": {
+      "Neuro_Type": "Typical",
+      "WASH_Quality": "Inadequate",
+      "Sensory_Environment": "Overloading",
+      "School_Accommodation": "Inadequate"
+     },
+     "n_evidence": 4,
+     "model_variant": "amended",
+     "model_fingerprint": "f12dd7f40c61ecd0",
+     "computed_at": "2026-07-25T10:45:19+00:00",
+     "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+     "caveat": "Decision-support only. Not a diagnosis, not a prediction about this individual, and not a basis for any automated action. Requires human review.",
+     "group": "A_environmental_mismatch",
+     "note": "Typical student exposed to the identical poor conditions; isolates how much of A1 is the environment alone."
+    },
+    {
+     "label": "B1_strain_with_barriers",
+     "target": "Next_Term_Dropout_Risk",
+     "interpretation": "observational_conditional",
+     "posterior": {
+      "Low": 0.532681,
+      "Medium": 0.272647,
+      "High": 0.194672
+     },
+     "highest_state": "Low",
+     "highest_probability": 0.532681,
+     "evidence": {
+      "Economic_Strain": "High",
+      "Child_Labour_Household_Duties": "High",
+      "Transport_Burden": "High"
+     },
+     "n_evidence": 3,
+     "model_variant": "amended",
+     "model_fingerprint": "f12dd7f40c61ecd0",
+     "computed_at": "2026-07-25T10:45:19+00:00",
+     "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+     "caveat": "Decision-support only. Not a diagnosis, not a prediction about this individual, and not a basis for any automated action. Requires human review.",
+     "group": "B_socioeconomic_access",
+     "note": "Economic strain that has already converted into work demands and travel cost."
+    },
+    {
+     "label": "B2_strain_barriers_relieved",
+     "target": "Next_Term_Dropout_Risk",
+     "interpretation": "observational_conditional",
+     "posterior": {
+      "Low": 0.612559,
+      "Medium": 0.250197,
+      "High": 0.137244
+     },
+     "highest_state": "Low",
+     "highest_probability": 0.612559,
+     "evidence": {
+      "Economic_Strain": "High",
+      "Child_Labour_Household_Duties": "Low",
+      "Transport_Burden": "Low"
+     },
+     "n_evidence": 3,
+     "model_variant": "amended",
+     "model_fingerprint": "f12dd7f40c61ecd0",
+     "computed_at": "2026-07-25T10:45:19+00:00",
+     "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+     "caveat": "Decision-support only. Not a diagnosis, not a prediction about this individual, and not a basis for any automated action. Requires human review.",
+     "group": "B_socioeconomic_access",
+     "note": "Same strain, but the two access barriers are relieved -- the shape of a transport-subsidy plus household-support package."
+    },
+    {
+     "label": "C1_irregular_unprotected",
+     "target": "Next_Term_Dropout_Risk",
+     "interpretation": "observational_conditional",
+     "posterior": {
+      "Low": 0.058,
+      "Medium": 0.244688,
+      "High": 0.697312
+     },
+     "highest_state": "High",
+     "highest_probability": 0.697312,
+     "evidence": {
+      "Current_Attendance": "Irregular",
+      "Home_Educational_Support": "Limited",
+      "Bullying_Social_Exclusion": "High",
+      "School_Engagement": "Low"
+     },
+     "n_evidence": 4,
+     "model_variant": "amended",
+     "model_fingerprint": "f12dd7f40c61ecd0",
+     "computed_at": "2026-07-25T10:45:19+00:00",
+     "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+     "caveat": "Decision-support only. Not a diagnosis, not a prediction about this individual, and not a basis for any automated action. Requires human review.",
+     "group": "C_protective_factors",
+     "note": "Irregular attender with no protective factors present."
+    },
+    {
+     "label": "C2_irregular_protected",
+     "target": "Next_Term_Dropout_Risk",
+     "interpretation": "observational_conditional",
+     "posterior": {
+      "Low": 0.303971,
+      "Medium": 0.440783,
+      "High": 0.255247
+     },
+     "highest_state": "Medium",
+     "highest_probability": 0.440783,
+     "evidence": {
+      "Current_Attendance": "Irregular",
+      "Home_Educational_Support": "Adequate",
+      "Bullying_Social_Exclusion": "Low",
+      "School_Engagement": "High"
+     },
+     "n_evidence": 4,
+     "model_variant": "amended",
+     "model_fingerprint": "f12dd7f40c61ecd0",
+     "computed_at": "2026-07-25T10:45:19+00:00",
+     "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+     "caveat": "Decision-support only. Not a diagnosis, not a prediction about this individual, and not a basis for any automated action. Requires human review.",
+     "group": "C_protective_factors",
+     "note": "Equally irregular attender who is supported at home, socially safe and still engaged."
+    }
+   ],
+   "contrasts": {
+    "A_environmental_mismatch": [
+     {
+      "reference": "A1_ASD_unsupported",
+      "comparison": "A2_ASD_accommodated",
+      "difference_by_state": {
+       "Low": 0.07304,
+       "Medium": -0.028209,
+       "High": -0.044831
+      },
+      "delta_p_high": -0.044831,
+      "relative_change_p_high": -0.2088,
+      "argmax_changed": false
+     },
+     {
+      "reference": "A1_ASD_unsupported",
+      "comparison": "A3_typical_same_school",
+      "difference_by_state": {
+       "Low": 0.082574,
+       "Medium": -0.032232,
+       "High": -0.050343
+      },
+      "delta_p_high": -0.050343,
+      "relative_change_p_high": -0.2344,
+      "argmax_changed": false
+     }
+    ],
+    "B_socioeconomic_access": [
+     {
+      "reference": "B1_strain_with_barriers",
+      "comparison": "B2_strain_barriers_relieved",
+      "difference_by_state": {
+       "Low": 0.079878,
+       "Medium": -0.02245,
+       "High": -0.057428
+      },
+      "delta_p_high": -0.057428,
+      "relative_change_p_high": -0.295,
+      "argmax_changed": false
+     }
+    ],
+    "C_protective_factors": [
+     {
+      "reference": "C1_irregular_unprotected",
+      "comparison": "C2_irregular_protected",
+      "difference_by_state": {
+       "Low": 0.245971,
+       "Medium": 0.196095,
+       "High": -0.442065
+      },
+      "delta_p_high": -0.442065,
+      "relative_change_p_high": -0.634,
+      "argmax_changed": true
+     }
+    ]
+   },
+   "ranking_by_p_high_descending": [
+    "C1_irregular_unprotected",
+    "C2_irregular_protected",
+    "A1_ASD_unsupported",
+    "B1_strain_with_barriers",
+    "A2_ASD_accommodated",
+    "A3_typical_same_school",
+    "B2_strain_barriers_relieved"
+   ],
+   "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates."
+  }
+ },
+ "pathways": {
+  "baseline": {
+   "pathway": [
+    "Support_Mismatch",
+    "School_Distress",
+    "Psychological_Attendance_Barrier",
+    "Current_Attendance",
+    "Next_Term_Dropout_Risk"
+   ],
+   "model_variant": "baseline",
+   "scenario_labels": {
+    "unsupported": {
+     "Neuro_Type": "ASD",
+     "WASH_Quality": "Inadequate",
+     "Sensory_Environment": "Overloading",
+     "School_Accommodation": "Inadequate"
+    },
+    "accommodated": {
+     "Neuro_Type": "ASD",
+     "WASH_Quality": "Inadequate",
+     "Sensory_Environment": "Overloading",
+     "School_Accommodation": "Adequate"
+    }
+   },
+   "steps": [
+    {
+     "node": "Support_Mismatch",
+     "adverse_state": "High",
+     "p_unsupported": 0.824692,
+     "p_accommodated": 0.25893,
+     "absolute_shift": 0.565762,
+     "relative_shift": 0.686
+    },
+    {
+     "node": "School_Distress",
+     "adverse_state": "High",
+     "p_unsupported": 0.677826,
+     "p_accommodated": 0.427811,
+     "absolute_shift": 0.250015,
+     "relative_shift": 0.3688
+    },
+    {
+     "node": "Psychological_Attendance_Barrier",
+     "adverse_state": "High",
+     "p_unsupported": 0.307616,
+     "p_accommodated": 0.225632,
+     "absolute_shift": 0.081984,
+     "relative_shift": 0.2665
+    },
+    {
+     "node": "Current_Attendance",
+     "adverse_state": "Irregular",
+     "p_unsupported": 0.236257,
+     "p_accommodated": 0.217192,
+     "absolute_shift": 0.019065,
+     "relative_shift": 0.0807
+    },
+    {
+     "node": "Next_Term_Dropout_Risk",
+     "adverse_state": "High",
+     "p_unsupported": 0.144734,
+     "p_accommodated": 0.138441,
+     "absolute_shift": 0.006293,
+     "relative_shift": 0.0435
+    }
+   ],
+   "shift_at_first_mediator": 0.565762,
+   "shift_at_outcome": 0.006293,
+   "transmission_to_outcome": 0.011123,
+   "monotone_decay": true,
+   "parallel_pathway_signals": [],
+   "n_directed_paths_first_to_last": 1,
+   "interpretation": "A large shift at the first mediator that arrives at the outcome as a small one is attenuation, not absence. If the outcome shift is below the resolution a review team can act on, the model cannot see its own most important modifiable lever and the structure or parameters must change."
+  },
+  "amendedAttendance": {
+   "pathway": [
+    "Support_Mismatch",
+    "School_Distress",
+    "Psychological_Attendance_Barrier",
+    "Current_Attendance",
+    "Next_Term_Dropout_Risk"
+   ],
+   "model_variant": "amended",
+   "scenario_labels": {
+    "unsupported": {
+     "Neuro_Type": "ASD",
+     "WASH_Quality": "Inadequate",
+     "Sensory_Environment": "Overloading",
+     "School_Accommodation": "Inadequate"
+    },
+    "accommodated": {
+     "Neuro_Type": "ASD",
+     "WASH_Quality": "Inadequate",
+     "Sensory_Environment": "Overloading",
+     "School_Accommodation": "Adequate"
+    }
+   },
+   "steps": [
+    {
+     "node": "Support_Mismatch",
+     "adverse_state": "High",
+     "p_unsupported": 0.824692,
+     "p_accommodated": 0.25893,
+     "absolute_shift": 0.565762,
+     "relative_shift": 0.686
+    },
+    {
+     "node": "School_Distress",
+     "adverse_state": "High",
+     "p_unsupported": 0.747853,
+     "p_accommodated": 0.465032,
+     "absolute_shift": 0.282821,
+     "relative_shift": 0.3782
+    },
+    {
+     "node": "Psychological_Attendance_Barrier",
+     "adverse_state": "High",
+     "p_unsupported": 0.35451,
+     "p_accommodated": 0.241741,
+     "absolute_shift": 0.112769,
+     "relative_shift": 0.3181
+    },
+    {
+     "node": "Current_Attendance",
+     "adverse_state": "Irregular",
+     "p_unsupported": 0.248461,
+     "p_accommodated": 0.21982,
+     "absolute_shift": 0.028641,
+     "relative_shift": 0.1153
+    },
+    {
+     "node": "Next_Term_Dropout_Risk",
+     "adverse_state": "High",
+     "p_unsupported": 0.214732,
+     "p_accommodated": 0.169901,
+     "absolute_shift": 0.044831,
+     "relative_shift": 0.2088
+    }
+   ],
+   "shift_at_first_mediator": 0.565762,
+   "shift_at_outcome": 0.044831,
+   "transmission_to_outcome": 0.07924,
+   "monotone_decay": false,
+   "parallel_pathway_signals": [
+    {
+     "after_node": "Current_Attendance",
+     "at_node": "Next_Term_Dropout_Risk",
+     "shift_before": 0.028641,
+     "shift_after": 0.044831
+    }
+   ],
+   "n_directed_paths_first_to_last": 4,
+   "interpretation": "A large shift at the first mediator that arrives at the outcome as a small one is attenuation, not absence. If the outcome shift is below the resolution a review team can act on, the model cannot see its own most important modifiable lever and the structure or parameters must change. NOTE: the shift GROWS at Next_Term_Dropout_Risk, which is impossible along a single route. 4 distinct directed paths run from Support_Mismatch to Next_Term_Dropout_Risk in this variant, so signal is arriving outside this chain and transmission_to_outcome is a total across all routes rather than an attenuation factor for this one."
+  },
+  "amendedEngagement": {
+   "pathway": [
+    "Support_Mismatch",
+    "School_Distress",
+    "School_Engagement",
+    "Next_Term_Dropout_Risk"
+   ],
+   "model_variant": "amended",
+   "scenario_labels": {
+    "unsupported": {
+     "Neuro_Type": "ASD",
+     "WASH_Quality": "Inadequate",
+     "Sensory_Environment": "Overloading",
+     "School_Accommodation": "Inadequate"
+    },
+    "accommodated": {
+     "Neuro_Type": "ASD",
+     "WASH_Quality": "Inadequate",
+     "Sensory_Environment": "Overloading",
+     "School_Accommodation": "Adequate"
+    }
+   },
+   "steps": [
+    {
+     "node": "Support_Mismatch",
+     "adverse_state": "High",
+     "p_unsupported": 0.824692,
+     "p_accommodated": 0.25893,
+     "absolute_shift": 0.565762,
+     "relative_shift": 0.686
+    },
+    {
+     "node": "School_Distress",
+     "adverse_state": "High",
+     "p_unsupported": 0.747853,
+     "p_accommodated": 0.465032,
+     "absolute_shift": 0.282821,
+     "relative_shift": 0.3782
+    },
+    {
+     "node": "School_Engagement",
+     "adverse_state": "Low",
+     "p_unsupported": 0.61015,
+     "p_accommodated": 0.445393,
+     "absolute_shift": 0.164757,
+     "relative_shift": 0.27
+    },
+    {
+     "node": "Next_Term_Dropout_Risk",
+     "adverse_state": "High",
+     "p_unsupported": 0.214732,
+     "p_accommodated": 0.169901,
+     "absolute_shift": 0.044831,
+     "relative_shift": 0.2088
+    }
+   ],
+   "shift_at_first_mediator": 0.565762,
+   "shift_at_outcome": 0.044831,
+   "transmission_to_outcome": 0.07924,
+   "monotone_decay": true,
+   "parallel_pathway_signals": [],
+   "n_directed_paths_first_to_last": 4,
+   "interpretation": "A large shift at the first mediator that arrives at the outcome as a small one is attenuation, not absence. If the outcome shift is below the resolution a review team can act on, the model cannot see its own most important modifiable lever and the structure or parameters must change."
+  }
+ },
+ "interventions": {
+  "observational_vs_interventional": [
+   {
+    "variable": "Bullying_Social_Exclusion",
+    "state": "Low",
+    "conditioning_evidence": {},
+    "observational": {
+     "Low": 0.650113,
+     "Medium": 0.232513,
+     "High": 0.117374
+    },
+    "interventional": {
+     "Low": 0.650113,
+     "Medium": 0.232513,
+     "High": 0.117374
+    },
+    "difference_do_minus_obs": {
+     "Low": 0.0,
+     "Medium": 0.0,
+     "High": 0.0
+    },
+    "max_abs_difference": 0.0,
+    "identical_in_this_dag": true,
+    "parents_of_variable": [],
+    "explanation": "'Bullying_Social_Exclusion' has no parents in this DAG, so no back-door path exists and the mutilated graph equals the original. The two quantities coincide *as a consequence of the assumed structure*, not as a general fact -- in reality schools do not assign this variable at random."
+   },
+   {
+    "variable": "Child_Labour_Household_Duties",
+    "state": "Low",
+    "conditioning_evidence": {},
+    "observational": {
+     "Low": 0.631269,
+     "Medium": 0.241586,
+     "High": 0.127145
+    },
+    "interventional": {
+     "Low": 0.630007,
+     "Medium": 0.242109,
+     "High": 0.127884
+    },
+    "difference_do_minus_obs": {
+     "Low": -0.001262,
+     "Medium": 0.000523,
+     "High": 0.000739
+    },
+    "max_abs_difference": 0.001262,
+    "identical_in_this_dag": false,
+    "parents_of_variable": [
+     "Economic_Strain",
+     "Parent_Availability"
+    ],
+    "explanation": "'Child_Labour_Household_Duties' has parents ['Economic_Strain', 'Parent_Availability'], so conditioning on it also carries information back up those edges. do() cuts them, which is why the two quantities differ here."
+   },
+   {
+    "variable": "Food_Health_Burden",
+    "state": "Low",
+    "conditioning_evidence": {},
+    "observational": {
+     "Low": 0.629838,
+     "Medium": 0.242131,
+     "High": 0.128031
+    },
+    "interventional": {
+     "Low": 0.628829,
+     "Medium": 0.242465,
+     "High": 0.128706
+    },
+    "difference_do_minus_obs": {
+     "Low": -0.001009,
+     "Medium": 0.000334,
+     "High": 0.000675
+    },
+    "max_abs_difference": 0.001009,
+    "identical_in_this_dag": false,
+    "parents_of_variable": [
+     "Economic_Strain",
+     "WASH_Quality"
+    ],
+    "explanation": "'Food_Health_Burden' has parents ['Economic_Strain', 'WASH_Quality'], so conditioning on it also carries information back up those edges. do() cuts them, which is why the two quantities differ here."
+   },
+   {
+    "variable": "School_Accommodation",
+    "state": "Adequate",
+    "conditioning_evidence": {},
+    "observational": {
+     "Low": 0.625047,
+     "Medium": 0.243779,
+     "High": 0.131174
+    },
+    "interventional": {
+     "Low": 0.625047,
+     "Medium": 0.243779,
+     "High": 0.131174
+    },
+    "difference_do_minus_obs": {
+     "Low": 0.0,
+     "Medium": 0.0,
+     "High": 0.0
+    },
+    "max_abs_difference": 0.0,
+    "identical_in_this_dag": true,
+    "parents_of_variable": [],
+    "explanation": "'School_Accommodation' has no parents in this DAG, so no back-door path exists and the mutilated graph equals the original. The two quantities coincide *as a consequence of the assumed structure*, not as a general fact -- in reality schools do not assign this variable at random."
+   }
+  ],
+  "modifiable_intervention_packages": {
+   "student_profile": {
+    "Neuro_Type": "ASD",
+    "Sector": "Estate",
+    "Economic_Strain": "High",
+    "Previous_Attendance": "Irregular",
+    "Grade_Band": "Junior_Secondary"
+   },
+   "results": [
+    {
+     "label": "no_intervention_observational",
+     "target": "Next_Term_Dropout_Risk",
+     "interpretation": "observational_conditional",
+     "posterior": {
+      "Low": 0.391693,
+      "Medium": 0.318659,
+      "High": 0.289648
+     },
+     "highest_state": "Low",
+     "highest_probability": 0.391693,
+     "evidence": {
+      "Neuro_Type": "ASD",
+      "Sector": "Estate",
+      "Economic_Strain": "High",
+      "Previous_Attendance": "Irregular",
+      "Grade_Band": "Junior_Secondary"
+     },
+     "n_evidence": 5,
+     "model_variant": "baseline",
+     "model_fingerprint": "c1b90a898747cc01",
+     "computed_at": "2026-07-25T10:45:19+00:00",
+     "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+     "caveat": "Decision-support only. Not a diagnosis, not a prediction about this individual, and not a basis for any automated action. Requires human review."
+    },
+    {
+     "label": "do_accommodation_adequate",
+     "target": "Next_Term_Dropout_Risk",
+     "interpretation": "interventional_do",
+     "method": "mutilated graph (model.do) + conditioning [truncated factorisation]",
+     "posterior": {
+      "Low": 0.398096,
+      "Medium": 0.317142,
+      "High": 0.284762
+     },
+     "highest_state": "Low",
+     "highest_probability": 0.398096,
+     "intervention": {
+      "School_Accommodation": "Adequate"
+     },
+     "evidence": {
+      "Neuro_Type": "ASD",
+      "Sector": "Estate",
+      "Economic_Strain": "High",
+      "Previous_Attendance": "Irregular",
+      "Grade_Band": "Junior_Secondary"
+     },
+     "mutilated_edges_removed": 0,
+     "pgmpy_cross_check": {
+      "performed": false,
+      "reason": "skipped deliberately: pgmpy 1.1.2 CausalInference.query ignores evidence variables outside its chosen back-door adjustment set, so it cannot be used to check a conditional interventional query"
+     },
+     "model_variant": "baseline",
+     "model_fingerprint": "c1b90a898747cc01",
+     "computed_at": "2026-07-25T10:45:19+00:00",
+     "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+     "caveat": "An interventional estimate is only as good as the DAG. It assumes no unmeasured common cause of the intervened variable and the outcome.",
+     "delta_p_high_vs_no_intervention": -0.004886
+    },
+    {
+     "label": "do_wash_adequate",
+     "target": "Next_Term_Dropout_Risk",
+     "interpretation": "interventional_do",
+     "method": "mutilated graph (model.do) + conditioning [truncated factorisation]",
+     "posterior": {
+      "Low": 0.399282,
+      "Medium": 0.316728,
+      "High": 0.28399
+     },
+     "highest_state": "Low",
+     "highest_probability": 0.399282,
+     "intervention": {
+      "WASH_Quality": "Adequate"
+     },
+     "evidence": {
+      "Neuro_Type": "ASD",
+      "Sector": "Estate",
+      "Economic_Strain": "High",
+      "Previous_Attendance": "Irregular",
+      "Grade_Band": "Junior_Secondary"
+     },
+     "mutilated_edges_removed": 1,
+     "pgmpy_cross_check": {
+      "performed": false,
+      "reason": "skipped deliberately: pgmpy 1.1.2 CausalInference.query ignores evidence variables outside its chosen back-door adjustment set, so it cannot be used to check a conditional interventional query"
+     },
+     "model_variant": "baseline",
+     "model_fingerprint": "c1b90a898747cc01",
+     "computed_at": "2026-07-25T10:45:19+00:00",
+     "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+     "caveat": "An interventional estimate is only as good as the DAG. It assumes no unmeasured common cause of the intervened variable and the outcome.",
+     "delta_p_high_vs_no_intervention": -0.005658
+    },
+    {
+     "label": "do_bullying_low",
+     "target": "Next_Term_Dropout_Risk",
+     "interpretation": "interventional_do",
+     "method": "mutilated graph (model.do) + conditioning [truncated factorisation]",
+     "posterior": {
+      "Low": 0.417112,
+      "Medium": 0.31949,
+      "High": 0.263398
+     },
+     "highest_state": "Low",
+     "highest_probability": 0.417112,
+     "intervention": {
+      "Bullying_Social_Exclusion": "Low"
+     },
+     "evidence": {
+      "Neuro_Type": "ASD",
+      "Sector": "Estate",
+      "Economic_Strain": "High",
+      "Previous_Attendance": "Irregular",
+      "Grade_Band": "Junior_Secondary"
+     },
+     "mutilated_edges_removed": 0,
+     "pgmpy_cross_check": {
+      "performed": false,
+      "reason": "skipped deliberately: pgmpy 1.1.2 CausalInference.query ignores evidence variables outside its chosen back-door adjustment set, so it cannot be used to check a conditional interventional query"
+     },
+     "model_variant": "baseline",
+     "model_fingerprint": "c1b90a898747cc01",
+     "computed_at": "2026-07-25T10:45:19+00:00",
+     "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+     "caveat": "An interventional estimate is only as good as the DAG. It assumes no unmeasured common cause of the intervened variable and the outcome.",
+     "delta_p_high_vs_no_intervention": -0.02625
+    },
+    {
+     "label": "do_transport_burden_low",
+     "target": "Next_Term_Dropout_Risk",
+     "interpretation": "interventional_do",
+     "method": "mutilated graph (model.do) + conditioning [truncated factorisation]",
+     "posterior": {
+      "Low": 0.420389,
+      "Medium": 0.311027,
+      "High": 0.268584
+     },
+     "highest_state": "Low",
+     "highest_probability": 0.420389,
+     "intervention": {
+      "Transport_Burden": "Low"
+     },
+     "evidence": {
+      "Neuro_Type": "ASD",
+      "Sector": "Estate",
+      "Economic_Strain": "High",
+      "Previous_Attendance": "Irregular",
+      "Grade_Band": "Junior_Secondary"
+     },
+     "mutilated_edges_removed": 2,
+     "pgmpy_cross_check": {
+      "performed": false,
+      "reason": "skipped deliberately: pgmpy 1.1.2 CausalInference.query ignores evidence variables outside its chosen back-door adjustment set, so it cannot be used to check a conditional interventional query"
+     },
+     "model_variant": "baseline",
+     "model_fingerprint": "c1b90a898747cc01",
+     "computed_at": "2026-07-25T10:45:19+00:00",
+     "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+     "caveat": "An interventional estimate is only as good as the DAG. It assumes no unmeasured common cause of the intervened variable and the outcome.",
+     "delta_p_high_vs_no_intervention": -0.021064
+    },
+    {
+     "label": "do_home_support_adequate",
+     "target": "Next_Term_Dropout_Risk",
+     "interpretation": "interventional_do",
+     "method": "mutilated graph (model.do) + conditioning [truncated factorisation]",
+     "posterior": {
+      "Low": 0.417834,
+      "Medium": 0.319928,
+      "High": 0.262238
+     },
+     "highest_state": "Low",
+     "highest_probability": 0.417834,
+     "intervention": {
+      "Home_Educational_Support": "Adequate"
+     },
+     "evidence": {
+      "Neuro_Type": "ASD",
+      "Sector": "Estate",
+      "Economic_Strain": "High",
+      "Previous_Attendance": "Irregular",
+      "Grade_Band": "Junior_Secondary"
+     },
+     "mutilated_edges_removed": 2,
+     "pgmpy_cross_check": {
+      "performed": false,
+      "reason": "skipped deliberately: pgmpy 1.1.2 CausalInference.query ignores evidence variables outside its chosen back-door adjustment set, so it cannot be used to check a conditional interventional query"
+     },
+     "model_variant": "baseline",
+     "model_fingerprint": "c1b90a898747cc01",
+     "computed_at": "2026-07-25T10:45:19+00:00",
+     "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+     "caveat": "An interventional estimate is only as good as the DAG. It assumes no unmeasured common cause of the intervened variable and the outcome.",
+     "delta_p_high_vs_no_intervention": -0.02741
+    },
+    {
+     "label": "do_child_labour_low",
+     "target": "Next_Term_Dropout_Risk",
+     "interpretation": "interventional_do",
+     "method": "mutilated graph (model.do) + conditioning [truncated factorisation]",
+     "posterior": {
+      "Low": 0.41114,
+      "Medium": 0.313606,
+      "High": 0.275253
+     },
+     "highest_state": "Low",
+     "highest_probability": 0.41114,
+     "intervention": {
+      "Child_Labour_Household_Duties": "Low"
+     },
+     "evidence": {
+      "Neuro_Type": "ASD",
+      "Sector": "Estate",
+      "Economic_Strain": "High",
+      "Previous_Attendance": "Irregular",
+      "Grade_Band": "Junior_Secondary"
+     },
+     "mutilated_edges_removed": 2,
+     "pgmpy_cross_check": {
+      "performed": false,
+      "reason": "skipped deliberately: pgmpy 1.1.2 CausalInference.query ignores evidence variables outside its chosen back-door adjustment set, so it cannot be used to check a conditional interventional query"
+     },
+     "model_variant": "baseline",
+     "model_fingerprint": "c1b90a898747cc01",
+     "computed_at": "2026-07-25T10:45:19+00:00",
+     "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+     "caveat": "An interventional estimate is only as good as the DAG. It assumes no unmeasured common cause of the intervened variable and the outcome.",
+     "delta_p_high_vs_no_intervention": -0.014395
+    },
+    {
+     "label": "do_full_inclusion_package",
+     "target": "Next_Term_Dropout_Risk",
+     "interpretation": "interventional_do",
+     "method": "mutilated graph (model.do) + conditioning [truncated factorisation]",
+     "posterior": {
+      "Low": 0.492516,
+      "Medium": 0.300958,
+      "High": 0.206526
+     },
+     "highest_state": "Low",
+     "highest_probability": 0.492516,
+     "intervention": {
+      "School_Accommodation": "Adequate",
+      "WASH_Quality": "Adequate",
+      "Bullying_Social_Exclusion": "Low",
+      "Sensory_Environment": "Supportive",
+      "Transport_Burden": "Low",
+      "Home_Educational_Support": "Adequate"
+     },
+     "evidence": {
+      "Neuro_Type": "ASD",
+      "Sector": "Estate",
+      "Economic_Strain": "High",
+      "Previous_Attendance": "Irregular",
+      "Grade_Band": "Junior_Secondary"
+     },
+     "mutilated_edges_removed": 5,
+     "pgmpy_cross_check": {
+      "performed": false,
+      "reason": "skipped deliberately: pgmpy 1.1.2 CausalInference.query ignores evidence variables outside its chosen back-door adjustment set, so it cannot be used to check a conditional interventional query"
+     },
+     "model_variant": "baseline",
+     "model_fingerprint": "c1b90a898747cc01",
+     "computed_at": "2026-07-25T10:45:19+00:00",
+     "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates.",
+     "caveat": "An interventional estimate is only as good as the DAG. It assumes no unmeasured common cause of the intervened variable and the outcome.",
+     "delta_p_high_vs_no_intervention": -0.083122
+    }
+   ]
+  },
+  "immutable_intervention_guardrail": {
+   "attempted": "do(Neuro_Type=Typical)",
+   "refused_with": "Refusing to intervene on non-modifiable variable(s) ['Neuro_Type']. do() is restricted to modifiable school/household factors: ['Bullying_Social_Exclusion', 'Child_Labour_Household_Duties', 'Food_Health_Burden', 'Home_Educational_Support', 'School_Accommodation', 'Sensory_Environment', 'Teacher_Resource_Adequacy', 'Transport_Burden', 'WASH_Quality']. Immutable or protected characteristics such as ['Grade_Band', 'Neuro_Type', 'Parent_Education', 'Sector'] are never valid intervention targets."
+  },
+  "library_caveat": {
+   "checked": true,
+   "query": "P(Next_Term_Dropout_Risk | do(Transport_Burden=Low), evidence)",
+   "probes": [
+    {
+     "conditioning_evidence": {},
+     "truncated_factorisation_p_high": 0.126464,
+     "pgmpy_causalinference_p_high": 0.126464,
+     "max_abs_difference": 0.0,
+     "agrees": true
+    },
+    {
+     "conditioning_evidence": {
+      "Neuro_Type": "ASD"
+     },
+     "truncated_factorisation_p_high": 0.130267,
+     "pgmpy_causalinference_p_high": 0.126464,
+     "max_abs_difference": 0.005428,
+     "agrees": false
+    },
+    {
+     "conditioning_evidence": {
+      "Previous_Attendance": "Irregular"
+     },
+     "truncated_factorisation_p_high": 0.246513,
+     "pgmpy_causalinference_p_high": 0.126464,
+     "max_abs_difference": 0.176111,
+     "agrees": false
+    },
+    {
+     "conditioning_evidence": {
+      "Sector": "Estate"
+     },
+     "truncated_factorisation_p_high": 0.13008,
+     "pgmpy_causalinference_p_high": 0.13008,
+     "max_abs_difference": 0.0,
+     "agrees": true
+    }
+   ],
+   "n_disagreements": 2,
+   "conclusion": "pgmpy.CausalInference.query disagrees with truncated factorisation whenever the conditioning variable lies outside its chosen adjustment set. estimate_intervention_effect therefore computes do() on the mutilated graph and uses pgmpy only as a no-evidence cross-check."
+  }
+ },
+ "amendedInterventions": [
+  {
+   "variable": "School_Accommodation",
+   "state": "Adequate",
+   "conditioning_evidence": {},
+   "observational": {
+    "Low": 0.61974,
+    "Medium": 0.245637,
+    "High": 0.134623
+   },
+   "interventional": {
+    "Low": 0.615334,
+    "Medium": 0.247533,
+    "High": 0.137133
+   },
+   "difference_do_minus_obs": {
+    "Low": -0.004406,
+    "Medium": 0.001896,
+    "High": 0.00251
+   },
+   "max_abs_difference": 0.004406,
+   "identical_in_this_dag": false,
+   "parents_of_variable": [
+    "Sector",
+    "Teacher_Resource_Adequacy"
+   ],
+   "explanation": "'School_Accommodation' has parents ['Sector', 'Teacher_Resource_Adequacy'], so conditioning on it also carries information back up those edges. do() cuts them, which is why the two quantities differ here."
+  },
+  {
+   "variable": "School_Accommodation",
+   "state": "Adequate",
+   "conditioning_evidence": {
+    "Neuro_Type": "ASD"
+   },
+   "observational": {
+    "Low": 0.581928,
+    "Medium": 0.261816,
+    "High": 0.156256
+   },
+   "interventional": {
+    "Low": 0.5774,
+    "Medium": 0.263666,
+    "High": 0.158934
+   },
+   "difference_do_minus_obs": {
+    "Low": -0.004528,
+    "Medium": 0.00185,
+    "High": 0.002678
+   },
+   "max_abs_difference": 0.004528,
+   "identical_in_this_dag": false,
+   "parents_of_variable": [
+    "Sector",
+    "Teacher_Resource_Adequacy"
+   ],
+   "explanation": "'School_Accommodation' has parents ['Sector', 'Teacher_Resource_Adequacy'], so conditioning on it also carries information back up those edges. do() cuts them, which is why the two quantities differ here."
+  },
+  {
+   "variable": "Transport_Burden",
+   "state": "Low",
+   "conditioning_evidence": {},
+   "observational": {
+    "Low": 0.61022,
+    "Medium": 0.25101,
+    "High": 0.13877
+   },
+   "interventional": {
+    "Low": 0.608695,
+    "Medium": 0.251561,
+    "High": 0.139744
+   },
+   "difference_do_minus_obs": {
+    "Low": -0.001525,
+    "Medium": 0.000551,
+    "High": 0.000974
+   },
+   "max_abs_difference": 0.001525,
+   "identical_in_this_dag": false,
+   "parents_of_variable": [
+    "Economic_Strain",
+    "Sector"
+   ],
+   "explanation": "'Transport_Burden' has parents ['Economic_Strain', 'Sector'], so conditioning on it also carries information back up those edges. do() cuts them, which is why the two quantities differ here."
+  },
+  {
+   "variable": "Food_Health_Burden",
+   "state": "Low",
+   "conditioning_evidence": {},
+   "observational": {
+    "Low": 0.606751,
+    "Medium": 0.252017,
+    "High": 0.141233
+   },
+   "interventional": {
+    "Low": 0.605357,
+    "Medium": 0.252462,
+    "High": 0.142181
+   },
+   "difference_do_minus_obs": {
+    "Low": -0.001394,
+    "Medium": 0.000445,
+    "High": 0.000948
+   },
+   "max_abs_difference": 0.001394,
+   "identical_in_this_dag": false,
+   "parents_of_variable": [
+    "Economic_Strain",
+    "WASH_Quality"
+   ],
+   "explanation": "'Food_Health_Burden' has parents ['Economic_Strain', 'WASH_Quality'], so conditioning on it also carries information back up those edges. do() cuts them, which is why the two quantities differ here."
+  }
+ ],
+ "sensitivity": {
+  "model_variant": "baseline",
+  "baseline_ranking": [
+   "C1_irregular_unprotected",
+   "C2_irregular_protected",
+   "B1_strain_with_barriers",
+   "A1_ASD_unsupported",
+   "A2_ASD_accommodated",
+   "A3_typical_same_school",
+   "B2_strain_barriers_relieved"
+  ],
+  "baseline_p_high": {
+   "A1_ASD_unsupported": 0.144734,
+   "A2_ASD_accommodated": 0.138441,
+   "A3_typical_same_school": 0.137672,
+   "B1_strain_with_barriers": 0.17675,
+   "B2_strain_barriers_relieved": 0.123789,
+   "C1_irregular_unprotected": 0.697095,
+   "C2_irregular_protected": 0.255393
+  },
+  "records": [
+   {
+    "target": "accommodation_effect_on_mismatch",
+    "perturbed_parameter": "P(Support_Mismatch=High | School_Accommodation=Inadequate)",
+    "question": "How much do conclusions depend on the assumed penalty for inadequate accommodation?",
+    "relative_delta": -0.1,
+    "ranking": [
+     "C1_irregular_unprotected",
+     "C2_irregular_protected",
+     "B1_strain_with_barriers",
+     "A1_ASD_unsupported",
+     "A2_ASD_accommodated",
+     "A3_typical_same_school",
+     "B2_strain_barriers_relieved"
+    ],
+    "ranking_preserved": true,
+    "p_high_shift_by_scenario": {
+     "A1_ASD_unsupported": -0.000917,
+     "A2_ASD_accommodated": 0.0,
+     "A3_typical_same_school": -0.000211,
+     "B1_strain_with_barriers": -0.000162,
+     "B2_strain_barriers_relieved": -0.000122,
+     "C1_irregular_unprotected": -1.5e-05,
+     "C2_irregular_protected": -1.5e-05
+    },
+    "max_abs_shift": 0.000917,
+    "most_affected_scenario": "A1_ASD_unsupported"
+   },
+   {
+    "target": "accommodation_effect_on_mismatch",
+    "perturbed_parameter": "P(Support_Mismatch=High | School_Accommodation=Inadequate)",
+    "question": "How much do conclusions depend on the assumed penalty for inadequate accommodation?",
+    "relative_delta": 0.1,
+    "ranking": [
+     "C1_irregular_unprotected",
+     "C2_irregular_protected",
+     "B1_strain_with_barriers",
+     "A1_ASD_unsupported",
+     "A2_ASD_accommodated",
+     "A3_typical_same_school",
+     "B2_strain_barriers_relieved"
+    ],
+    "ranking_preserved": true,
+    "p_high_shift_by_scenario": {
+     "A1_ASD_unsupported": 0.000917,
+     "A2_ASD_accommodated": 0.0,
+     "A3_typical_same_school": 0.000211,
+     "B1_strain_with_barriers": 0.000162,
+     "B2_strain_barriers_relieved": 0.000123,
+     "C1_irregular_unprotected": 1.4e-05,
+     "C2_irregular_protected": 1.5e-05
+    },
+    "max_abs_shift": 0.000917,
+    "most_affected_scenario": "A1_ASD_unsupported"
+   },
+   {
+    "target": "wash_effect_on_health_burden",
+    "perturbed_parameter": "P(Food_Health_Burden=High | WASH_Quality=Inadequate)",
+    "question": "How much do conclusions depend on the assumed WASH-to-health pathway?",
+    "relative_delta": -0.1,
+    "ranking": [
+     "C1_irregular_unprotected",
+     "C2_irregular_protected",
+     "B1_strain_with_barriers",
+     "A1_ASD_unsupported",
+     "A2_ASD_accommodated",
+     "A3_typical_same_school",
+     "B2_strain_barriers_relieved"
+    ],
+    "ranking_preserved": true,
+    "p_high_shift_by_scenario": {
+     "A1_ASD_unsupported": -0.000488,
+     "A2_ASD_accommodated": -0.000471,
+     "A3_typical_same_school": -0.00047,
+     "B1_strain_with_barriers": -0.000483,
+     "B2_strain_barriers_relieved": -0.000168,
+     "C1_irregular_unprotected": 4e-06,
+     "C2_irregular_protected": 3e-06
+    },
+    "max_abs_shift": 0.000488,
+    "most_affected_scenario": "A1_ASD_unsupported"
+   },
+   {
+    "target": "wash_effect_on_health_burden",
+    "perturbed_parameter": "P(Food_Health_Burden=High | WASH_Quality=Inadequate)",
+    "question": "How much do conclusions depend on the assumed WASH-to-health pathway?",
+    "relative_delta": 0.1,
+    "ranking": [
+     "C1_irregular_unprotected",
+     "C2_irregular_protected",
+     "B1_strain_with_barriers",
+     "A1_ASD_unsupported",
+     "A2_ASD_accommodated",
+     "A3_typical_same_school",
+     "B2_strain_barriers_relieved"
+    ],
+    "ranking_preserved": true,
+    "p_high_shift_by_scenario": {
+     "A1_ASD_unsupported": 0.000487,
+     "A2_ASD_accommodated": 0.000472,
+     "A3_typical_same_school": 0.000469,
+     "B1_strain_with_barriers": 0.000483,
+     "B2_strain_barriers_relieved": 0.000169,
+     "C1_irregular_unprotected": -5e-06,
+     "C2_irregular_protected": -4e-06
+    },
+    "max_abs_shift": 0.000487,
+    "most_affected_scenario": "A1_ASD_unsupported"
+   },
+   {
+    "target": "child_labour_effect_on_access",
+    "perturbed_parameter": "P(Access_Barrier=High | Child_Labour_Household_Duties=High)",
+    "question": "How much do conclusions depend on the assumed strength of work demands as an access barrier?",
+    "relative_delta": -0.1,
+    "ranking": [
+     "C1_irregular_unprotected",
+     "C2_irregular_protected",
+     "B1_strain_with_barriers",
+     "A1_ASD_unsupported",
+     "A2_ASD_accommodated",
+     "A3_typical_same_school",
+     "B2_strain_barriers_relieved"
+    ],
+    "ranking_preserved": true,
+    "p_high_shift_by_scenario": {
+     "A1_ASD_unsupported": -0.000736,
+     "A2_ASD_accommodated": -0.000711,
+     "A3_typical_same_school": -0.000709,
+     "B1_strain_with_barriers": -0.005821,
+     "B2_strain_barriers_relieved": 0.0,
+     "C1_irregular_unprotected": 1.9e-05,
+     "C2_irregular_protected": 1.3e-05
+    },
+    "max_abs_shift": 0.005821,
+    "most_affected_scenario": "B1_strain_with_barriers"
+   },
+   {
+    "target": "child_labour_effect_on_access",
+    "perturbed_parameter": "P(Access_Barrier=High | Child_Labour_Household_Duties=High)",
+    "question": "How much do conclusions depend on the assumed strength of work demands as an access barrier?",
+    "relative_delta": 0.1,
+    "ranking": [
+     "C1_irregular_unprotected",
+     "C2_irregular_protected",
+     "B1_strain_with_barriers",
+     "A1_ASD_unsupported",
+     "A2_ASD_accommodated",
+     "A3_typical_same_school",
+     "B2_strain_barriers_relieved"
+    ],
+    "ranking_preserved": true,
+    "p_high_shift_by_scenario": {
+     "A1_ASD_unsupported": 0.000736,
+     "A2_ASD_accommodated": 0.000711,
+     "A3_typical_same_school": 0.000708,
+     "B1_strain_with_barriers": 0.005821,
+     "B2_strain_barriers_relieved": 0.0,
+     "C1_irregular_unprotected": -1.9e-05,
+     "C2_irregular_protected": -1.3e-05
+    },
+    "max_abs_shift": 0.005821,
+    "most_affected_scenario": "B1_strain_with_barriers"
+   },
+   {
+    "target": "irregular_attendance_effect_on_risk",
+    "perturbed_parameter": "P(Next_Term_Dropout_Risk=High | Current_Attendance=Irregular)",
+    "question": "How much do conclusions depend on the assumed weight of irregular attendance -- the single strongest input?",
+    "relative_delta": -0.1,
+    "ranking": [
+     "C1_irregular_unprotected",
+     "C2_irregular_protected",
+     "B1_strain_with_barriers",
+     "A1_ASD_unsupported",
+     "A2_ASD_accommodated",
+     "A3_typical_same_school",
+     "B2_strain_barriers_relieved"
+    ],
+    "ranking_preserved": true,
+    "p_high_shift_by_scenario": {
+     "A1_ASD_unsupported": -0.009534,
+     "A2_ASD_accommodated": -0.008768,
+     "A3_typical_same_school": -0.008675,
+     "B1_strain_with_barriers": -0.013302,
+     "B2_strain_barriers_relieved": -0.007085,
+     "C1_irregular_unprotected": -0.06971,
+     "C2_irregular_protected": -0.02554
+    },
+    "max_abs_shift": 0.06971,
+    "most_affected_scenario": "C1_irregular_unprotected"
+   },
+   {
+    "target": "irregular_attendance_effect_on_risk",
+    "perturbed_parameter": "P(Next_Term_Dropout_Risk=High | Current_Attendance=Irregular)",
+    "question": "How much do conclusions depend on the assumed weight of irregular attendance -- the single strongest input?",
+    "relative_delta": 0.1,
+    "ranking": [
+     "C1_irregular_unprotected",
+     "C2_irregular_protected",
+     "B1_strain_with_barriers",
+     "A1_ASD_unsupported",
+     "A2_ASD_accommodated",
+     "A3_typical_same_school",
+     "B2_strain_barriers_relieved"
+    ],
+    "ranking_preserved": true,
+    "p_high_shift_by_scenario": {
+     "A1_ASD_unsupported": 0.009533,
+     "A2_ASD_accommodated": 0.008768,
+     "A3_typical_same_school": 0.008675,
+     "B1_strain_with_barriers": 0.013301,
+     "B2_strain_barriers_relieved": 0.007085,
+     "C1_irregular_unprotected": 0.069709,
+     "C2_irregular_protected": 0.025539
+    },
+    "max_abs_shift": 0.069709,
+    "most_affected_scenario": "C1_irregular_unprotected"
+   }
+  ],
+  "n_perturbations": 8,
+  "n_rank_changes": 0,
+  "all_rankings_preserved": true,
+  "largest_max_abs_shift": 0.06971,
+  "limitations": [
+   "One-at-a-time perturbation of a single parameter group is the weakest form of sensitivity analysis. It cannot detect compensating or interacting misspecification; joint perturbation and full sensitivity functions (Chan & Darwiche style) are required before any deployment claim.",
+   "Rank stability under +/-10% is necessary, not sufficient. The structure itself -- which edges exist at all -- dominates parameter uncertainty here.",
+   "The +/-10% band is arbitrary and is not an elicited credible interval. Real expert uncertainty on several of these parameters is far wider."
+  ]
+ },
+ "screening": {
+  "observables_used": [
+   "Previous_Attendance",
+   "Current_Attendance",
+   "School_Engagement",
+   "Grade_Band"
+  ],
+  "n_distinct_profiles": 24,
+  "cohort_size": 10000,
+  "cohort_sampled_high_rate": 0.1323,
+  "thresholds": [
+   {
+    "threshold": 0.2,
+    "n_flagged": 2045,
+    "flag_rate": 0.2045,
+    "flagged_per_1000_students": 204.5,
+    "self_consistency": {
+     "precision": 0.416137,
+     "recall": 0.643235,
+     "false_positives": 1194,
+     "false_negatives": 472
+    },
+    "precision_ceiling_by_assumed_true_rate": {
+     "1%": 0.0489,
+     "2%": 0.0978,
+     "5%": 0.2445
+    }
+   },
+   {
+    "threshold": 0.35,
+    "n_flagged": 1015,
+    "flag_rate": 0.1015,
+    "flagged_per_1000_students": 101.5,
+    "self_consistency": {
+     "precision": 0.595074,
+     "recall": 0.456538,
+     "false_positives": 411,
+     "false_negatives": 719
+    },
+    "precision_ceiling_by_assumed_true_rate": {
+     "1%": 0.0985,
+     "2%": 0.197,
+     "5%": 0.4926
+    }
+   },
+   {
+    "threshold": 0.5,
+    "n_flagged": 666,
+    "flag_rate": 0.0666,
+    "flagged_per_1000_students": 66.6,
+    "self_consistency": {
+     "precision": 0.686186,
+     "recall": 0.345427,
+     "false_positives": 209,
+     "false_negatives": 866
+    },
+    "precision_ceiling_by_assumed_true_rate": {
+     "1%": 0.1502,
+     "2%": 0.3003,
+     "5%": 0.7508
+    }
+   },
+   {
+    "threshold": 0.65,
+    "n_flagged": 413,
+    "flag_rate": 0.0413,
+    "flagged_per_1000_students": 41.3,
+    "self_consistency": {
+     "precision": 0.767554,
+     "recall": 0.239607,
+     "false_positives": 96,
+     "false_negatives": 1006
+    },
+    "precision_ceiling_by_assumed_true_rate": {
+     "1%": 0.2421,
+     "2%": 0.4843,
+     "5%": 1.0
+    }
+   }
+  ],
+  "warning": "self_consistency metrics are computed against outcomes sampled from the same CPDs that produced the scores. They quantify internal coherence only and must never be reported as accuracy, validation or performance.",
+  "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates."
+ },
+ "structure": {
+  "baseline": {
+   "variant": "baseline",
+   "fingerprint": "c1b90a898747cc01",
+   "n_nodes": 25,
+   "n_edges": 35,
+   "edges": [
+    "Access_Barrier->Current_Attendance",
+    "Bullying_Social_Exclusion->School_Distress",
+    "Bullying_Social_Exclusion->School_Engagement",
+    "Child_Labour_Household_Duties->Access_Barrier",
+    "Current_Academic_Performance->Current_Academic_Stress",
+    "Current_Academic_Performance->School_Engagement",
+    "Current_Academic_Stress->Psychological_Attendance_Barrier",
+    "Current_Attendance->Next_Term_Dropout_Risk",
+    "Economic_Strain->Child_Labour_Household_Duties",
+    "Economic_Strain->Food_Health_Burden",
+    "Economic_Strain->Transport_Burden",
+    "Food_Health_Burden->Access_Barrier",
+    "Grade_Band->Current_Academic_Stress",
+    "Grade_Band->Next_Term_Dropout_Risk",
+    "Home_Educational_Support->Current_Academic_Performance",
+    "Home_Educational_Support->School_Engagement",
+    "Neuro_Type->Support_Mismatch",
+    "Parent_Availability->Child_Labour_Household_Duties",
+    "Parent_Availability->Home_Educational_Support",
+    "Parent_Education->Home_Educational_Support",
+    "Previous_Attendance->Current_Academic_Performance",
+    "Previous_Attendance->Current_Attendance",
+    "Psychological_Attendance_Barrier->Current_Attendance",
+    "School_Accommodation->Support_Mismatch",
+    "School_Distress->Psychological_Attendance_Barrier",
+    "School_Engagement->Next_Term_Dropout_Risk",
+    "Sector->Teacher_Resource_Adequacy",
+    "Sector->Transport_Burden",
+    "Sector->WASH_Quality",
+    "Sensory_Environment->School_Distress",
+    "Support_Mismatch->School_Distress",
+    "Teacher_Resource_Adequacy->Current_Academic_Performance",
+    "Transport_Burden->Access_Barrier",
+    "WASH_Quality->Food_Health_Burden",
+    "WASH_Quality->School_Distress"
+   ],
+   "root_nodes": [
+    "Bullying_Social_Exclusion",
+    "Economic_Strain",
+    "Grade_Band",
+    "Neuro_Type",
+    "Parent_Availability",
+    "Parent_Education",
+    "Previous_Attendance",
+    "School_Accommodation",
+    "Sector",
+    "Sensory_Environment"
+   ],
+   "target": "Next_Term_Dropout_Risk",
+   "target_parents": [
+    "Current_Attendance",
+    "Grade_Band",
+    "School_Engagement"
+   ],
+   "max_parent_count": 4,
+   "max_cpd_columns": 16,
+   "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates."
+  },
+  "amended": {
+   "variant": "amended",
+   "fingerprint": "f12dd7f40c61ecd0",
+   "n_nodes": 25,
+   "n_edges": 42,
+   "edges": [
+    "Access_Barrier->Current_Attendance",
+    "Bullying_Social_Exclusion->School_Distress",
+    "Bullying_Social_Exclusion->School_Engagement",
+    "Child_Labour_Household_Duties->Access_Barrier",
+    "Current_Academic_Performance->Current_Academic_Stress",
+    "Current_Academic_Performance->School_Engagement",
+    "Current_Academic_Stress->Psychological_Attendance_Barrier",
+    "Current_Attendance->Next_Term_Dropout_Risk",
+    "Economic_Strain->Child_Labour_Household_Duties",
+    "Economic_Strain->Food_Health_Burden",
+    "Economic_Strain->Transport_Burden",
+    "Food_Health_Burden->Access_Barrier",
+    "Grade_Band->Current_Academic_Stress",
+    "Grade_Band->Next_Term_Dropout_Risk",
+    "Home_Educational_Support->Current_Academic_Performance",
+    "Home_Educational_Support->School_Engagement",
+    "Neuro_Type->Bullying_Social_Exclusion",
+    "Neuro_Type->Support_Mismatch",
+    "Parent_Availability->Child_Labour_Household_Duties",
+    "Parent_Availability->Home_Educational_Support",
+    "Parent_Education->Home_Educational_Support",
+    "Previous_Attendance->Current_Academic_Performance",
+    "Previous_Attendance->Current_Attendance",
+    "Psychological_Attendance_Barrier->Current_Attendance",
+    "School_Accommodation->Bullying_Social_Exclusion",
+    "School_Accommodation->Support_Mismatch",
+    "School_Distress->Psychological_Attendance_Barrier",
+    "School_Distress->School_Engagement",
+    "School_Engagement->Next_Term_Dropout_Risk",
+    "Sector->Economic_Strain",
+    "Sector->School_Accommodation",
+    "Sector->Teacher_Resource_Adequacy",
+    "Sector->Transport_Burden",
+    "Sector->WASH_Quality",
+    "Sensory_Environment->School_Distress",
+    "Support_Mismatch->Current_Academic_Performance",
+    "Support_Mismatch->School_Distress",
+    "Teacher_Resource_Adequacy->Current_Academic_Performance",
+    "Teacher_Resource_Adequacy->School_Accommodation",
+    "Transport_Burden->Access_Barrier",
+    "WASH_Quality->Food_Health_Burden",
+    "WASH_Quality->School_Distress"
+   ],
+   "root_nodes": [
+    "Grade_Band",
+    "Neuro_Type",
+    "Parent_Availability",
+    "Parent_Education",
+    "Previous_Attendance",
+    "Sector",
+    "Sensory_Environment"
+   ],
+   "target": "Next_Term_Dropout_Risk",
+   "target_parents": [
+    "Current_Attendance",
+    "Grade_Band",
+    "School_Engagement"
+   ],
+   "max_parent_count": 4,
+   "max_cpd_columns": 16,
+   "provenance": "Illustrative expert-elicited priors for software testing; not validated Sri Lankan prevalence estimates."
+  },
+  "parents": {
+   "Sector": [],
+   "Grade_Band": [],
+   "Economic_Strain": [
+    "Sector"
+   ],
+   "Parent_Education": [],
+   "Parent_Availability": [],
+   "Neuro_Type": [],
+   "Child_Labour_Household_Duties": [
+    "Economic_Strain",
+    "Parent_Availability"
+   ],
+   "Transport_Burden": [
+    "Economic_Strain",
+    "Sector"
+   ],
+   "Food_Health_Burden": [
+    "Economic_Strain",
+    "WASH_Quality"
+   ],
+   "Home_Educational_Support": [
+    "Parent_Availability",
+    "Parent_Education"
+   ],
+   "WASH_Quality": [
+    "Sector"
+   ],
+   "Sensory_Environment": [],
+   "School_Accommodation": [
+    "Sector",
+    "Teacher_Resource_Adequacy"
+   ],
+   "Bullying_Social_Exclusion": [
+    "Neuro_Type",
+    "School_Accommodation"
+   ],
+   "Teacher_Resource_Adequacy": [
+    "Sector"
+   ],
+   "Support_Mismatch": [
+    "Neuro_Type",
+    "School_Accommodation"
+   ],
+   "School_Distress": [
+    "Bullying_Social_Exclusion",
+    "Sensory_Environment",
+    "Support_Mismatch",
+    "WASH_Quality"
+   ],
+   "Access_Barrier": [
+    "Child_Labour_Household_Duties",
+    "Food_Health_Burden",
+    "Transport_Burden"
+   ],
+   "Previous_Attendance": [],
+   "Current_Academic_Performance": [
+    "Home_Educational_Support",
+    "Previous_Attendance",
+    "Support_Mismatch",
+    "Teacher_Resource_Adequacy"
+   ],
+   "Current_Academic_Stress": [
+    "Current_Academic_Performance",
+    "Grade_Band"
+   ],
+   "Psychological_Attendance_Barrier": [
+    "Current_Academic_Stress",
+    "School_Distress"
+   ],
+   "Current_Attendance": [
+    "Access_Barrier",
+    "Previous_Attendance",
+    "Psychological_Attendance_Barrier"
+   ],
+   "School_Engagement": [
+    "Bullying_Social_Exclusion",
+    "Current_Academic_Performance",
+    "Home_Educational_Support",
+    "School_Distress"
+   ],
+   "Next_Term_Dropout_Risk": [
+    "Current_Attendance",
+    "Grade_Band",
+    "School_Engagement"
+   ]
+  },
+  "baselineParents": {
+   "Sector": [],
+   "Grade_Band": [],
+   "Economic_Strain": [],
+   "Parent_Education": [],
+   "Parent_Availability": [],
+   "Neuro_Type": [],
+   "Child_Labour_Household_Duties": [
+    "Economic_Strain",
+    "Parent_Availability"
+   ],
+   "Transport_Burden": [
+    "Economic_Strain",
+    "Sector"
+   ],
+   "Food_Health_Burden": [
+    "Economic_Strain",
+    "WASH_Quality"
+   ],
+   "Home_Educational_Support": [
+    "Parent_Availability",
+    "Parent_Education"
+   ],
+   "WASH_Quality": [
+    "Sector"
+   ],
+   "Sensory_Environment": [],
+   "School_Accommodation": [],
+   "Bullying_Social_Exclusion": [],
+   "Teacher_Resource_Adequacy": [
+    "Sector"
+   ],
+   "Support_Mismatch": [
+    "Neuro_Type",
+    "School_Accommodation"
+   ],
+   "School_Distress": [
+    "Bullying_Social_Exclusion",
+    "Sensory_Environment",
+    "Support_Mismatch",
+    "WASH_Quality"
+   ],
+   "Access_Barrier": [
+    "Child_Labour_Household_Duties",
+    "Food_Health_Burden",
+    "Transport_Burden"
+   ],
+   "Previous_Attendance": [],
+   "Current_Academic_Performance": [
+    "Home_Educational_Support",
+    "Previous_Attendance",
+    "Teacher_Resource_Adequacy"
+   ],
+   "Current_Academic_Stress": [
+    "Current_Academic_Performance",
+    "Grade_Band"
+   ],
+   "Psychological_Attendance_Barrier": [
+    "Current_Academic_Stress",
+    "School_Distress"
+   ],
+   "Current_Attendance": [
+    "Access_Barrier",
+    "Previous_Attendance",
+    "Psychological_Attendance_Barrier"
+   ],
+   "School_Engagement": [
+    "Bullying_Social_Exclusion",
+    "Current_Academic_Performance",
+    "Home_Educational_Support"
+   ],
+   "Next_Term_Dropout_Risk": [
+    "Current_Attendance",
+    "Grade_Band",
+    "School_Engagement"
+   ]
+  }
+ },
+ "addedEdges": [
+  "Sector->Economic_Strain",
+  "Teacher_Resource_Adequacy->School_Accommodation",
+  "Sector->School_Accommodation",
+  "Neuro_Type->Bullying_Social_Exclusion",
+  "School_Accommodation->Bullying_Social_Exclusion",
+  "School_Distress->School_Engagement",
+  "Support_Mismatch->Current_Academic_Performance"
+ ]
+}

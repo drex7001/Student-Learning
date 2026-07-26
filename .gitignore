@@ -9,5 +9,5 @@ api/htmlcov/
 web/.next/
 web/node_modules/
 web/out/
-data/models/*.joblib
-data/models/*.json
+next-env.d.ts
+research/dropout-ews/ui/__pycache__/

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 
 class ConceptNode(BaseModel):
@@ -51,9 +51,18 @@ class SubjectNode(BaseModel):
 
 
 class StudentSummary(BaseModel):
+    # Tolerates the richer student dict from PostgresRepository without every caller
+    # having to strip it down.
+    model_config = ConfigDict(extra="ignore")
+
     id: str
     full_name: str
+    full_name_si: str | None = None
     cohort: str
+    school_id: str | None = None
+    class_id: str | None = None
+    grade: int | None = None
+    medium: str | None = None
 
 
 class PathSegment(BaseModel):
