@@ -369,18 +369,26 @@ export type LearningProfileResponse = {
   subject: SubjectNode;
   summary: Record<string, number>;
   lesson_cards: LessonCard[];
-  recommended_quiz: { concept_ids: string[]; question_count: number };
+  recommended_quiz: {
+    concept_ids: string[];
+    /** How many questions exist — for display. */
+    question_count: number;
+    /** How many to ask, already within the endpoint's allowed range — send this. */
+    recommended_length: number;
+  };
   explanation: string;
 };
 
 export type QuizQuestion = {
-  question_id: string;
+  /** The question's own id. Named `id` by the API, not `question_id`. */
+  id: string;
   concept_id: string;
   concept_name: string;
   prompt: string;
   prompt_si?: string | null;
   options: string[];
   options_si?: string[] | null;
+  difficulty: number;
 };
 
 export type QuizAttemptResponse = {
@@ -388,20 +396,33 @@ export type QuizAttemptResponse = {
   student_id: string;
   subject_id: string;
   concept_ids: string[];
+  status: string;
   questions: QuizQuestion[];
 };
 
 export type QuizSubmitResponse = {
   attempt_id: string;
-  score: number;
+  status: string;
+  score_obtained: number;
   score_max: number;
+  /** A fraction in 0..1 despite the name — pass straight to `percent()`. */
+  percentage: number;
   results: {
     question_id: string;
     concept_id: string;
+    prompt: string;
+    prompt_si?: string | null;
     is_correct: boolean;
     correct_option_index: number;
     selected_option_index: number | null;
+    score_obtained: number;
+    score_max: number;
     explanation: string;
     explanation_si?: string | null;
+  }[];
+  updated_concepts: {
+    concept_id: string;
+    mastery_score: number;
+    confidence: number;
   }[];
 };

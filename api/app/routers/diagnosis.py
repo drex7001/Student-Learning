@@ -3,7 +3,12 @@ from __future__ import annotations
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
-from app.core.deps import require_staff
+from app.core.deps import (
+    CurrentUser,
+    authorise_student_access,
+    current_user,
+    require_staff,
+)
 from app.db.postgres import get_session
 from app.repositories.graph_repository import GraphRepository
 from app.repositories.postgres_repository import PostgresRepository
@@ -22,17 +27,21 @@ from app.services.diagnosis import DiagnosisEngine
 from app.services.subject_diagnosis import SubjectDiagnosisEngine
 
 
-router = APIRouter(
-    prefix="/api",
-    tags=["diagnosis"],
-    # Teacher-facing analysis across the whole cohort: staff only.
-    dependencies=[Depends(require_staff)],
-)
+# Guards are applied per endpoint rather than to the whole router. Three tiers:
+#
+#   staff only            cohort-wide analysis, and anything listing other learners
+#   any signed-in user    curriculum structure, which describes no one
+#   the learner or staff  a named learner's own record
+#
+# A single router-level guard would be simpler and wrong: it would lock a student out
+# of the subject list and out of their own learning map.
+router = APIRouter(prefix="/api", tags=["diagnosis"])
 
 
 @router.get("/options", response_model=SelectorOptionsResponse)
 def get_selector_options(
     subject_id: str | None = None,
+    user: CurrentUser = Depends(require_staff),
     session: Session = Depends(get_session),
 ) -> SelectorOptionsResponse:
     graph_repository = GraphRepository()
@@ -51,7 +60,9 @@ def get_selector_options(
 
 
 @router.get("/subjects", response_model=list[SubjectNode])
-def get_subjects() -> list[SubjectNode]:
+def get_subjects(user: CurrentUser = Depends(current_user)) -> list[SubjectNode]:
+    """Curriculum reference data. Describes no learner, so any signed-in user may read
+    it -- the student portal needs it to offer a subject at all."""
     graph_repository = GraphRepository()
     try:
         subjects = graph_repository.list_subjects()
@@ -61,7 +72,10 @@ def get_subjects() -> list[SubjectNode]:
 
 
 @router.get("/concepts/{concept_id}/prerequisites", response_model=PrerequisiteResponse)
-def get_prerequisites(concept_id: str) -> PrerequisiteResponse:
+def get_prerequisites(
+    concept_id: str, user: CurrentUser = Depends(current_user)
+) -> PrerequisiteResponse:
+    """Curriculum structure. Describes no learner."""
     graph_repository = GraphRepository()
     try:
         concept = graph_repository.get_concept(concept_id)
@@ -83,7 +97,13 @@ def get_prerequisites(concept_id: str) -> PrerequisiteResponse:
 
 
 @router.get("/diagnosis/student/{student_id}/concept/{concept_id}", response_model=DiagnosisResponse)
-def get_diagnosis(student_id: str, concept_id: str, session: Session = Depends(get_session)) -> DiagnosisResponse:
+def get_diagnosis(
+    student_id: str,
+    concept_id: str,
+    user: CurrentUser = Depends(current_user),
+    session: Session = Depends(get_session),
+) -> DiagnosisResponse:
+    authorise_student_access(user, student_id)
     postgres_repository = PostgresRepository(session)
     student = postgres_repository.get_student(student_id)
     if student is None:
@@ -135,8 +155,11 @@ def get_diagnosis(student_id: str, concept_id: str, session: Session = Depends(g
 def get_subject_diagnosis_map(
     student_id: str,
     subject_id: str,
+    user: CurrentUser = Depends(current_user),
     session: Session = Depends(get_session),
 ) -> SubjectDiagnosisMapResponse:
+    # A learner may see their own map; staff may see anyone's.
+    authorise_student_access(user, student_id)
     postgres_repository = PostgresRepository(session)
     student = postgres_repository.get_student(student_id)
     if student is None:
@@ -171,6 +194,7 @@ def get_subject_diagnosis_map(
 @router.get("/overview/concept/{concept_id}", response_model=SupportQueueResponse)
 def get_support_queue(
     concept_id: str,
+    user: CurrentUser = Depends(require_staff),
     limit: int = 18,
     session: Session = Depends(get_session),
 ) -> SupportQueueResponse:

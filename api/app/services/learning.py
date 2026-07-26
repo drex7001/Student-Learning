@@ -19,6 +19,9 @@ from app.schemas.learning import (
     QuizAttemptResponse,
     QuizQuestionItem,
     QuizSubmitResponse,
+    DEFAULT_QUIZ_LENGTH,
+    MAX_QUIZ_LENGTH,
+    MIN_QUIZ_LENGTH,
     RecommendedQuiz,
     UpdatedConceptScore,
 )
@@ -108,7 +111,13 @@ def build_learning_profile(
         for node in recommended_nodes[:6]
     ]
     quiz_concept_ids = [node.id for node in recommended_nodes[:3]]
-    question_count = sum(question_count_by_concept.get(concept_id, 0) for concept_id in quiz_concept_ids)
+    question_count = sum(
+        question_count_by_concept.get(concept_id, 0) for concept_id in quiz_concept_ids
+    )
+    # Never ask for more than exist, nor more than the endpoint accepts.
+    recommended_length = max(
+        MIN_QUIZ_LENGTH, min(question_count, DEFAULT_QUIZ_LENGTH, MAX_QUIZ_LENGTH)
+    )
 
     return LearningProfileResponse(
         student=subject_map.student,
@@ -119,6 +128,7 @@ def build_learning_profile(
         recommended_quiz=RecommendedQuiz(
             concept_ids=quiz_concept_ids,
             question_count=question_count,
+            recommended_length=recommended_length,
             reason="Selected from the highest-priority support and watch concepts.",
         ),
     )

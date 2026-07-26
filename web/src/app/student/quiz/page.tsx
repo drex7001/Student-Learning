@@ -59,7 +59,9 @@ export default function QuizPage() {
           student_id: user.student_id,
           subject_id: subjectId,
           concept_ids: profile.data.recommended_quiz.concept_ids,
-          quiz_length: profile.data.recommended_quiz.question_count || 8,
+          // The server-side recommended length, not the number of questions that
+          // exist: the latter can exceed what the endpoint accepts.
+          quiz_length: profile.data.recommended_quiz.recommended_length,
         }),
       );
     } catch (caught) {
@@ -76,8 +78,8 @@ export default function QuizPage() {
       setResult(
         await api.post<QuizSubmitResponse>(`/api/learn/quiz/${attempt.attempt_id}/submit`, {
           answers: attempt.questions.map((question) => ({
-            question_id: question.question_id,
-            selected_option_index: answers[question.question_id] ?? null,
+            question_id: question.id,
+            selected_option_index: answers[question.id] ?? null,
           })),
         }),
       );
@@ -120,8 +122,8 @@ export default function QuizPage() {
         <div className="grid gap-3 sm:grid-cols-2">
           <StatTile
             label={t("learn.yourScore")}
-            value={`${result.score} / ${result.score_max}`}
-            hint={percent(result.score / Math.max(result.score_max, 1))}
+            value={`${result.score_obtained} / ${result.score_max}`}
+            hint={percent(result.percentage)}
           />
           <div className="grid place-items-start">
             <button type="button" onClick={start} className={primaryButtonClass} disabled={busy}>
@@ -154,7 +156,7 @@ export default function QuizPage() {
           <PanelHeader title={`${attempt.questions.length} questions`} />
           <ol className="grid gap-4 p-4">
             {attempt.questions.map((question, index) => {
-              const outcome = resultsByQuestion.get(question.question_id);
+              const outcome = resultsByQuestion.get(question.id);
               const options =
                 canShowSinhala &&
                 question.options_si &&
@@ -162,7 +164,7 @@ export default function QuizPage() {
                   ? question.options_si
                   : question.options;
               return (
-                <li key={question.question_id} className="rounded-card border border-rule p-4">
+                <li key={question.id} className="rounded-card border border-rule p-4">
                   <p className="num text-[10.5px] uppercase tracking-[0.12em] text-ink-muted">
                     {index + 1} / {attempt.questions.length} · {question.concept_name}
                   </p>
@@ -173,7 +175,7 @@ export default function QuizPage() {
                   <fieldset className="mt-3 grid gap-1.5">
                     <legend className="sr-only">{question.prompt}</legend>
                     {options.map((option, optionIndex) => {
-                      const selected = answers[question.question_id] === optionIndex;
+                      const selected = answers[question.id] === optionIndex;
                       const correct = outcome && outcome.correct_option_index === optionIndex;
                       const wrong = outcome && selected && !outcome.is_correct;
                       return (
@@ -190,13 +192,13 @@ export default function QuizPage() {
                         >
                           <input
                             type="radio"
-                            name={question.question_id}
+                            name={question.id}
                             checked={selected}
                             disabled={Boolean(result)}
                             onChange={() =>
                               setAnswers((current) => ({
                                 ...current,
-                                [question.question_id]: optionIndex,
+                                [question.id]: optionIndex,
                               }))
                             }
                             className="mt-0.5 size-3.5 shrink-0 accent-[var(--indigo)]"

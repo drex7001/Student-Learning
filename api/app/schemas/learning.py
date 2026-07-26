@@ -17,9 +17,21 @@ class LessonCard(BaseModel):
     study_tips: list[str]
 
 
+#: Bounds for a practice quiz. Named so the schema and the profile agree instead of
+#: each carrying its own magic number.
+MIN_QUIZ_LENGTH = 1
+MAX_QUIZ_LENGTH = 12
+DEFAULT_QUIZ_LENGTH = 8
+
+
 class RecommendedQuiz(BaseModel):
     concept_ids: list[str]
+    #: How many questions exist for these concepts -- what to *show* the learner.
     question_count: int
+    #: How many to actually ask, already inside the allowed range -- what to *send*
+    #: to `/api/learn/quiz/start`. These were previously one field, and passing the
+    #: available total as the length failed validation.
+    recommended_length: int
     reason: str
 
 
@@ -36,7 +48,9 @@ class QuizStartRequest(BaseModel):
     student_id: str
     subject_id: str
     concept_ids: list[str] | None = None
-    quiz_length: int = Field(default=8, ge=1, le=12)
+    quiz_length: int = Field(
+        default=DEFAULT_QUIZ_LENGTH, ge=MIN_QUIZ_LENGTH, le=MAX_QUIZ_LENGTH
+    )
 
 
 class QuizQuestionItem(BaseModel):
