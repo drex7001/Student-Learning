@@ -144,6 +144,12 @@ input[type="number"] {
   letter-spacing: -0.01em;
 }
 
+/* Tracked small-caps labels are a Latin device: letter-spacing pulls Sinhala vowel signs
+   and conjuncts apart ("ද ැ න ්"). Unlayered, so it wins over the tracking utilities. */
+:lang(si) [class*="tracking-"] {
+  letter-spacing: normal;
+}
+
 /* One visible focus treatment for everything, replacing the old `outline-none`. */
 :where(a, button, input, select, textarea, [tabindex]):focus-visible {
   outline: 2px solid var(--focus);

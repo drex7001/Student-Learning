@@ -65,6 +65,9 @@ const en = {
   "risk.locked": "Not a lever",
   "risk.lockedNote":
     "These cannot be intervened on. Asking what would change if a child were different is a forbidden question, not a malformed one.",
+  "risk.askForbidden": "Ask what would change if this were different",
+  "risk.refused":
+    "The risk engine refused this question (HTTP 403). Protected and immutable characteristics are never valid targets for an intervention; the model only answers what support could change.",
   "risk.evidence": "Record",
   "risk.notRecorded": "Not recorded",
   "risk.ahead": "Circumstances ahead",
@@ -172,6 +175,9 @@ const si: Record<MessageKey, string> = {
   "risk.locked": "වෙනස් කළ නොහැකි",
   "risk.lockedNote":
     "මේවාට මැදිහත් විය නොහැක. දරුවෙකු වෙනස් නම් කුමක් වේද යන්න තහනම් ප්‍රශ්නයකි.",
+  "risk.askForbidden": "මෙය වෙනස් නම් කුමක් වේදැයි අසන්න",
+  "risk.refused":
+    "අවදානම් එන්ජිම මෙම ප්‍රශ්නය ප්‍රතික්ෂේප කළා (HTTP 403). ආරක්ෂිත හෝ වෙනස් කළ නොහැකි ලක්ෂණ කිසිවිටෙක මැදිහත්වීමක ඉලක්ක නොවේ; මාදිලිය පිළිතුරු දෙන්නේ සහායෙන් වෙනස් කළ හැකි දේ ගැන පමණයි.",
   "risk.evidence": "වාර්තාව",
   "risk.notRecorded": "වාර්තා කර නැත",
   "risk.ahead": "තත්ත්ව ඉදිරියෙන්",

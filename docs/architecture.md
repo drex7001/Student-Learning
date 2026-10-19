@@ -135,7 +135,10 @@ Four queries earn the graph its place:
 
 - **Causal routes** — `(:RiskFactor)-[:INFLUENCES*1..6]->(outcome)`. This is the
   "why this flag?" surface, and it makes visible that no protected characteristic
-  reaches the outcome except through something a school can change.
+  reaches the outcome except through something a school can change. The one
+  exception is `Grade_Band -> outcome`, a structural transition (grade 5, O-Level)
+  rather than a personal trait, defended in REPORT.md and allowed by name in
+  `_assert_no_protected_shortcut`.
 - **Shared conditions** — concerns many learners hold in common. A factor half a
   school shares is a condition of that school with a school-level fix, not a list of
   children to watch. This reading is the ethical point of the whole screen.

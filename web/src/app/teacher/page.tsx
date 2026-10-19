@@ -24,6 +24,7 @@ import { useApi } from "@/lib/use-api";
 import type {
   CurrentUser,
   RiskCaseloadResponse,
+  RiskModelResponse,
   ScreeningMatrixResponse,
   SharedFactorsResponse,
 } from "@/lib/types";
@@ -42,6 +43,15 @@ export default function TeacherOverviewPage() {
     [schoolId],
   );
   const screening = useApi<ScreeningMatrixResponse>("/api/risk/screening-matrix");
+  const model = useApi<RiskModelResponse>("/api/risk/model");
+
+  /** Authored label for a register state; no raw model identifier reaches the screen. */
+  const stateLabel = (variable: string, value: string) => {
+    const state = model.data?.factors
+      .find((factor) => factor.id === variable)
+      ?.states.find((item) => item.value === value);
+    return state ? pick(state.label, state.label_si) : value.replace(/_/g, " ");
+  };
 
   const summary = caseload.data?.summary;
 
@@ -137,10 +147,10 @@ export default function TeacherOverviewPage() {
                 <tbody>
                   {screening.data.cells.map((cell, index) => (
                     <tr key={index}>
-                      <Td>{cell.current_attendance}</Td>
-                      <Td>{cell.school_engagement}</Td>
+                      <Td>{stateLabel("Current_Attendance", cell.current_attendance)}</Td>
+                      <Td>{stateLabel("School_Engagement", cell.school_engagement)}</Td>
                       <Td className="text-ink-secondary">
-                        {cell.grade_band.replace(/_/g, " ")}
+                        {stateLabel("Grade_Band", cell.grade_band)}
                       </Td>
                       <Td className="text-right">
                         <span className="inline-flex items-center gap-2">

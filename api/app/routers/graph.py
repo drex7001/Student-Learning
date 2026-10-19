@@ -50,6 +50,8 @@ def causal_paths(
     This is the "Why this flag?" surface. Every route runs through a mechanism a
     school can act on -- there is no direct edge from a protected characteristic to
     the outcome, and the graph is where that is visible rather than merely asserted.
+    The one exception is ``Grade_Band``, a structural transition allowed by name in
+    ``_assert_no_protected_shortcut``; the note says so when it is the factor shown.
     """
     deny_students(user)
     copy = _copy()
@@ -66,11 +68,23 @@ def causal_paths(
         "target": copy.target,
         "path_count": len(paths),
         "paths": paths,
-        "note": (
-            "Every route passes through something a school can change. A protected "
-            "characteristic never reaches the outcome directly."
-        ),
+        "note": _routes_note(variable, paths),
     }
+
+
+def _routes_note(variable: str, paths: list[dict]) -> str:
+    direct = any(len(path["nodes"]) == 2 for path in paths)
+    if variable in bn.PROTECTED_OR_IMMUTABLE_NODES and direct:
+        return (
+            "Grade band is the one protected characteristic with a direct route: it marks "
+            "the stage of schooling (grade 5, O-Level) at which leaving actually happens, a "
+            "structural transition rather than a personal trait. It is never a valid target "
+            "for an intervention."
+        )
+    return (
+        "Every route passes through something a school can change. Apart from grade band, "
+        "the stage of schooling, no protected characteristic reaches the outcome directly."
+    )
 
 
 @router.get("/shared-factors")

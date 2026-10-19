@@ -61,7 +61,11 @@ export function AppShell({
 
           <nav aria-label="Main" className="ml-4 hidden flex-1 items-center gap-0.5 lg:flex">
             {nav.map((item) => {
-              const active = pathname === item.href || pathname.startsWith(`${item.href}/`);
+              // The portal's home item matches only itself: every page sits under it, so a
+              // prefix match would keep it lit beside the page that is actually open.
+              const active =
+                pathname === item.href ||
+                (item.href !== user.home_path && pathname.startsWith(`${item.href}/`));
               return (
                 <Link
                   key={item.href}

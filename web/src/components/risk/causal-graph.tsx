@@ -7,7 +7,7 @@
  * This is the piece that replaces a SHAP bar chart. A bar says a feature mattered;
  * this says *through what* it mattered — and makes visible that a protected
  * characteristic never reaches the outcome except through something a school can
- * change.
+ * change (grade band, a structural transition, is the one documented exception).
  */
 
 import dagre from "@dagrejs/dagre";

@@ -38,6 +38,11 @@ export default function StudentProgressPage() {
 
   const strong = (profile.data?.lesson_cards ?? []).filter((card) => card.status === "ready");
   const practise = (profile.data?.lesson_cards ?? []).filter((card) => card.status !== "ready");
+  // The cards are only the top few recommendations, so the tiles count the whole
+  // subject from the summary rather than the cards on screen.
+  const summary = profile.data?.summary;
+  const readyCount = summary?.ready ?? strong.length;
+  const practiseCount = summary ? summary.total_concepts - summary.ready : practise.length;
 
   return (
     <div className="grid gap-4">
@@ -75,8 +80,8 @@ export default function StudentProgressPage() {
       {profile.data ? (
         <>
           <div className="grid gap-3 sm:grid-cols-3">
-            <StatTile label={t("learn.strong")} value={strong.length} />
-            <StatTile label={t("learn.practise")} value={practise.length} emphasis="watch" />
+            <StatTile label={t("learn.strong")} value={readyCount} />
+            <StatTile label={t("learn.practise")} value={practiseCount} emphasis="watch" />
             <StatTile
               label="Practice questions ready"
               value={profile.data.recommended_quiz.question_count}
@@ -86,7 +91,6 @@ export default function StudentProgressPage() {
           <Panel>
             <PanelHeader
               title={t("learn.practise")}
-              note={profile.data.explanation}
               action={
                 <Link href="/student/quiz" className="text-[13px] text-indigo underline underline-offset-2">
                   {t("learn.startQuiz")} →
@@ -107,7 +111,7 @@ export default function StudentProgressPage() {
                           {card.concept_id}
                         </p>
                         <h3 className="mt-0.5 text-[14.5px] font-semibold leading-tight">
-                          {pick(card.name, card.name_si)}
+                          {pick(card.concept_name, card.concept_name_si)}
                         </h3>
                       </div>
                       <Chip className={statusStyle[card.status].chip}>
@@ -161,7 +165,7 @@ export default function StudentProgressPage() {
               <div className="flex flex-wrap gap-2 p-4">
                 {strong.map((card) => (
                   <Chip key={card.concept_id} className="border-rule bg-sunken text-ink-secondary">
-                    {pick(card.name, card.name_si)}{" "}
+                    {pick(card.concept_name, card.concept_name_si)}{" "}
                     <span className="num">{score(card.mastery_score)}</span>
                   </Chip>
                 ))}

@@ -79,12 +79,16 @@ export default function StudentRecordPage({ params }: { params: Promise<{ id: st
       setPlan(await api.post<PlanResponse>(`/api/risk/students/${id}/plan`, { variables: next }));
     } catch (caught) {
       setPlan(null);
-      if (caught instanceof ApiError && caught.isRefusal) setRefusal(caught.message);
+      if (caught instanceof ApiError && caught.isRefusal) setRefusal(t("risk.refused"));
     }
   }
 
-  /** Deliberately invokes the engine so the refusal is shown, not described. */
-  async function askForbidden(variable: string) {
+  /**
+   * Deliberately invokes the engine so the refusal is shown, not described. The engine's
+   * own message names raw model identifiers, so the screen shows the authored copy for
+   * the 403 it returned.
+   */
+  async function askForbidden(variable: string, label: string) {
     setRefusal(null);
     try {
       await api.post(`/api/risk/students/${id}/what-if`, {
@@ -92,7 +96,11 @@ export default function StudentRecordPage({ params }: { params: Promise<{ id: st
       });
       setRefusal("The model answered — the guardrail did not fire. This is a defect.");
     } catch (caught) {
-      setRefusal(caught instanceof Error ? caught.message : t("common.error"));
+      if (caught instanceof ApiError && caught.isRefusal) {
+        setRefusal(`${label}: ${t("risk.refused")}`);
+      } else {
+        setRefusal(caught instanceof Error ? caught.message : t("common.error"));
+      }
     }
   }
 
@@ -477,11 +485,11 @@ export default function StudentRecordPage({ params }: { params: Promise<{ id: st
               ) : null}
               <button
                 type="button"
-                onClick={() => askForbidden(factor.id)}
+                onClick={() => askForbidden(factor.id, pick(factor.label, factor.label_si))}
                 className={cn(buttonClass, "mt-2.5 text-[12px]")}
               >
                 <ShieldAlert className="size-3.5" aria-hidden />
-                Ask what would change if this were different
+                {t("risk.askForbidden")}
               </button>
             </div>
           ))}

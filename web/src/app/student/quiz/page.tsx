@@ -135,10 +135,7 @@ export default function QuizPage() {
 
       {!attempt ? (
         <Panel>
-          <PanelHeader
-            title={t("learn.startQuiz")}
-            note={profile.data?.explanation}
-          />
+          <PanelHeader title={t("learn.startQuiz")} />
           <div className="p-4">
             {profile.loading ? (
               <Loading label={t("common.loading")} />

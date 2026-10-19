@@ -353,15 +353,17 @@ export type SubjectDiagnosisMapResponse = {
   explanation: string;
 };
 
+/** Mirrors `LessonCard` in api/app/schemas/learning.py field for field. */
 export type LessonCard = {
   concept_id: string;
-  name: string;
-  name_si?: string | null;
+  concept_name: string;
+  concept_name_si?: string | null;
   status: SupportStatus;
   mastery_score: number | null;
+  confidence: number;
+  priority_score: number;
   why_it_matters: string;
   study_tips: string[];
-  question_count: number;
 };
 
 export type LearningProfileResponse = {
@@ -376,7 +378,6 @@ export type LearningProfileResponse = {
     /** How many to ask, already within the endpoint's allowed range — send this. */
     recommended_length: number;
   };
-  explanation: string;
 };
 
 export type QuizQuestion = {
